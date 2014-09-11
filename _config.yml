@@ -20,3 +20,4 @@ exclude:
   - '.sass-cache'
   - 'feed.xml'
   - '*.sublime-project'
+  - 'CNAME'

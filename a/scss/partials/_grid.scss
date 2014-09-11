@@ -27,39 +27,37 @@ $large: new-breakpoint(min-width em(1072) 12);
   }
 }
 
-
-
-body {
-  &:before {
-    content: 'small';
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: .5em;
-    background-color: lightgreen;
-    color: black;
-    font-size: 80%;
-  }
-  @include media($small-medium) {
-    &:before {
-      content: 'small-medium';
-      background-color: burlywood;
-    }
-  }
-  @include media($medium) {
-    &:before {
-      content: 'medium';
-      background-color: pink;
-    }
-  }
-  @include media($large) {
-    &:before {
-      content: 'large';
-      background-color: plum;
-    }
-  }
-}
+// body {
+//   &:before {
+//     content: 'small';
+//     display: block;
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     padding: .5em;
+//     background-color: lightgreen;
+//     color: black;
+//     font-size: 80%;
+//   }
+//   @include media($small-medium) {
+//     &:before {
+//       content: 'small-medium';
+//       background-color: burlywood;
+//     }
+//   }
+//   @include media($medium) {
+//     &:before {
+//       content: 'medium';
+//       background-color: pink;
+//     }
+//   }
+//   @include media($large) {
+//     &:before {
+//       content: 'large';
+//       background-color: plum;
+//     }
+//   }
+// }
 
 .layout__two-col {
   @include clearfix;
