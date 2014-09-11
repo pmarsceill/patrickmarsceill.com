@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Designing for Yourself"
-date:   2014-07-14 22:59:00
+date:   2014-09-11 19:25:00
 categories:
 ---
 
