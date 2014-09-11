@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Patrick Marsceill &mdash; Prototyping Q&amp;A</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Patrick Marsceill is a Senior Designer at Happy Cog in Philadelphia.">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="canonical" href="http://patrickmarsceill.com/2013/12/11/prototyping-q-and-a/">
+  <link rel="stylesheet" href="/a/c/screen.css">
+  <!-- Grunt Icon -->
+  <script>
+    /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+    window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var r=t.document.createElement("link"),a=t.document.getElementsByTagName("script")[0];r.rel="stylesheet",r.href=e[o&&n?0:o?1:2],a.parentNode.insertBefore(r,a)},r=new t.Image;r.onerror=function(){o(!1)},r.onload=function(){o(1===r.width&&1===r.height)},r.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+    grunticon(["/a/c/grunticon/icons.data.svg.css", "/a/c/grunticon/icons.data.png.css", "/a/c/grunticon/icons.fallback.css"]);
+  </script>
+  <noscript><link href="/a/c/grunticon/icons.fallback.css" rel="stylesheet"></noscript>
+  <script src="/a/j/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+
+  <body class="body--post">
+	<div class="non-footer">
+    <div class="outer">
+  <header class="site-header" role="banner">
+      <hgroup class="site-header__hgroup">
+        <h1>
+          <a href="/">Patrick Marsceill</a>
+        </h1>
+        <h2>working designer and developer</h2>
+      </hgroup>
+      <nav class="site-header__nav" role="navigation">
+        <ul>
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <li>
+            <a class="page-link active" href="/">Journal</a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+
+          <li>
+            <a class="page-link " href="/about/">About</a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <li>
+            <a class="page-link " href="/projects/">Projects</a>
+          </li>
+          
+          
+          
+        </ul>
+      </nav>
+
+  </header>
+</div>
+
+
+    
+<div class="outer">
+  <main class="post">
+    <article>
+      <header>
+        <h1 class="post-header__title--detail">Prototyping Q&amp;A</h1>
+        <p class="post-header__meta--detail">Published on Dec 11, 2013</p>
+      </header>
+
+      
+      
+      
+
+      
+
+      
+      
+      
+      <div class="content"><p>A few months ago <a href="http://happycog.com">Happy Cog™</a> released <a href="http://happycog.com/way">The Happy Cog Way</a>, an instructional video series highlighting our methods and best practices. As part of this series I created a course in <a href="http://mijingo.com/products/screencasts/html-prototyping">HTML Prototyping</a>, a beginners guide to using <a href="http://foundation.zurb.com">Zurb Foundation</a>, <a href="http://sass-lang.com">Sass</a>, and <a href="http://incident57.com/codekit/">CodeKit</a> to create responsive prototypes. Since its release, I’ve received some really great feedback about my video and the series, including this set of questions that a reader emailed me.</p>
+
+<blockquote>
+  <p>I’m a front end dev that’s been in the business for over 15 years. I’ve always hand coded my sites, and I’ve never really gotten into grid systems. (I was working online back int the table days).</p>
+</blockquote>
+
+<p>Grid systems and “hand coding” are not mutually exclusive. For me, grid systems are just as much of a design tool as they are a development tool. Designers have been using proportional grids to layout designs on paper since the days before the printing press was invented. 
+</div>
+      <aside>
+        
+
+<div class="icon-post-q-and-a icon--post"></div>
+
+<p><a href="http://mijingo.com/products/screencasts/html-prototyping/">HTML Prototyping</a> is available for purchase on <a href="http://mijingo.com">Mijingo.com</a>. For more questions about the prototyping process, <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#112;&#097;&#116;&#114;&#105;&#099;&#107;&#046;&#109;&#097;&#114;&#115;&#099;&#101;&#105;&#108;&#108;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">email me</a>.</p>
+
+      </aside>
+      <div class="content">
+<p>In the context of web development, grids allow designers and developers to layout pages with the consistency and flexibility that modern day web development requires. While it is a good idea to use a grid to help layout your pages, you may not want an entire “front end framework” like Zurb Foundation or Twitter Bootstrap to weigh down your production-level code. At Happy Cog, we use these as tools to get ideas into the browser early, but we don’t use these for production. Here are a few options that still allow a developer to use grid-based designs efficiently in front-end production:&lt;/p&gt;</p>
+
+<ul>
+  <li>
+    <p>Roll your own. <a href="http://css-tricks.com/dont-overthink-it-grids/">Chris Coyier did a pretty good demo here</a>. I’m not a super huge fan of using class names like <code>.col-1-2</code> so if I were developing a site using this method, I would make all those classes Sass mixins so I could just <code>@include</code> them within the element selectors that need to use them.</p>
+  </li>
+  <li>
+    <p>Use a light weight grid system framework. <a href="http://susy.oddbird.net/">Susy</a> is a pretty good example of this. Susy is a Compass based grid framework that easily allows you to customize your grid using Sass mixins. This enables you to keep your CSS class names semantic. <a href="http://neat.bourbon.io/">Neat</a> is a similar framework that is built on top of Bourbon, if you that is what you prefer. </p>
+  </li>
+</ul>
+
+<p>While both of these options are indeed technically frameworks, they exist purely in the pre-compiled Sass layer, do not contain additional UI elements (unlike Foundation and Bootstrap), and are relatively lightweight in terms of what gets served to the user. I tend to think of them less as frameworks, and more as as set of mathematical functions that make it easier for a developer to quickly divide a page up using proportions, percentages, ems, or pixels.</p>
+
+<blockquote>
+  <p>Does Happy Cog use foundation for live production websites?</p>
+</blockquote>
+
+<p>No we do not. Foundation requires you to use a very specific patterns for class names, and markup.</p>
+
+<blockquote>
+  <p>And has Happy Cog ever taken something that was prototyped out in foundation then converted it into a live website for a client?</p>
+</blockquote>
+
+<p>Prototypes serve as an alternative to exclusively creating paper wireframes. Their purpose is to more effectively document and communicate designs to our internal and client stakeholders. Frameworks like Foundation allow us to quickly and easily get our ideas into the browser and allow us to think about how things will scale from small to large screens. When prototyping, we aren’t as worried about the quality of the code–but the content, information architecture, and interaction design take priority. Prototyping may also be a good time for developers to get involved in thinking early about how they may approach a problem, while not actually spending time fully executing it.</p>
+
+<blockquote>
+  <p>If Happy Cog doesn’t use foundation or convert their prototypes to live sites, isn’t it more work to try and hand code a site later to match your Foundation prototype? (You’re re-creating the styes and html but without the “cruft”)</p>
+</blockquote>
+
+<p>Since our prototypes have essentially replaced paper wireframes in most cases–it actually speeds up the design process and facilitates more conversations between our design and development teams. This allows our front end developers to see how elements on the page should behave and then plan for the best possible implementation sooner in the process. If prototyping were not part of our process, we would spend a fairly large chunk of time trying to document the same information on paper–which can be very time consuming. Front end teams would still have to hand code the site based on paper wireframes which inevidably leaves some nuances left undocumented.  We’ve found that prototyping provides a more complete and definitive documentation, with clearer direction to stakeholders and developers alike.</p>
+
+</div>
+      <aside>
+        
+<h3>Other Recent Articles</h3>
+<ul>
+  
+    
+    <li><a href="/2014/07/14/designing-for-yourself/">Designing for Yourself</a><br>Jul 14, 2014</li>
+    
+  
+    
+  
+    
+    <li><a href="/2013/06/26/russian-joe/">The Russian Joe</a><br>Jun 26, 2013</li>
+    
+  
+</ul>
+
+      </aside>
+      
+      
+      
+    </article>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'patrickmarsceill'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </main>
+</div>
+
+	</div>
+    <footer class="footer">
+
+  <div class="outer">
+
+
+      <p class="text--small">All content copyright &copy; 2012-2014 Patrick Marsceill. Proudly made in Philadelphia.</p>
+
+
+  </div>
+
+</footer>
+
+
+    <script src="/a/j/global.min.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/peb0hbp.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+     <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'patrickmarsceill'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    </body>
+</html>

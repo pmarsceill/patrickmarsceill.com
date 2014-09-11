@@ -1,0 +1,2461 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"backg",
+				"background-image"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"repea",
+				"repeat-x"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"first",
+				"first-child"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"small",
+				"small-medium"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"repeat",
+				"repeat-y"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"p",
+				"position"
+			],
+			[
+				"bord",
+				"border-box"
+			],
+			[
+				"swap",
+				"swapImgNew"
+			],
+			[
+				"mag",
+				"magnifi"
+			],
+			[
+				"thu",
+				"thumbHolder"
+			],
+			[
+				"fade",
+				"fadeTo"
+			],
+			[
+				"fad",
+				"fadeTo"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"j",
+				"jPM"
+			],
+			[
+				"auto",
+				"autoCompleteSearch"
+			],
+			[
+				"results",
+				"results-row"
+			],
+			[
+				"stick",
+				"stickyMap"
+			],
+			[
+				"slide",
+				"slideToggle"
+			],
+			[
+				"slid",
+				"slideToggle"
+			],
+			[
+				"location",
+				"locationSearchToggle"
+			],
+			[
+				"prev",
+				"prevQuestion"
+			],
+			[
+				"remo",
+				"remove"
+			],
+			[
+				"next",
+				"nextQuestion"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"office-lab",
+				"office-label-row"
+			],
+			[
+				"my",
+				"myProps"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"my-",
+				"my-props-drawer"
+			],
+			[
+				"pro",
+				"prop-carousel"
+			],
+			[
+				"pr",
+				"preventDefault"
+			],
+			[
+				"togl",
+				"toggleClass"
+			],
+			[
+				"prop",
+				"propCarousel"
+			],
+			[
+				"contact",
+				"contactExpand"
+			],
+			[
+				"part",
+				"parentsUntil"
+			],
+			[
+				"ac",
+				"active"
+			],
+			[
+				"recent",
+				"recentSearchExpand"
+			],
+			[
+				"activ",
+				"activeResult"
+			],
+			[
+				"feat",
+				"featProps"
+			],
+			[
+				"nav",
+				"navigation"
+			],
+			[
+				"ev",
+				"event"
+			],
+			[
+				"home",
+				"homepage-featured"
+			],
+			[
+				"filter",
+				"filterName"
+			],
+			[
+				"pa",
+				"parentsUntil"
+			],
+			[
+				"toggles",
+				"toggles"
+			],
+			[
+				"experti",
+				"expertise"
+			],
+			[
+				"toggle",
+				"toggleClass"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"practic",
+				"practice-item"
+			],
+			[
+				"ju",
+				"jquery"
+			],
+			[
+				"fix",
+				"fixMenu"
+			],
+			[
+				"col",
+				"columnWidth"
+			],
+			[
+				"togg",
+				"toggleClass"
+			],
+			[
+				"mi",
+				"middle"
+			],
+			[
+				"m",
+				"middle"
+			],
+			[
+				"d",
+				"desktop"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"has",
+				"hasClass"
+			],
+			[
+				"sc",
+				"scrollTop"
+			],
+			[
+				"targe",
+				"targetNum"
+			],
+			[
+				"de",
+				"detectArrows"
+			],
+			[
+				"cli",
+				"clientWidth"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"ma",
+				"main-nav"
+			],
+			[
+				"menu",
+				"menu-link"
+			],
+			[
+				"move",
+				"moveRight"
+			],
+			[
+				"vis",
+				"visiblePartY"
+			],
+			[
+				"visiblePart",
+				"visiblePartY"
+			],
+			[
+				"visiblePar",
+				"visiblePartX"
+			],
+			[
+				"scroll",
+				"scroll"
+			],
+			[
+				"scr",
+				"h-scroll"
+			],
+			[
+				"scro",
+				"scroll"
+			],
+			[
+				"jump",
+				"jump-links"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"clar",
+				"clearfix"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"lar",
+				"larger-screen"
+			],
+			[
+				"co",
+				"columnWidth"
+			],
+			[
+				"deploy",
+				"deployment"
+			],
+			[
+				"media",
+				"media-box"
+			],
+			[
+				"t",
+				"tablet"
+			],
+			[
+				"bas",
+				"base-font-family"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"block",
+				"block-quote"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"te",
+				"text-color"
+			],
+			[
+				"e",
+				"extend"
+			],
+			[
+				"account",
+				"account-setup"
+			],
+			[
+				"sec",
+				"secondary"
+			],
+			[
+				"shed",
+				"schedule"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"pay",
+				"payment-form"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"span",
+				"span-columns"
+			],
+			[
+				"sp",
+				"span-columns"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"group",
+				"group-options"
+			],
+			[
+				"Prod",
+				"product-config"
+			],
+			[
+				"fea",
+				"featured-content"
+			],
+			[
+				"field",
+				"fieldset"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"base-",
+				"base-line-height"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"rem",
+				"removeClass"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"shi",
+				"shipping-details"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"payment",
+				"payment"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"test",
+				"test-select"
+			],
+			[
+				"busin",
+				"business-unit-select"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "a/scss/partials/_type.scss",
+			"settings":
+			{
+				"buffer_size": 4540,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/header.html",
+			"settings":
+			{
+				"buffer_size": 979,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/patrickmarsceill/Library/Application Support/LimeChat/Themes/patrick.css",
+			"settings":
+			{
+				"buffer_size": 3491,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/patrickmarsceill/Library/Application Support/LimeChat/Themes/patrick.yaml",
+			"settings":
+			{
+				"buffer_size": 1106,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "projects.md",
+			"settings":
+			{
+				"buffer_size": 2101,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/post.html",
+			"settings":
+			{
+				"buffer_size": 3100,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/page.html",
+			"settings":
+			{
+				"buffer_size": 145,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1742,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "a/scss/partials/_page.scss",
+			"settings":
+			{
+				"buffer_size": 1142,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "about.md",
+			"settings":
+			{
+				"buffer_size": 3495,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 1025,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-07-14-designing-for-yourself.md",
+			"settings":
+			{
+				"buffer_size": 5661,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "a/scss/partials/_posts.scss",
+			"settings":
+			{
+				"buffer_size": 5252,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/head.html",
+			"settings":
+			{
+				"buffer_size": 1666,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "a/scss/partials/_grid.scss",
+			"settings":
+			{
+				"buffer_size": 1576,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lo",
+				"Convert Case: Lower Case"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"da",
+				"DashDoc: invoke Dash with selected word"
+			],
+			[
+				"s",
+				"Sort Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"line",
+				"Emmet: Merge Lines"
+			],
+			[
+				"dash",
+				"DashDoc: invoke Dash with selected word"
+			],
+			[
+				"en",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"con",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"html",
+				"Tidy HTML"
+			],
+			[
+				"tidy",
+				"TidyHTML"
+			],
+			[
+				"case",
+				"Convert Case: Title Case"
+			],
+			[
+				"cas",
+				"Convert Case: Title Case"
+			],
+			[
+				"rin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reing",
+				"Preferences: Settings - Default"
+			],
+			[
+				"enc",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"REI",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"encode",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"e",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"enco",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"ENC",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"encod",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"ri",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"mer",
+				"Emmet: Merge Lines"
+			],
+			[
+				"merge",
+				"Emmet: Merge Lines"
+			],
+			[
+				"merg",
+				"Emmet: Merge Lines"
+			],
+			[
+				"RE",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"EN",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"emm",
+				"Emmet: Merge Lines"
+			],
+			[
+				"m",
+				"Emmet: Merge Lines"
+			],
+			[
+				"MER",
+				"Emmet: Merge Lines"
+			],
+			[
+				"em",
+				"Emmet: Remove Tag"
+			],
+			[
+				"emme",
+				"Emmet: Merge Lines"
+			],
+			[
+				"EMME",
+				"Emmet: Merge Lines"
+			],
+			[
+				"eno",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"rub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"ru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"runy",
+				"Set Syntax: Regular Expressions (Python)"
+			],
+			[
+				"wrap",
+				"Emmet: Wrap With Abbreviation"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"LINT	",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"Sublime",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"h",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"INDE",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"htm",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"ht",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"co",
+				"Convert Case: Title Case"
+			],
+			[
+				"conve",
+				"Convert Case: Title Case"
+			],
+			[
+				"r",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"HTML",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"char",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"packg",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"oac",
+				"Package Control: Add Channel"
+			],
+			[
+				"CONV",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"convert to",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"Snippet: lor",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"Snippet: erb",
+				"Snippet: end (ERB)"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_layouts",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_site",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_site/a",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials"
+	],
+	"file_history":
+	[
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2013-02-13-building-my-desk-part-two-the-top.md",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials/_images.scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2013-02-27-the-difference-between-money-and-power.md",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2012-11-19-how-i-setup-my-machine-for-prototyping.md",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/about.md",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials/_header.scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2014-07-14-designing-for-yourself.md",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2013-12-11-prototyping-q-and-a.md",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2013-06-26-russian-joe.md",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2013-01-14-building-my-desk-part-one-the-frame.md",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials/_posts.scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/.sass-cache/54e4c6a2f81cf48cc71a34d2d2b2bb8cf744ab89/_posts.scssc",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/.sass-cache/028d4c6a3485d12ed42c019066c1409382e8c0ce/_posts.scssc",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_includes/footer.html",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_layouts/post.html",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/package.json",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_config.yml",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_site/a/c/grunticon/preview.html",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials/_footer.scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials/_global.scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials/_animations.scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/Gruntfile.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/c/grunticon/icons.data.png.css",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/c/grunticon/icons.fallback.css",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials/_grid.scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/c/screen.css",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/j/custom/main.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/j/global.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials/_page.scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials/_type.scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials/_media.scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_layouts/page.html",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/projects.md",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Framer Jekyll Template/app.coffee",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/.gitignore",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_includes/head.html",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_footer.scss",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_global.scss",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/Gruntfile.js",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/c/svg/preview.html",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/screen.scss",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_syntax.scss",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_normalize.scss",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_type.scss",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/index.html",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_layouts/post.html",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_layouts/default.html",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_header.scss",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_includes/header.html",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_animations.scss",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_posts.scss",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_grid.scss",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_posts/2014-07-14-designing-for-yourself.md",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/listen.md",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_posts/2014-05-22-welcome-to-jekyll.markdown",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/grunt-grunticon/node_modules/svg-to-png/node_modules/phantomjs/lib/phantom/examples/post.coffee",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/grunt-grunticon/node_modules/svg-to-png/node_modules/phantomjs/lib/phantom/examples/post.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/grunt-grunticon/node_modules/svg-to-png/node_modules/phantomjs/lib/phantom/examples/postserver.coffee",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/.sass-cache/028d4c6a3485d12ed42c019066c1409382e8c0ce/_header.scssc",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/grunt-grunticon/node_modules/svg-to-png/node_modules/phantomjs/node_modules/adm-zip/headers/dataHeader.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/grunt/lib/grunt/task.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2012-10-24-first.markdown",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2012-11-19-how-i-setup-my-machine-for-prototyping.markdown",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2013-02-13-building-my-desk-part-two-the-top.markdown",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2013-01-14-building-my-desk-part-one-the-frame.markdown",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2013-02-27-the-difference-between-money-and-power.markdown",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_layouts/default.html",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/index.html",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2013-12-11-prototyping-q-and-a.markdown",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts/2013-06-26-russian-joe.markdown",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/.sass-cache/028d4c6a3485d12ed42c019066c1409382e8c0ce/_global.scssc",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_site/a/j/global.min.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/j/global.min.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_site/a/j/global.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/.sass-cache/028d4c6a3485d12ed42c019066c1409382e8c0ce/_type.scssc",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/load-grunt-tasks/node_modules/globule/node_modules/glob/glob.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/load-grunt-tasks/node_modules/findup-sync/node_modules/glob/glob.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/grunt/node_modules/findup-sync/node_modules/glob/glob.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/load-grunt-tasks/node_modules/globule/lib/globule.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_site/node_modules/grunt/node_modules/glob/glob.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/grunt/node_modules/glob/glob.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_site/node_modules/load-grunt-tasks/node_modules/globule/lib/globule.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/j/plugins/livereload.js",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/.sass-cache/bdb10e1ee576d760eaa488ad703e3dcd025099f7/_position.scssc",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/.sass-cache/b9355c2b0d6729b300446a98bf416b2432688885/_position.scssc",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/.sass-cache/028d4c6a3485d12ed42c019066c1409382e8c0ce/_syntax.scssc",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_includes/head.html",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/source/node_modules/grunt-grunticon/node_modules/grunt-svgmin/node_modules/svgo/plugins/cleanupAttrs.js",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/source/_config.yml",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/source/_layouts/post.html",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/kit/model_dealer_gear.kit",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/a/scss/_trek.scss",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/kit/partials/_catalog-filters-bike.kit",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/a/j/trek.js",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/kit/catalog_bikes.kit",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/a/scss/_settings.scss",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/kit/gear.kit",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/index.html",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/kit/bikes.kit",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/kit/collection.kit",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/_posts/design/wireframes/2014-05-21-v7.md",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/kit/category_landing.kit",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/collection.html",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/kit/partials/_main-nav.kit",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/_posts/timeline/2014-05-19-design-batch1.md",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/wireframes/v7/prototype/kit/partials/_category_product.kit",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/source/timeline/index.html",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/source/_posts/2014-05-16-desktop-test-2.md",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/source/_layouts/mobile-comp.html",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/source/_layouts/category-index.html",
+		"/Users/patrickmarsceill/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/patrickmarsceill/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/_posts/timeline/2014-05-19-wireframe-v7.md",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/node_modules/bower/node_modules/bower-config/node_modules/optimist/test/dash.js",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/design/code/fragments/button-groups/darker-stack.html",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/node_modules/bower/node_modules/decompress-zip/download-test-assets.js",
+		"/Users/patrickmarsceill/Dropbox (Happy Cog)/_Active/trek-source/_layouts/default.html",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Freelance-Projects/Unis/Development/Theme/lakin-moore-and-hagenes2634-5793077/unis-theme.sublime-project",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Freelance-Projects/Unis/Development/Theme/lakin-moore-and-hagenes2634-5793077/assets/FontAwesome.otf",
+		"/Users/patrickmarsceill/Desktop/Templates/tmp/restart.txt",
+		"/Users/patrickmarsceill/Desktop/Templates/scss/screen.scss",
+		"/Users/patrickmarsceill/Desktop/Templates/public/a/c/screen.css",
+		"/Users/patrickmarsceill/Desktop/Templates/_site/scss/screen.scss",
+		"/Users/patrickmarsceill/Desktop/Templates/unis-templates.sublime-project",
+		"/Users/patrickmarsceill/Desktop/Templates/views/category-all.html.erb",
+		"/Users/patrickmarsceill/Desktop/Templates/public/a/j/main.js",
+		"/Users/patrickmarsceill/Dropbox/_Personal/Unis/Development/Templates/scss/settings/_colors.scss"
+	],
+	"find":
+	{
+		"height": 47.0
+	},
+	"find_in_files":
+	{
+		"height": 133.0,
+		"where_history":
+		[
+			"",
+			"/Users/patrickmarsceill/Dropbox/_Personal/Unis/Development/Templates/scss/modules",
+			"",
+			"/Users/patrickmarsceill/Dropbox/_Active/weil-prototype/scss",
+			"/Users/patrickmarsceill/Dropbox/_Active/weil-prototype/views",
+			"/Users/patrickmarsceill/Dropbox/_Active/weil-prototype/scss",
+			"",
+			"/Users/patrickmarsceill/.dropbox/Dropbox/_Active/weil-prototype/views",
+			"",
+			"/Users/patrickmarsceill/.dropbox/Dropbox/_Active/weil-prototype/views",
+			"",
+			"/Users/patrickmarsceill/Desktop/garces-prototype/views/pa",
+			"/Users/patrickmarsceill/Desktop/garces-prototype/views/shared",
+			"/Users/patrickmarsceill/Desktop/garces-prototype/views,/Users/patrickmarsceill/Desktop/garces-prototype/views/shared",
+			"/Users/patrickmarsceill/Desktop/garces-prototype/views",
+			"/views/*",
+			"/layouts/",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"text-align",
+			"figure",
+			"aside",
+			"under",
+			"blockquote",
+			"home",
+			"content",
+			"#06068E",
+			" .",
+			"fade",
+			".",
+			";\n",
+			"shell",
+			"{% endcodeblock %}",
+			"{% codeblock %}",
+			"sass",
+			"toggle",
+			"bread",
+			"#",
+			"Custom",
+			"Project",
+			"brand",
+			"h4",
+			"dd",
+			"sticky",
+			"util",
+			"main",
+			"nav",
+			"list-style",
+			"save",
+			"catalog",
+			"</option><option",
+			"category",
+			"v6",
+			"dropdown",
+			"%;\n",
+			"dropdown",
+			"main",
+			"meta",
+			"util",
+			"  -webkit-font-smoothing: subpixel-antialiased;",
+			"sub",
+			"dt",
+			"dd",
+			"prod",
+			"upper",
+			"chart",
+			"chrt",
+			"sizing",
+			"links",
+			"product",
+			"enter",
+			"10:00-7:00",
+			"text",
+			"clear",
+			"detail",
+			".rsDefault",
+			".rsDefault ",
+			"share-this",
+			"topsearch",
+			"top",
+			"nav-bg",
+			"util",
+			"autocomplete",
+			"ui",
+			"dropdown",
+			";\n",
+			"size",
+			"share",
+			"jquer",
+			"jquery",
+			"clearQueue",
+			"clearQue",
+			"deque",
+			"console.log",
+			"image",
+			"imgEl.load",
+			"imgEl",
+			"imgEl.load",
+			"imgEL.load",
+			"imgEl.load",
+			"load",
+			"img",
+			"top",
+			"padding-top",
+			"product",
+			"cart",
+			";\n",
+			"(window).scroll",
+			"epsilon",
+			"title",
+			".top",
+			"filters",
+			"main",
+			"search-page-form",
+			"search",
+			".search",
+			"search",
+			".search",
+			"in-page",
+			"sign-in",
+			".list-style",
+			"list-style",
+			">",
+			"removeEqual",
+			"large",
+			"equal",
+			"url",
+			"tbody",
+			"tfoot",
+			".customer-area",
+			"customer",
+			".customer",
+			"customer",
+			"cart-contents",
+			"CART",
+			"top",
+			"selector-wrapper",
+			"featured",
+			".clear",
+			"clear",
+			"tooltip",
+			"<a href=\"#\">",
+			"<a href=\"#\"><i class=\"fa fa-plus-circle\">",
+			"<a href=\"/product\"><i class=\"fa fa-plus-circle\">",
+			"<a href=\"#\">",
+			"<a href=\"#\"><img src=\"/a/i/product4.jpg\" alt=\"\"></a>",
+			"product3"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#ff002a",
+			" %",
+			"%",
+			"{% endhighlight %}",
+			"{% highlight %}",
+			"collection.html",
+			"category_landing.html",
+			"cat",
+			"h6",
+			"li",
+			"brand",
+			"v7",
+			"",
+			"h5",
+			"li",
+			"10:00am-7:00pm",
+			"",
+			"digamma",
+			"title epsilon",
+			"<a href=\"/product\">",
+			"<a href=\"/category\"><i class=\"fa fa-plus-circle\">",
+			"<a href=\"/product\">",
+			"<a href=\"/product\"><img src=\"/a/i/product4.jpg\" alt=\"\"></a>",
+			"product4",
+			"article",
+			"div",
+			"$middle",
+			"url(/a/i/",
+			"",
+			"small-12",
+			"li",
+			"<a href=\"#\" class=\"button secondary load-more-props\">View more homes <i class=\"icon-angle-down\"></i></a>",
+			"class=\"load-more-props\"",
+			"<li class=\"small-6 large-3 columns property\">",
+			"<h5><a href=\"#\">901 East Jefferson Street, Phoenix, AZ</a></h5>",
+			"<img src=\"http://placehold.it/480x320&text=Property Photo\" alt=\"\">",
+			"/people/list.html",
+			"",
+			"<a href=\"/locations/office.html\">Boston</a>",
+			"<p class=\"description\">",
+			"sum",
+			"&amp;",
+			"</p>",
+			"p class=\"description\"",
+			"",
+			"href=\"#\"",
+			"Awards &amp; Recognition",
+			"Area of Focus",
+			"Lawyers",
+			"<option value=\"a\">",
+			"Sectors",
+			"Bar Admissions, Court Admissions &amp; Jurisdictions",
+			"Awards &amp; Recognition",
+			"Guides &amp; Resources",
+			"Latest Thinking",
+			".field",
+			"",
+			"Michael Aiello",
+			"<a href=\"/people/bio.html\">Holly Gregory</a>",
+			"/locations/office.html",
+			"</a>, ",
+			"</a></li>",
+			"<li><a href=\"/expertise/practice.html\">",
+			"Global Reach",
+			"Announcements",
+			"/search/filtered.html",
+			"/search/index.html",
+			"th",
+			"h4",
+			"<a href=\"/people/bio.html\"",
+			"<a href=\"/people/bio.html\"\n					<a href=\"#media-overlay\" class=\"lightbox\"><img src=\"http://placehold.it/50x50\" alt=\"\"></a>\n				</div>",
+			"<div class=\"item\">\n					<a href=\"#media-overlay\" class=\"lightbox\"><img src=\"http://placehold.it/50x50\" alt=\"\"></a>\n				</div>",
+			"#",
+			"list-filtered.html",
+			"<a href=\"bio.html\">Last",
+			"\"list.html\"",
+			"list.html",
+			"",
+			"&mdash;",
+			"\"",
+			"'",
+			"",
+			"View 12 more...",
+			"\"getmore",
+			"#main-nav",
+			"</a></li>",
+			"<li><a href=\"#\">",
+			"</a></li>",
+			"<li><a href=\"#\">",
+			"primary-content",
+			"li",
+			"top",
+			"",
+			"/location",
+			"location",
+			"h4",
+			"/",
+			"",
+			"<strong>",
+			"class",
+			"\"#\"",
+			"#",
+			"\"",
+			"&reg;",
+			"-",
+			"'",
+			"javascript:void(0);",
+			"html",
+			"javascript:void(0);",
+			"gre3",
+			"?t=",
+			"noimageyet.com",
+			"dummyimage.com",
+			"<a href=\"#teacher\" class=\"modal\">",
+			"Meet your teacher: Mr. Doe",
+			"View times &amp; details</a></span><span><a href=\"#teacher\">Meet your teacher</a></span>",
+			":",
+			"<h4><a href=\"#times\" class=\"modal\">Event title lorem ispum</a></h4>",
+			"<h4>Event title lorem ispum</h4>",
+			"08/02/12",
+			"<td class=\"price\">$1,299.99<span>(3 installments of $433.33)</span><a href=\"/checkout/cart.html\" class=\"button primary\">Enroll Now</a>",
+			"gre2.html",
+			"Sun, Thu",
+			"Mon, Wed",
+			"Sun, Wed",
+			"Tue, Thu",
+			"",
+			"/checkout/cart.html"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "a/scss/partials/_type.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3893,
+								3893
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5242.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_includes/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 979,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/patrickmarsceill/Library/Application Support/LimeChat/Themes/patrick.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3491,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/patrickmarsceill/Library/Application Support/LimeChat/Themes/patrick.yaml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1106,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "projects.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								421,
+								421
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 24.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_layouts/post.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								98,
+								98
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Siteleaf Liquid Syntax/Syntaxes/HTML (Liquid).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_layouts/page.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								486,
+								486
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "a/scss/partials/_page.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								974,
+								974
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 983.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "about.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								442,
+								442
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "_layouts/default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1025,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								34
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "_posts/2014-07-14-designing-for-yourself.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5309,
+								5309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "a/scss/partials/_posts.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2880,
+								2880
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3035.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "_includes/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1646,
+								1646
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "a/scss/partials/_grid.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1576,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1376,
+								1376
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "personal-site.sublime-project",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"a/scss/partials/_type.scss"
+			],
+			[
+				"posts",
+				".sass-cache/54e4c6a2f81cf48cc71a34d2d2b2bb8cf744ab89/_posts.scssc"
+			],
+			[
+				"post",
+				"a/scss/partials/_posts.scss"
+			],
+			[
+				"type",
+				"a/scss/partials/_type.scss"
+			],
+			[
+				"ty",
+				"a/scss/partials/_type.scss"
+			],
+			[
+				"header",
+				"a/scss/partials/_header.scss"
+			],
+			[
+				"head",
+				"a/scss/partials/_header.scss"
+			],
+			[
+				"global",
+				"a/scss/partials/_global.scss"
+			],
+			[
+				"globa",
+				"a/scss/partials/_global.scss"
+			],
+			[
+				"glo",
+				"a/scss/partials/_global.scss"
+			],
+			[
+				"g",
+				"Gruntfile.js"
+			],
+			[
+				"pos",
+				"a/scss/partials/_posts.scss"
+			],
+			[
+				"syn",
+				"a/scss/partials/_syntax.scss"
+			],
+			[
+				"gl",
+				"a/scss/partials/_global.scss"
+			],
+			[
+				"cat",
+				"_layouts/category-index.html"
+			],
+			[
+				"pr",
+				"scss/modules/_products.scss"
+			],
+			[
+				"conte",
+				"scss/content/_default.scss"
+			],
+			[
+				"foot",
+				"scss/modules/_footer.scss"
+			],
+			[
+				"prod",
+				"scss/modules/_products.scss"
+			],
+			[
+				"home",
+				"views/home.html.erb"
+			],
+			[
+				"main",
+				"public/a/j/main.js"
+			],
+			[
+				"content",
+				"scss/content/_default.scss"
+			],
+			[
+				"hero",
+				"scss/modules/_heroes.scss"
+			],
+			[
+				"pro",
+				"scss/modules/_products.scss"
+			],
+			[
+				"nav",
+				"scss/modules/_nav.scss"
+			],
+			[
+				"her",
+				"scss/modules/_heroes.scss"
+			],
+			[
+				"sign",
+				"views/signin.html.erb"
+			],
+			[
+				"po",
+				"views/product.html.erb"
+			],
+			[
+				"colo",
+				"scss/settings/_colors.scss"
+			],
+			[
+				"for",
+				"scss/base/_forms.scss"
+			],
+			[
+				"button",
+				"scss/modules/_buttons.scss"
+			],
+			[
+				"color",
+				"scss/settings/_colors.scss"
+			],
+			[
+				"footer",
+				"scss/modules/_footer.scss"
+			],
+			[
+				"ma",
+				"public/a/j/main.js"
+			],
+			[
+				"mian",
+				"_site/a/j/main.js"
+			],
+			[
+				"typ",
+				"scss/base/_typography.scss"
+			],
+			[
+				"main.",
+				"public/a/j/main.js"
+			],
+			[
+				"js",
+				"_site/a/j/main.js"
+			],
+			[
+				"feature",
+				"views/shared/_featured-products.html.erb"
+			],
+			[
+				"butt",
+				"scss/modules/_buttons.scss"
+			],
+			[
+				"tabl",
+				"scss/modules/_tables.scss"
+			],
+			[
+				"bu",
+				"scss/modules/_buttons.scss"
+			],
+			[
+				"na",
+				"scss/modules/_nav.scss"
+			],
+			[
+				"form",
+				"scss/base/_forms.scss"
+			],
+			[
+				"forms",
+				"scss/base/_forms.scss"
+			],
+			[
+				"all",
+				"public/a/j/all.js"
+			],
+			[
+				"cont",
+				"scss/content/_default.scss"
+			],
+			[
+				"but",
+				"scss/modules/_buttons.scss"
+			],
+			[
+				"produ",
+				"scss/modules/_products.scss"
+			],
+			[
+				"btn",
+				"scss/modules/_buttons.scss"
+			],
+			[
+				"p",
+				"scss/modules/_products.scss"
+			],
+			[
+				"bt",
+				"scss/modules/_buttons.scss"
+			],
+			[
+				"inde",
+				"views/index.html.erb"
+			],
+			[
+				"screen",
+				"public/a/c/screen.css"
+			],
+			[
+				"buttons",
+				"scss/modules/_buttons.scss"
+			],
+			[
+				"conten",
+				"scss/content/_default.scss"
+			],
+			[
+				"layout",
+				"scss/layouts/_grid.scss"
+			],
+			[
+				"mai",
+				"public/a/j/main.js"
+			],
+			[
+				"feat",
+				"scss/modules/_featured.scss"
+			],
+			[
+				"scre",
+				"public/a/c/screen.css"
+			],
+			[
+				"erro",
+				"scss/states/_errors.scss"
+			],
+			[
+				"cart",
+				"views/cart.html.erb"
+			],
+			[
+				"tables",
+				"scss/modules/_tables.scss"
+			],
+			[
+				"table",
+				"scss/base/_tables.scss"
+			],
+			[
+				"scree",
+				"public/a/c/screen.css"
+			],
+			[
+				"screen.css",
+				"public/a/c/screen.css"
+			],
+			[
+				"products",
+				"scss/modules/_products.scss"
+			],
+			[
+				"sc",
+				"public/a/c/screen.css"
+			],
+			[
+				"scr",
+				"public/a/c/screen.css"
+			],
+			[
+				"scren",
+				"public/a/c/screen.css"
+			],
+			[
+				"plugis",
+				"public/a/j/plugins.js"
+			],
+			[
+				"cate",
+				"views/shared/_category-list.html.erb"
+			],
+			[
+				"fea",
+				"views/shared/_featured.html.erb"
+			],
+			[
+				"headre",
+				"views/shared/_headref.html.erb"
+			],
+			[
+				"default",
+				"views/layouts/_default.html.erb"
+			],
+			[
+				"lay",
+				"views/_layout.html.erb"
+			],
+			[
+				"featured",
+				"views/shared/_featured-products.html.erb"
+			],
+			[
+				"tyo",
+				"scss/base/_typography.scss"
+			],
+			[
+				"recom",
+				"views/shared/_recommended-products.html.erb"
+			],
+			[
+				"rec",
+				"views/shared/_recommended-products.html.erb"
+			],
+			[
+				"typo",
+				"scss/base/_typography.scss"
+			],
+			[
+				"heros",
+				"scss/modules/_heroes.scss"
+			],
+			[
+				"style",
+				"scss/modules/_styleguide.scss"
+			],
+			[
+				"guar",
+				"Guardfile"
+			],
+			[
+				"nav.er",
+				"views/shared/_nav.html.erb"
+			],
+			[
+				"guard",
+				"Guardfile"
+			],
+			[
+				"pl",
+				"_site/a/j/plugins.js"
+			],
+			[
+				"grid",
+				"scss/layouts/_grid.scss"
+			],
+			[
+				"layou",
+				"views/layouts/_default.html.erb"
+			],
+			[
+				"la",
+				"views/_layout.html.erb"
+			],
+			[
+				"scss/mod",
+				"scss/modules/_nav.scss"
+			],
+			[
+				"nrt",
+				"a/j/nrt.js"
+			],
+			[
+				"nrt-s",
+				"a/scss/_nrt-zone.scss"
+			],
+			[
+				"nrt-zon",
+				".sass-cache/df2a3091b43cf25f05271eab9122000fde737685/_nrt-zone.scssc"
+			],
+			[
+				"agen",
+				"kit/agent-office-results.kit"
+			],
+			[
+				"agn",
+				"kit/agent-office-search-natl.kit"
+			],
+			[
+				"nrt.js",
+				"a/j/nrt.js"
+			],
+			[
+				"glb",
+				"a/scss/_nrt-global.scss"
+			],
+			[
+				"nrt-g",
+				"a/scss/_nrt-global.scss"
+			],
+			[
+				"maps",
+				"a/j/maps.js"
+			],
+			[
+				"proper",
+				"kit/partials/_property-results.kit"
+			],
+			[
+				"sear",
+				"kit/search-results.kit"
+			],
+			[
+				"prop",
+				"kit/partials/_property-single.kit"
+			],
+			[
+				"glob",
+				"a/scss/_nrt-global.scss"
+			],
+			[
+				"result",
+				"kit/partials/_property-results.kit"
+			],
+			[
+				"nrt-gl",
+				"a/scss/_nrt-global.scss"
+			],
+			[
+				"nrt-globa",
+				".sass-cache/df2a3091b43cf25f05271eab9122000fde737685/_nrt-global.scssc"
+			],
+			[
+				"search",
+				"kit/search-results.kit"
+			],
+			[
+				"nrt-zo",
+				"a/scss/_nrt-zone.scss"
+			],
+			[
+				"nrt-z",
+				".sass-cache/df2a3091b43cf25f05271eab9122000fde737685/_nrt-zone.scssc"
+			],
+			[
+				"nav-zon",
+				"kit/partials/_main-nav-zone.kit"
+			],
+			[
+				"nrt-zone",
+				"a/scss/_nrt-zone.scss"
+			],
+			[
+				"nrt-global",
+				"a/scss/_nrt-global.scss"
+			],
+			[
+				"prop-f",
+				"kit/partials/_prop-filters.kit"
+			],
+			[
+				"filter",
+				"kit/partials/_filter-list.kit"
+			],
+			[
+				".js",
+				"a/j/nrt.js"
+			],
+			[
+				"zone",
+				"a/scss/_nrt-zone.scss"
+			],
+			[
+				"expertise/",
+				"_site/expertise/index.html"
+			],
+			[
+				"peop",
+				"scss/modules/_people.scss"
+			],
+			[
+				"offi",
+				"views/contact/offices.html.erb"
+			],
+			[
+				"offic",
+				"views/contact/offices.html.erb"
+			],
+			[
+				"practic-dra",
+				"views/shared/components/_practice-drawer.html.erb"
+			],
+			[
+				"tim",
+				"scss/modules/_timeline.scss"
+			],
+			[
+				"time",
+				"scss/modules/_timeline.scss"
+			],
+			[
+				"ini",
+				"public/a/j/init.js"
+			],
+			[
+				"d",
+				"scss/content/_default.scss"
+			],
+			[
+				"aff",
+				"views/about/culture/affinity.html.erb"
+			],
+			[
+				"init",
+				"public/a/j/init.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Dropbox/_Personal/Unis/Development/Theme/lakin-moore-and-hagenes2634-5793077/unis-theme.sublime-project"
+			],
+			[
+				"nrt",
+				"/Users/patrickmarsceill/Dropbox/_Active/nrt-prototype/nrt-prototype.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 346.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
