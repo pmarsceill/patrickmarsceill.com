@@ -1,0 +1,244 @@
+@font-face {
+  font-family: GT-Walsheim;
+  src: url('/a/f/gt-walsheim-web.eot');
+  src: url('/a/f/gt-walsheim-web.eot?#iefix') format('embedded-opentype'),
+  url('/a/f/gt-walsheim-web.woff') format('woff'),
+  url('/a/f/gt-walsheim-web.ttf') format('truetype'),
+  url('/a/f/gt-walsheim-web.svg#svgFontName') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: GT-Walsheim;
+  src: url('/a/f/gt-walsheim-regular-oblique-web.eot');
+  src: url('/a/f/gt-walsheim-regular-oblique-web.eot?#iefix') format('embedded-opentype'),
+  url('/a/f/gt-walsheim-regular-oblique-web.woff') format('woff'),
+  url('/a/f/gt-walsheim-regular-oblique-web.ttf') format('truetype'),
+  url('/a/f/gt-walsheim-regular-oblique-web.svg#font') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+// Generic Overrides
+body {
+  font-family: "calluna",serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6em;
+  @include media($medium) {
+    font-size: 18px;
+    line-height: 1.6em;
+  }
+
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: GT-Walsheim, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+h1 {
+  line-height: 1.1em;
+}
+.content, .post-content {
+  h2,h3,h4,h5,h6 {
+    margin-top: 1.5em;
+  }
+}
+em {
+  font-style: italic;
+}
+a {
+  color: $red;
+  text-decoration: none;
+}
+.content,.post {
+  a {
+    &:hover {
+      @extend %text--underline;
+    }
+  }
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 3px solid $lt-grey;
+  margin-left: 0;
+  padding-left: 1em;
+  @include media($medium) {
+    margin-left: -1em - em(3);
+  }
+}
+ul,ol {
+  padding-left: 1em;
+  @include media($medium) {
+    padding-left: 0;
+  }
+  li {
+    margin-bottom: .5em;
+  }
+}
+ul {
+  list-style: none;
+  li {
+    position: relative;
+    &:before {
+      content: "\2022";
+      position: absolute;
+      left: -1em;
+      color: $dk-grey;
+    }
+  }
+}
+//
+// Specific overrides
+//
+.site-header__title {
+  font-size: 3.3em;
+  line-height: .7em;
+  @include media($medium) {
+    font-size: 5em;
+  }
+  @include media($large) {
+    font-size: 6em;
+  }
+  a {
+    @include transition(color 0.25s ease-out);
+    &:hover {
+      color: $dk-grey;
+    }
+  }
+}
+.post-header__title {
+
+  font-size: 1.5em;
+  a {
+    &:hover {
+      background-image: none !important;
+    }
+  }
+  @include media($small-medium) {
+    font-size: 2em;
+  }
+  @include media($medium) {
+    font-size: 2.5em;
+  }
+}
+.post-header__title--detail {
+  font-size: 2em;
+  @extend .post-header__title;
+  // text-align: center;
+  @include media($small-medium) {
+    font-size: 2.5em;
+  }
+  @include media($medium) {
+    font-size: 3em;
+  }
+}
+.post-header__meta {
+  font-style: italic;
+}
+.post-header__meta--detail {
+  @extend .post-header__meta;
+  // text-align: center;
+}
+.page__intro {
+  @include media($small-medium) {
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+}
+.cssgradients.textshadow {
+  .post {
+    a {
+
+    }
+    a {
+      &:hover {
+
+        text-shadow: 1px 0 $white,1px 0 $white,-1px 0 $white,-1px 0 $white;
+      }
+    }
+  }
+}
+.text--small {
+  @extend %text--small;
+}
+
+hr {
+  clear: both;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  &:after {
+    @extend %hr--dash;
+    padding-bottom: 1em;
+  }
+}
+//
+// Silent Extends
+//
+%a--quiet-link {
+  @extend %text--underline;
+  color: $body;
+  &:hover {
+    background-image: none !important;
+  }
+}
+%ul--no-bullet {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
+    margin-bottom: $gutter*.5;
+    &:before {
+      content: "";
+    }
+  }
+}
+%text--small{
+  font-size: .9em;
+  line-height: 1.4em;
+}
+%text__first-letter--big{
+  @include media($small-medium) {
+    font-size: 3em;
+    margin: 3px 8px 10px 0;
+    font-family: GT-Walsheim;
+    font-style: italic;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    color: $dk-grey;
+  }
+  @include media($medium) {
+    font-size: 4em;
+    margin: 10px 8px 15px 0;
+  }
+}
+%text--underline {
+  text-decoration: underline;
+  display: inline;
+  .cssgradients &{
+    text-decoration: none;
+    @include background-image(linear-gradient(to bottom, rgba(0,0,0,0) 87%, rgba(169,167,186,1) 87%));
+    background-size: 2px 7px;
+    background-position: 0 92%;
+    background-repeat: repeat-x;  
+  }
+  .textshadow & {
+    text-shadow: 1px 0 $lt-grey,1px 0 $lt-grey,-1px 0 $lt-grey,-1px 0 $lt-grey;
+  }
+}
+%hr--dash {
+  content: "***";
+  color: $body;
+  font-size: 2em;
+  font-family: GT-Walsheim;
+  display: block;
+  letter-spacing: 8px;
+  position: relative;
+  top: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+}

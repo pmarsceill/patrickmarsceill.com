@@ -1,0 +1,86 @@
+// mobile first 4 column layout
+$grid-columns: 4;
+
+// max width for the outer-conainer to kick in
+$max-width: em(800);
+
+// size of the gutters
+$gutter: golden-ratio(1em, 1);
+
+// these are the breakpoints
+$small-medium: new-breakpoint(min-width em(600) 6);
+$medium: new-breakpoint(min-width em(800) 6);
+$large: new-breakpoint(min-width em(1072) 12);
+
+// name of the default outer container class
+.outer {
+  padding: 0 $gutter;
+  @include outer-container;
+  @include media($small-medium) {
+    padding: 0 $gutter*2;
+  }
+  @include media($medium) {
+    padding: 0 $gutter;
+  }
+  @include media($large) {
+    padding: 0;
+  }
+}
+
+
+
+body {
+  &:before {
+    content: 'small';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .5em;
+    background-color: lightgreen;
+    color: black;
+    font-size: 80%;
+  }
+  @include media($small-medium) {
+    &:before {
+      content: 'small-medium';
+      background-color: burlywood;
+    }
+  }
+  @include media($medium) {
+    &:before {
+      content: 'medium';
+      background-color: pink;
+    }
+  }
+  @include media($large) {
+    &:before {
+      content: 'large';
+      background-color: plum;
+    }
+  }
+}
+
+.layout__two-col {
+  @include clearfix;
+  .layout__two-col--col {
+    @include media($medium) {
+      @include span-columns(3 of 6);
+    }
+  }
+}
+.projects--layout__two-col {
+  @extend .layout__two-col;
+  .layout__two-col--col {
+    @include media($medium) {
+      padding: 0 $gutter;
+    }
+  }
+  .icon {
+    @include media($medium) {
+      margin-left: -$gutter;
+      margin-top: -.5em;
+    }
+
+  }
+}

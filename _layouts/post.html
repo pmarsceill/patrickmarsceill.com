@@ -1,0 +1,89 @@
+---
+layout: default
+bodyClass: body--post
+---
+{% capture defaultAside %}
+<h3>Other Recent Articles</h3>
+<ul>
+  {% for post in site.posts | limit: 3  %}
+    {% unless post.title == page.title%}
+    <li><a href="{{post.url}}">{{ post.title }}</a><br>{{post.date | date: "%b %-d, %Y" }}</li>
+    {% endunless %}
+  {% endfor %}
+</ul>
+{% endcapture %}
+<div class="outer">
+  <main class="post">
+    <article>
+      <header>
+        <h1 class="post-header__title--detail">{{ page.title }}</h1>
+        <p class="post-header__meta--detail">Published on {{ page.date | date: "%b %-d, %Y" }}</p>
+      </header>
+
+      {% if content contains '<!--more-->' %}
+      
+      {% capture laterContent %}{{ content | split:'<!--more-->' | last | markdownify }}{% endcapture %}
+
+      {% if content contains '<!--aside-one-->' and content contains '<!--aside-two-->' %}
+      
+      {% capture asides %}{{ laterContent | split:'<!--aside-one-->' | last | markdownify }}{% endcapture %}
+      {% capture laterContent %}{{ laterContent | split: '<!--aside-one-->' | first | markdownify }}{% endcapture %}
+
+      <div class="content">{{ content | split:'<!--more-->' | first }}</div>
+      <aside>
+        {{ asides | split: '<!--aside-two-->' | first }}
+      </aside>
+
+      <div class="content">{{ laterContent }}</div>
+      <aside>
+        {{ asides | split: '<!--aside-two-->' | last }}
+      </aside>
+
+      {% elsif content contains '<!--aside-one-->' %}
+
+      {% capture asides %}{{ laterContent | split:'<!--aside-one-->' | last }}{% endcapture %}
+      {% capture laterContent %}{{ laterContent | split: '<!--aside-one-->' | first }}{% endcapture %}
+      
+      <div class="content">{{ content | split:'<!--more-->' | first }}</div>
+      <aside>
+        {{ asides }}
+      </aside>
+      <div class="content">{{ laterContent }}</div>
+      <aside>
+        {{ defaultAside }}
+      </aside>
+      {% else %}
+      
+      <div class="content">{{ content | split:'<!--more-->' | first }}</div>
+      <aside>
+        {{ defaultAside }}
+      </aside>
+      <div class="content">{{ laterContent }}</div>
+
+      {% endif %}
+      
+      {% else %}
+
+      <div class="content">{{ content }}</div>
+
+
+      {% endif %}
+    </article>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'patrickmarsceill'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </main>
+</div>

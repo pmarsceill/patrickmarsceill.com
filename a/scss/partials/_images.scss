@@ -1,0 +1,143 @@
+.content {
+    figure {
+        background: lighten($lt-grey, 8%);
+        padding: 1em;
+        margin-bottom: 1em;
+        @include transition(width 0.25s ease-out);
+        @include media($medium) {
+            margin-left: -1em;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        figcaption {
+            @extend %text--small;
+            font-style: italic;
+        }
+
+
+    }
+}
+
+.js {
+  .image--animate-in {
+    // -webkit-transform: translateX(-10%);
+    // -moz-transform: translateX(-10%);
+    // transform: translateX(-10%);
+    opacity: .5;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    &.focus {
+      -webkit-transition: -webkit-transform 0.5s, opacity 0.5s, -webkit-filter 0.5s;
+      -moz-transition: -moz-transform 0.5s, opacity 0.5s, -moz-filter 0.5s;
+      transition: transform 0.5s, opacity 0.5s, filter 0.5s;
+      -webkit-transform: translateX(0px);
+      -moz-transform: translateX(0px);
+      transform: translateX(0px);
+      opacity: 1;
+       -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
+  }
+}
+.illo__van, .illo__bldg {
+    margin: $gutter*2 0;
+}
+.illo__van {
+    height: 200px;
+    margin-right: -5em;
+    @extend .image--animate-in;
+    opacity: 1;
+    path, ellipse, polyline, line {
+        stroke: $dk-grey;
+        @include transition(stroke 0.25s ease-out);
+    }
+    &.focus {
+        path, ellipse, polyline, line {
+            stroke: $red;
+        }
+    }
+    @include media($medium) {
+        height: 250px;
+        margin-right: -20em;
+    }
+    @include media($large) {
+        margin-right: -33em;
+    }
+}
+
+.illo__bldg {
+
+    height: 400px;
+    @extend .image--animate-in;
+    opacity: 1;
+    path, ellipse, polyline, line, rect, polygon {
+        stroke: $dk-grey;
+        @include transition(stroke 0.25s ease-out);
+    }
+     @include media($medium) {
+        height: 475px;
+        margin-right: -12em;
+    }
+
+    @include media($large) {
+        margin-right: -27em;
+        height: 550px;
+    }
+    #Layer_3 {
+        g {
+            path{
+                stroke: none;
+                fill: $dk-grey;
+            }
+
+        }
+    }
+    &.focus {
+        path, ellipse, polyline, line, rect, polygon {
+            stroke: $red;
+        }
+        #Layer_3 {
+            g {
+                path{
+                stroke: none;
+                fill: $red;
+                }
+            }
+
+
+        }
+    }
+}
+// .photo__bio {
+//     width: 110%;
+//     margin-left: -5%;
+// }
+
+.icon {
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+    @include media($medium) {
+        width: 3em;
+        height: 3em;
+    }
+    &--post {
+      @extend .icon;
+      width: 10em;
+      height: 10em;
+      float: right;
+      margin: $gutter 0 $gutter*2 $gutter;
+      @include media($medium) {
+        
+        float: none;
+        margin: -$gutter*2 0 0;
+      }
+      
+    }
+}

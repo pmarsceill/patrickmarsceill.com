@@ -1,0 +1,91 @@
+.page {
+	@extend %animated;
+	@extend %fadeInUp;
+	@extend .content-padding;
+	.content {
+	    h3 {
+	      // @extend %text--underline;
+	    }
+		img {
+			width: 100%;
+			height: auto;
+		}
+		// overflow: hidden;
+	}
+}
+// .page__title {
+// 	@include media($small-medium) {
+// 		@include span-columns(3 of 12);
+// 	}
+// 	@include media($large) {
+// 		@include span-columns(3 of 12);
+// 	}
+// }
+// .page__intro{
+// 	@include media($small-medium) {
+// 		@include span-columns(9 of 12);
+// 		@include omega;
+// 	}
+// 	@include media($large) {
+// 		@include span-columns(9 of 12);
+// 		@include omega;
+// 	}
+// }
+
+.page__content {
+	@include clearfix;
+  clear: both;
+	@include media($medium) {
+		@include span-columns(9 of 12);
+	}
+}
+
+
+.body--about {
+  .photo--bio {
+    position: relative;
+    right: -$gutter;
+    margin-left: -$gutter*2;
+    @include media($small-medium) {
+      float: left;
+      position: static;
+      right: inherit;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    @include media($medium) {
+      @include span-columns(5 of 10);
+      margin-top: $gutter;
+      
+    }
+    @include media($large) {
+      // @include span-columns(5 of 10);
+      margin-top: -$gutter*2;
+      
+    }
+  }
+}
+.about__header {
+  @include media($medium) {
+    position: relative;
+    right: -$gutter*4;
+    margin-left: -$gutter*8;
+  }
+}
+.about__header__lead {
+  @include media($small-medium) {
+    // @include span-columns(6 of 10);
+    // float: right;
+    // @include omega();
+  }
+  @include media($medium) {
+    @include span-columns(5 of 10);
+    float: right;
+    padding-right: $gutter*3;
+    @include omega();
+  }
+  @include media($large) {
+    padding-right: $gutter*2;
+  }
+}

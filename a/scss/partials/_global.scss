@@ -1,0 +1,33 @@
+// Colors
+$body: #2a2a2a;
+$lt-grey: #E1E0E7;
+$dk-grey: darken($lt-grey, 20%);
+$white: #fff;
+$red: #ff002a;
+$deep-purple: #1b1830;
+// Body
+body {
+    background-color: $white;
+}
+::selection {
+  background: #ffb7b7; /* Safari */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Firefox */
+}
+.non-footer {
+    background-color: $lt-grey;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+.content-padding {
+    @include media($medium) {
+        padding: $gutter*2 $gutter $gutter*2 $gutter;
+    }
+    @include media($large) {
+        padding: $gutter*2 0 $gutter*2;
+    }
+}
+.content-wrap {
+    @include clearfix;
+}

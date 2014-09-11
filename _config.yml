@@ -1,0 +1,22 @@
+# Site settings
+title: Patrick Marsceill
+email: patrick.marsceill@gmail.com
+description: "Patrick Marsceill is a Senior Designer at Happy Cog in Philadelphia."
+baseurl: ""
+url: "http://patrickmarsceill.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude:
+  - node_modules
+  - scss
+  - '*.scss'
+  - 'README.md'
+  - 'package.json'
+  - 'Gruntfile.js'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '.sass-cache'
+  - 'feed.xml'
+  - '*.sublime-project'

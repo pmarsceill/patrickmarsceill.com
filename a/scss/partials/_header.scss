@@ -1,0 +1,117 @@
+.site-header {
+  @include clearfix;
+  @extend .content-padding;
+  padding-top: 0;
+    
+}
+.site-header__hgroup {
+  text-transform: lowercase;
+
+  @extend %animated;
+  @extend %fadeIn;
+  @include media($small-medium) {
+    @include span-columns (5 of 6);
+  }
+  @include media($medium) {
+    @include span-columns (3 of 6);
+  }
+  @include media($large) {
+    @include span-columns (8 of 12);
+  }
+  h1 {
+    padding-right: 40%;
+    margin-bottom: .5em;
+    @include media($medium) {
+      padding-right: 0;
+    }
+    @extend .site-header__title;
+  }
+  h2 {
+    color: $white;
+    @include media($medium) {
+      width: 200%;
+    }
+  }
+}
+.site-header__nav {
+    @extend %animated;
+    @extend %fadeIn;
+    margin-bottom: 1em;
+    float: left;
+    width: 100%;
+    @include media($small-medium) {
+      width: auto;
+    }
+    @include media($medium) {
+      padding-left: 3em;
+      @include span-columns (3 of 6);
+      @include omega;
+      padding-top: 8.5em;
+    }
+    @include media($large) {
+      padding-left: 0;
+      @include span-columns (4 of 12);
+      padding-top: 10.5em;
+    }
+    a {
+        display: block;
+        padding: .5em .25em;
+        position: relative;
+        font-size: 1em;
+        &:before {
+          content: "*";
+          color: $dk-grey;
+          font-size: 1.5em;
+          font-family: GT-Walsheim;
+          display: inline;
+          opacity: 0;
+          position: relative;
+
+
+
+          top: 0.35em;
+          left: -.2em;
+
+
+
+
+        }
+        &:hover, &.active {
+          &:before {
+            opacity: 1;
+          }
+
+        }
+
+
+        &.active {
+          color: $body;
+        }
+    }
+    ul {
+        @extend %ul--no-bullet;
+        margin-left: -1em;
+        @include media($medium) {
+          margin-left: 0;
+        }
+        li {
+            display: inline-block;
+            text-align: center;
+            margin-right: 1em;
+            &:last-child {
+              margin-right: 0;
+            }
+            @include media($small-medium) {
+              margin-right: 2em;
+            }
+            @include media($medium) {
+              @include span-columns(2 of 6);
+              margin-bottom: 0;
+                          // text-align: right;
+              &:nth-child(3n) {
+                  @include omega;
+              }
+            }
+        }
+    }
+}

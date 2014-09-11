@@ -1,0 +1,28 @@
+<div class="outer">
+  <header class="site-header" role="banner">
+      <hgroup class="site-header__hgroup">
+        <h1>
+          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </h1>
+        <h2>working designer and developer</h2>
+      </hgroup>
+      <nav class="site-header__nav" role="navigation">
+        <ul>
+          {% assign thisPage = page.title %}
+          {% assign thisBodyClass = page.bodyClass %}
+          {% assign pageCount = site.pages.size %}
+          {% for order in (1..pageCount) %}
+          {% for page in site.pages %}
+          {% if page.order == order %}
+
+          <li>
+            <a class="page-link {% if page.title == thisPage %}active{% endif %}{% if thisBodyClass == 'body--post' and page.title == 'Journal' %}active{% endif %}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </li>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </ul>
+      </nav>
+
+  </header>
+</div>

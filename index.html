@@ -1,0 +1,64 @@
+---
+title: Journal
+layout: default
+order: 1
+bodyClass: body--home
+---
+
+<main class="non-footer" role="main">
+  <div class="outer">
+    <section class="posts">
+    {% for post in site.posts %}
+      <article class="post">
+        <header>
+          <h2 class="post-header__title">
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        <p class="post-header__meta">Published on {{ post.date | date: "%b %-d, %Y" }}</p>
+        </header>
+
+        <div class="content">
+        {% if post.content contains '<!--more-->' %}
+            
+            {{ post.content | split:'<!--more-->' | first }}
+            
+            <p><a href="{{ post.url }}">Continue reading</a></p>
+
+        {% else %}
+
+            {{ post.content }}
+            
+        {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+      <footer>
+          <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      </footer>
+    </section>
+    <aside>
+      <header>
+        <h3>Recently</h3>
+      </header>
+      <ul>
+        {% for post in site.posts | offset: 1 | limit: 5  %}
+          <li><a href="{{post.url}}">{{ post.title }}</a></li>
+        {% endfor %}
+
+      </ul>
+    </aside>
+    <aside>
+      <header>
+        <h3>Elsewhere</h3>
+      </header>
+      <ul>
+          <li><a href="http://cognition.happycog.com/author/pmarsceill">Cognition</a></li>
+          <li><a href="http://twitter.com/pmarsceill">Twitter</a></li>
+          <li><a href="http://dribbble.com/pmarsceill">Dribbble</a></li>
+          <li><a href="http://github.com/pmarsceill">Github</a></li>
+      </ul>
+    </aside>
+  </div>
+<!--   <div class="bottom-gradient"></div>
+ -->
+</main>
