@@ -29,6 +29,9 @@ module.exports = function(grunt) {
     shell: {
       jekyllBuild: {
         command: 'jekyll build'
+      },
+      deploy: {
+        command: 'git subtree push --prefix _site origin gh-pages'
       }
     },
     grunticon: {
@@ -69,6 +72,7 @@ module.exports = function(grunt) {
   });
 
 require('load-grunt-tasks')(grunt);
-grunt.registerTask('default', ['sass','concat','uglify','grunticon','shell','watch']);
-grunt.registerTask('staging', ['sass','concat','uglify','shell']);
+grunt.registerTask('default', ['sass','concat','uglify','grunticon','shell:jekyllBuild','watch']);
+grunt.registerTask('staging', ['sass','concat','uglify','shell:jekyllBuild']);
+grunt.registerTask('deploy', ['shell:deploy']);
 };
