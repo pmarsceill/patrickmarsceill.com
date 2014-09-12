@@ -7,7 +7,7 @@ order: 3
 
 <h1 class="page__title">Works: Mostly in Progress.</h1>
 
-<p class="page__intro" markdown="1">I dedicate a large portion of my free time to projects that provide opprotunites for me to learn, make art, and contribute to various communities. Below is a working list of things I have worked on / am working on.</p>
+<p class="page__intro" markdown="1">I dedicate a large portion of my free time to projects that provide opprotunites for me to learn, make art, and contribute to various communities. Below is a list of things I have worked on or am currently working on. _These are all personal projects—not my professional portfolio—if you're specifically looking for that, please [email me]('mailto:patrick.marsceill@gmail.com') for more information._</p>
 
 <div class="projects--layout__two-col">
 <div class="layout__two-col--col" markdown="1">
