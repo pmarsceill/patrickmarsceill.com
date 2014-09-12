@@ -42,7 +42,10 @@
   }
   
   header {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
+    @include media($medium) {
+      margin-bottom: 3em;
+    }
     .post-header__title {
       margin-bottom: .5em;
       padding-bottom: 0;
