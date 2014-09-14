@@ -10,7 +10,7 @@ bodyClass: body--about
 
 <div class="about__header">
 <div class="about__header__lead">
-    <h1 class="page__title">A Little About Me</h1>
+    <h1 class="page__title icon-page-about-head">A Little About Me</h1>
     <p class="page__intro" markdown="1">I'm happiest when I'm making, designing, or building. At [Happy Cog](http://happycog.com), I work as a Senior Designer alongside some of the best people creating websites and applications. My weekends are filled with music making, code wrangling, motorcycle riding, vector bending, and backyard hanging. All of this goes down in Philadelphia, which I call my home.</p>
 </div>
 
