@@ -4,8 +4,20 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"background-position"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
 				"back",
-				"background-image"
+				"background-color"
 			],
 			[
 				"backg",
@@ -54,10 +66,6 @@
 			[
 				"font",
 				"font-family"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"tex",
@@ -468,10 +476,6 @@
 				"fieldset"
 			],
 			[
-				"border",
-				"border-radius"
-			],
-			[
 				"base-",
 				"base-line-height"
 			],
@@ -510,10 +514,6 @@
 			[
 				"test",
 				"test-select"
-			],
-			[
-				"busin",
-				"business-unit-select"
 			]
 		]
 	},
@@ -523,7 +523,15 @@
 			"file": "a/scss/partials/_type.scss",
 			"settings":
 			{
-				"buffer_size": 4540,
+				"buffer_size": 4515,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 74,
 				"line_ending": "Unix"
 			}
 		},
@@ -587,7 +595,7 @@
 			"file": "a/scss/partials/_posts.scss",
 			"settings":
 			{
-				"buffer_size": 5357,
+				"buffer_size": 5370,
 				"line_ending": "Unix"
 			}
 		},
@@ -603,7 +611,7 @@
 			"file": "about.md",
 			"settings":
 			{
-				"buffer_size": 3496,
+				"buffer_size": 3517,
 				"line_ending": "Unix"
 			}
 		},
@@ -643,7 +651,7 @@
 			"file": "a/scss/partials/_page.scss",
 			"settings":
 			{
-				"buffer_size": 1690,
+				"buffer_size": 2328,
 				"line_ending": "Unix"
 			}
 		},
@@ -660,22 +668,6 @@
 			"settings":
 			{
 				"buffer_size": 1466,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "_includes/head.html",
-			"settings":
-			{
-				"buffer_size": 1715,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "a/scss/partials/_grid.scss",
-			"settings":
-			{
-				"buffer_size": 1667,
 				"line_ending": "Unix"
 			}
 		}
@@ -996,13 +988,16 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site",
-		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a",
-		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss",
-		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials"
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site"
 	],
 	"file_history":
 	[
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_includes/head.html",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_grid.scss",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/node_modules/grunt/node_modules/js-yaml/examples/custom_types.js",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/omap.js",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/node_modules/grunt-contrib-uglify/node_modules/uglify-js/test/compress/typeof.js",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/i/icons/tools.svg",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_posts/2014-07-14-designing-for-yourself.md",
 		"/Users/patrickmarsceill/Library/Application Support/LimeChat/Themes/patrick.css",
 		"/Users/patrickmarsceill/Library/Application Support/LimeChat/Themes/patrick.yaml",
@@ -1036,7 +1031,6 @@
 		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/projects.md",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Framer Jekyll Template/app.coffee",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/.gitignore",
-		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_includes/head.html",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_footer.scss",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_global.scss",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/Gruntfile.js",
@@ -1052,7 +1046,6 @@
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_includes/header.html",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_animations.scss",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_posts.scss",
-		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_grid.scss",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/listen.md",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_posts/2014-05-22-welcome-to-jekyll.markdown",
 		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/node_modules/grunt-grunticon/node_modules/svg-to-png/node_modules/phantomjs/lib/phantom/examples/post.coffee",
@@ -1126,11 +1119,7 @@
 		"/Users/patrickmarsceill/Desktop/Templates/_site/scss/screen.scss",
 		"/Users/patrickmarsceill/Desktop/Templates/unis-templates.sublime-project",
 		"/Users/patrickmarsceill/Desktop/Templates/views/category-all.html.erb",
-		"/Users/patrickmarsceill/Desktop/Templates/public/a/j/main.js",
-		"/Users/patrickmarsceill/Dropbox/_Personal/Unis/Development/Templates/scss/settings/_colors.scss",
-		"/Users/patrickmarsceill/Dropbox/_Personal/Unis/Development/Templates/views/category.html.erb",
-		"/Users/patrickmarsceill/Dropbox/_Personal/Unis/Development/Templates/views/shared/_footer.html.erb",
-		"/Users/patrickmarsceill/Dropbox/_Personal/Unis/Development/Templates/_site/a/f/FontAwesome.otf"
+		"/Users/patrickmarsceill/Desktop/Templates/public/a/j/main.js"
 	],
 	"find":
 	{
@@ -1166,6 +1155,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"2em",
 			"text-align",
 			"figure",
 			"aside",
@@ -1292,8 +1282,7 @@
 			"<a href=\"#\"><i class=\"fa fa-plus-circle\">",
 			"<a href=\"/product\"><i class=\"fa fa-plus-circle\">",
 			"<a href=\"#\">",
-			"<a href=\"#\"><img src=\"/a/i/product4.jpg\" alt=\"\"></a>",
-			"product3"
+			"<a href=\"#\"><img src=\"/a/i/product4.jpg\" alt=\"\"></a>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1439,7 +1428,7 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 16,
 			"sheets":
 			[
 				{
@@ -1448,15 +1437,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4540,
+						"buffer_size": 4515,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2555,
+								2555
 							]
 						],
 						"settings":
@@ -1466,14 +1455,42 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2694.0,
+						"translation.y": 2753.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 74,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "_includes/header.html",
 					"semi_transient": false,
 					"settings":
@@ -1499,11 +1516,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "projects.md",
 					"semi_transient": false,
 					"settings":
@@ -1529,11 +1546,11 @@
 						"translation.y": 24.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "_layouts/post.html",
 					"semi_transient": false,
 					"settings":
@@ -1559,11 +1576,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "_posts/2013-01-14-building-my-desk-part-one-the-frame.md",
 					"semi_transient": false,
 					"settings":
@@ -1589,11 +1606,11 @@
 						"translation.y": 2107.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "_posts/2013-02-13-building-my-desk-part-two-the-top.md",
 					"semi_transient": false,
 					"settings":
@@ -1623,7 +1640,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "_posts/2013-06-26-russian-joe.md",
 					"semi_transient": false,
 					"settings":
@@ -1653,7 +1670,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "_posts/2013-12-11-prototyping-q-and-a.md",
 					"semi_transient": false,
 					"settings":
@@ -1679,24 +1696,24 @@
 						"translation.y": 1351.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "a/scss/partials/_posts.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5357,
+						"buffer_size": 5370,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								4607,
+								4607
 							]
 						],
 						"settings":
@@ -1704,14 +1721,14 @@
 							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 5435.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "a/scss/partials/_header.scss",
 					"semi_transient": false,
 					"settings":
@@ -1737,24 +1754,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "about.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3496,
+						"buffer_size": 3517,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								84,
+								84
 							]
 						],
 						"settings":
@@ -1764,14 +1781,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 666.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "_posts/2012-11-19-how-i-setup-my-machine-for-prototyping.md",
 					"semi_transient": false,
 					"settings":
@@ -1797,11 +1814,11 @@
 						"translation.y": 3592.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "_posts/2013-02-27-the-difference-between-money-and-power.md",
 					"semi_transient": false,
 					"settings":
@@ -1827,11 +1844,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "_layouts/page.html",
 					"semi_transient": false,
 					"settings":
@@ -1861,7 +1878,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
@@ -1887,24 +1904,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 16,
 					"file": "a/scss/partials/_page.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1690,
+						"buffer_size": 2328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								960,
+								960
 							]
 						],
 						"settings":
@@ -1914,14 +1931,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 911.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 17,
 					"file": "a/scss/partials/_images.scss",
 					"semi_transient": false,
 					"settings":
@@ -1947,11 +1964,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"file": "_layouts/default.html",
 					"semi_transient": false,
 					"settings":
@@ -1977,67 +1994,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "_includes/head.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1715,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "a/scss/partials/_grid.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1667,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -2094,6 +2051,10 @@
 		"selected_items":
 		[
 			[
+				"type",
+				"a/scss/partials/_type.scss"
+			],
+			[
 				"",
 				"a/scss/partials/_type.scss"
 			],
@@ -2104,10 +2065,6 @@
 			[
 				"post",
 				"a/scss/partials/_posts.scss"
-			],
-			[
-				"type",
-				"a/scss/partials/_type.scss"
 			],
 			[
 				"ty",

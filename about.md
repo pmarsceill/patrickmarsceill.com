@@ -31,7 +31,7 @@ I grew up playing music. When I was seven years old I started taking piano lesso
 <div class="list__album" markdown="1">
 * [The A-Sides - Seeing Suzy b/w Going Gone](http://www.discogs.com/A-Sides-Going-Gone-Seeing-Suzy/release/2667523) — 2003
 * [The A-Sides - Hello, Hello](http://www.discogs.com/A-Sides-Hello-Hello/release/3083514) — 2005
-* [The A-Sides - Silver Storms](http://www.discogs.com/A-Sides-Silver-Storms/release/3083524)  — 2009
+* [The A-Sides - Silver Storms](http://www.discogs.com/A-Sides-Silver-Storms/release/3083524)  — 2007
 * [Blood Feathers - Goodness Gracious](http://www.discogs.com/Blood-Feathers-Goodness-Gracious/release/4414570)  — 2010
 * [Sun Airway - Noturne of Exploded Crystal Chandelier](http://www.discogs.com/Sun-Airway-Nocturne-Of-Exploded-Crystal-Chandelier/master/314378)  — 2010
 * [Sun Airway - Soft Fall](http://www.discogs.com/Sun-Airway-Soft-Fall/release/3910495) — 2012
