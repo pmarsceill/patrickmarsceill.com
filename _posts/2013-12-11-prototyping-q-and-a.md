@@ -9,7 +9,9 @@ A few months ago <a href="http://happycog.com">Happy Cog&trade;</a> released <a 
 > I'm a front end dev that's been in the business for over 15 years. I've always hand coded my sites, and I've never really gotten into grid systems. (I was working online back int the table days).
 
 Grid systems and “hand coding” are not mutually exclusive. For me, grid systems are just as much of a design tool as they are a development tool. Designers have been using proportional grids to layout designs on paper since the days before the printing press was invented. 
+
 <!--more-->
+
 In the context of web development, grids allow designers and developers to layout pages with the consistency and flexibility that modern day web development requires. While it is a good idea to use a grid to help layout your pages, you may not want an entire “front end framework” like Zurb Foundation or Twitter Bootstrap to weigh down your production-level code. At Happy Cog, we use these as tools to get ideas into the browser early, but we don’t use these for production. Here are a few options that still allow a developer to use grid-based designs efficiently in front-end production:
 
 * Roll your own. [Chris Coyier did a pretty good demo here](http://css-tricks.com/dont-overthink-it-grids/). I’m not a super huge fan of using class names like `.col-1-2` so if I were developing a site using this method, I would make all those classes Sass mixins so I could just `@include` them within the element selectors that need to use them.

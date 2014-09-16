@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 order: 2
 bodyClass: body--about
+desc: true
 ---
 
 

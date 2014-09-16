@@ -3,6 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 order: 3
+desc: true
 ---
 
 <h1 class="page__title">Works: Mostly in Progress.</h1>
