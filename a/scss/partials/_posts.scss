@@ -51,28 +51,34 @@
       padding-bottom: 0;
       line-height: 1.25em;
       margin-top: .5em;
-    }
-    a {
-      // @extend %a--quiet-link;
-      text-decoration: none;
-      overflow: visible;
-      margin-bottom: 3em;
-      color: $body;
-      &:after {
-        content: "\2192 ";
-        font-family: 'helvetic neue', 'helvetica', 'arial', sans-serif;
-        color: $dk-grey;
-        font-size: .8em;
-        margin-left: .5em;
-        opacity: 0;
-        border-bottom: 0;
-        z-index: 2;
-      }
-      &:hover {
+      a {
+        // @extend %a--quiet-link;
+        text-decoration: none;
+        overflow: visible;
+        margin-bottom: 3em;
+        color: $body;
         &:after {
-          @extend %animated;
-          @extend %fadeInLeft;
+          content: "\2192 ";
+          font-family: 'helvetic neue', 'helvetica', 'arial', sans-serif;
+          color: $dk-grey;
+          font-size: .8em;
+          margin-left: .5em;
+          opacity: 0;
+          border-bottom: 0;
+          z-index: 2;
         }
+        &:hover {
+          &:after {
+            @extend %animated;
+            @extend %fadeInLeft;
+          }
+        }
+      }
+    }
+    .post-header__meta {
+      a {
+        color: $dk-grey;
+        text-transform: lowercase;
       }
     }
   }

@@ -14,7 +14,7 @@ bodyClass: body--home
           <h2 class="post-header__title">
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
-        <p class="post-header__meta">Published on {{ post.date | date: "%b %-d, %Y" }}</p>
+        <p class="post-header__meta">Published on {{ post.date | date: "%b %-d, %Y" }}. <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">comments</a>.</p>
         </header>
 
         <div class="content">
@@ -62,3 +62,16 @@ bodyClass: body--home
 <!--   <div class="bottom-gradient"></div>
  -->
 </main>
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'patrickmarsceill'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
