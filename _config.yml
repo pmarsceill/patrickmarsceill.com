@@ -18,5 +18,4 @@ exclude:
   - 'Gemfile'
   - 'Gemfile.lock'
   - '.sass-cache'
-  - 'feed.xml'
   - '*.sublime-project'
