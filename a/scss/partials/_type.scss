@@ -164,16 +164,21 @@ ul {
   @extend %text--small;
 }
 
-hr {
+.content {
+  hr {
   clear: both;
   border: 0;
   margin: 0;
   padding: 0;
-  &:after {
-    @extend %hr--dash;
-    padding-bottom: 1em;
+  font-size: .75em;
+    &:after {
+      @extend %hr--dash;
+      
+      padding-bottom: 1em;
+    }
   }
 }
+
 //
 // Silent Extends
 //

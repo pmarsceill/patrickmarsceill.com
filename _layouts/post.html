@@ -35,8 +35,8 @@ desc: true
       <aside>
         {{ asides | split: '<!--aside-two-->' | first }}
       </aside>
-
-      <div class="content">{{ laterContent }}</div>
+      
+      <div class="content"><hr>{{ laterContent }}</div>
       <aside>
         {{ asides | split: '<!--aside-two-->' | last }}
       </aside>
@@ -50,7 +50,8 @@ desc: true
       <aside>
         {{ asides }}
       </aside>
-      <div class="content">{{ laterContent }}</div>
+      
+      <div class="content"><hr>{{ laterContent }}</div>
       <aside>
         {{ defaultAside }}
       </aside>
@@ -60,7 +61,8 @@ desc: true
       <aside>
         {{ defaultAside }}
       </aside>
-      <div class="content">{{ laterContent }}</div>
+      
+      <div class="content"><hr>{{ laterContent }}</div>
 
       {% endif %}
       
