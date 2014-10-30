@@ -206,8 +206,8 @@ ul {
 }
 %text__first-letter--big{
   @include media($small-medium) {
-    font-size: 3em;
-    margin: 3px 8px 10px 0;
+    font-size: 3.3em;
+    margin: 13px 8px 10px 0;
     font-family: GT-Walsheim;
     font-style: italic;
     display: block;
@@ -216,8 +216,8 @@ ul {
     color: $dk-grey;
   }
   @include media($medium) {
-    font-size: 4em;
-    margin: 10px 8px 15px 0;
+    font-size: 3.5em;
+    margin: 14px 8px 14px 0;
   }
 }
 %text--underline {
