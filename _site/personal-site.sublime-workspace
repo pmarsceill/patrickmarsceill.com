@@ -523,7 +523,23 @@
 			"file": "a/scss/partials/_type.scss",
 			"settings":
 			{
-				"buffer_size": 4568,
+				"buffer_size": 4573,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-10-31-woodshedding.md",
+			"settings":
+			{
+				"buffer_size": 2461,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2014-09-11-designing-for-yourself.md",
+			"settings":
+			{
+				"buffer_size": 5830,
 				"line_ending": "Unix"
 			}
 		},
@@ -604,14 +620,6 @@
 			"settings":
 			{
 				"buffer_size": 2346,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "a/scss/partials/_global.scss",
-			"settings":
-			{
-				"buffer_size": 609,
 				"line_ending": "Unix"
 			}
 		},
@@ -1013,8 +1021,12 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site",
-		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_layouts"
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_posts",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials",
+		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/m"
 	],
 	"file_history":
 	[
@@ -1463,15 +1475,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4568,
+						"buffer_size": 4573,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3153,
-								3153
+								3705,
+								3705
 							]
 						],
 						"settings":
@@ -1481,7 +1493,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3886.0,
+						"translation.y": 4926.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1489,6 +1501,64 @@
 				},
 				{
 					"buffer": 1,
+					"file": "_posts/2014-10-31-woodshedding.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								927,
+								927
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2014-09-11-designing-for-yourself.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5830,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								93,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": ".gitignore",
 					"semi_transient": false,
 					"settings":
@@ -1512,11 +1582,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "_includes/header.html",
 					"semi_transient": false,
 					"settings":
@@ -1542,11 +1612,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "projects.md",
 					"semi_transient": false,
 					"settings":
@@ -1572,11 +1642,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "_layouts/post.html",
 					"semi_transient": false,
 					"settings":
@@ -1602,11 +1672,11 @@
 						"translation.y": 738.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "_posts/2013-01-14-building-my-desk-part-one-the-frame.md",
 					"semi_transient": false,
 					"settings":
@@ -1632,11 +1702,11 @@
 						"translation.y": 2107.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "_posts/2013-02-13-building-my-desk-part-two-the-top.md",
 					"semi_transient": false,
 					"settings":
@@ -1662,11 +1732,11 @@
 						"translation.y": 622.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "_posts/2013-06-26-russian-joe.md",
 					"semi_transient": false,
 					"settings":
@@ -1692,11 +1762,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 10,
 					"file": "_posts/2013-12-11-prototyping-q-and-a.md",
 					"semi_transient": false,
 					"settings":
@@ -1722,11 +1792,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 11,
 					"file": "a/scss/partials/_posts.scss",
 					"semi_transient": false,
 					"settings":
@@ -1752,11 +1822,11 @@
 						"translation.y": 4688.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 12,
 					"file": "a/scss/partials/_page.scss",
 					"semi_transient": false,
 					"settings":
@@ -1782,41 +1852,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "a/scss/partials/_global.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 609,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "a/scss/partials/_header.scss",
 					"semi_transient": false,
 					"settings":
@@ -1842,11 +1882,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "about.md",
 					"semi_transient": false,
 					"settings":
@@ -1872,11 +1912,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 15,
 					"file": "_posts/2012-11-19-how-i-setup-my-machine-for-prototyping.md",
 					"semi_transient": false,
 					"settings":
@@ -1902,11 +1942,11 @@
 						"translation.y": 3592.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 16,
 					"file": "_posts/2013-02-27-the-difference-between-money-and-power.md",
 					"semi_transient": false,
 					"settings":
@@ -1932,11 +1972,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 17,
 					"file": "_layouts/page.html",
 					"semi_transient": false,
 					"settings":
@@ -1962,11 +2002,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 18,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1990,11 +2030,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 19,
 					"file": "_config.yml",
 					"semi_transient": false,
 					"settings":
@@ -2018,11 +2058,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 20,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
@@ -2048,11 +2088,11 @@
 						"translation.y": 192.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 21,
 					"file": "a/scss/partials/_images.scss",
 					"semi_transient": false,
 					"settings":
@@ -2078,11 +2118,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 22,
 					"file": "_layouts/default.html",
 					"semi_transient": false,
 					"settings":
@@ -2108,7 +2148,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
