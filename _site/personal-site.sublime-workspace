@@ -523,7 +523,7 @@
 			"file": "a/scss/partials/_type.scss",
 			"settings":
 			{
-				"buffer_size": 4515,
+				"buffer_size": 4568,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,7 +555,7 @@
 			"file": "_layouts/post.html",
 			"settings":
 			{
-				"buffer_size": 3112,
+				"buffer_size": 3144,
 				"line_ending": "Unix"
 			}
 		},
@@ -1013,13 +1013,13 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site",
-		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a",
-		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss",
-		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials"
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_layouts"
 	],
 	"file_history":
 	[
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/node_modules/grunt-contrib-uglify/node_modules/uglify-js/test/compress/typeof.js",
+		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/i/icons/tools.svg",
 		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/_includes/head.html",
 		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/index.html",
 		"/Users/patrickmarsceill/Dropbox (Personal)/_Projects/Personal Site/v2/Site/a/scss/partials/_page.scss",
@@ -1028,8 +1028,6 @@
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/scss/partials/_grid.scss",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/node_modules/grunt/node_modules/js-yaml/examples/custom_types.js",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type/omap.js",
-		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/node_modules/grunt-contrib-uglify/node_modules/uglify-js/test/compress/typeof.js",
-		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/a/i/icons/tools.svg",
 		"/Users/patrickmarsceill/Dropbox/_Projects/Personal Site/v2/Site/_posts/2014-07-14-designing-for-yourself.md",
 		"/Users/patrickmarsceill/Library/Application Support/LimeChat/Themes/patrick.css",
 		"/Users/patrickmarsceill/Library/Application Support/LimeChat/Themes/patrick.yaml",
@@ -1456,7 +1454,7 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1465,15 +1463,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4515,
+						"buffer_size": 4568,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2555,
-								2555
+								3153,
+								3153
 							]
 						],
 						"settings":
@@ -1483,10 +1481,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2753.0,
+						"translation.y": 3886.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1514,7 +1512,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -1544,7 +1542,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -1574,7 +1572,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -1583,15 +1581,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3112,
+						"buffer_size": 3144,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								335,
-								335
+								2031,
+								2031
 							]
 						],
 						"settings":
@@ -1601,10 +1599,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 159.0,
+						"translation.y": 738.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -1724,7 +1722,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1754,7 +1752,7 @@
 						"translation.y": 4688.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -1784,7 +1782,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1814,7 +1812,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -1874,7 +1872,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1964,7 +1962,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1992,7 +1990,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -2020,7 +2018,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -2050,7 +2048,7 @@
 						"translation.y": 192.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -2110,7 +2108,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
