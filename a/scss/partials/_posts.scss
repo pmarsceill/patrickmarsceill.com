@@ -234,10 +234,28 @@
       }
       
     }
+    hr {
+        display: none;
+        @include media($medium) {
+            display: block;
+        }
+    }
   }
   aside {
     border-top: 2px solid $lt-grey;
     border-bottom: 2px solid $lt-grey;
+    margin-top: $gutter*2;
+    margin-bottom: $gutter;
+    @extend %text--small;
+    &:before {
+        content: "Article continues below... ▾";
+        position: absolute;
+        margin-top: -2em;
+        text-align: center;
+        background: $lt-grey;
+        color: $dk-grey;
+        padding: .25em .5em;
+    }
     @include media ($medium) {
       border: 0;
       @include span-columns (3 of 12);
@@ -247,10 +265,13 @@
       position: relative;
       right: -$gutter;
       padding-top: .5em;
+      margin-top: 0;
+      margin-bottom: 0;
+      &:before {
+          content: "";
+          display: none;
+      }
     }
-   
-    @extend %text--small;
-    
     &:after {
         // @extend %hr--dash;
         // padding-bottom: 1em;

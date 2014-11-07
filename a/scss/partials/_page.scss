@@ -51,6 +51,10 @@
     p {
       margin-bottom: 0;
     }
+    img {
+        max-width: 100%;
+        width:auto;
+    }
     @include media($small-medium) {
       float: left;
       position: static;
@@ -62,12 +66,12 @@
     @include media($medium) {
       @include span-columns(5 of 10);
       margin-top: $gutter/2;
-      
+      padding-right: $gutter;
     }
     @include media($large) {
       // @include span-columns(5 of 10);
       margin-top: -$gutter;
-      
+      padding-right: $gutter*2;
     }
   }
 }
