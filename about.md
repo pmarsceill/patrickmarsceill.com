@@ -27,7 +27,7 @@ desc: true
 
 ## My Musical Background
 
-I grew up playing music. When I was seven years old I started taking piano lessons, which soon gave way to drum lessons—and for a few years—bass lessons. From the time I was a teenager I played drums and sang in bands, dreaming of making a career out of it. In 2003 until 2012, I toured around the United States and Canada in between freelance jobs and on vacation days. Here are some of the records I worked on during that time:
+I grew up playing music. When I was seven years old I started taking piano lessons, which soon gave way to bass and drum lessons. From the time I was a teenager I played drums and sang in bands, dreaming of making a career out of it. In 2003 until 2012, I toured around the United States and Canada in between freelance jobs and on vacation days. Here are some of the records I worked on during that time:
 
 <div class="list__album" markdown="1">
 * [The A-Sides - Seeing Suzy b/w Going Gone](http://www.discogs.com/A-Sides-Going-Gone-Seeing-Suzy/release/2667523) — 2003
