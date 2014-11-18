@@ -12,7 +12,7 @@ desc: true
 <div class="about__header">
 <div class="about__header__lead">
     <h1 class="page__title icon-page-about-head">A Little About Me</h1>
-    <p class="page__intro" markdown="1">I'm happiest when I'm making, designing, or building. At [Happy Cog](http://happycog.com), I work as a Senior Designer alongside some of the best people creating websites and applications. My weekends are filled with music making, code wrangling, motorcycle riding, vector bending, and backyard hanging. All of this goes down in Philadelphia, which I call my home.</p>
+    <p class="page__intro" markdown="1">I'm happiest when I'm bringing things to life. At [Happy Cog](http://happycog.com), I work as a Senior Designer where I research, strategize, design, and build for the web. My weekends are filled with [side projects](/projects/), music making, motorcycle <del>riding</del> repair, and backyard hanging. All of this goes down in Philadelphia, which I call my home.</p>
 </div>
 
 <div class="photo--bio" markdown="1">
