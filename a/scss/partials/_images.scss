@@ -133,9 +133,9 @@
       width: 10em;
       height: 10em;
       float: right;
-      margin: $gutter 0 $gutter*2 $gutter;
+      margin: 0 0 $gutter 0;
+      background-size: contain;
       @include media($medium) {
-        
         float: none;
         margin: -$gutter*2 0 0;
       }
