@@ -140,6 +140,7 @@
       text-align: center;
     }
     ul {
+      padding-left: 0;
       @include media($large) {
         text-align: center;
       }
