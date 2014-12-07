@@ -8,7 +8,7 @@
 //   console.log('active');
 // },{ offset: -50 });
 
-enquire.register("screen and (min-width: 600px)", {
+enquire.register("screen and (min-width: 800px)", {
     match : function() {
         // Load sidebar content in via AJAX.
         // Show sidebar

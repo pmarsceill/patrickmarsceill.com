@@ -34,11 +34,10 @@
     }
   }
   h1 {
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     width: 70%;
     @include media($medium) {
       width: 80%;
-      margin-bottom: .5em;
     }
     @include media($large) {
       width: 100%;
