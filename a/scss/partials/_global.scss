@@ -17,17 +17,38 @@ body {
 }
 .non-footer {
     background-color: $lt-grey;
-    padding-bottom: 1em;
     overflow: hidden;
 }
 .content-padding {
-    @include media($medium) {
-        padding: $gutter*2 $gutter $gutter*2 $gutter;
-    }
-    @include media($large) {
-        padding: $gutter*2 0 $gutter*2;
-    }
+  @include clearfix;
+  @include media($medium) {
+      padding: $gutter*2 $gutter $gutter*2 $gutter;
+  }
+  @include media($large) {
+      padding: $gutter*2 0 $gutter*2;
+  }
 }
 .content-wrap {
     @include clearfix;
+}
+.panel {
+  background-color: $white;
+  padding: $gutter;
+  @include media($small-medium) {
+    padding: $gutter $gutter*2;
+  }
+  
+  margin-top: $gutter;
+  h2 {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+.visually-hidden {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
 }

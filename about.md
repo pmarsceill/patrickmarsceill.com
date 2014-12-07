@@ -46,15 +46,15 @@ I usually spend my weekdays working at Happy Cog's office in the _Philadelphia B
 Ocassionally, I take on freelance work. I am specifically interested in working with artists or small businesses that make or sell goods locally. If you'd like to discuss an opportunity, please [email me](mailto:patrick.marsceill@gmail.com).
 
 </div>
-<div class="layout__two-col">
-<div class="layout__two-col--col" markdown="1">
+<div class="layout--two-col">
+<div class="layout__col" markdown="1">
 
 ### About This Site
 
 I designed and built this site because I wanted an outlet to share the things I'm working on or thinking about. It runs on [Jekyll](http://jekyllrb.com), the headings are set in [Grilli Type](http://www.grillitype.com/)'s _GT Walsheim_ and the body in [Exljbris](http://exljbris.com)'s _Calluna_. All iconography and illustration was designed by me.
 
 </div>
-<div class="layout__two-col--col" markdown="1">
+<div class="layout__col" markdown="1">
 
 ### Questions, Comments, Hate Mail?
 

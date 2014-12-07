@@ -124,3 +124,43 @@
     // }
   }
 }
+
+.body--projects {
+  .layout--four-col {
+    h2 {
+      // @extend .visually-hidden;
+      // @extend h3;
+      // margin-left: -1.5em;
+      // @include media($medium) {
+      //   margin-left: -2em;
+      // }
+      // @include media($large) {
+      //   margin-left: -1em;
+      // }
+      text-align: center;
+    }
+    ul {
+      @include media($large) {
+        text-align: center;
+      }
+    }
+    li {
+      &:before {
+        content: "";
+      }
+      &:after {
+        content: "";
+        width: 4em;
+        display: block;
+        margin: 2em auto;
+        border: 2px solid $lt-grey;
+      }
+      &:last-child {
+        &:after {
+          border: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

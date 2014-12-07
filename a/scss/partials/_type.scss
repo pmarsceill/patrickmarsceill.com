@@ -93,22 +93,22 @@ ul {
 //
 // Specific overrides
 //
-.site-header__title {
-  font-size: 3.3em;
-  line-height: .7em;
-  @include media($medium) {
-    font-size: 5em;
-  }
-  @include media($large) {
-    font-size: 6em;
-  }
-  a {
-    @include transition(color 0.25s ease-out);
-    &:hover {
-      color: $dk-grey;
-    }
-  }
-}
+// .site-header__title {
+//   font-size: 3.3em;
+//   line-height: .7em;
+//   @include media($medium) {
+//     font-size: 5em;
+//   }
+//   @include media($large) {
+//     font-size: 6em;
+//   }
+//   a {
+//     @include transition(color 0.25s ease-out);
+//     &:hover {
+//       color: $dk-grey;
+//     }
+//   }
+// }
 .post-header__title {
 
   font-size: 1.5em;
@@ -148,13 +148,9 @@ ul {
   }
 }
 .cssgradients.textshadow {
-  .post {
-    a {
-
-    }
+  .post, .panel {
     a {
       &:hover {
-
         text-shadow: 1px 0 $white,1px 0 $white,-1px 0 $white,-1px 0 $white;
       }
     }

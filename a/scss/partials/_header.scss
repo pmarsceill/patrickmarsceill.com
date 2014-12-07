@@ -2,11 +2,15 @@
   @include clearfix;
   @extend .content-padding;
   padding-top: 0;
-    
+}
+.site-header__container {
+  @include media($medium) {
+    position: absolute;
+  }
 }
 .site-header__hgroup {
   text-transform: lowercase;
-
+  margin-top: $gutter;
   @extend %animated;
   @extend %fadeIn;
   @include media($small-medium) {
@@ -16,15 +20,34 @@
     @include span-columns (3 of 6);
   }
   @include media($large) {
-    @include span-columns (8 of 12);
+    // @include span-columns (8 of 12);
+  }
+  a {
+    display: block;
+    &:hover {
+      .site-title {
+        #text, #pm {
+          fill: $dk-grey;
+          opacity: 1 !important; //Override JS styles
+        }
+      }
+    }
   }
   h1 {
-    padding-right: 40%;
     margin-bottom: .5em;
+    width: 70%;
     @include media($medium) {
-      padding-right: 0;
+      width: 80%;
     }
-    @extend .site-header__title;
+    @include media($large) {
+      width: 100%;
+    }
+    .site-title {
+      #text, #pm {
+        fill: $red;
+        @include transition(all 0.25s ease-out);
+      }
+    }
   }
   h2 {
     color: $white;
@@ -50,8 +73,19 @@
     }
     @include media($large) {
       padding-left: 0;
-      @include span-columns (4 of 12);
+      // @include span-columns (4 of 12);
       padding-top: 10.5em;
+    }
+    ul {
+      @include media($medium) {
+        float: right;
+        width: em(270);
+
+      }
+      @include media($large) {
+        width: em(300);
+      }
+      
     }
     a {
         display: block;

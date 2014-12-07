@@ -15,6 +15,7 @@ $large: new-breakpoint(min-width em(1072) 12);
 // name of the default outer container class
 .outer {
   padding: 0 $gutter;
+  position: relative;
   @include outer-container;
   @include media($small-medium) {
     padding: 0 $gutter*2;
@@ -59,26 +60,30 @@ $large: new-breakpoint(min-width em(1072) 12);
 //   }
 // }
 
-.layout__two-col {
+.layout--two-col {
   @include clearfix;
-  .layout__two-col--col {
+  .layout__col {
     @include media($medium) {
       @include span-columns(3 of 6);
     }
   }
 }
-.projects--layout__two-col {
-  @extend .layout__two-col;
-  .layout__two-col--col {
+.layout--four-col {
+  @include clearfix;
+  .layout__col {
     @include media($medium) {
-      padding: 0 $gutter;
+      @include span-columns(3 of 6);
+      @include omega(2n);
     }
-  }
-  .icon {
-    @include media($medium) {
-      margin-left: -$gutter;
-      margin-top: -.5em;
+    @include media($large) {
+      @include span-columns(1 of 4);
+      &:nth-child(2n) {
+        @include span-columns(1 of 4);
+      }
+      &:nth-child(2n+1) {
+        clear: none;
+      }
+      @include omega(4n);
     }
-
   }
 }
