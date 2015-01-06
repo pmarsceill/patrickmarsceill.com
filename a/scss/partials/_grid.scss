@@ -27,7 +27,10 @@ $large: new-breakpoint(min-width em(1072) 12);
     padding: 0;
   }
 }
-
+.outer--wide {
+  max-width: em(1300);
+  margin: 0 auto;
+}
 // body {
 //   &:before {
 //     content: 'small';

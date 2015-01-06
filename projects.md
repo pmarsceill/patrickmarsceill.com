@@ -13,6 +13,7 @@ bodyClass: body--projects
 <p class="page__intro" markdown="1">_These are all personal side projects—not my professional portfolio—[email me]('mailto:patrick.marsceill@gmail.com') if you want to learn more about my professional work._</p>
 </div>
 <div class="layout--four-col panel">
+<div class="outer--wide">
 <div class="layout__col" markdown="1"><h2><i class="icon icon-tools"></i> Tools</h2>
 
 * [My Desk](/2013/01/14/building-my-desk-part-one-the-frame/) is a project that I completed in the winter of 2012-2013. I built my desk out of galvanized steel pipes and an oak countertop.
@@ -34,7 +35,7 @@ bodyClass: body--projects
 * [A.M. Mills](https://www.facebook.com/pages/AM-Mills/1407256366204937) "Fans of the late, great Blood Feathers (or, if you are a truly old head, Aspera) may have recognized the sweet, dulcet Petty-ish tones of one Drew Mills opening up last night’s sold-out War On Drugs show at Union Transfer. And indeed, that was he, resurfacing for his first gig under the moniker A.M. Mills, with the above track going online this morning." -Philebrity
 * _See the [About](/about/) section for my full discography._
 
-</div></div>
+</div></div></div>
 
 
 
