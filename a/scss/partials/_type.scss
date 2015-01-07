@@ -143,8 +143,13 @@ ul {
 }
 .page__intro {
   @include media($small-medium) {
-    font-size: 1.3em;
-    line-height: 1.5em;
+    h1 {
+    
+    }
+    p {
+      font-size: 1.3em;
+      line-height: 1.5em;
+    }
   }
 }
 .cssgradients.textshadow {

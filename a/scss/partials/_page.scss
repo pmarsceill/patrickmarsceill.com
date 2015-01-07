@@ -17,6 +17,10 @@
 .page--projects {
   @extend %animated;
   @extend %fadeInUp;
+  padding-bottom:0;
+}
+.page__intro {
+  padding-bottom: 0;
   padding-top: 0;
 }
 // .page__title {

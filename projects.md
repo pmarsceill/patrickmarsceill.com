@@ -6,12 +6,7 @@ order: 3
 desc: true
 bodyClass: body--projects
 ---
-<div class="outer">
-<h1 class="page__title">Works: Mostly in Progress.</h1>
 
-<p class="page__intro" markdown="1">I dedicate a large portion of my free time to projects that provide opprotunites for me to learn, make art, and contribute to various communities. Below is a list of things I have worked on or am currently working on.</p>
-<p class="page__intro" markdown="1">_These are all personal side projects—not my professional portfolio—[email me]('mailto:patrick.marsceill@gmail.com') if you want to learn more about my professional work._</p>
-</div>
 <div class="layout--four-col panel">
 <div class="outer--wide">
 <div class="layout__col" markdown="1"><h2><i class="icon icon-tools"></i> Tools</h2>
