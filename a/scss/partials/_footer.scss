@@ -3,4 +3,7 @@
 	color: $dk-grey;
 	background-color: white;
 	// margin-top: $gutter;
+  @extend .content-padding;
+  padding-top: 0;
+  padding-bottom: 0;
 }

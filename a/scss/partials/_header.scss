@@ -69,12 +69,12 @@
       padding-left: 3em;
       @include span-columns (3 of 6);
       @include omega;
-      padding-top: 8.5em;
+      padding-top: 10.6em;
     }
     @include media($large) {
       padding-left: 0;
       // @include span-columns (4 of 12);
-      padding-top: 10.5em;
+      padding-top: 12.3em;
     }
     ul {
       @include media($medium) {
