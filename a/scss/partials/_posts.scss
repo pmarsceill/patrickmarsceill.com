@@ -1,7 +1,5 @@
 // Post index
-.body--home {
-    
-}
+
 .posts {
     @include media($small-medium) {
         @include span-columns(6 of 8);
@@ -14,8 +12,8 @@
 }
 .post {
   margin-left: -$gutter*4;
-  padding: $gutter $gutter*2 $gutter*2;
-  margin-bottom: $gutter;
+  padding: $gutter/2 $gutter*2 $gutter;
+
   background-color: $white;
   background-image: url(/a/i/bg-papers.png);
   background-position: -2.2em 0;
@@ -23,6 +21,7 @@
   position: relative;
   right: -$gutter*2;
   @include media($small-medium) {
+    margin-bottom: $gutter;
     padding: $gutter $gutter*3 $gutter*2 $gutter*3;
     // margin-left: -$gutter*2;
     background-position: 104.5% 27%;

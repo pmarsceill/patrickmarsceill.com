@@ -36,11 +36,13 @@
   h1 {
     margin-bottom: .5em;
     width: 70%;
+    max-width: em(150);
     @include media($medium) {
       width: 80%;
     }
     @include media($large) {
       width: 100%;
+      max-width: 100%;
     }
     .site-title {
       #text, #pm {
@@ -50,7 +52,7 @@
     }
   }
   h2 {
-    color: $white;
+    color: $dk-grey;
     @include media($medium) {
       width: 200%;
     }
