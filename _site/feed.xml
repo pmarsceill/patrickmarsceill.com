@@ -7,6 +7,63 @@
     <atom:link href="http://patrickmarsceill.com/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Introducing Tab Lab</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/m/tablab-v1/home-large.jpg&quot; alt=&quot;tablab.io Homepage screenshot&quot; class=&quot;img--screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“So, what’s stopping you?”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;… has been my mantra for the last six months. It’s been in the back of my head from the first conceptual sketch, to the last code deployment. As of Saturday evening—I can finally respond with a definitive, “nothing.” &lt;/p&gt;
+
+&lt;p&gt;I have launched my first product, &lt;a href=&quot;https://tablab.io&quot;&gt;Tab Lab&lt;/a&gt;, and I couldn’t be more excited for its future.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;I&amp;#39;ve been working on this thing for a while now, and I think I&amp;#39;m finally ready to share it. Twitter, meet Tab Lab &lt;a href=&quot;https://t.co/aoB0fXg6SQ&quot;&gt;https://t.co/aoB0fXg6SQ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Patrick Marsceill (@pmarsceill) &lt;a href=&quot;https://twitter.com/pmarsceill/status/564183786167238659&quot;&gt;February 7, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Of the obstacles that I faced in putting Tab Lab together, three define my experience most completely:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Time.&lt;/li&gt;
+  &lt;li&gt;Ignorance.&lt;/li&gt;
+  &lt;li&gt;Fear.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And though the first two were surmountable, the third is a mountain that I’m still climbing.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;At first, I struggled to reclaim my free time. I stopped watching TV every night, going out on the weekends, and spent almost every waking moment (when I wasn’t at work) chiseling away at this thing. Despite being incredibly productive, it became isolating and marginally unhealthy. Finding a good balance of hard work with measured breaks was more difficult than I could have imagined. I was truly immersed in what I was doing. When I was home alone some weekends, it wasn’t uncommon for me to wake up and start working only look up at the clock to discover that almost ten hours had gone by.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, I have a encouraging wife who helped tame this habit—and even got me outside sometimes.  If I hadn’t learned to tackle small bits at a time, I would have never left my desk, let alone launched a website. Stepping away became progressively easier, even necessary the further along the app was. The more I focused on other things, the more I realized that the quality of my work was improving. I reevaluated problems and saw them differently. My brain needed breaks, sometimes long ones, to perform at its best.&lt;/p&gt;
+
+&lt;p&gt;My second problem was that I had no idea what I was doing. Sure, I’ve designed a lot of sites and apps for a variety of clients—but I’ve never individually designed, built, &lt;em&gt;and&lt;/em&gt; launched anything from start to finish aside from the site you’re reading right now. Fortunately, I was guided by services like &lt;a href=&quot;http://stackexchange.com&quot;&gt;Stack Exchange&lt;/a&gt;, &lt;a href=&quot;http://railscasts.com&quot;&gt;Railscasts&lt;/a&gt;, and &lt;a href=&quot;http://codeschool.com&quot;&gt;Code School&lt;/a&gt; to steer me through the unfamiliar territory of building a web app. In the beginning, I knew very little about the inner workings of a site like Tab Lab, let alone how to architect an application around them. By the end, a holistic operational view of these components allowed me to design them from a more enlightened point of view. &lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/m/tablab-v1/music-small.jpg&quot; alt=&quot;tablab.io music on small screens&quot; class=&quot;img--screenshot-mobile&quot; /&gt;
+    &lt;figcaption&gt;
+        Tab Lab&#39;s music view on small screens.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Consistent with my personality, I shared very little about this project until close to launch day. At one point, I was so paralyzed by the thought of not being able to pull it off that the project sat stagnant for a few months. I kept going back to the mantra, “So, what’s stopping you?” and was comforted by the fact that the list never grew beyond three items. &lt;/p&gt;
+
+&lt;p&gt;Fear is a steep and constant climb. I know I’m not at the top yet, but I’ve reached a bivvy and I’m not looking back.&lt;/p&gt;
+
+&lt;!--aside-one--&gt;
+
+&lt;h3 id=&quot;tldr&quot;&gt;TL;DR&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;I designed and built this project: &lt;a href=&quot;http://tablab.io&quot;&gt;http://tablab.io&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s a web app for reading, writing, and sharing tablature and music notation. The process of creating it challenged my sense of personal limitations. &lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Feb 2015 17:44:00 -0500</pubDate>
+        <link>http://patrickmarsceill.com/2015/02/08/tab-lab/</link>
+        <guid isPermaLink="true">http://patrickmarsceill.com/2015/02/08/tab-lab/</guid>
+      </item>
+    
+      <item>
         <title>Woodshedding</title>
         <description>&lt;p&gt;When I was nine, I began learning how to play percussion. I started out studying in the school band program. By eleven, I was surprisingly still interested enough to seek additional instruction. Driven by a family that already produced two other musicians, I began taking private drum lessons from an older jazz player. &lt;/p&gt;
 

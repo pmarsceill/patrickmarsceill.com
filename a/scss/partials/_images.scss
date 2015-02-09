@@ -43,79 +43,37 @@
     }
   }
 }
-.illo__van, .illo__bldg {
-    margin: $gutter*2 0;
-}
-.illo__van {
-    height: 200px;
-    margin-right: -5em;
-    @extend .image--animate-in;
-    opacity: 1;
-    path, ellipse, polyline, line {
-        stroke: $dk-grey;
-        @include transition(stroke 0.25s ease-out);
+
+.img--screenshot {
+    @include media($medium) {
+        border: 30px solid $lt-grey;
+        border-radius: 10px;
+        position: relative;
     }
-    &.focus {
-        path, ellipse, polyline, line {
-            stroke: $red;
-        }
+}
+.img--screenshot-mobile {
+  // @include media($medium) {
+      border-top: 5px solid $body;
+      border-bottom: 5px solid $body;
+      border-left: 40px solid $body;
+      border-right: 40px solid $body;
+      border-radius: 15px;
+  // }
+    @include media($small-medium) {
+      border-top: 8px solid $body;
+      border-bottom: 8px solid $body;
+      border-left: 50px solid $body;
+      border-right: 50px solid $body;
+      border-radius: 20px;
     }
     @include media($medium) {
-        height: 250px;
-        margin-right: -20em;
-    }
-    @include media($large) {
-        margin-right: -33em;
-    }
-}
-
-.illo__bldg {
-
-    height: 400px;
-    @extend .image--animate-in;
-    opacity: 1;
-    path, ellipse, polyline, line, rect, polygon {
-        stroke: $dk-grey;
-        @include transition(stroke 0.25s ease-out);
-    }
-     @include media($medium) {
-        height: 475px;
-        margin-right: -12em;
-    }
-
-    @include media($large) {
-        margin-right: -27em;
-        height: 550px;
-    }
-    #Layer_3 {
-        g {
-            path{
-                stroke: none;
-                fill: $dk-grey;
-            }
-
-        }
-    }
-    &.focus {
-        path, ellipse, polyline, line, rect, polygon {
-            stroke: $red;
-        }
-        #Layer_3 {
-            g {
-                path{
-                stroke: none;
-                fill: $red;
-                }
-            }
-
-
-        }
+        border-top: 10px solid $body;
+        border-bottom: 10px solid $body;
+        border-left: 80px solid $body;
+        border-right: 80px solid $body;
+        border-radius: 30px;
     }
 }
-// .photo__bio {
-//     width: 110%;
-//     margin-left: -5%;
-// }
 
 .icon {
     display: block;
