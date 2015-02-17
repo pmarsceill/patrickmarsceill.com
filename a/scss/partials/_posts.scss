@@ -151,6 +151,9 @@
 
 // Post detail
 .body--post {
+  .site-header__hgroup h1 .site-title #text {
+    display: none;
+  }
   .post {
       background-image: none;
       position: relative;

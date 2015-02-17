@@ -49,11 +49,19 @@
         fill: $red;
         @include transition(all 0.25s ease-out);
       }
+      #text {
+        display: none;
+        @include media($small-medium) {
+            display: inherit;
+        }
+      }
     }
   }
   h2 {
     color: $dk-grey;
+    font-size: 1em;
     @include media($medium) {
+      font-size: 1.5em;
       width: 200%;
     }
   }
@@ -71,12 +79,12 @@
       padding-left: 3em;
       @include span-columns (3 of 6);
       @include omega;
-      padding-top: 10.6em;
+      padding-top: 9.9em;
     }
     @include media($large) {
       padding-left: 0;
       // @include span-columns (4 of 12);
-      padding-top: 12.3em;
+      padding-top: 11.3em;
     }
     ul {
       @include media($medium) {
