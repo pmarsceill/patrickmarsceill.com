@@ -14,7 +14,7 @@
   &lt;p&gt;“So, what’s stopping you?”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;… has been my mantra for the last six months. It’s been in the back of my head from the first conceptual sketch, to the last code deployment. As of Saturday evening—I can finally respond with a definitive, “nothing.” &lt;/p&gt;
+&lt;p&gt;… has been my mantra for the last six months. It’s been in the back of my head from the first conceptual sketch, to the last code deployment. As of Saturday evening—I can finally respond with a definitive, “nothing.”&lt;/p&gt;
 
 &lt;p&gt;I have launched my first product, &lt;a href=&quot;https://tablab.io&quot;&gt;Tab Lab&lt;/a&gt;, and I couldn’t be more excited for its future.&lt;/p&gt;
 
@@ -37,7 +37,7 @@
 
 &lt;p&gt;Fortunately, I have a encouraging wife who helped tame this habit—and even got me outside sometimes.  If I hadn’t learned to tackle small bits at a time, I would have never left my desk, let alone launched a website. Stepping away became progressively easier, even necessary the further along the app was. The more I focused on other things, the more I realized that the quality of my work was improving. I reevaluated problems and saw them differently. My brain needed breaks, sometimes long ones, to perform at its best.&lt;/p&gt;
 
-&lt;p&gt;My second problem was that I had no idea what I was doing. Sure, I’ve designed a lot of sites and apps for a variety of clients—but I’ve never individually designed, built, &lt;em&gt;and&lt;/em&gt; launched anything from start to finish aside from the site you’re reading right now. Fortunately, I was guided by services like &lt;a href=&quot;http://stackexchange.com&quot;&gt;Stack Exchange&lt;/a&gt;, &lt;a href=&quot;http://railscasts.com&quot;&gt;Railscasts&lt;/a&gt;, and &lt;a href=&quot;http://codeschool.com&quot;&gt;Code School&lt;/a&gt; to steer me through the unfamiliar territory of building a web app. In the beginning, I knew very little about the inner workings of a site like Tab Lab, let alone how to architect an application around them. By the end, a holistic operational view of these components allowed me to design them from a more enlightened point of view. &lt;/p&gt;
+&lt;p&gt;My second problem was that I had no idea what I was doing. Sure, I’ve designed a lot of sites and apps for a variety of clients—but I’ve never individually designed, built, &lt;em&gt;and&lt;/em&gt; launched anything from start to finish aside from the site you’re reading right now. Fortunately, I was guided by services like &lt;a href=&quot;http://stackexchange.com&quot;&gt;Stack Exchange&lt;/a&gt;, &lt;a href=&quot;http://railscasts.com&quot;&gt;Railscasts&lt;/a&gt;, and &lt;a href=&quot;http://codeschool.com&quot;&gt;Code School&lt;/a&gt; to steer me through the unfamiliar territory of building a web app. In the beginning, I knew very little about the inner workings of a site like Tab Lab, let alone how to architect an application around them. By the end, a holistic operational view of these components allowed me to design them from a more enlightened point of view.&lt;/p&gt;
 
 &lt;figure&gt;
     &lt;img src=&quot;/m/tablab-v1/music-small.jpg&quot; alt=&quot;tablab.io music on small screens&quot; class=&quot;img--screenshot-mobile&quot; /&gt;
@@ -46,7 +46,7 @@
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Consistent with my personality, I shared very little about this project until close to launch day. At one point, I was so paralyzed by the thought of not being able to pull it off that the project sat stagnant for a few months. I kept going back to the mantra, “So, what’s stopping you?” and was comforted by the fact that the list never grew beyond three items. &lt;/p&gt;
+&lt;p&gt;Consistent with my personality, I shared very little about this project until close to launch day. At one point, I was so paralyzed by the thought of not being able to pull it off that the project sat stagnant for a few months. I kept going back to the mantra, “So, what’s stopping you?” and was comforted by the fact that the list never grew beyond three items.&lt;/p&gt;
 
 &lt;p&gt;Fear is a steep and constant climb. I know I’m not at the top yet, but I’ve reached a bivvy and I’m not looking back.&lt;/p&gt;
 
@@ -56,7 +56,7 @@
 
 &lt;p&gt;&lt;strong&gt;I designed and built this project: &lt;a href=&quot;http://tablab.io&quot;&gt;http://tablab.io&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;It’s a web app for reading, writing, and sharing tablature and music notation. The process of creating it challenged my sense of personal limitations. &lt;/p&gt;
+&lt;p&gt;It’s a web app for reading, writing, and sharing tablature and music notation. The process of creating it challenged my sense of personal limitations.&lt;/p&gt;
 </description>
         <pubDate>Sun, 08 Feb 2015 17:44:00 -0500</pubDate>
         <link>http://patrickmarsceill.com/2015/02/08/tab-lab/</link>
@@ -65,7 +65,7 @@
     
       <item>
         <title>Woodshedding</title>
-        <description>&lt;p&gt;When I was nine, I began learning how to play percussion. I started out studying in the school band program. By eleven, I was surprisingly still interested enough to seek additional instruction. Driven by a family that already produced two other musicians, I began taking private drum lessons from an older jazz player. &lt;/p&gt;
+        <description>&lt;p&gt;When I was nine, I began learning how to play percussion. I started out studying in the school band program. By eleven, I was surprisingly still interested enough to seek additional instruction. Driven by a family that already produced two other musicians, I began taking private drum lessons from an older jazz player.&lt;/p&gt;
 
 &lt;p&gt;Beyond actually reading drum charts, improvising, practicing technique, and all the things a student might do one-on-one with an instructor, I learned how a professional musician goes about honing their craft. My teacher patiently explained that this is called &lt;em&gt;woodshedding&lt;/em&gt;. I imagined a small shack in a snow covered valley where bad musicians were banished if they messed up during a performance. Despite his best efforts, my eleven year old mind couldn’t fully understand what he was trying to explain to me.&lt;/p&gt;
 
@@ -145,7 +145,7 @@
   &lt;p&gt;I’m a front end dev that’s been in the business for over 15 years. I’ve always hand coded my sites, and I’ve never really gotten into grid systems. (I was working online back int the table days).&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Grid systems and “hand coding” are not mutually exclusive. For me, grid systems are just as much of a design tool as they are a development tool. Designers have been using proportional grids to layout designs on paper since the days before the printing press was invented. &lt;/p&gt;
+&lt;p&gt;Grid systems and “hand coding” are not mutually exclusive. For me, grid systems are just as much of a design tool as they are a development tool. Designers have been using proportional grids to layout designs on paper since the days before the printing press was invented.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -156,7 +156,7 @@
     &lt;p&gt;Roll your own. &lt;a href=&quot;http://css-tricks.com/dont-overthink-it-grids/&quot;&gt;Chris Coyier did a pretty good demo here&lt;/a&gt;. I’m not a super huge fan of using class names like &lt;code&gt;.col-1-2&lt;/code&gt; so if I were developing a site using this method, I would make all those classes Sass mixins so I could just &lt;code&gt;@include&lt;/code&gt; them within the element selectors that need to use them.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Use a light weight grid system framework. &lt;a href=&quot;http://susy.oddbird.net/&quot;&gt;Susy&lt;/a&gt; is a pretty good example of this. Susy is a Compass based grid framework that easily allows you to customize your grid using Sass mixins. This enables you to keep your CSS class names semantic. &lt;a href=&quot;http://neat.bourbon.io/&quot;&gt;Neat&lt;/a&gt; is a similar framework that is built on top of Bourbon, if you that is what you prefer. &lt;/p&gt;
+    &lt;p&gt;Use a light weight grid system framework. &lt;a href=&quot;http://susy.oddbird.net/&quot;&gt;Susy&lt;/a&gt; is a pretty good example of this. Susy is a Compass based grid framework that easily allows you to customize your grid using Sass mixins. This enables you to keep your CSS class names semantic. &lt;a href=&quot;http://neat.bourbon.io/&quot;&gt;Neat&lt;/a&gt; is a similar framework that is built on top of Bourbon, if you that is what you prefer.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -395,16 +395,16 @@
 &lt;p&gt;&lt;em&gt;This is where you need to open up Terminal and get busy…&lt;/em&gt;
 #### Install RVM &amp;amp; install the latest stable version of Ruby&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\c&lt;/span&gt;url -L https://get.rvm.io &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; bash -s stable --ruby&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\c&lt;/span&gt;url -L https://get.rvm.io &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; bash -s stable --ruby&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;verify-you-a-running-on-the-newly-installed-rvm-version-of-ruby&quot;&gt;Verify you a running on the newly installed “RVM” version of Ruby&lt;/h4&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;which ruby
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;which ruby
 /Users/patrickmarsceill/.rvm/rubies/ruby-1.9.3-p327/bin/ruby&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The important thing to note here is the &lt;code&gt;/.rvm/rubies/ruby-1.9.3-p327&lt;/code&gt;.  Your version numbers may be different, and thats ok but the path should be &lt;code&gt;/.rvm/rubies/ruby-x.x.x-pxxx&lt;/code&gt;.  If you don’t see something like this, you should switch to the newly installed version:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rvm use 1.9.3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rvm use 1.9.3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This just tells your machine to switch to Ruby 1.9.3 installed by RVM.  You may have a different version number installed by RVM, in which case you would run &lt;code&gt;rvm use 1.9.2&lt;/code&gt; or &lt;code&gt;rvm use 1.9.4&lt;/code&gt;.&lt;/p&gt;
 
@@ -412,7 +412,7 @@
 
 &lt;p&gt;The easiest way to install Git on an OSX machine is to &lt;a href=&quot;http://git-scm.com/download/mac&quot;&gt;download and install the Universal .dmg file from git-scm.com&lt;/a&gt;.  There are other ways to do this from the command line, if you are a Homebrew user like me you can use:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew install git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew install git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;step-4-mdash-build-your-development-environment&quot;&gt;Step 4 — Build your development environment&lt;/h3&gt;
 
@@ -422,11 +422,11 @@
 
 &lt;p&gt;Switch back over to terminal and CD (change directories) by typing &lt;code&gt;cd&lt;/code&gt; and then a space, &lt;em&gt;do not press “Enter” yet&lt;/em&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Then drag the folder icon (in this case it’s called “_Active”) immediately following the space after &lt;code&gt;cd&lt;/code&gt;.  Like magic, the full path to this location will appear after the &lt;code&gt;cd&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/patrickmarsceill/Dropbox/_Active&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/patrickmarsceill/Dropbox/_Active&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Press “Enter”&lt;/p&gt;
 
@@ -436,23 +436,23 @@
 
 &lt;p&gt;&lt;em&gt;From your current location in Terminal run:&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git@github.com:pmarsceill/StrapOn.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git@github.com:pmarsceill/StrapOn.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This will pull down a directory called “StrapOn” that you can use as a starter for your projects.  A more detailed tutorial is in the works, but to get started &lt;code&gt;cd&lt;/code&gt; into the “StrapOn” directory:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;StrapOn&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;StrapOn&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Then install all the tools that are needed for this project by running:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;If successful you should see something like this:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;Your bundle is &lt;span class=&quot;nb&quot;&gt;complete&lt;/span&gt;! Use &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;bundle show &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;gemname&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; to see where a bundled gem is installed.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;Your bundle is &lt;span class=&quot;nb&quot;&gt;complete&lt;/span&gt;! Use &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;bundle show &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;gemname&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; to see where a bundled gem is installed.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Start the StrapOn dev mode by running this rake command:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rake start
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rake start
 
 DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;called from require at /Users/patrickmarsceill/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 
@@ -463,11 +463,11 @@ DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed
 DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;called from require at /Users/patrickmarsceill/Desktop/StrapOn/config.ru:14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-19 17:02:23&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; INFO  WEBrick 1.3.1
 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-19 17:02:23&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; INFO  ruby 1.9.3 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2012-11-10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;x86_64-darwin12.2.0&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-19 17:02:23&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; INFO  WEBrick::HTTPServer#start: &lt;span class=&quot;nv&quot;&gt;pid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;30507 &lt;span class=&quot;nv&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-19 17:02:23&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; INFO  WEBrick::HTTPServer#start: &lt;span class=&quot;nv&quot;&gt;pid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30507&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Voila, StrapOn has started a local server on your machine that you can use for development by pointing your browser to: &lt;code&gt;http://localhost:4000&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;/images/blog/prototype-setup/strapon-browser.png StrapOn running on a local machine &lt;/p&gt;
+&lt;p&gt;/images/blog/prototype-setup/strapon-browser.png StrapOn running on a local machine&lt;/p&gt;
 
 &lt;p&gt;This also includes starts an auto-compiler for SASS, and all the built-in templating engine included in the Serve gem. Both of which will be explained in my next post about developing with StrapOn.&lt;/p&gt;
 

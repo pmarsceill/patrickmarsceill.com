@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{% if page.title %}{{ site.title }} &mdash; {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="{% if page.desc %}{{ page.title | strip_html }} - {{ page.content | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.desc %}{{ page.title | strip_html | strip_newlines }} - {{ page.content | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="stylesheet" href="{{ "/a/c/screen.css" | prepend: site.baseurl }}">
