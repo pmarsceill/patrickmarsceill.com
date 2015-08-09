@@ -1,0 +1,14 @@
+# Site settings
+title: Patrick Marsceill
+email: patrick.marsceill@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Patrick Marsceill Designer
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://patrickmarsceill.com" # the base hostname & protocol for your site
+twitter_username: pmarsceill
+github_username:  pmarsceill
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed

@@ -1,0 +1,21 @@
+// Spacing and padding
+
+$spacing-unit: rem(32);
+$padding-unit: rem(16);
+
+// Page Widths
+$page-width: rem(800);
+
+// Colors
+$grey: #828282;
+$grey-light: lighten($grey, 40%);
+$blue-dark: #000;
+$white: #fff;
+
+$body-text-color: $blue-dark;
+$body-background-color: $white;
+
+// Variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   rem(16);
+$base-line-height: 1.5;

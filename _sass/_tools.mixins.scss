@@ -1,0 +1,354 @@
+//------------------------------------
+//    $MIXINS
+//------------------------------------
+
+// Spacing mixins
+// Adds spacing after an element
+
+@mixin spacing-s {
+  margin-bottom: $spacing-unit / 3;
+}
+
+@mixin spacing {
+  margin-bottom: $spacing-unit / 2;
+}
+
+@mixin spacing-l {
+  margin-bottom: $spacing-unit;
+}
+
+@mixin spacing-xl {
+  margin-bottom: $spacing-unit * 2;
+}
+
+// ============================================================
+//
+// @source: http://alwaystwisted.com/post.php?s=2013-04-01-my-media-query-mixin
+//
+// @mixin mq($point, $IE9: false, $query1: min, $query2: width)
+// - Outputs media query with fallback no media query support
+//
+// @param $point       : pixel value for your major or minor breakpoint
+// @param $query1      : this is for either min, max, min-device, or max-device
+//                       defining the first part of the media query. Predefined
+//                       as min.
+// @param $query2      : this if for either width or height defining the second
+//                       part of the media query. Predefined as max
+// @param $IE9         : predefined as false, changing this to true would
+//                       include the IE9 conditional class of CSS
+//
+//===================================
+//
+// Example:
+//
+// .example {
+//   @include mq(320) {
+//     width: 100%;
+//   }
+// }
+//
+// ============================================================
+@mixin mq($point, $query1: min, $query2: width, $IE9: false) {
+  @if $IE9 == true{
+    .lt-ie9 & {
+      @content;
+    }
+  }
+  @media (#{$query1}-#{$query2}: $point) {
+    @content;
+  }
+}
+
+// ============================================================
+//
+// @mixin rem($property, $sizeValue)
+// -Outputs rem and fallback px values
+//
+// @param property       : font-size, padding-bottom, (any property that accepts 1 value)
+// @param sizeValue      : value in px
+//
+//===================================
+//
+// Example, rembase size is 14px:
+//
+// @include rem('font-size', 16);
+//  => font-size: 16px;
+//     font-size: 1.14286rem;
+//
+// ============================================================
+@mixin rem($property, $sizeValue: $rembase) {
+  $length: length($sizeValue);
+  @if type-of($sizeValue) == "number" {
+    #{$property}: strip-unit($sizeValue) + px;
+    #{$property}: (strip-unit($sizeValue)/$rembase) + rem;
+  } @else {
+    // Create list to append values to.
+    $allvalues: ();
+    $allvaluespx: ();
+    @each $singleValue in $sizeValue {
+      @if $singleValue == 0 or type-of($singleValue) != "number" {
+        // Append 0 as is or strings such as 'auto'.
+        $allvaluespx: append($allvaluespx, $singleValue);
+        $allvalues: append($allvalues, $singleValue);
+      } @else {
+        $allvaluespx: append($allvaluespx, $singleValue + 0px);
+        $allvalues: append($allvalues, ( strip-unit($singleValue) / $rembase) + 0rem);
+      }
+    }
+    #{$property}: $allvaluespx;
+    #{$property}: $allvalues;
+  }
+}
+
+// ============================================================
+//
+// @mixin triangle()
+// - Outputs an element styled like a triangle
+//
+// @param width           : px, em
+// @param height          : px, em
+// @param direction       : up, down, left, right
+// @param color           : hex, rgb
+//
+//===================================
+//
+// Example:
+//
+// @include triangle(40px, 30px, down, #e88565);
+//
+// ============================================================
+@mixin triangle($width: 20px, $height: 20px, $direction: up, $color: red) {
+  @if $direction == "left" {
+    border-top: $height/2 solid transparent;
+    border-bottom: $height/2 solid transparent;
+    border-right: $width solid $color;
+  }
+  @if $direction == "right" {
+    border-top: $height/2 solid transparent;
+    border-bottom: $height/2 solid transparent;
+    border-left: $width solid $color;
+  }
+  @if $direction == "up" {
+    border-left: $width/2 solid transparent;
+    border-right: $width/2 solid transparent;
+    border-bottom: $height solid $color;
+  }
+  @if $direction == "down" {
+    border-left: $width/2 solid transparent;
+    border-right: $width/2 solid transparent;
+    border-top: $height solid $color;
+  }
+  height: 0;
+  width: 0;
+}
+
+ // Mixin for selection markup
+
+@mixin selection($background, $color, $element:false) {
+  @if ($element) {
+    &::-moz-selection{ background:$background; color:$color; text-shadow:none; }
+    &::selection { background:$background; color:$color; text-shadow:none; }
+  }
+  @else {
+    ::-moz-selection{ background:$background; color:$color; text-shadow:none; }
+    ::selection { background:$background; color:$color; text-shadow:none; }
+  }
+}
+
+
+// Mixin for placeholder styling
+
+@mixin placeHolder($color) {
+  &::-webkit-input-placeholder { color: $color; }
+  &:-moz-placeholder { color: $color; }
+}
+
+// Center-align a block level element
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ // Background gradient
+
+@mixin bg-gradient($height: 150, $top: auto, $bottom: 0, $color1: rgba(black, 0), $color2: black) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: $top;
+    bottom: $bottom;
+    left: 0;
+    @include rem(height, $height);
+    @include background-image(linear-gradient($color1, $color2 100%));
+  }
+}
+
+ // Scrollbar mixin
+
+@mixin scrollbar($size, $primary, $secondary: lighten($primary, 25%)) {
+  ::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $primary;
+  }
+  ::-webkit-scrollbar-track {
+    background: $secondary;
+  }
+}
+
+ // Transition all the things
+
+@mixin trans {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+// Remove the unit from a number
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+ // Spinning loader animation
+
+@mixin spinner($color: $white, $size: 30) {
+  margin: 0 auto;
+  border: 6px solid rgba($color,.15);
+  border-top: 6px solid rgba($color,.8);
+  @include rem(height, $size);
+  @include rem(width, $size);
+  @include border-radius(100%);
+  @include animation(rotation .6s infinite linear);
+}
+
+// Clearfix
+
+@mixin cf {
+  .cf {
+    *zoom: 1;
+  }
+  .cf:before, .cf:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  .cf:after {
+    clear: both;
+  }
+}
+
+/**
+ * Table layouts
+ */
+@mixin table {
+  display: table;
+  width: 100%;
+}
+@mixin t-cell {
+  display: table-cell;
+  width: 50%;
+}
+
+// Better Underlines
+
+@mixin underline($color: $pink, $line-offset: 1.2, $line-size: 23, $bg-color: $pink) {
+  background-repeat: repeat-x;
+  background-size: #{$line-size}px #{$line-size}px;
+  //background-position: 0 #{$line-offset}em;
+  background-position: left bottom;
+  text-decoration: none;
+  //text-shadow: 3px 0 $bg-color, 2px 0 $bg-color, 1px 0 $bg-color, -1px 0 $bg-color, -2px 0 $bg-color, -3px 0 $bg-color;
+  @include linear-gradient(to top, $color 50%, rgba($color, 0) 50%);
+  background-color: transparent;
+  &:hover {
+    color: $blue;
+    @include linear-gradient(to top, darken($color, 15) 50%, rgba($color, 0) 50%);
+    background-color: transparent;
+  }
+  .lt-ie10 & { // Because old IE can't handle it
+    background: none;
+    text-decoration: underline;
+  }
+}
+
+/**
+ * Various filters
+ * https://dvcs.w3.org/hg/FXTF/raw-file/tip/filters/index.html
+ *
+ * grayscale      ex: filter: grayscale(100%);
+ * sepia          ex: filter: sepia(100%);
+ * saturate       ex: filter: saturate(0%);
+ * hue-rotate     ex: filter: hue-rotate(45deg);
+ * invert         ex: filter: invert(100%);
+ * brightness     ex: filter: brightness(15%);
+ * contrast       ex: filter: contrast(200%);
+ * blur           ex: filter: blur(2px);
+ */
+@mixin filter($filter-type, $filter-amount) {
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+/**
+ * More Triangles!
+ */
+@mixin triangle($dir, $size, $color) {
+  border: $size transparent solid;
+  @if ($dir == "top" or $dir == "up" or $dir == "left" or $dir == "before") {
+    @if ($dir == "top" or $dir == "up") {
+      border-bottom-color: $color;
+    }
+    @else if ($dir == "right" or $dir == "after") {
+      border-left-color: $color;
+    }
+  }
+  @else if ($dir == "bottom" or $dir == "down" or $dir == "left" or $dir == "before") {
+    @if ($dir == "bottom" or $dir == "down") {
+      border-top-color: $color;
+    }
+    @else if ($dir == "left" or $dir == "before") {
+      border-right-color: $color;
+    }
+  }
+}
+
+ // Add lines before and after an element
+ // @example: -- HEADER --
+
+@mixin wings($height: 16px, $width: 50px, $color: $gray-med-2) {
+  text-align: center;
+  span {
+    display: inline-block;
+    position: relative;
+  }
+  span:before,
+  span:after {
+    height: $height;
+    content: "";
+    position: absolute;
+    width: $width;
+    top: $height;
+    border-top: 2px solid $color;
+  }
+  span:before {
+    right: 100%;
+    margin-right: 8px;
+  }
+  span:after {
+    left: 100%;
+    margin-left: 8px;
+  }
+}
