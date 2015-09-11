@@ -6,12 +6,13 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "vendor.reset",
-  "tools.mixins",
   "settings.variables",
-  "base.typography",
+  "tools.mixins.utilities",
+  "tools.mixins.spacing",
   "base.body",
+  "base.typography",
   "base.lists",
-  "layout.wrappers",
   "layout.grids",
+  "layout.wrappers",
   "modules.syntax-highlighting"
 ;

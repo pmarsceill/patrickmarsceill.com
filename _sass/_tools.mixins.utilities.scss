@@ -2,25 +2,6 @@
 //    $MIXINS
 //------------------------------------
 
-// Spacing mixins
-// Adds spacing after an element
-
-@mixin spacing-s {
-  margin-bottom: $spacing-unit / 3;
-}
-
-@mixin spacing {
-  margin-bottom: $spacing-unit / 2;
-}
-
-@mixin spacing-l {
-  margin-bottom: $spacing-unit;
-}
-
-@mixin spacing-xl {
-  margin-bottom: $spacing-unit * 2;
-}
-
 // ============================================================
 //
 // @source: http://alwaystwisted.com/post.php?s=2013-04-01-my-media-query-mixin

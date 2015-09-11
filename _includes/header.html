@@ -1,5 +1,10 @@
 <header>
-    <ahref="{{ site.baseurl }}/">{{ site.title }}</a>
+    </a>
+    <h1>
+      <a href="{{ site.baseurl }}/">
+        {% include mark_svg.html %}
+      </a>
+    </h1>
     <nav>
       <ul>
         {% for page in site.pages %}
@@ -11,7 +16,5 @@
         {% endfor %}
       </ul>
     </nav>
-
   </div>
-
 </header>

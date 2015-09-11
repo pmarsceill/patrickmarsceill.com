@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+{% comment %}
 <h1>Posts</h1>
 <ul>
   {% for post in site.posts %}
@@ -14,3 +14,4 @@ layout: default
   {% endfor %}
 </ul>
 <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+{% endcomment %}
