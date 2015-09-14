@@ -1,3 +1,7 @@
+//------------------------------------
+//    Typography
+//------------------------------------
+
 h1,
 h2,
 h3,
@@ -21,16 +25,4 @@ h4,
 h5,
 h6 {
   font-weight: 300;
-}
-
-blockquote {
-  
-  padding-left: $spacing-unit / 2;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
 }

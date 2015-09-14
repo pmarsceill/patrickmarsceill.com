@@ -1,14 +1,20 @@
+//------------------------------------
+//    Header
+//------------------------------------
+
 // Header styles
 
 .logo {
   background-color: $red;
+  padding-left: $spacing-unit;
+  padding-top: $spacing-unit * 2;
 }
 
 .logo__mark {
-  #text {
+  .text {
     fill: $blue-dark;
   }
-  #pm {
+  .pm {
     fill: $blue-dark;
   }
 }

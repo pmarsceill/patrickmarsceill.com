@@ -1,10 +1,6 @@
-// Spacing and padding
-
-$spacing-unit: rem(32);
-$padding-unit: rem(16);
-
-// Page Widths
-$page-width: rem(800);
+//------------------------------------
+//    Variables
+//------------------------------------
 
 // Colors
 $red: #ff1c04;
@@ -17,15 +13,15 @@ $body-background-color: $white;
 
 // Fonts
 $base-font-family: 'Input Mono';
-$base-font-size:   rem(16);
+$base-font-size: 16px;
 $base-line-height: 1.5;
 $base-font-weight: 300;
-
-// Light
 $light-font-family: 'Input Mono Lt';
-// Compressed
 $compressed-font-familiy: 'Input Mono Comp Thin';
 
 
-
-//
+// Spacing
+$em-base: $base-font-size; // Set the em base to be the same as the base type size.
+$spacing-unit: rem(32);
+$padding-unit: rem(16);
+$page-width: rem(800);

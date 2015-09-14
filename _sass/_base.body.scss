@@ -1,4 +1,11 @@
+//------------------------------------
+//    Body
+//------------------------------------
+
 // Base body styles
+html {
+  font-size: $base-font-size;
+}
 body {
   font-family: $base-font-family;
   font-size: $base-font-size;

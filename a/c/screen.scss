@@ -6,8 +6,8 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "vendor.reset",
+  "tools.functions",
   "settings.variables",
-  "tools.mixins.utilities",
   "tools.mixins.spacing",
   "base.body",
   "base.typography",
