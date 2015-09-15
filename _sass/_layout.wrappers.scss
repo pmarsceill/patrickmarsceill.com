@@ -1,7 +1,27 @@
 //------------------------------------
 //    Wrappers
 //------------------------------------
+
+// Fixed-width, centered column for site content.
+@mixin outer {
+  max-width: $outer-width;
+  margin-right: auto;
+  margin-left: auto;
+  @include clearfix;
+}
+.main-content {
+  margin-top: $spacing-unit*3;
+  @include spacing-l;
+}
 .outer {
-  max-width: $page-width;
-  margin: 0 auto;
+  @include outer;
+}
+
+.text-wrap-left {
+  @include two-thirds;
+  @include column;
+}
+.media-wrap-right {
+  @include one-third;
+  @include column;
 }

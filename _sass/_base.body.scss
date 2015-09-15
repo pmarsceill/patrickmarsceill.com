@@ -3,6 +3,9 @@
 //------------------------------------
 
 // Base body styles
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: $base-font-size;
 }

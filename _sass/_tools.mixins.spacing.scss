@@ -2,6 +2,16 @@
 //    MIXINS / Spacing
 //------------------------------------
 
+// Clearfix
+//
+
+@mixin clearfix {
+    &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 // Spacing mixins
 //
 // Adds spacing after an element

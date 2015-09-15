@@ -26,3 +26,10 @@ h5,
 h6 {
   font-weight: 300;
 }
+
+.alpha {
+  font-size: rem(58);
+  font-family: $compressed-font-family;
+  line-height: 1.2;
+  letter-spacing: -3px;
+}

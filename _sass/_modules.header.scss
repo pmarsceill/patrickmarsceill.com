@@ -4,17 +4,39 @@
 
 // Header styles
 
+.site-header {
+  @include clearfix;
+  display: flex;
+  align-items: flex-end;
+}
+
 .logo {
   background-color: $red;
   padding-left: $spacing-unit;
   padding-top: $spacing-unit * 2;
+  width: rem(400);
 }
 
-.logo__mark {
+.logo-mark {
   .text {
     fill: $blue-dark;
   }
   .pm {
     fill: $blue-dark;
   }
+}
+
+.main-nav {
+  padding-left: $spacing-unit*2;
+}
+.main-nav-item {
+  display: inline-block;
+  margin-right: $spacing-unit;
+}
+.main-nav-link {
+  font-family: $light-font-family;
+  font-size: rem(28);
+  text-transform: uppercase;
+  color: $red;
+  text-decoration: none;
 }

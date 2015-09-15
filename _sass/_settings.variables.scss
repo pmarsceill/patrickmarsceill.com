@@ -7,7 +7,6 @@ $red: #ff1c04;
 $blue-dark: #0e0a3e;
 $grey-lt: #f3f3f3;
 $white: #fff;
-
 $body-text-color: $blue-dark;
 $body-background-color: $white;
 
@@ -17,11 +16,11 @@ $base-font-size: 16px;
 $base-line-height: 1.5;
 $base-font-weight: 300;
 $light-font-family: 'Input Mono Lt';
-$compressed-font-familiy: 'Input Mono Comp Thin';
-
+$compressed-font-family: 'Input Mono Comp Thin';
 
 // Spacing
 $em-base: $base-font-size; // Set the em base to be the same as the base type size.
 $spacing-unit: rem(32);
 $padding-unit: rem(16);
-$page-width: rem(800);
+$outer-width: rem(1200);
+$grid-gutter: $padding-unit;

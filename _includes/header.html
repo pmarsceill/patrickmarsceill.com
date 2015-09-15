@@ -1,15 +1,15 @@
-<header>
+<header class="site-header">
     <h1 class="logo">
       <a href="{{ site.baseurl }}/">
         {% include mark_svg.html %}
       </a>
     </h1>
-    <nav>
+    <nav class="main-nav">
       <ul>
         {% for page in site.pages %}
           {% if page.title %}
-          <li>
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           </li>
           {% endif %}
         {% endfor %}

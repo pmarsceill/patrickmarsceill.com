@@ -1,0 +1,17 @@
+//------------------------------------
+//    Homepage
+//------------------------------------
+
+.avatar-wrap {
+  // position: relative;
+
+}
+.avatar-photo {
+  // position: absolute;
+  width: 130%;
+  max-width: none;
+  position: relative;
+  margin-left: -30%;
+  margin-top: $spacing-unit * -4;
+  z-index: -1;
+}
