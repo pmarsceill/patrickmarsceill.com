@@ -1,0 +1,19 @@
+//------------------------------------
+//    MIXINS / Background
+//------------------------------------
+
+// Gradients
+// from https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/css3/_linear-gradient.scss
+// @include linear-gradient(#1e5799, #2989d8);
+
+// Background Gradient: Left to Right
+@mixin hoz-gradient($start-colour, $end-colour) {
+    background-color: $start-colour;
+    background-image: -webkit-gradient(linear, left top, right top, from($start-colour), to($end-colour));
+    background-image: -webkit-linear-gradient(left, $start-colour, $end-colour);
+    background-image:    -moz-linear-gradient(left, $start-colour, $end-colour);
+    background-image:     -ms-linear-gradient(left, $start-colour, $end-colour);
+    background-image:      -o-linear-gradient(left, $start-colour, $end-colour);
+    background-image:         linear-gradient(left, $start-colour, $end-colour);
+    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}', gradientType='1');
+}

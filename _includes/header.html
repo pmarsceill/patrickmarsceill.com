@@ -6,10 +6,11 @@
     </h1>
     <nav class="main-nav">
       <ul>
-        {% for page in site.pages %}
-          {% if page.title %}
+        {% assign pages = site.pages | sort:"order"  %}
+        {% for page in pages %}
+          {% if page.title and page.nav_hidden != true %}
           <li class="main-nav-item">
-            <a class="main-nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            <a class="beta main-nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           </li>
           {% endif %}
         {% endfor %}
