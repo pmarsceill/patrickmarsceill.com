@@ -2,7 +2,7 @@
 //    Header
 //------------------------------------
 
-// Header styles
+// Logo / Header
 
 .site-header {
   @include clearfix;
@@ -14,7 +14,8 @@
   background-color: $red;
   padding-left: $spacing-unit;
   padding-top: $spacing-unit * 2;
-  width: rem(400);
+  width: $logo-width;
+  margin-bottom: 0;
 }
 
 .logo-mark {
@@ -26,16 +27,30 @@
   }
 }
 
+// Main nav
+
 .main-nav {
   padding-left: $spacing-unit*2;
+  border-bottom: 1px solid $grey-med;
+  width: 100%;
 }
+
 .main-nav-item {
   display: inline-block;
   margin-right: $spacing-unit;
+
 }
 .main-nav-link {
   text-transform: uppercase;
-  font-weight: normal;
+  font-size: rem(18);
+  font-family: $base-font-family;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
   color: $red;
   text-decoration: none;
+}
+
+.main-nav-link-active {
+  color: $blue-dark;
+  border-bottom: 2px solid $blue-dark;
 }

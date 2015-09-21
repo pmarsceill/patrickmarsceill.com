@@ -6,6 +6,7 @@
 $red: #ff1c04;
 $blue-dark: #0e0a3e;
 $grey-lt: #f3f3f3;
+$grey-med: darken($grey-lt, 10%);
 $white: #fff;
 $yellow: #ffcd05;
 $body-text-color: $blue-dark;
@@ -23,5 +24,8 @@ $compressed-font-family: 'Input Sans Comp Thin';
 $em-base: $base-font-size; // Set the em base to be the same as the base type size.
 $spacing-unit: rem(32);
 $padding-unit: rem(16);
-$outer-width: rem(1140);
+$outer-width: rem(1080);
 $grid-gutter: $padding-unit;
+
+// Sizes
+$logo-width: $spacing-unit*16;

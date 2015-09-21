@@ -2,20 +2,34 @@
 //    Wrappers
 //------------------------------------
 
-// Fixed-width, centered column for site content.
+// Primary content container for the site
+
 @mixin outer {
   max-width: $outer-width;
   margin-right: auto;
   margin-left: auto;
   @include clearfix;
 }
+.outer {
+  @include outer;
+}
+
+@mixin outer-wide {
+  @include outer;
+  max-width: $outer-width + $logo-width;
+}
+.outer-wide {
+  @include outer-wide;
+}
+
+// Stuff below the header and above the footer
+
 .main-content {
   margin-top: $spacing-unit*3;
   @include spacing-l;
 }
-.outer {
-  @include outer;
-}
+
+// Basic wrappers for 2/3 1/3 layout
 
 .text-wrap-left {
   @include two-thirds;
