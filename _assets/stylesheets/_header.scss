@@ -1,0 +1,49 @@
+.site-header {
+  @include clearfix;
+  padding: 2rem 0;
+  background-color: $darkest;
+}
+
+.main-nav {
+  display: table-cell;
+  width: 50%;
+  text-align: right;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+.main-nav-item {
+  display: inline-block;
+}
+
+.main-nav-link {
+  padding: 1rem;
+  font-size: 16px;
+  color: $red;
+  background-image: none;
+}
+
+.logo {
+  display: table-cell;
+  width: 50%;
+  margin: 0;
+
+  a {
+    line-height: 0;
+    background-image: none;
+  }
+
+  .text,
+  .pm {
+    fill: $red;
+  }
+}
+
+.logo-mark {
+  width: 160px;
+  height: auto;
+}

@@ -4,11 +4,15 @@
   {% include head.html %}
 
   <body>
+    <div class="wrap-entire-page">
+      {% include header.html %}
+      <main role="main" class="main">
+        {{ content }}
+      </main>
+      {% include footer.html %}
+    </div>
 
-    {% include header.html %}
-      {{ content }}
-    {% include footer.html %}
-
+    <script src="{% asset_path main.js %}" charset="utf-8"></script>
   </body>
 
 </html>

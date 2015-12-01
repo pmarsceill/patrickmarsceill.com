@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: #{$body-font-size};
+  font-family: $body-font;
+  line-height: 1.5;
+  background-color: $darkest;
+}
+
+input,
+select,
+textarea,
+button {
+  font: #{$body-font-size}/1.5 $body-font;
+}
+
+a {
+  color: $red-lt;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 97%, $red 97%);
+  transition: color 0.25s ease-out;
+
+  &:hover {
+    color: $red;
+  }
+}

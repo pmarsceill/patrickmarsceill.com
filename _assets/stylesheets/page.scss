@@ -1,0 +1,25 @@
+.wrap-entire-page {
+  position: absolute;
+  width: 100%;
+  max-width: $container-wide-width + 15rem;
+  height: 100%;
+  overflow: hidden;
+  background: $grey-dk;
+  border: 2rem solid $darkest;
+}
+
+.main {
+  position: relative;
+}
+
+.img-bg {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}

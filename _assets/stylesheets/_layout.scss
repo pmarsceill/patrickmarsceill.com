@@ -1,0 +1,281 @@
+// Overrides _container.scss
+
+// Breakpoint mixin
+//
+// Usage:
+// @include breakpoint($medium) {
+//   ..medium and up styles
+// }
+// See _variables-marketing.scss for default breakpoint size variables.
+//
+@mixin breakpoint($bp) {
+  @media screen and ($bp) {
+    @content;
+  }
+}
+
+// flexible width container
+.container {
+  width: auto;
+  max-width: $container-width + ($grid-gutter * 2);
+  padding: 0 $grid-gutter;
+  margin-right: auto;
+  margin-left: auto;
+  @include clearfix;
+}
+
+// a wider container for media that needs to go beyond the normal container by a bit.
+.container-wide {
+  width: auto;
+  max-width: $container-wide-width + ($grid-gutter * 2);
+  padding: 0 $grid-gutter;
+  margin-right: auto;
+  margin-left: auto;
+  @include clearfix;
+}
+
+.container,
+.container-wide {
+  @include breakpoint($small) {
+    padding: 0 $grid-gutter * 2;
+  }
+}
+
+.table-wrap {
+  display: table;
+  width: 100%;
+}
+
+// Flexible images
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+// Grid system
+//
+// Now with mixins!
+//
+@mixin columns {
+  margin-right: -$grid-gutter;
+  margin-left: -$grid-gutter;
+  @include clearfix;
+}
+
+.columns {
+  @include columns;
+}
+
+// Base class for every column (requires a column width from below)
+//
+// This is included in the column width mixins below.
+//
+@mixin column {
+  float: left;
+  padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+}
+
+.column {
+  @include column;
+}
+
+// Column widths
+//
+// Most of these are used in the pre-built layouts below.
+//
+@mixin one-third {
+  width: 33.333333%;
+  @include column;
+}
+
+.one-third {
+  @include one-third;
+}
+
+@mixin two-thirds {
+  width: 66.666667%;
+  @include column;
+}
+
+.two-thirds {
+  @include two-thirds;
+}
+
+@mixin one-fourth {
+  width: 25%;
+  @include column;
+}
+
+.one-fourth {
+  @include one-fourth;
+}
+
+@mixin one-half {
+  width: 50%;
+  @include column;
+}
+
+.one-half {
+  @include one-half;
+}
+
+@mixin three-fourths {
+  width: 75%;
+  @include column;
+}
+
+.three-fourths {
+  @include three-fourths;
+}
+
+@mixin one-fifth {
+  width: 20%;
+  @include column;
+}
+
+.one-fifth {
+  @include one-fifth;
+}
+
+@mixin four-fifths {
+  width: 80%;
+  @include column;
+}
+
+.four-fifths {
+  @include four-fifths;
+}
+
+// Single column hack
+.layout-single {
+  @include breakpoint($medium) {
+    @include columns;
+  }
+
+}
+
+.single-column {
+  padding: 0;
+
+  @include breakpoint($medium) {
+    @include column;
+    padding: 0;
+  }
+}
+
+// Prebuilt layouts
+
+// Main / Aside - large Screen
+//
+// |-----------------|-------|
+// |   Main          | Aside |
+// |   3/4           |  1/4  |
+// |                 |       |
+// |-----------------|-------|
+//
+// Main / Aside - small screen
+//
+// |----------|
+// |   Main   |
+// |          |
+// |          |
+// |----------|
+// |   Aside  |
+// |----------|
+
+.layout-main-aside {
+  @include breakpoint($medium) {
+    @include columns;
+  }
+
+  .main-content {
+    @include breakpoint($medium) {
+      @include three-fourths;
+    }
+  }
+
+  .aside-content {
+    @include breakpoint($medium) {
+      @include one-fourth;
+    }
+
+    // Visually aligns all-caps headlines
+    h4,
+    .delta,
+    h5,
+    h5 {
+      &:first-of-type {
+
+        @include breakpoint($medium) {
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+}
+
+// Three up - large Screen
+//
+// |-------|-------|-------|
+// |       |       |       |
+// | col   |  col  |  col  |
+// | 1/3   |  1/3  |  1/3  |
+// |       |       |       |
+// |-------|-------|-------|
+//
+// Three up - small screen
+//
+// |----------|
+// |   col    |
+// |----------|
+// |   col    |
+// |----------|
+// |   col    |
+// |----------|
+
+.layout-three-up {
+  @include breakpoint($medium) {
+    @include columns;
+  }
+
+  .col {
+    @include breakpoint($medium) {
+      @include one-third;
+    }
+  }
+}
+
+// Two up - large Screen
+//
+// |----------|----------|
+// |          |          |
+// |    col   |    col   |
+// |    1/2   |    1/2   |
+// |          |          |
+// |----------|----------|
+//
+// Two up - small screen
+//
+// |----------|
+// |   col    |
+// |----------|
+// |   col    |
+// |----------|
+
+.layout-two-up {
+  @include breakpoint($medium) {
+    @include columns;
+  }
+
+  .col {
+    @include breakpoint($medium) {
+      @include one-half;
+    }
+  }
+}

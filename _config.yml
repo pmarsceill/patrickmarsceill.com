@@ -10,5 +10,20 @@ github_username:  pmarsceill
 
 # Build settings
 markdown: kramdown
-sass:
-  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-assets
+assets:
+  # cache: false | directory | default: .asset-cache
+  # cdn: https://cdn.example.com
+  # skip_prefix_with_cdn: false
+  # prefix: "/a"
+  # assets:
+  #   - "/a/c/main.css"
+  sources:
+    - _assets/stylesheets
+    - _assets/images
+    - _assets/javascripts
+  baseurl: http://localhost:4000/assets/
+  debug: false
+  version: 1
