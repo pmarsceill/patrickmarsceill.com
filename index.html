@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Journal
+homePage: true
 ---
 
 <div class="container-wide">
@@ -8,16 +9,24 @@ title: Journal
     <div class="rail-content">
       <section>
         <h1 class="heading-delta">Current status</h1>
-        {% for post in site.posts %}
-          {% if post.statusPost == true %}
-          <article class="current-status">
-            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {% for post in site.categories['status'] limit:1%}
+            <article class="post-status">
+              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <div class="post-content">
+                  {{ post.content }}
+                </div>
+                <a href="{{post.url}}" class="btn">Respond to this</a>
+            </article>
+        {% endfor %}
+
+        <hr>
+        {% for post in site.categories['status'] offset:1 %}
+        <article class="post-status">
+          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
             <div class="post-content">
-              {{ post.content }}
+              {{ post.content | truncatewords: 10 }}
             </div>
-            <a href="{{post.url}}" class="btn">Respond to this</a>
-          </article>
-          {% endif %}
+        </article>
         {% endfor %}
       </section>
     </div>
@@ -25,7 +34,7 @@ title: Journal
       <section>
       <h1 class="heading-delta">Noteworthy</h1>
         {% for post in site.posts %}
-          {% unless post.statusPost == true %}
+          {% unless post.categories contains "status" %}
           <article class="post-preview">
             <div class="col">
               <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>

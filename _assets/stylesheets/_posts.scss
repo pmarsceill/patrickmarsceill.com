@@ -1,3 +1,7 @@
+//
+// Generic post styles
+//
+
 .post-title {
   margin-top: 0;
 }
@@ -6,13 +10,92 @@
   font-size: 12px;
 }
 
+//
+// Post preview
+//
+
 .post-preview {
   margin-bottom: 2rem;
 }
 
-.current-status {
+.post-status {
+  margin-bottom: 1rem;
   .post-content {
     font-family: $monospace-font;
     font-size: 13px;
+  }
+
+  &:nth-of-type(n+2) {
+    display: none;
+
+    @include breakpoint($medium) {
+      display: block;
+    }
+  }
+}
+
+//
+// Post detail
+//
+
+
+.post-detail {
+  .post-header {
+    padding-bottom: 2rem;
+    background-color: #f0f0f0;
+    color: $grey-md;
+
+    .post-title {
+      color: $grey-md;
+    }
+  }
+
+  .post-content {
+    padding: 4rem 0;
+    margin-bottom: 1rem;
+    color: $darkest;
+    background-color: $lightest;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $darkest;
+    }
+  }
+}
+
+// .body-status {
+//   .site-header {
+//     .logo-mark {
+//       .text {
+//         display: none;
+//       }
+//     }
+//
+//     .main-nav-link,
+//     .logo-mark {
+//       opacity: 0.5;
+//       transition: opacity 0.15s ease-out;
+//     }
+//
+//     &:hover {
+//       .main-nav-link,
+//       .logo-mark {
+//         opacity: 1;
+//       }
+//     }
+//   }
+// }
+
+.status-detail {
+  .post-content {
+    font-family: $monospace-font;
+    padding: 2rem 0 0;
+  }
+  .post-footer {
+    margin-bottom: 2rem;
+    opacity: 0.7;
   }
 }

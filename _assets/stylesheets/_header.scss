@@ -4,7 +4,7 @@
   background-color: $darkest;
 
   @include breakpoint($small) {
-    padding: 2rem 0;
+    padding: 0 0 2rem;
   }
 }
 
@@ -18,7 +18,7 @@
   }
 
   @include breakpoint($medium) {
-    vertical-align: baseline;
+    vertical-align: bottom;
   }
 
   ul {
@@ -81,4 +81,17 @@
 .logo-mark {
   width: 160px;
   height: auto;
+}
+
+.body-home {
+  // .logo {
+  //   .text,
+  //   .pm {
+  //     fill: $lightest;
+  //   }
+  // }
+  .logo-mark {
+    width: 300px;
+    height: auto;
+  }
 }

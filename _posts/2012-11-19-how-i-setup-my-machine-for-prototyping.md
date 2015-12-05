@@ -2,7 +2,6 @@
 layout: post
 title: "How I Setup My Machine for Prototyping"
 date: 2012-11-19 17:27
-categories: 
 ---
 A few weeks ago, I wrote <a href="http://cognition.happycog.com/article/its-alive-prototyping-in-the-browser">a post for Cognition</a> explaining my process for creating prototypes and how I arrived there. After being asked for more technical detail around my actual setup, I decided to create this step by step guide.
 
@@ -59,7 +58,7 @@ Create and/or open the folder where you might want to house all your prototyping
 
 Switch back over to terminal and CD (change directories) by typing `cd` and then a space, _do not press "Enter" yet_:
 {% highlight bash %}
-$ cd 
+$ cd
 {% endhighlight %}
 
 Then drag the folder icon (in this case it's called "_Active") immediately following the space after `cd`.  Like magic, the full path to this location will appear after the `cd`:
@@ -116,7 +115,7 @@ DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed
 
 Voila, StrapOn has started a local server on your machine that you can use for development by pointing your browser to: `http://localhost:4000`
 
-/images/blog/prototype-setup/strapon-browser.png StrapOn running on a local machine 
+/images/blog/prototype-setup/strapon-browser.png StrapOn running on a local machine
 
 This also includes starts an auto-compiler for SASS, and all the built-in templating engine included in the Serve gem. Both of which will be explained in my next post about developing with StrapOn.
 

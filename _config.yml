@@ -11,6 +11,7 @@ markdown: kramdown
 gems:
   - jekyll-sitemap
   - jekyll-assets
+permalink: pretty
 assets:
   # cache: false | directory | default: .asset-cache
   # cdn: https://cdn.example.com

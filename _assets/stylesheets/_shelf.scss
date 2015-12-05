@@ -26,25 +26,12 @@
       @include one-third;
     }
   }
-  // .item-empty {
-  //   position: relative;
-  //   height: 220px;
-  //   border-top: 0.5rem solid $darkest;
-  //
-  //   &:after {
-  //     display: block;
-  //     height: 100%;
-  //     margin-top: -220px;
-  //     content: " ";
-  //     border: 1px solid $darkest;
-  //   }
-  // }
 
   .item-img {
     @include breakpoint($medium) {
       position: absolute;
       bottom: -6px;
-      width: 30.7%;
+      width: 24.7%;
     }
   }
 
@@ -54,7 +41,7 @@
       padding-left: 16px;
       margin-right: -16px;
       margin-left: -16px;
-      border-top: 0.5rem solid $darkest;
+      border-top: 10px solid $darkest;
     }
 
     >:first-child {

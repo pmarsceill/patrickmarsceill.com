@@ -2,13 +2,12 @@
 layout: post
 title: "Prototyping Q&amp;A"
 date: 2013-12-11 11:20
-categories: 
 ---
 A few months ago <a href="http://happycog.com">Happy Cog&trade;</a> released <a href="http://happycog.com/way">The Happy Cog Way</a>, an instructional video series highlighting our methods and best practices. As part of this series I created a course in <a href="http://mijingo.com/products/screencasts/html-prototyping">HTML Prototyping</a>, a beginners guide to using <a href="http://foundation.zurb.com">Zurb Foundation</a>, <a href="http://sass-lang.com">Sass</a>, and <a href="http://incident57.com/codekit/">CodeKit</a> to create responsive prototypes. Since its release, I've received some really great feedback about my video and the series, including this set of questions that a reader emailed me.
 
 > I'm a front end dev that's been in the business for over 15 years. I've always hand coded my sites, and I've never really gotten into grid systems. (I was working online back int the table days).
 
-Grid systems and “hand coding” are not mutually exclusive. For me, grid systems are just as much of a design tool as they are a development tool. Designers have been using proportional grids to layout designs on paper since the days before the printing press was invented. 
+Grid systems and “hand coding” are not mutually exclusive. For me, grid systems are just as much of a design tool as they are a development tool. Designers have been using proportional grids to layout designs on paper since the days before the printing press was invented.
 
 <!--more-->
 
@@ -16,7 +15,7 @@ In the context of web development, grids allow designers and developers to layou
 
 * Roll your own. [Chris Coyier did a pretty good demo here](http://css-tricks.com/dont-overthink-it-grids/). I’m not a super huge fan of using class names like `.col-1-2` so if I were developing a site using this method, I would make all those classes Sass mixins so I could just `@include` them within the element selectors that need to use them.
 
-* Use a light weight grid system framework. [Susy](http://susy.oddbird.net/) is a pretty good example of this. Susy is a Compass based grid framework that easily allows you to customize your grid using Sass mixins. This enables you to keep your CSS class names semantic. [Neat](http://neat.bourbon.io/) is a similar framework that is built on top of Bourbon, if you that is what you prefer. 
+* Use a light weight grid system framework. [Susy](http://susy.oddbird.net/) is a pretty good example of this. Susy is a Compass based grid framework that easily allows you to customize your grid using Sass mixins. This enables you to keep your CSS class names semantic. [Neat](http://neat.bourbon.io/) is a similar framework that is built on top of Bourbon, if you that is what you prefer.
 
 While both of these options are indeed technically frameworks, they exist purely in the pre-compiled Sass layer, do not contain additional UI elements (unlike Foundation and Bootstrap), and are relatively lightweight in terms of what gets served to the user. I tend to think of them less as frameworks, and more as as set of mathematical functions that make it easier for a developer to quickly divide a page up using proportions, percentages, ems, or pixels.
 
