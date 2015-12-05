@@ -1,0 +1,52 @@
+.shelf {
+  @include breakpoint($medium) {
+    @include columns;
+    padding-top: 3rem;
+  }
+
+  .shelf-row {
+    position: relative;
+    padding-top: 12rem;
+    margin-bottom: 14rem;
+  }
+
+  .item {
+    @include breakpoint($medium) {
+      @include one-third;
+    }
+  }
+  .item-empty {
+    position: relative;
+    height: 220px;
+    border-top: 0.5rem solid $darkest;
+
+    &:after {
+      display: block;
+      height: 100%;
+      margin-top: -220px;
+      content: " ";
+      border: 1px solid $darkest;
+    }
+  }
+
+  .item-img {
+    @include breakpoint($medium) {
+      position: absolute;
+      bottom: -6px;
+    }
+  }
+
+  .item-meta {
+    @include breakpoint($medium) {
+      padding-right: 16px;
+      padding-left: 16px;
+      margin-right: -16px;
+      margin-left: -16px;
+      border-top: 0.5rem solid $darkest;
+    }
+
+    >:first-child {
+      margin-top: 1rem;
+    }
+  }
+}

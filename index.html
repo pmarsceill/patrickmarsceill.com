@@ -1,5 +1,33 @@
 ---
 layout: default
-title: Home
-nav_hidden: true
+title: Journal
 ---
+
+<div class="container-wide">
+  <div class="layout-right-main">
+    <div class="rail-content">
+      <section>
+        <h1 class="heading-delta">Current status</h1>
+      </section>
+    </div>
+    <div class="main-content">
+      <section>
+      <h1 class="heading-delta">Noteworthy</h1>
+        {% for post in site.posts %}
+          <article class="layout-two-up">
+            <div class="col">
+              <h2 class="post-title">
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+              <span class="text-small">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </div>
+            <div class="col">
+
+            </div>
+          </article>
+        {% endfor %}
+      </section>
+      <!-- <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+    </div>
+  </div>
+</div>

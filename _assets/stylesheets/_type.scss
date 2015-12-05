@@ -32,6 +32,84 @@ h2,
   margin-bottom: 0.5em;
   line-height: 1.3;
   font-size: 24px;
+  font-weight: 400;
+  color: $lightest;
+
+  @include breakpoint($small) {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+h3,
+.heading-gamma {
+  margin-top: 1em;
+  margin-bottom: 0.35em;
+  line-height: 1.3;
+  font-size: 18px;
+  font-weight: 400;
+  color: $lightest;
+
+  @include breakpoint($small) {
+    font-size: 22px;
+    font-weight: 400;
+  }
+}
+
+h4,
+.heading-delta {
+  margin-top: 1.5em;
+  margin-bottom: 0.25em;
+  line-height: 1.3;
+  font-size: 14px;
+  font-weight: 400;
+  color: $lightest;
+
+  @include breakpoint($small) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.display-alpha {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+  font-size: 36px;
+  font-weight: 300;
+  color: $lightest;
+
+  @include breakpoint($small) {
+    font-size: 56px;
+    font-weight: 300;
+  }
+  @include breakpoint($medium) {
+    font-size: 65px;
+    font-weight: 300;
+  }
+}
+
+.heading-epsilon {
+  margin-top: 1.5em;
+  margin-bottom: 0.25em;
+  line-height: 1.3;
+  font-size: 12px;
+  font-weight: 400;
+  color: $lightest;
+
+  @include breakpoint($small) {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+// Display headings
+
+.display-beta {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.3;
+  font-size: 24px;
   font-weight: 300;
   color: $lightest;
 
@@ -41,8 +119,7 @@ h2,
   }
 }
 
-h3,
-.heading-gamma {
+.display-gamma {
   margin-top: 1em;
   margin-bottom: 0.35em;
   line-height: 1.3;
@@ -56,8 +133,7 @@ h3,
   }
 }
 
-h4,
-.heading-delta {
+.display-delta {
   margin-top: 1.5em;
   margin-bottom: 0.25em;
   line-height: 1.3;
@@ -68,13 +144,6 @@ h4,
   @include breakpoint($small) {
     font-size: 18px;
     font-weight: 300;
-  }
-}
-
-.headline {
-  margin: 1em 0;
-  @include breakpoint($medium) {
-    width: 60%;
   }
 }
 

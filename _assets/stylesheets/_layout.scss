@@ -279,3 +279,21 @@ img {
     }
   }
 }
+
+.layout-right-main {
+  @include breakpoint($medium) {
+    @include columns;
+  }
+
+  .rail-content {
+    @include breakpoint($medium) {
+      @include one-third;
+    }
+  }
+
+  .main-content {
+    @include breakpoint($medium) {
+      @include two-thirds;
+    }
+  }
+}

@@ -1,11 +1,13 @@
 .wrap-entire-page {
-  position: absolute;
-  width: 100%;
   max-width: $container-wide-width + 15rem;
-  height: 100%;
-  overflow: hidden;
+  margin: 0 auto;
+  overflow-x: hidden;
   background: $grey-dk;
-  border: 2rem solid $darkest;
+  border: 1rem solid $darkest;
+
+  @include breakpoint($medium) {
+    border: 2rem solid $darkest;
+  }
 }
 
 .main {
@@ -17,6 +19,13 @@
   top: 2rem;
   right: 2rem;
   z-index: 1;
+}
+
+.page-title {
+  margin: 1em 0;
+  @include breakpoint($large) {
+    width: 60%;
+  }
 }
 
 .content {
