@@ -50,7 +50,7 @@
     padding: 1rem 0 1rem 1rem;
   }
 
-  @include breakpoint($medium) {
+  @include breakpoint($large) {
     padding: 1rem;
     font-size: 16px;
   }

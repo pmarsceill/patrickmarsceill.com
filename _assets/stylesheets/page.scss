@@ -15,6 +15,10 @@
 
 .main {
   position: relative;
+
+  @include breakpoint($medium) {
+    margin-top: 1rem;
+  }
 }
 
 .img-bg {

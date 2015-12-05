@@ -8,13 +8,25 @@ title: Journal
     <div class="rail-content">
       <section>
         <h1 class="heading-delta">Current status</h1>
+        {% for post in site.posts %}
+          {% if post.statusPost == true %}
+          <article class="current-status">
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <div class="post-content">
+              {{ post.content }}
+            </div>
+            <a href="{{post.url}}" class="btn">Respond to this</a>
+          </article>
+          {% endif %}
+        {% endfor %}
       </section>
     </div>
     <div class="main-content">
       <section>
       <h1 class="heading-delta">Noteworthy</h1>
         {% for post in site.posts %}
-          <article class="post-preview layout-two-up">
+          {% unless post.statusPost == true %}
+          <article class="post-preview">
             <div class="col">
               <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
               <h2 class="post-title">
@@ -25,6 +37,7 @@ title: Journal
 
             </div>
           </article>
+          {% endunless %}
         {% endfor %}
       </section>
       <!-- <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->

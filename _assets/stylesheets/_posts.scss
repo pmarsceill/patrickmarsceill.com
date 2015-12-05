@@ -9,3 +9,10 @@
 .post-preview {
   margin-bottom: 2rem;
 }
+
+.current-status {
+  .post-content {
+    font-family: $monospace-font;
+    font-size: 13px;
+  }
+}

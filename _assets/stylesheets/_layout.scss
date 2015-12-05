@@ -143,6 +143,24 @@ img {
   @include one-fifth;
 }
 
+@mixin two-fifths {
+  width: 40%;
+  @include column;
+}
+
+.two-fifths {
+  @include two-fifths;
+}
+
+@mixin three-fifths {
+  width: 60%;
+  @include column;
+}
+
+.three-fifths {
+  @include three-fifths;
+}
+
 @mixin four-fifths {
   width: 80%;
   @include column;
@@ -287,13 +305,22 @@ img {
 
   .rail-content {
     @include breakpoint($medium) {
-      @include one-third;
+      @include one-half;
+    }
+
+    @include breakpoint($large) {
+      @include two-fifths;
+
     }
   }
 
   .main-content {
     @include breakpoint($medium) {
-      @include two-thirds;
+      @include one-half;
+    }
+
+    @include breakpoint($large) {
+      @include three-fifths;
     }
   }
 }
