@@ -3,10 +3,14 @@
 }
 
 body {
-  font-size: #{$body-font-size};
   font-family: $body-font;
+  font-size: 14px;
   line-height: 1.5;
   background-color: $darkest;
+
+  @include breakpoint($medium) {
+    font-size: #{$body-font-size};
+  }
 }
 
 input,

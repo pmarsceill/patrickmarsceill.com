@@ -1,13 +1,25 @@
 .site-header {
   @include clearfix;
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-color: $darkest;
+
+  @include breakpoint($small) {
+    padding: 2rem 0;
+  }
 }
 
 .main-nav {
-  display: table-cell;
-  width: 50%;
-  text-align: right;
+  display: block;
+
+  @include breakpoint($small) {
+    display: table-cell;
+    text-align: right;
+    vertical-align: top;
+  }
+
+  @include breakpoint($medium) {
+    vertical-align: baseline;
+  }
 
   ul {
     padding: 0;
@@ -18,19 +30,42 @@
 
 .main-nav-item {
   display: inline-block;
+
+  @include breakpoint($small) {
+    display: block;
+  }
+
+  @include breakpoint($medium) {
+    display: inline-block;
+  }
 }
 
 .main-nav-link {
-  padding: 1rem;
-  font-size: 16px;
+  padding: 1rem 1rem 1rem 0;
+  font-size: 14px;
   color: $red;
   background-image: none;
+
+  @include breakpoint($small) {
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  @include breakpoint($medium) {
+    padding: 1rem;
+    font-size: 16px;
+  }
 }
 
 .logo {
-  display: table-cell;
-  width: 50%;
-  margin: 0;
+  display: block;
+  margin-top: 0;
+
+  @include breakpoint($small) {
+    display: table-cell;
+    width: 30%;
+    margin: 0;
+  }
+
 
   a {
     line-height: 0;

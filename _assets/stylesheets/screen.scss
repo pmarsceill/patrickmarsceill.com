@@ -6,10 +6,11 @@
 @import "mixins";
 
 // Import base styles
+@import "layout";
 @import "base";
 
 // Import site partials
-@import "layout";
+@import "posts";
 @import "page";
 @import "type";
 @import "header";

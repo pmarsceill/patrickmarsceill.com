@@ -3,7 +3,10 @@
   margin: 0 auto;
   overflow-x: hidden;
   background: $grey-dk;
-  border: 1rem solid $darkest;
+
+  @include breakpoint($smallest) {
+    border: 1rem solid $darkest;
+  }
 
   @include breakpoint($medium) {
     border: 2rem solid $darkest;
@@ -23,6 +26,7 @@
 
 .page-title {
   margin: 1em 0;
+
   @include breakpoint($large) {
     width: 60%;
   }

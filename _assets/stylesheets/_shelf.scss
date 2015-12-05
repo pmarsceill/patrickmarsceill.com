@@ -1,38 +1,50 @@
 .shelf {
+  margin-top: 2rem;
+
   @include breakpoint($medium) {
     @include columns;
-    padding-top: 3rem;
+    margin-top: 5rem;
   }
 
   .shelf-row {
-    position: relative;
-    padding-top: 12rem;
-    margin-bottom: 14rem;
+    @include breakpoint($medium) {
+      position: relative;
+      padding-top: 12rem;
+      margin-bottom: 14rem;
+    }
   }
 
   .item {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid $darkest;
+
     @include breakpoint($medium) {
+      padding: 0;
+      margin: 0;
+      border: 0;
       @include one-third;
     }
   }
-  .item-empty {
-    position: relative;
-    height: 220px;
-    border-top: 0.5rem solid $darkest;
-
-    &:after {
-      display: block;
-      height: 100%;
-      margin-top: -220px;
-      content: " ";
-      border: 1px solid $darkest;
-    }
-  }
+  // .item-empty {
+  //   position: relative;
+  //   height: 220px;
+  //   border-top: 0.5rem solid $darkest;
+  //
+  //   &:after {
+  //     display: block;
+  //     height: 100%;
+  //     margin-top: -220px;
+  //     content: " ";
+  //     border: 1px solid $darkest;
+  //   }
+  // }
 
   .item-img {
     @include breakpoint($medium) {
       position: absolute;
       bottom: -6px;
+      width: 30.7%;
     }
   }
 
