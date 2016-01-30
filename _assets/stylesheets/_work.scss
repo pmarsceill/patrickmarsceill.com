@@ -22,10 +22,15 @@
 //   }
 // }
 
+.work-toc {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .work-toc-item {
   position: relative;
   display: block;
-  padding: ($grid-gutter / 2) $grid-gutter;
+  padding: ($grid-gutter / 2) 0;
   color: $lightest;
   text-decoration: none;
   background-color: $soft-light;
@@ -39,7 +44,14 @@
     // width: 20%;
     height: 100%;
     content: "";
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: $grey-dk;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $darkest;
+    background-color: #fff;
   }
 }
 
@@ -54,10 +66,20 @@
 
 .bg-weil {
   background-color: #00ac5a;
+
+  &::after {
+    display: block;
+    width: 60%;
+  }
 }
 
 .bg-trek {
   background-color: #ce1a2b;
+
+  &::after {
+    display: block;
+    width: 50%;
+  }
 }
 
 .bg-coldwell {
@@ -71,6 +93,11 @@
 
 .bg-pj {
   background-color: #ab131b;
+
+  &::after {
+    display: block;
+    width: 5%;
+  }
 }
 
 .bg-amc {

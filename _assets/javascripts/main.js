@@ -8,6 +8,7 @@ var elements = document.getElementsByClassName('js-invisibles');
 
 for (i = 0; i < elements.length; i++) {
   var textNodes = textNodesUnder(elements[i]);
+
   textNodes.forEach(function(node, index, textNodes) {
     var text = node.textContent;
     text = text.replace(/ /g,'<span class="space"> </span>');
