@@ -5,30 +5,9 @@ homePage: true
 ---
 
 <div class="container-wide">
-  <div class="layout-right-rail">
-    <div class="main-content">
-      <section>
-      <h1 class="heading-delta">Noteworthy</h1>
-        {% for post in site.posts %}
-          {% unless post.categories contains "status" %}
-          <article class="post-preview">
-            <div class="col">
-              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <h2 class="post-title display-beta">
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h2>
-            </div>
-            <div class="col">
-
-            </div>
-          </article>
-          {% endunless %}
-        {% endfor %}
-      </section>
-      <!-- <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-    </div>
-    <div class="rail-content">
-      <section>
+  <div class="layout-two-up">
+    <div class="column"> &nbsp;
+      <!-- <section>
         <h1 class="heading-delta">Current status</h1>
         {% for post in site.categories['status'] limit:1%}
             <article class="post-status">
@@ -49,7 +28,29 @@ homePage: true
             </div>
         </article>
         {% endfor %}
-      </section>
+      </section> -->
     </div>
+    <div class="column">
+      <section>
+      <h1 class="heading-delta">Noteworthy</h1>
+        {% for post in site.posts %}
+          {% unless post.categories contains "status" %}
+          <article class="post-preview">
+            <div class="column">
+              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h2 class="post-title display-beta">
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+            </div>
+            <div class="column">
+
+            </div>
+          </article>
+          {% endunless %}
+        {% endfor %}
+      </section>
+      <!-- <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+    </div>
+
   </div>
 </div>

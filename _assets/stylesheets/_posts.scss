@@ -16,6 +16,7 @@
 
 .post-preview {
   margin-bottom: 2rem;
+  @include clearfix;
 }
 
 .post-status {

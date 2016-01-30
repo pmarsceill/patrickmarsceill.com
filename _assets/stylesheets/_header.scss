@@ -4,7 +4,12 @@
   background-color: $darkest;
 
   @include breakpoint($small) {
-    padding: 0 0 2rem;
+    padding: 0;
+
+    .container-wide {
+      display: table;
+      width: 100%;
+    }
   }
 }
 
@@ -33,6 +38,7 @@
 
   @include breakpoint($small) {
     display: block;
+    margin-bottom: 0;
   }
 
   @include breakpoint($medium) {
@@ -41,6 +47,7 @@
 }
 
 .main-nav-link {
+  display: block;
   padding: 1rem 1rem 1rem 0;
   font-size: 14px;
   color: $red;
@@ -51,12 +58,13 @@
   }
 
   @include breakpoint($large) {
-    padding: 1rem;
+    padding: 2rem 1rem;
     font-size: 16px;
   }
 }
 
 .logo {
+  position: fixed;
   display: block;
   margin-top: 0;
 
@@ -64,12 +72,15 @@
     display: table-cell;
     width: 30%;
     margin: 0;
+    vertical-align: bottom;
   }
 
 
   a {
     line-height: 0;
     background-image: none;
+    padding-top: 20px;
+    display: block;
   }
 
   .text,
@@ -79,7 +90,7 @@
 }
 
 .logo-mark {
-  width: 160px;
+  width: 120px;
   height: auto;
 }
 

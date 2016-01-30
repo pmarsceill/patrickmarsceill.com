@@ -10,13 +10,14 @@
 
   @include breakpoint($medium) {
     border: 2rem solid $darkest;
+    border-top: 0;
   }
 }
 
 .body-home {
   .main {
     @include breakpoint($medium) {
-      padding-top: 2rem;
+      padding-top: 8rem;
     }
   }
 }

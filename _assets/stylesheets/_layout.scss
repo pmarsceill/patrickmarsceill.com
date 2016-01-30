@@ -41,11 +41,6 @@
   }
 }
 
-.table-wrap {
-  display: table;
-  width: 100%;
-}
-
 // Flexible images
 img {
   max-width: 100%;
@@ -63,7 +58,7 @@ img {
   @include clearfix;
 }
 
-.columns {
+.columnumns {
   @include columns;
 }
 
@@ -81,7 +76,7 @@ img {
   }
 }
 
-.column {
+.columnumn {
   @include column;
 }
 
@@ -262,7 +257,7 @@ img {
     @include columns;
   }
 
-  .col {
+  .column {
     @include breakpoint($medium) {
       @include one-third;
     }
@@ -291,7 +286,7 @@ img {
     @include columns;
   }
 
-  .col {
+  .column {
     @include breakpoint($medium) {
       @include one-half;
     }

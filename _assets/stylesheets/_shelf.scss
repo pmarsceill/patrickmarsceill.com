@@ -28,10 +28,17 @@
   }
 
   .item-img {
+    line-height: 0;
+
+
     @include breakpoint($medium) {
       position: absolute;
       bottom: -6px;
       width: 24.7%;
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
     }
   }
 

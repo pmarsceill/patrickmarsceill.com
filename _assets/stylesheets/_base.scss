@@ -29,6 +29,13 @@ a {
   &:hover {
     color: $red;
   }
+   &:not([class]),
+   &.post-link {
+     text-shadow: -1px -1px 0 $grey-dk, 1px -1px 0 $grey-dk, -1px 1px 0 $grey-dk, 1px 1px 0 $grey-dk;
+   }
+  .post-content &:not([class]) {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
 }
 
 hr {
