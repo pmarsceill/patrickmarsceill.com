@@ -20,6 +20,7 @@
 
 .post-status {
   margin-bottom: 1rem;
+
   .post-content {
     font-family: $monospace-font;
     font-size: 13px;
@@ -30,6 +31,7 @@
 
     @include breakpoint($medium) {
       display: block;
+      opacity: 0.7;
     }
   }
 }
@@ -42,8 +44,8 @@
 .post-detail {
   .post-header {
     padding-bottom: 2rem;
-    background-color: #f0f0f0;
     color: $grey-md;
+    background-color: $grey-dk;
 
     .post-title {
       color: $grey-md;
@@ -91,9 +93,10 @@
 
 .status-detail {
   .post-content {
-    font-family: $monospace-font;
     padding: 2rem 0 0;
+    font-family: $monospace-font;
   }
+
   .post-footer {
     margin-bottom: 2rem;
     opacity: 0.7;

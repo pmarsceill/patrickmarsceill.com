@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="{% if page.homePage == true %}body-home{% elsif page.categories contains "status" %}body-status{% endif %}">
+  <body class="{% if page.homePage == true %}body-home {% elsif page.categories contains "status" %}body-status {% endif %}{{ page.bodyClass }}">
     <div class="wrap-entire-page">
       {% include header.html %}
       <main role="main" class="main">

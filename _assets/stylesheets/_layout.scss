@@ -298,9 +298,19 @@ img {
   }
 }
 
-.layout-right-main {
+.layout-right-rail {
   @include breakpoint($medium) {
     @include columns;
+  }
+
+  .main-content {
+    @include breakpoint($medium) {
+      @include one-half;
+    }
+
+    @include breakpoint($large) {
+      @include three-fifths;
+    }
   }
 
   .rail-content {
@@ -311,16 +321,6 @@ img {
     @include breakpoint($large) {
       @include two-fifths;
 
-    }
-  }
-
-  .main-content {
-    @include breakpoint($medium) {
-      @include one-half;
-    }
-
-    @include breakpoint($large) {
-      @include three-fifths;
     }
   }
 }

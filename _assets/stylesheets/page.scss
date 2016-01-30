@@ -15,11 +15,12 @@
 
 .body-home {
   .main {
-    @include breakpoint($medium){
-      padding-top: 2rem;  
+    @include breakpoint($medium) {
+      padding-top: 2rem;
     }
   }
 }
+
 .main {
   position: relative;
 }

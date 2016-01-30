@@ -1,0 +1,83 @@
+// .body-portfolio {
+//   background-color: $lightest;
+//
+//   .site-header {
+//     background-color: $lightest;
+//   }
+//
+//   .wrap-entire-page {
+//     background: $lightest;
+//
+//     @include breakpoint($smallest) {
+//       border: 1rem solid $lightest;
+//     }
+//
+//     @include breakpoint($medium) {
+//       border: 2rem solid $lightest;
+//     }
+//   }
+//
+//   .page-title {
+//     color: $darkest;
+//   }
+// }
+
+.work-toc-item {
+  position: relative;
+  display: block;
+  padding: ($grid-gutter / 2) $grid-gutter;
+  color: $lightest;
+  text-decoration: none;
+  background-color: $soft-light;
+  background-image: none;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    // width: 20%;
+    height: 100%;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+}
+
+.bg-github {
+  background-color: #202021;
+
+  &::after {
+    display: block;
+    width: 20%;
+  }
+}
+
+.bg-weil {
+  background-color: #00ac5a;
+}
+
+.bg-trek {
+  background-color: #ce1a2b;
+}
+
+.bg-coldwell {
+  background-color: #30507b;
+
+  &::after {
+    display: block;
+    width: 40%;
+  }
+}
+
+.bg-pj {
+  background-color: #ab131b;
+}
+
+.bg-amc {
+  background-color: #e6a815;
+
+  &::after {
+    display: block;
+    width: 10%;
+  }
+}
