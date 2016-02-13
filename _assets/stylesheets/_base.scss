@@ -23,7 +23,10 @@ button {
 a {
   color: $red-lt;
   text-decoration: none;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 97%, $red 97%);
+  background-image: linear-gradient(rgba($red, 0.25) 0%, $red 100%);
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-position: 0 95%;
   transition: color 0.25s ease-out;
 
   &:hover {
@@ -36,7 +39,8 @@ a {
   }
 
   .post-content &:not([class]) {
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    color: $red;
+    text-shadow: -1px -1px 0 $lightest, 1px -1px 0 $lightest, -1px 1px 0 $lightest, 1px 1px 0 $lightest;
   }
 }
 
