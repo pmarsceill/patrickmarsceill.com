@@ -37,13 +37,12 @@
 //
 .post-detail {
   .post-header {
-    padding: $spacer-xl 0;
-    color: $grey-dk;
-    background-color: $soft-light;
+    padding: $spacer-xl * 1.5 0;
+    color: $lightest;
+    // background-color: $soft-light;
 
     .post-title {
       width: 70%;
-      color: $grey-dk;
     }
   }
 
