@@ -5,12 +5,17 @@
 
   <body class="{% if page.home_page == true %}body-home {% endif %}{{ page.bodyClass }}">
     <div class="page-outer-border">
+
       {% include header.html %}
+
       <main role="main" class="main">
         {{ content }}
       </main>
+
     </div>
+
     {% include footer.html %}
+
     <script src="{% asset_path main.js %}" charset="utf-8"></script>
   </body>
 

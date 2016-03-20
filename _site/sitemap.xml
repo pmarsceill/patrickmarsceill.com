@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://www.patrickmarsceill.com/</loc>
+  <lastmod>2014-09-16T23:19:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>http://www.patrickmarsceill.com/about/</loc>
+  <lastmod>2014-09-16T23:19:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://www.patrickmarsceill.com/projects/</loc>
+  <lastmod>2014-09-16T23:19:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://www.patrickmarsceill.com/2014/09/11/designing-for-yourself/</loc>
+  <lastmod>2014-09-16T23:19:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://www.patrickmarsceill.com/2013/12/11/prototyping-q-and-a/</loc>
+  <lastmod>2014-09-16T23:19:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.patrickmarsceill.com/2013/06/26/russian-joe/</loc>
+  <lastmod>2014-09-16T23:19:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.patrickmarsceill.com/2013/02/27/the-difference-between-money-and-power/</loc>
+  <lastmod>2014-09-16T23:19:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.patrickmarsceill.com/2013/02/13/building-my-desk-part-two-the-top/</loc>
+  <lastmod>2014-09-16T23:19:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.patrickmarsceill.com/2013/01/14/building-my-desk-part-one-the-frame/</loc>
+  <lastmod>2014-09-16T23:19:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.patrickmarsceill.com/2012/11/19/how-i-setup-my-machine-for-prototyping/</loc>
+  <lastmod>2014-09-16T23:19:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://www.patrickmarsceill.com/2012/10/24/first/</loc>
+  <lastmod>2014-09-16T23:19:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

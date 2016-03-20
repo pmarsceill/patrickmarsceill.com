@@ -3,6 +3,7 @@ layout: post
 title: "The Russian Joe"
 date: 2013-06-26 12:34
 ---
+
 I was looking at some old photos on Flickr and came across this. It's from 2013's SXSW Interactive, at Easy Tiger, just before a sizable group of people consumed the combination of beverages spread out on the table.
 
 Ryan Jahn and I spent a day biking around Austin trying to eat lunch. After multiple unsuccessful attempts, we gave up and focused our collective energy on something that would get us through the rest of the day / night. The Russian Joe was born out of lack of energy, need for sustinance, and the desire to get in some day drinking.

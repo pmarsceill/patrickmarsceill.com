@@ -57,6 +57,7 @@ $ brew install git
 Create and/or open the folder where you might want to house all your prototyping projects. I like to use a folder called "_active" where all my current projects live.
 
 Switch back over to terminal and CD (change directories) by typing `cd` and then a space, _do not press "Enter" yet_:
+
 {% highlight bash %}
 $ cd
 {% endhighlight %}
