@@ -1,18 +1,18 @@
 .item-grid {
   display: flex;
   flex-wrap: wrap;
+}
 
-  .item {
-    width: 50%;
-    padding: 2rem 2rem 2rem 0;
-    border-bottom: 1px solid $darkest;
+.item-grid-item-thirds {
+  width: 50%;
+  padding: 2rem 2rem 2rem 0;
+  border-bottom: 1px solid $darkest;
 
-    &:nth-last-child(-n+3) {
-      border-bottom: 0;
-    }
+  &:nth-last-child(-n+3) {
+    border-bottom: 0;
+  }
 
-    @include breakpoint($medium) {
-      width: 33.3333%;
-    }
+  @include breakpoint($medium) {
+    width: 33.3333%;
   }
 }
