@@ -1,13 +1,9 @@
-//
 // Code snippets
 //
 
-
-// Based on .markdown-body styles
-
 code,
 pre {
-  font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  font-family: $monospace-font-family;
   font-size: 12px;
 }
 
@@ -30,11 +26,11 @@ code {
 
 // Code blocks
 .highlight {
-  margin-bottom: 1rem;
+  margin-bottom: $spacer;
   border-radius: 4px;
 
   pre {
-    padding: 1rem;
+    padding: $spacer;
     overflow: auto;
     font-size: 16px;
     line-height: 1.45;

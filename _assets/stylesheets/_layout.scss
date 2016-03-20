@@ -1,13 +1,10 @@
-// Overrides _container.scss
-
 // Breakpoint mixin
 //
 // Usage:
 // @include breakpoint($medium) {
 //   ..medium and up styles
 // }
-// See _variables-marketing.scss for default breakpoint size variables.
-//
+
 @mixin breakpoint($bp) {
   @media screen and ($bp) {
     @content;

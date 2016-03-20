@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Patrick Marsceill</title>
-    <description>Patrick Marsceill is a working designer and developer living in Philadelphia.</description>
+    <title>Patrick Marsceill - Designer at GitHub</title>
+    <description>Patrick Marsceill - Designer and web developer living in Philadelphia, working at GitHub
+</description>
     <link>http://patrickmarsceill.com/</link>
-    <atom:link href="http://patrickmarsceill.com/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://patrickmarsceill.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 20 Mar 2016 15:46:48 -0400</pubDate>
+    <lastBuildDate>Sun, 20 Mar 2016 15:46:48 -0400</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+
     
       <item>
         <title>Introducing Tab Lab</title>
@@ -61,6 +66,8 @@
         <pubDate>Sun, 08 Feb 2015 17:44:00 -0500</pubDate>
         <link>http://patrickmarsceill.com/2015/02/08/tab-lab/</link>
         <guid isPermaLink="true">http://patrickmarsceill.com/2015/02/08/tab-lab/</guid>
+        
+        
       </item>
     
       <item>
@@ -78,6 +85,8 @@
         <pubDate>Thu, 30 Oct 2014 10:30:00 -0400</pubDate>
         <link>http://patrickmarsceill.com/2014/10/30/woodshedding/</link>
         <guid isPermaLink="true">http://patrickmarsceill.com/2014/10/30/woodshedding/</guid>
+        
+        
       </item>
     
       <item>
@@ -130,11 +139,12 @@
   &lt;li&gt;&lt;a href=&quot;http://thedieline.com&quot;&gt;The Dieline&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://thegreatdiscontent.com&quot;&gt;The Great Discontent&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
 </description>
         <pubDate>Thu, 11 Sep 2014 15:25:00 -0400</pubDate>
         <link>http://patrickmarsceill.com/2014/09/11/designing-for-yourself/</link>
         <guid isPermaLink="true">http://patrickmarsceill.com/2014/09/11/designing-for-yourself/</guid>
+        
+        
       </item>
     
       <item>
@@ -153,7 +163,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Roll your own. &lt;a href=&quot;http://css-tricks.com/dont-overthink-it-grids/&quot;&gt;Chris Coyier did a pretty good demo here&lt;/a&gt;. I’m not a super huge fan of using class names like &lt;code&gt;.col-1-2&lt;/code&gt; so if I were developing a site using this method, I would make all those classes Sass mixins so I could just &lt;code&gt;@include&lt;/code&gt; them within the element selectors that need to use them.&lt;/p&gt;
+    &lt;p&gt;Roll your own. &lt;a href=&quot;http://css-tricks.com/dont-overthink-it-grids/&quot;&gt;Chris Coyier did a pretty good demo here&lt;/a&gt;. I’m not a super huge fan of using class names like &lt;code class=&quot;highlighter-rouge&quot;&gt;.col-1-2&lt;/code&gt; so if I were developing a site using this method, I would make all those classes Sass mixins so I could just &lt;code class=&quot;highlighter-rouge&quot;&gt;@include&lt;/code&gt; them within the element selectors that need to use them.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Use a light weight grid system framework. &lt;a href=&quot;http://susy.oddbird.net/&quot;&gt;Susy&lt;/a&gt; is a pretty good example of this. Susy is a Compass based grid framework that easily allows you to customize your grid using Sass mixins. This enables you to keep your CSS class names semantic. &lt;a href=&quot;http://neat.bourbon.io/&quot;&gt;Neat&lt;/a&gt; is a similar framework that is built on top of Bourbon, if you that is what you prefer.&lt;/p&gt;
@@ -189,6 +199,8 @@
         <pubDate>Wed, 11 Dec 2013 11:20:00 -0500</pubDate>
         <link>http://patrickmarsceill.com/2013/12/11/prototyping-q-and-a/</link>
         <guid isPermaLink="true">http://patrickmarsceill.com/2013/12/11/prototyping-q-and-a/</guid>
+        
+        
       </item>
     
       <item>
@@ -231,6 +243,8 @@
         <pubDate>Wed, 26 Jun 2013 12:34:00 -0400</pubDate>
         <link>http://patrickmarsceill.com/2013/06/26/russian-joe/</link>
         <guid isPermaLink="true">http://patrickmarsceill.com/2013/06/26/russian-joe/</guid>
+        
+        
       </item>
     
       <item>
@@ -244,6 +258,8 @@
         <pubDate>Wed, 27 Feb 2013 12:10:00 -0500</pubDate>
         <link>http://patrickmarsceill.com/2013/02/27/the-difference-between-money-and-power/</link>
         <guid isPermaLink="true">http://patrickmarsceill.com/2013/02/27/the-difference-between-money-and-power/</guid>
+        
+        
       </item>
     
       <item>
@@ -283,6 +299,8 @@
         <pubDate>Wed, 13 Feb 2013 23:04:00 -0500</pubDate>
         <link>http://patrickmarsceill.com/2013/02/13/building-my-desk-part-two-the-top/</link>
         <guid isPermaLink="true">http://patrickmarsceill.com/2013/02/13/building-my-desk-part-two-the-top/</guid>
+        
+        
       </item>
     
       <item>
@@ -366,6 +384,8 @@
         <pubDate>Mon, 14 Jan 2013 16:15:00 -0500</pubDate>
         <link>http://patrickmarsceill.com/2013/01/14/building-my-desk-part-one-the-frame/</link>
         <guid isPermaLink="true">http://patrickmarsceill.com/2013/01/14/building-my-desk-part-one-the-frame/</guid>
+        
+        
       </item>
     
       <item>
@@ -395,24 +415,24 @@
 &lt;p&gt;&lt;em&gt;This is where you need to open up Terminal and get busy…&lt;/em&gt;
 #### Install RVM &amp;amp; install the latest stable version of Ruby&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\c&lt;/span&gt;url -L https://get.rvm.io &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; bash -s stable --ruby&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\c&lt;/span&gt;url -L https://get.rvm.io | bash -s stable --ruby&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h4 id=&quot;verify-you-a-running-on-the-newly-installed-rvm-version-of-ruby&quot;&gt;Verify you a running on the newly installed “RVM” version of Ruby&lt;/h4&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;which ruby
-/Users/patrickmarsceill/.rvm/rubies/ruby-1.9.3-p327/bin/ruby&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;which ruby
+/Users/patrickmarsceill/.rvm/rubies/ruby-1.9.3-p327/bin/ruby&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;The important thing to note here is the &lt;code&gt;/.rvm/rubies/ruby-1.9.3-p327&lt;/code&gt;.  Your version numbers may be different, and thats ok but the path should be &lt;code&gt;/.rvm/rubies/ruby-x.x.x-pxxx&lt;/code&gt;.  If you don’t see something like this, you should switch to the newly installed version:&lt;/p&gt;
+&lt;p&gt;The important thing to note here is the &lt;code class=&quot;highlighter-rouge&quot;&gt;/.rvm/rubies/ruby-1.9.3-p327&lt;/code&gt;.  Your version numbers may be different, and thats ok but the path should be &lt;code class=&quot;highlighter-rouge&quot;&gt;/.rvm/rubies/ruby-x.x.x-pxxx&lt;/code&gt;.  If you don’t see something like this, you should switch to the newly installed version:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rvm use 1.9.3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;rvm use 1.9.3&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;This just tells your machine to switch to Ruby 1.9.3 installed by RVM.  You may have a different version number installed by RVM, in which case you would run &lt;code&gt;rvm use 1.9.2&lt;/code&gt; or &lt;code&gt;rvm use 1.9.4&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This just tells your machine to switch to Ruby 1.9.3 installed by RVM.  You may have a different version number installed by RVM, in which case you would run &lt;code class=&quot;highlighter-rouge&quot;&gt;rvm use 1.9.2&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;rvm use 1.9.4&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;step-3-mdash-install-git&quot;&gt;Step 3 — Install Git&lt;/h3&gt;
 
 &lt;p&gt;The easiest way to install Git on an OSX machine is to &lt;a href=&quot;http://git-scm.com/download/mac&quot;&gt;download and install the Universal .dmg file from git-scm.com&lt;/a&gt;.  There are other ways to do this from the command line, if you are a Homebrew user like me you can use:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew install git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;brew install git&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h3 id=&quot;step-4-mdash-build-your-development-environment&quot;&gt;Step 4 — Build your development environment&lt;/h3&gt;
 
@@ -420,52 +440,52 @@
 
 &lt;p&gt;Create and/or open the folder where you might want to house all your prototyping projects. I like to use a folder called “_active” where all my current projects live.&lt;/p&gt;
 
-&lt;p&gt;Switch back over to terminal and CD (change directories) by typing &lt;code&gt;cd&lt;/code&gt; and then a space, &lt;em&gt;do not press “Enter” yet&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;Switch back over to terminal and CD (change directories) by typing &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt; and then a space, &lt;em&gt;do not press “Enter” yet&lt;/em&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Then drag the folder icon (in this case it’s called “_Active”) immediately following the space after &lt;code&gt;cd&lt;/code&gt;.  Like magic, the full path to this location will appear after the &lt;code&gt;cd&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Then drag the folder icon (in this case it’s called “_Active”) immediately following the space after &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt;.  Like magic, the full path to this location will appear after the &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/patrickmarsceill/Dropbox/_Active&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /Users/patrickmarsceill/Dropbox/_Active&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Press “Enter”&lt;/p&gt;
 
 &lt;h4 id=&quot;now-its-time-to-get-some-development-tools-and-start-building&quot;&gt;Now it’s time to get some development tools and start building:&lt;/h4&gt;
 
-&lt;p&gt;&lt;code&gt;&amp;lt;controversialname&amp;gt;&lt;/code&gt; “StrapOn” &lt;code&gt;&amp;lt;/controversialname&amp;gt;&lt;/code&gt; is a pre-packaged set of tools and rake commands that I build with the help of my friend &lt;a href=&quot;http://stephentudor.com&quot; title=&quot;Stephen Tudor&#39;s Blog&quot;&gt;Stephen&lt;/a&gt; for quickly building HTML prototypes.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;controversialname&amp;gt;&lt;/code&gt; “StrapOn” &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/controversialname&amp;gt;&lt;/code&gt; is a pre-packaged set of tools and rake commands that I build with the help of my friend &lt;a href=&quot;http://stephentudor.com&quot; title=&quot;Stephen Tudor&#39;s Blog&quot;&gt;Stephen&lt;/a&gt; for quickly building HTML prototypes.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;From your current location in Terminal run:&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git@github.com:pmarsceill/StrapOn.git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git clone git@github.com:pmarsceill/StrapOn.git&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;This will pull down a directory called “StrapOn” that you can use as a starter for your projects.  A more detailed tutorial is in the works, but to get started &lt;code&gt;cd&lt;/code&gt; into the “StrapOn” directory:&lt;/p&gt;
+&lt;p&gt;This will pull down a directory called “StrapOn” that you can use as a starter for your projects.  A more detailed tutorial is in the works, but to get started &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt; into the “StrapOn” directory:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;StrapOn&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;StrapOn&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Then install all the tools that are needed for this project by running:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bundle install&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;If successful you should see something like this:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;Your bundle is &lt;span class=&quot;nb&quot;&gt;complete&lt;/span&gt;! Use &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;bundle show &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;gemname&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; to see where a bundled gem is installed.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;Your bundle is &lt;span class=&quot;nb&quot;&gt;complete&lt;/span&gt;! Use &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;bundle show &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;gemname]&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; to see where a bundled gem is installed.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Start the StrapOn dev mode by running this rake command:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rake start
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;rake start
 
-DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;called from require at /Users/patrickmarsceill/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;future releases,simply use Ruby memoization pattern instead. &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;called from require at /Users/patrickmarsceill/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 
 
 StrapOn starting.....................
 
-DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;called from require at /Users/patrickmarsceill/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed in future releases,simply use Ruby memoization pattern instead. &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;called from require at /Users/patrickmarsceill/Desktop/StrapOn/config.ru:14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-19 17:02:23&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; INFO  WEBrick 1.3.1
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-19 17:02:23&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; INFO  ruby 1.9.3 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2012-11-10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;x86_64-darwin12.2.0&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-19 17:02:23&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; INFO  WEBrick::HTTPServer#start: &lt;span class=&quot;nv&quot;&gt;pid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30507&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4000&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;future releases,simply use Ruby memoization pattern instead. &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;called from require at /Users/patrickmarsceill/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;future releases,simply use Ruby memoization pattern instead. &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;called from require at /Users/patrickmarsceill/Desktop/StrapOn/config.ru:14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-19 17:02:23] INFO  WEBrick 1.3.1
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-19 17:02:23] INFO  ruby 1.9.3 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2012-11-10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;x86_64-darwin12.2.0]
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;2012-11-19 17:02:23] INFO  WEBrick::HTTPServer#start: &lt;span class=&quot;nv&quot;&gt;pid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;30507 &lt;span class=&quot;nv&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4000&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Voila, StrapOn has started a local server on your machine that you can use for development by pointing your browser to: &lt;code&gt;http://localhost:4000&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Voila, StrapOn has started a local server on your machine that you can use for development by pointing your browser to: &lt;code class=&quot;highlighter-rouge&quot;&gt;http://localhost:4000&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;/images/blog/prototype-setup/strapon-browser.png StrapOn running on a local machine&lt;/p&gt;
 
@@ -483,6 +503,8 @@ DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed
         <pubDate>Mon, 19 Nov 2012 17:27:00 -0500</pubDate>
         <link>http://patrickmarsceill.com/2012/11/19/how-i-setup-my-machine-for-prototyping/</link>
         <guid isPermaLink="true">http://patrickmarsceill.com/2012/11/19/how-i-setup-my-machine-for-prototyping/</guid>
+        
+        
       </item>
     
       <item>
@@ -497,6 +519,8 @@ DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed
         <pubDate>Wed, 24 Oct 2012 15:36:00 -0400</pubDate>
         <link>http://patrickmarsceill.com/2012/10/24/first/</link>
         <guid isPermaLink="true">http://patrickmarsceill.com/2012/10/24/first/</guid>
+        
+        
       </item>
     
   </channel>

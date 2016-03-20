@@ -37,14 +37,19 @@
 //
 .post-detail {
   .post-header {
-    padding: 4rem 0;
-    color: $grey-md;
-    background-color: $grey-dk;
+    padding: $spacer-xl 0;
+    color: $grey-dk;
+    background-color: $soft-light;
 
     .post-title {
       width: 70%;
-      color: $lightest;
+      color: $grey-dk;
     }
+  }
+
+  .post-date {
+    position: absolute;
+    width: 10%;
   }
 
   .post-content {
