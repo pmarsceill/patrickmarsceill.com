@@ -1,0 +1,33 @@
+---
+layout: default
+title: Journal
+permalink: /journal/
+order: 2
+---
+
+<div class="content-block content-block-dark">
+  <div class="container-wide">
+
+    <h1 class="display-alpha">Journal</h1>
+
+      <div class="columns">
+        <div class="one-fourth column">
+          <h2 class="heading-delta">Older Entries</h2>
+        </div>
+        <div class="one-half column">
+          {% for post in site.posts %}
+            {% unless post.categories contains "status" %}
+            <article class="post-preview">
+                <span class="post-date text-xs">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <h2 class="post-title heading-gamma">
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+            </article>
+            {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+
+    <!-- <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+  </div>
+</div>

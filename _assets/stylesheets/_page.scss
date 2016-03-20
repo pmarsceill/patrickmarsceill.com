@@ -1,0 +1,15 @@
+.page-outer-border {
+  max-width: $container-wide-width * 2;
+  margin: 0 auto;
+  overflow-x: hidden;
+
+  @include breakpoint($smallest) {
+    border: $spacer-sm solid $darkest;
+  }
+
+  @include breakpoint($medium) {
+    border: $spacer-lg solid $darkest;
+    border-top: 0;
+    border-bottom: 0;
+  }
+}

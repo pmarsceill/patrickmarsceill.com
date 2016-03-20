@@ -1,22 +1,16 @@
-//
 // Generic post styles
 //
-
 .post-title {
-  margin-top: 0;
-  width: 70%;
 }
 
-.post-date {
-  font-size: 12px;
-}
+// .post-date {
+//   font-size: 12px;
+// }
 
-//
 // Post preview
 //
-
 .post-preview {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   @include clearfix;
 }
 
@@ -24,7 +18,7 @@
   margin-bottom: 1rem;
 
   .post-content {
-    font-family: $monospace-font;
+    font-family: $monospace-font-family;
     font-size: 13px;
   }
 
@@ -38,19 +32,18 @@
   }
 }
 
-//
+
 // Post detail
 //
-
-
 .post-detail {
   .post-header {
-    padding-bottom: 2rem;
+    padding: 4rem 0;
     color: $grey-md;
     background-color: $grey-dk;
 
     .post-title {
-      color: $grey-md;
+      width: 70%;
+      color: $lightest;
     }
   }
 
@@ -96,7 +89,7 @@
 .status-detail {
   .post-content {
     padding: 2rem 0 0;
-    font-family: $monospace-font;
+    font-family: $monospace-font-family;
   }
 
   .post-footer {

@@ -3,13 +3,16 @@
   flex-wrap: wrap;
 
   .item {
-    width: 33.333%;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-    padding: 2rem 2rem 4rem 0;
-
+    width: 50%;
+    padding: 2rem 2rem 2rem 0;
     border-bottom: 1px solid $darkest;
 
+    &:nth-last-child(-n+3) {
+      border-bottom: 0;
+    }
 
+    @include breakpoint($medium) {
+      width: 33.3333%;
+    }
   }
 }

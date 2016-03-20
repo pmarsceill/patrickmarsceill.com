@@ -4,14 +4,11 @@
   background-color: $darkest;
 
   @include breakpoint($small) {
-    position: relative;
     z-index: 1;
     padding: 0;
 
-    .container-wide {
-      display: table;
-      width: 100%;
-    }
+    display: table;
+    width: 100%;
   }
 }
 
@@ -61,7 +58,6 @@
 
   @include breakpoint($large) {
     padding: 2rem 1rem;
-    font-size: 16px;
   }
 
   &.selected {
@@ -80,24 +76,22 @@
 }
 
 .logo {
-  position: fixed;
   display: block;
   margin-top: 0;
 
   @include breakpoint($small) {
     display: table-cell;
-    width: 30%;
+    width: 40%;
     margin: 0;
-    vertical-align: bottom;
+    vertical-align: middle;
   }
 
 
   a {
     display: block;
-    padding-top: 20px;
-    margin-bottom: 1rem;
     line-height: 0;
     background-image: none;
+    font-size: 0;
   }
 
   .text,
@@ -107,13 +101,17 @@
 }
 
 .logo-mark {
-  width: 120px;
+  width: 140px;
   height: auto;
 }
 
-.body-home {
-  .logo-mark {
-    width: 300px;
-    height: auto;
-  }
-}
+// .body-home {
+//   .logo {
+//     // position: fixed;
+//   }
+//
+//   .logo-mark {
+//     width: 300px;
+//     height: auto;
+//   }
+// }

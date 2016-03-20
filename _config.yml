@@ -1,8 +1,8 @@
 # Site settings
-title: Patrick Marsceill
+title: Patrick Marsceill - Designer at GitHub
 email: patrick.marsceill@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Patrick Marsceill Designer
+  Patrick Marsceill - Designer and web developer living in Philadelphia, working at GitHub
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://patrickmarsceill.com" # the base hostname & protocol for your site
 

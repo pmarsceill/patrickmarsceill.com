@@ -41,16 +41,7 @@
   }
 }
 
-// Flexible images
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-
 // Grid system
-//
-// Now with mixins!
 //
 @mixin columns {
   margin-right: -$grid-gutter;
@@ -58,7 +49,7 @@ img {
   @include clearfix;
 }
 
-.columnumns {
+.columns {
   @include columns;
 }
 
@@ -76,7 +67,7 @@ img {
   }
 }
 
-.columnumn {
+.column {
   @include column;
 }
 
@@ -163,159 +154,4 @@ img {
 
 .four-fifths {
   @include four-fifths;
-}
-
-// Single column hack
-.layout-single {
-  @include breakpoint($medium) {
-    @include columns;
-  }
-
-}
-
-.single-column {
-  padding: 0;
-
-  @include breakpoint($medium) {
-    @include column;
-    padding: 0;
-  }
-}
-
-// Prebuilt layouts
-
-// Main / Aside - large Screen
-//
-// |-----------------|-------|
-// |   Main          | Aside |
-// |   3/4           |  1/4  |
-// |                 |       |
-// |-----------------|-------|
-//
-// Main / Aside - small screen
-//
-// |----------|
-// |   Main   |
-// |          |
-// |          |
-// |----------|
-// |   Aside  |
-// |----------|
-
-.layout-main-aside {
-  @include breakpoint($medium) {
-    @include columns;
-  }
-
-  .main-content {
-    @include breakpoint($medium) {
-      @include three-fourths;
-    }
-  }
-
-  .aside-content {
-    @include breakpoint($medium) {
-      @include one-fourth;
-    }
-
-    // Visually aligns all-caps headlines
-    h4,
-    .delta,
-    h5,
-    h5 {
-      &:first-of-type {
-
-        @include breakpoint($medium) {
-          margin-top: 7px;
-        }
-      }
-    }
-  }
-}
-
-// Three up - large Screen
-//
-// |-------|-------|-------|
-// |       |       |       |
-// | col   |  col  |  col  |
-// | 1/3   |  1/3  |  1/3  |
-// |       |       |       |
-// |-------|-------|-------|
-//
-// Three up - small screen
-//
-// |----------|
-// |   col    |
-// |----------|
-// |   col    |
-// |----------|
-// |   col    |
-// |----------|
-
-.layout-three-up {
-  @include breakpoint($medium) {
-    @include columns;
-  }
-
-  .column {
-    @include breakpoint($medium) {
-      @include one-third;
-    }
-  }
-}
-
-// Two up - large Screen
-//
-// |----------|----------|
-// |          |          |
-// |    col   |    col   |
-// |    1/2   |    1/2   |
-// |          |          |
-// |----------|----------|
-//
-// Two up - small screen
-//
-// |----------|
-// |   col    |
-// |----------|
-// |   col    |
-// |----------|
-
-.layout-two-up {
-  @include breakpoint($medium) {
-    @include columns;
-  }
-
-  .column {
-    @include breakpoint($medium) {
-      @include one-half;
-    }
-  }
-}
-
-.layout-right-rail {
-  @include breakpoint($medium) {
-    @include columns;
-  }
-
-  .main-content {
-    @include breakpoint($medium) {
-      @include one-half;
-    }
-
-    @include breakpoint($large) {
-      @include three-fifths;
-    }
-  }
-
-  .rail-content {
-    @include breakpoint($medium) {
-      @include one-half;
-    }
-
-    @include breakpoint($large) {
-      @include two-fifths;
-
-    }
-  }
 }

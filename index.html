@@ -1,51 +1,133 @@
 ---
 layout: default
-title: Journal
-homePage: true
+order: 1
+home_page: true
 ---
 
-<div class="container-wide">
-  <div class="layout-two-up">
-    <div class="column"> &nbsp;
-      <!-- <section>
-        <h1 class="heading-delta">Current status</h1>
-        {% for post in site.categories['status'] limit:1%}
-            <article class="post-status">
-              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-                <div class="post-content">
-                  {{ post.content }}
-                </div>
-                <a href="{{post.url}}" class="btn">Respond to this</a>
-            </article>
-        {% endfor %}
-
-        <hr>
-        {% for post in site.categories['status'] offset:1 %}
-        <article class="post-status">
-          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <div class="post-content">
-              {{ post.content | truncatewords: 10 }}
-            </div>
-        </article>
-        {% endfor %}
-      </section> -->
-    </div>
-    <div class="column">
-      <section>
-      <h1 class="heading-delta">Entries</h1>
-        {% for post in site.posts %}
-          {% unless post.categories contains "status" %}
-          <article class="post-preview">
-              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <h2 class="post-title display-beta">
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h2>
-          </article>
-          {% endunless %}
-        {% endfor %}
-      </section>
-      <!-- <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+<div class="content-block content-block-dark img-bg" style="background-image: url({% asset_path patrick-marsceill.png %});">
+  <div class="container-wide">
+    <div class="columns">
+      <h1 class="display-alpha two-thirds column">
+        I design and build for the web, living the dream with the design team at <a href="http://github.com">GitHub</a>.
+      </h1>
+      <p class="two-thirds column">
+        I've been passionate about creating and designing content for the web since the day my parents came home with a computer that could connect to the internet. During high school, my friends and I started a small web design company and built websites for local businesses. After attending college at Drexel University in Philadelphia, I cut my teeth at a small startup in New York City before persuing music. After a few years trying to make it in a band (and becoming very broke), I returned to tech and began working for digital agencies in Philadelphia. During my time in client services, I worked with clients like The American Red Cross, DirecTV, Google, Weil Gotshal &amp; Manges, Trek Bicycles, W.L. Gore &amp; Associates, Philly.com, and The US Open. Almost a decade later, I joined the friendly folks at GitHub to help shape the future of software development.
+      </p>
     </div>
 
+    <!-- <div class="shelf">
+      <div class="shelf-row">
+        <div class="item">
+          <div class="item-img">
+            <img src="{% asset_path 'asides-gg.jpg' %}" alt="The A-Sides - Seeing Suzy">
+          </div>
+          <div class="item-meta">
+            <h4 class="heading-epsilon">Seeing Suzy b/w Going Gone</h4>
+            <p class="text-sm">by The A-Sides, released 2003 on Prizon Jazz Records as a vinyl 7” record.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="{% asset_path 'asides-hh.jpg' %}" alt="The A-Sides - Seeing Suzy">
+          </div>
+          <div class="item-meta">
+            <h4 class="heading-epsilon">Hello, Hello</h4>
+            <p class="text-sm">by The A-Sides, released 2005 on Prizon Jazz Records as a compact disc.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="{% asset_path 'asides-ss.jpg' %}" alt="The A-Sides - Seeing Suzy">
+          </div>
+          <div class="item-meta">
+            <h4 class="heading-epsilon"  >Silver Storms</h4>
+            <p class="text-sm">by The A-Sides, released 2007 on Vagrant Records as a compact disc.</p>
+          </div>
+        </div>
+      </div>
+      <div class="shelf-row">
+        <div class="item">
+          <div class="item-img">
+            <img src="{% asset_path 'sa-ep.jpg' %}" alt="The A-Sides - Seeing Suzy">
+          </div>
+          <div class="item-meta">
+            <h4 class="heading-epsilon">Untitled EP</h4>
+            <p class="text-sm">by Sun Airway, released 2008, self released as a free digital download.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="{% asset_path 'sa-necc.jpg' %}" alt="The A-Sides - Seeing Suzy">
+          </div>
+          <div class="item-meta">
+            <h4 class="heading-epsilon">Nocturne of Exploded Crystal Chandelier
+</h4>
+            <p class="text-sm">by Sun Airway, released 2010 on Dead Oceans as a compact disc and a vinyl 12” record.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="{% asset_path 'sa-sf.jpg' %}" alt="The A-Sides - Seeing Suzy">
+          </div>
+          <div class="item-meta">
+            <h4 class="heading-epsilon">Soft Fall</h4>
+            <p class="text-sm">by Sun Airway, released 2012 on Dead Oceans as a compact disc and a vinyl 12” record.</p>
+          </div>
+        </div>
+      </div>
+      <div class="shelf-row">
+        <div class="item">
+          <div class="item-img">
+            <img src="{% asset_path 'bf-ttw.jpg' %}" alt="The A-Sides - Seeing Suzy">
+          </div>
+          <div class="item-meta">
+            <h4 class="heading-epsilon">Tingle Tangle Wanda</h4>
+            <p class="text-sm">by Blood Feathers, released 2012 on Max Recordings as a vinyl 12” record.</p>
+          </div>
+        </div> -->
+        <!-- <div class="item item-empty">
+
+        </div>
+        <div class="item item-empty">
+
+        </div> -->
+      <!-- </div>
+    </div> -->
+  </div>
+</div>
+<div class="content-block content-block-dark">
+  <div class="container-wide">
+    <div class="columns">
+      <h2 class="display-beta two-thirds column">Staying passionate, sharp, and collaborative</h2>
+      <p class="two-thirds column">
+        The drive to make, learn, and share things keeps me interested in my work. Here are some examples of projects that I've worked on outside of my job.
+      </p>
+    </div>
+    <div class="item-grid">
+      <div class="item">
+        <h3 class="heading-delta mt-0"><a href="#">Aware</a></h3>
+        <p class="text-sm">Aware is a menubar app for OSX that tracks and displays how long you've been actively using your computer.</p>
+      </div>
+      <div class="item">
+        <h3 class="heading-delta mt-0"><a href="https://tablab.io">Tab Lab</a></h3>
+        <p class="text-sm">Tab Lab is a web app created to publish and collaborate on guitar tablature and sheet music.</p>
+      </div>
+      <div class="item">
+        <h3 class="heading-delta mt-0"><a href="http://quirksandcompulsions.com">Quirks &amp; Compulsions</a></h3>
+        <p class="text-sm">The show about overanalyzing the overlooked. With my co-hosts, Anthony Colangelo and Aura Seltzer, we discuss their obsessions with life's minutiae.</p>
+      </div>
+      <div class="item">
+        <h3 class="heading-delta mt-0"><a href="http://ammills.com">A.M. Mills</a></h3>
+        <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sint est asperiores veritatis voluptates.</p>
+      </div>
+      <div class="item">
+        <h3 class="heading-delta mt-0"><a href="#">Project title</a></h3>
+        <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sint est asperiores veritatis voluptates.</p>
+      </div>
+      <div class="item">
+        <h3 class="heading-delta mt-0"><a href="#">Project title</a></h3>
+        <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sint est asperiores veritatis voluptates.</p>
+      </div>
+    </div>
   </div>
 </div>

@@ -3,15 +3,14 @@
 
   {% include head.html %}
 
-  <body class="{% if page.homePage == true %}body-home {% elsif page.categories contains "status" %}body-status {% endif %}{{ page.bodyClass }}">
-    <div class="wrap-entire-page">
+  <body class="{% if page.home_page == true %}body-home {% endif %}{{ page.bodyClass }}">
+    <div class="page-outer-border">
       {% include header.html %}
       <main role="main" class="main">
         {{ content }}
       </main>
-      {% include footer.html %}
     </div>
-
+    {% include footer.html %}
     <script src="{% asset_path main.js %}" charset="utf-8"></script>
   </body>
 
