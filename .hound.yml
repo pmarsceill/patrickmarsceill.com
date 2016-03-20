@@ -1,6 +1,6 @@
 scss:
   enabled: true
-  config_file: .scss-lint.yml
+  config_file: _assets/stylesheets/.scss-lint.yml
 
 ruby:
   enabled: false
