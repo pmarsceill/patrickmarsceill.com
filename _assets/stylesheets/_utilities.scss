@@ -1,6 +1,5 @@
 // Margin and padding utils
-
-// Margin & padding
+//
 
 @for $i from 0 through 6 {
   $size: $spacer * $i;
@@ -26,7 +25,28 @@
   .pr-#{$i} { padding-right: $size !important; }
 }
 
-// Text utilities
+.mx-offset {
+  margin-right: -$grid-gutter;
+  margin-left: -$grid-gutter;
+}
+
+// Display utils
+//
+
+.d-table {
+  display: table !important;
+  width: 100% !important;
+}
+
+.d-table-row { display: table-row !important; }
+.d-table-cell { display: table-cell !important; }
+
+.d-none { display: none !important; }
+.d-block { display: block !important; }
+.d-inline-block { display: inline-block !important; }
+.d-inline { display: inline !important; }
+
+// Text utils
 //
 
 .text-sm {
@@ -52,6 +72,23 @@
   background-image: none !important;
 }
 
-.text-muted {
-  color: darken($soft-light, 10%) !important;
+.text-muted { color: darken($soft-light, 10%) !important; }
+
+.text-red { color: $red !important; }
+
+.text-black { color: $darkest !important; }
+
+// Backgrounds
+//
+
+.bg-black {
+  background-color: $darkest;
+}
+
+.bg-dark {
+  background-color: $grey-dk;
+}
+
+.bg-light {
+  background-color: $lightest;
 }
