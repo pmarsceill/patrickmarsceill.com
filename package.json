@@ -4,7 +4,10 @@
   "homepage": "http://patrickmarsceill.com",
   "author": "Patrick Marsceill",
   "license": "MIT",
-  "repository": "https://github.com/pmarsceill/patrickmarsceill.com.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmarsceill/patrickmarsceill.com.git"
+  },
   "description": "Source for patrickmarsceill.com",
   "devDependencies": {
     "grunt": "^0.4.5",
