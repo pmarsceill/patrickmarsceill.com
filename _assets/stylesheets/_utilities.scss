@@ -26,11 +26,10 @@
 }
 
 .mx-offset {
+  padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
   margin-right: -$grid-gutter;
   margin-left: -$grid-gutter;
-
-  padding-left: $grid-gutter;
-  padding-right: $grid-gutter;
 }
 
 // Display utils
