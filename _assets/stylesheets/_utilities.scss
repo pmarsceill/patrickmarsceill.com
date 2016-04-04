@@ -28,6 +28,9 @@
 .mx-offset {
   margin-right: -$grid-gutter;
   margin-left: -$grid-gutter;
+
+  padding-left: $grid-gutter;
+  padding-right: $grid-gutter;
 }
 
 // Display utils
@@ -90,5 +93,18 @@
 }
 
 .bg-light {
+  background-color: $grey-md;
+}
+
+.bg-white {
   background-color: $lightest;
+}
+
+// Responsive media
+//
+
+.img-fluid {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
