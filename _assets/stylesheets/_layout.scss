@@ -23,11 +23,7 @@
 
 // a wider container for media that needs to go beyond the normal container by a bit.
 .container-wide {
-  width: auto;
   max-width: $container-wide-width + ($grid-gutter * 2);
-  padding: 0 $grid-gutter;
-  margin-right: auto;
-  margin-left: auto;
   @include clearfix;
 }
 
@@ -41,9 +37,11 @@
 // Grid system
 //
 @mixin columns {
-  margin-right: -$grid-gutter;
-  margin-left: -$grid-gutter;
   @include clearfix;
+  @include breakpoint($medium) {
+    margin-right: -$grid-gutter;
+    margin-left: -$grid-gutter;
+  }
 }
 
 .columns {
@@ -58,14 +56,12 @@
   float: left;
   padding-right: $grid-gutter;
   padding-left: $grid-gutter;
-
-  > *:first-child {
-    margin-top: 0;
-  }
 }
 
 .column {
-  @include column;
+  @include breakpoint($medium) {
+    @include column;
+  }
 }
 
 // Column widths
@@ -78,7 +74,9 @@
 }
 
 .one-third {
-  @include one-third;
+  @include breakpoint($medium) {
+    @include one-third;
+  }
 }
 
 @mixin two-thirds {
@@ -87,7 +85,9 @@
 }
 
 .two-thirds {
-  @include two-thirds;
+  @include breakpoint($medium) {
+    @include two-thirds;
+  }
 }
 
 @mixin one-fourth {
@@ -96,7 +96,9 @@
 }
 
 .one-fourth {
-  @include one-fourth;
+  @include breakpoint($medium) {
+    @include one-fourth;
+  }
 }
 
 @mixin one-half {
@@ -105,7 +107,9 @@
 }
 
 .one-half {
-  @include one-half;
+  @include breakpoint($medium) {
+    @include one-half;
+  }
 }
 
 @mixin three-fourths {
@@ -114,7 +118,9 @@
 }
 
 .three-fourths {
-  @include three-fourths;
+  @include breakpoint($medium) {
+    @include three-fourths;
+  }
 }
 
 @mixin one-fifth {
@@ -123,7 +129,9 @@
 }
 
 .one-fifth {
-  @include one-fifth;
+  @include breakpoint($medium) {
+    @include one-fifth;
+  }
 }
 
 @mixin two-fifths {
@@ -132,7 +140,9 @@
 }
 
 .two-fifths {
-  @include two-fifths;
+  @include breakpoint($medium) {
+    @include two-fifths;
+  }
 }
 
 @mixin three-fifths {
@@ -141,7 +151,9 @@
 }
 
 .three-fifths {
-  @include three-fifths;
+  @include breakpoint($medium) {
+    @include three-fifths;
+  }
 }
 
 @mixin four-fifths {
@@ -150,5 +162,7 @@
 }
 
 .four-fifths {
-  @include four-fifths;
+  @include breakpoint($medium) {
+    @include four-fifths;
+  }
 }
