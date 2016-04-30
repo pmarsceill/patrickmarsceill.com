@@ -1,0 +1,43 @@
+// Media query mixin
+//
+// Usage:
+// @include mq(md) {
+//   ..medium and up styles
+// }
+@mixin mq($name, $size: $media-queries) {
+  @media (min-width: $name) {
+    @content;
+  }
+}
+
+// Columns container
+//
+// Usage
+// .columns-wrapper {
+//   @include columns;
+// }
+@mixin columns {
+  @include clearfix;
+  @include mq(md) {
+    margin-right: -$grid-gutter;
+    margin-left: -$grid-gutter;
+  }
+}
+
+// Column container
+//
+// Usage:
+// .column {
+//   @include column;
+// }
+@mixin column {
+  float: left;
+  padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
+}
+
+// Column widths
+
+@each $column-width, $size in $column-widths {
+  .#{ $column-width } { width: $size; }
+}
