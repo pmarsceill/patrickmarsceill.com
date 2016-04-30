@@ -1,0 +1,35 @@
+// flexible width container
+.container {
+  width: auto;
+  max-width: $container-width + ($grid-gutter * 2);
+  padding: 0 $grid-gutter;
+  margin-right: auto;
+  margin-left: auto;
+  @include clearfix;
+}
+
+// a wider container for media that needs to go beyond the normal container by a bit.
+.container-wide {
+  max-width: $container-wide-width + ($grid-gutter * 2);
+  @include clearfix;
+}
+
+.container,
+.container-wide {
+  @include mq(sm) {
+    padding: 0 $grid-gutter * 2;
+  }
+}
+
+// Base class for every column (requires a column width from below)
+//
+// This is included in the column width mixins below.
+//
+
+.columns {
+  @include columns;
+}
+
+.column {
+  @include column;
+}
