@@ -1,0 +1,24 @@
+// Color utils
+//
+
+// Text colors
+.text-muted { color: darken($soft-light, 10%) !important; }
+.text-red { color: $red !important; }
+.text-black { color: $darkest !important; }
+
+// Link colors
+
+.link-red {
+  color: $red  !important;
+  background-image: none  !important;
+
+  &:hover {
+    text-decoration: underline  !important;
+  }
+}
+
+// Background colors
+.bg-black { background-color: $darkest  !important; }
+.bg-dark { background-color: $grey-dk  !important; }
+.bg-light { background-color: $grey-md  !important; }
+.bg-white { background-color: $lightest  !important; }

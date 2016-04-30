@@ -1,0 +1,10 @@
+// Typography utils
+.text-small {
+  font-size: 12px !important;
+
+  @include mq(md) {
+    font-size: 14px !important;
+  }
+}
+
+.text-monospace { font-family: $monospace-font-family !important; }
