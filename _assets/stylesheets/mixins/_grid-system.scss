@@ -4,9 +4,19 @@
 // @include mq(md) {
 //   ..medium and up styles
 // }
-@mixin mq($name, $size: $media-queries) {
-  @media (min-width: $name) {
-    @content;
+@mixin mq($name) {
+  // Retrieves the value from the key
+  $value: map-get($media-queries, $name);
+
+  // If the key exists in the map
+  @if $value != null {
+    // Prints a media query based on the value
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
   }
 }
 
