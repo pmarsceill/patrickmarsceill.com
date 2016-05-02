@@ -6,7 +6,8 @@
   <title>{% if page.title %}{{ page.title }} - Patrick Marsceill{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="icon" href="/favicon.ico?v=1"> 
+  <link rel="icon" href="/favicon.ico?v=1">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="stylesheet" href="{% asset_path screen.css %}">
+  <link href="//cloud.webtype.com/css/0f4e670a-d261-4500-9b9f-1f367755c485.css" rel="stylesheet" type="text/css">
 </head>
