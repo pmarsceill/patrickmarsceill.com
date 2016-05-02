@@ -3,14 +3,14 @@
 // Import dependancies
 @import "normalize";
 @import "variables";
-@import "mixins";
+@import "mixins/mixins";
 
 // Import base styles
-@import "layout";
-@import "utilities";
+@import "utilities/utilities";
+@import "grid";
 @import "base";
 
-// Import site partials
+// Import components
 @import "content-blocks";
 @import "buttons";
 @import "posts";
@@ -18,11 +18,6 @@
 @import "type";
 @import "lists";
 @import "header";
-
-// Page specific items
 @import "shelf";
 @import "item-grid";
 @import "work";
-
-// Utilities
-@import "utilities";
