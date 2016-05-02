@@ -10,13 +10,13 @@
 .item-grid-item-thirds {
   width: 50%;
 
-  @include breakpoint($medium) {
+  @include mq(md) {
     width: 33.3333%;
   }
 }
 
 .item-grid-item-halfs {
-  @include breakpoint($medium) {
+  @include mq(md) {
     width: 50%;
   }
 }

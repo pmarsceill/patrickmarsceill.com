@@ -55,7 +55,7 @@ body {
   color: $body-color;
   background-color: $body-background-color;
 
-  @include breakpoint($medium) {
+  @include mq(md) {
     font-size: #{$body-font-size};
   }
 }

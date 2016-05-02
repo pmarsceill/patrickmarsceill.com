@@ -3,12 +3,12 @@
   margin: 0 auto;
   overflow-x: hidden;
 
-  @include breakpoint($smallest) {
-    border: $spacer-sm solid $darkest;
+  @include mq(xs) {
+    border: $spacer-1 solid $darkest;
   }
 
-  @include breakpoint($medium) {
-    border: $spacer-lg solid $darkest;
+  @include mq(md) {
+    border: $spacer-4 solid $darkest;
     border-top: 0;
     border-bottom: 0;
   }

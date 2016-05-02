@@ -3,7 +3,7 @@
   padding: $spacer 0;
   background-color: $darkest;
 
-  @include breakpoint($small) {
+  @include mq(sm) {
     z-index: 1;
     display: table;
     width: 100%;
@@ -14,13 +14,13 @@
 .main-nav {
   display: block;
 
-  @include breakpoint($small) {
+  @include mq(sm) {
     display: table-cell;
     text-align: right;
     vertical-align: top;
   }
 
-  @include breakpoint($medium) {
+  @include mq(md) {
     vertical-align: bottom;
   }
 
@@ -34,12 +34,12 @@
 .main-nav-item {
   display: inline-block;
 
-  @include breakpoint($small) {
+  @include mq(sm) {
     display: block;
     margin-bottom: 0;
   }
 
-  @include breakpoint($medium) {
+  @include mq(md) {
     display: inline-block;
   }
 }
@@ -51,25 +51,42 @@
   color: $red;
   background-image: none;
 
-  @include breakpoint($small) {
-    padding: 1rem 0 1rem 1rem;
+  @include mq(sm) {
+    padding: 2rem 0 2rem 1rem;
   }
 
-  @include breakpoint($large) {
-    padding: 2rem 1rem;
+  @include mq(lg) {
+    padding: 3rem 1rem;
   }
 
   &.selected {
     position: relative;
+    z-index: 1;
+    color: $lightest;
+
+    &::before {
+      position: absolute;
+      bottom: 50%;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 2px;
+      margin-top: 2px;
+      content: "";
+      background-color: $grey-dk;
+    }
 
     &::after {
       position: absolute;
       bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
+      left: 50%;
+      z-index: -1;
+      width: 70%;
+      height: 100%;
+      margin-left: -35%;
       content: "";
-      background-color: $red;
+      background-color: $darkest;
+      opacity: 1;
     }
   }
 }
@@ -78,7 +95,7 @@
   display: block;
   margin-top: 0;
 
-  @include breakpoint($small) {
+  @include mq(sm) {
     display: table-cell;
     margin: 0;
     vertical-align: middle;

@@ -1,5 +1,5 @@
 .content-block {
-  padding: $spacer-xl * 1.5 0;
+  padding: $spacer-6 * 1.5 0;
 
   &.img-bg {
     background-repeat: no-repeat;
@@ -7,6 +7,6 @@
   }
 
   +.content-block {
-    margin-top: $spacer-lg;
+    margin-top: $spacer-4;
   }
 }

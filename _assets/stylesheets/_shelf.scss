@@ -1,13 +1,13 @@
 .shelf {
   margin-top: 2rem;
 
-  @include breakpoint($medium) {
+  @include mq(md) {
     @include columns;
     margin-top: 5rem;
   }
 
   .shelf-row {
-    @include breakpoint($medium) {
+    @include mq(md) {
       position: relative;
       padding-top: 12rem;
       margin-bottom: 14rem;
@@ -19,19 +19,17 @@
     margin-bottom: 2rem;
     border-bottom: 1px solid $darkest;
 
-    @include breakpoint($medium) {
+    @include mq(md) {
       padding: 0;
       margin: 0;
       border: 0;
-      @include one-third;
     }
   }
 
   .item-img {
     line-height: 0;
 
-
-    @include breakpoint($medium) {
+    @include mq(md) {
       position: absolute;
       bottom: -6px;
       width: 24.7%;
@@ -39,7 +37,7 @@
   }
 
   .item-meta {
-    @include breakpoint($medium) {
+    @include mq(md) {
       padding-right: 16px;
       padding-left: 32px;
       margin-top: 7px;
