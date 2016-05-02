@@ -2,7 +2,15 @@
 //
 
 @for $i from 0 through 6 {
-  $size: $spacer * $i;
+  $mult: 0 !default;
+
+  @if $i % 2 == 0 { //check for even numbers
+    $mult: $i * 0.5;
+  } @else {
+    $mult: $i * 0.5;
+  }
+
+  $size: $spacer * $mult;
 
   @if $i == 0 {
     $size: 0;

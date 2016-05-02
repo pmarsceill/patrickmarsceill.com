@@ -2,18 +2,17 @@
 //
 
 // Text colors
-.text-muted { color: darken($soft-light, 10%) !important; }
+.text-muted { color: darken($soft-light, 14%) !important; }
 .text-red { color: $red !important; }
 .text-black { color: $darkest !important; }
 
 // Link colors
-
 .link-red {
-  color: $red  !important;
-  background-image: none  !important;
+  color: $red !important;
+  background-image: none !important;
 
   &:hover {
-    text-decoration: underline  !important;
+    text-decoration: underline !important;
   }
 }
 
