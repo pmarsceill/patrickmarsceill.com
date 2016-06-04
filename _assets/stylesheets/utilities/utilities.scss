@@ -3,7 +3,9 @@
 @import "../mixins/mixins";
 
 // Utility classes
+@import "media";
 @import "layout";
-@import "spacing";
+@import "margin";
+@import "padding";
 @import "typography";
 @import "colors";

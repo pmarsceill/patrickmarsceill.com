@@ -1,5 +1,5 @@
+// stylelint-disable block-opening-brace-space-after, block-opening-brace-space-before, primer/selector-no-utility
 // Color utils
-//
 
 // Text colors
 .text-muted { color: darken($soft-light, 14%) !important; }
@@ -17,7 +17,7 @@
 }
 
 // Background colors
-.bg-black { background-color: $darkest  !important; }
-.bg-dark { background-color: $grey-dk  !important; }
-.bg-light { background-color: $grey-md  !important; }
-.bg-white { background-color: $lightest  !important; }
+.bg-black { background-color: $darkest !important; }
+.bg-dark { background-color: $grey-dk !important; }
+.bg-light { background-color: $grey-md !important; }
+.bg-white { background-color: $lightest !important; }
