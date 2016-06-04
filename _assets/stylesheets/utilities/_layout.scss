@@ -23,14 +23,14 @@
 
 // Responsive display utlities
 // .d-sm-none, .d-lg-inline, ...
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include breakpoint($breakpoint) {
-    .d-#{$breakpoint}-block  { display: block !important; }
-    .d-#{$breakpoint}-inline  { display: inline !important; }
-    .d-#{$breakpoint}-inline-block  { display: inline-block !important; }
-    .d-#{$breakpoint}-table  { display: table !important; }
-    .d-#{$breakpoint}-table-cell  { display: table-cell !important; }
-    .d-#{$breakpoint}-none  { display: none !important; }
+@each $media-query in map-keys($media-queries) {
+  @include mq($media-query) {
+    .d-#{ $media-query }-block  { display: block !important; }
+    .d-#{ $media-query }-inline  { display: inline !important; }
+    .d-#{ $media-query }-inline-block  { display: inline-block !important; }
+    .d-#{ $media-query }-table  { display: table !important; }
+    .d-#{ $media-query }-table-cell  { display: table-cell !important; }
+    .d-#{ $media-query }-none  { display: none !important; }
   }
 }
 
@@ -58,18 +58,18 @@
 .right, // legacy
 .float-right { float: right !important; }
 
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include breakpoint($breakpoint) {
-    .float-#{$breakpoint}-right  { float: right !important; }
+@each $media-query in map-keys($media-queries) {
+  @include mq($media-query) {
+    .float-#{$media-query}-right  { float: right !important; }
   }
 }
 
 .left, // legacy
 .float-left { float: left !important; }
 
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include breakpoint($breakpoint) {
-    .float-#{$breakpoint}-left  { float: left !important; }
+@each $media-query in map-keys($media-queries) {
+  @include mq($media-query) {
+    .float-#{$media-query}-left  { float: left !important; }
   }
 }
 
