@@ -1,8 +1,7 @@
 // flexible width container
 .container {
   width: auto;
-  max-width: $container-width + ($grid-gutter * 2);
-  padding: 0 $grid-gutter;
+  max-width: $container-width;
   margin-right: auto;
   margin-left: auto;
   @include clearfix;
@@ -12,13 +11,6 @@
 .container-wide {
   max-width: $container-wide-width + ($grid-gutter * 2);
   @include clearfix;
-}
-
-.container,
-.container-wide {
-  @include mq(sm) {
-    padding: 0 $grid-gutter * 2;
-  }
 }
 
 // Base class for every column (requires a column width from below)
