@@ -1,5 +1,6 @@
+// stylelint-disable block-closing-brace-newline-after, indentation
+
 // Media query mixin
-//
 // Usage:
 // @include mq(md) {
 //   ..medium and up styles
@@ -15,8 +16,8 @@
       @content;
     }
   } @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Please make sure it is defined in `$breakpoints` map.";
+    @warn "Unfortunately, no value could be retrieved from `#{$media-query}`. "
+        + "Please make sure it is defined in `$media-queries` map.";
   }
 }
 
@@ -29,8 +30,8 @@
 @mixin columns {
   @include clearfix;
   @include mq(md) {
-    margin-right: -$grid-gutter;
-    margin-left: -$grid-gutter;
+    margin-right: -$grid-gutter !important;
+    margin-left: -$grid-gutter !important;
   }
 }
 
@@ -41,13 +42,25 @@
 //   @include column;
 // }
 @mixin column {
-  float: left;
-  padding-right: $grid-gutter;
-  padding-left: $grid-gutter;
+  float: left !important;
+  padding-right: $grid-gutter !important;
+  padding-left: $grid-gutter !important;
 }
 
 // Column widths
 
+// .one-half, .one-third
 @each $column-width, $size in $column-widths {
-  .#{ $column-width } { width: $size; }
+  .#{ $column-width } { width: $size !important; }
+}
+
+// .md-one-half, .sm-one-third
+@each $media-query, $query in $media-queries {
+  @each $column-width, $size in $column-widths {
+    .#{ $column-width }-#{ $media-query } {
+      @include mq($media-query) {
+        width: $size !important;
+      }
+    }
+  }
 }
