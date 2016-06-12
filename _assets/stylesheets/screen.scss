@@ -6,9 +6,9 @@
 @import "mixins/mixins";
 
 // Import base styles
-@import "utilities/utilities";
-@import "grid";
 @import "base";
+@import "grid";
+@import "utilities/utilities";
 
 // Import components
 @import "content-blocks";
@@ -18,7 +18,7 @@
 @import "type";
 @import "lists";
 @import "header";
-@import "shelf";
+// @import "shelf";
 @import "item-grid";
 @import "screenshots";
 @import "work";
