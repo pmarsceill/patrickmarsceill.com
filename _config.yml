@@ -33,3 +33,4 @@ exclude:
   - Gemfile.lock
   - package.json
   - Gruntfile.js
+  - circle.yml
