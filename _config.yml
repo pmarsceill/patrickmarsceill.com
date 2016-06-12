@@ -1,16 +1,19 @@
 # Site settings
-title: Patrick Marsceill - Designer at GitHub
+title: Patrick Marsceill
 email: patrick.marsceill@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Patrick Marsceill - Designer and web developer living in Philadelphia, working at GitHub
+  Designer and web developer living in Philadelphia, working at GitHub
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://patrickmarsceill.com" # the base hostname & protocol for your site
+twitter:
+  username: pmarsceill
 
 # Build settings
 markdown: kramdown
 gems:
   - jekyll-sitemap
   - jekyll-assets
+  - jekyll-seo-tag
 permalink: pretty
 assets:
   # cache: false | directory | default: .asset-cache
