@@ -7,7 +7,18 @@ order: 2
 
 <div class="content-block border-top">
   <div class="container container-wide">
-      <div class="item-grid mb-6">
+      <div class="single column">
+        <div class="item-grid mb-6">
+            <div class="two-thirds py-4 pl-0 pr-3 post-content">
+              <h2 class="heading-beta"><a href="#">Hacking the font stack</a></h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in dicta tempora molestiae assumenda eius commodi molestias enim perspiciatis. Enim doloribus molestias eligendi eum eaque ipsum iste obcaecati, incidunt voluptatem.</p>
+            </div>
+            <div class="one-third bg-dark py-4">
+
+            </div>
+        </div>
+
+        <div class="item-grid mb-6 mx-offset">
           <div class="two-thirds py-4 pl-0 pr-3 post-content">
             <h2 class="heading-beta"><a href="#">Hacking the font stack</a></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in dicta tempora molestiae assumenda eius commodi molestias enim perspiciatis. Enim doloribus molestias eligendi eum eaque ipsum iste obcaecati, incidunt voluptatem.</p>
@@ -15,37 +26,26 @@ order: 2
           <div class="one-third bg-dark py-4">
 
           </div>
-      </div>
-
-      <div class="item-grid mb-6 mx-offset">
-        <div class="two-thirds py-4 pl-0 pr-3 post-content">
-          <h2 class="heading-beta"><a href="#">Hacking the font stack</a></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in dicta tempora molestiae assumenda eius commodi molestias enim perspiciatis. Enim doloribus molestias eligendi eum eaque ipsum iste obcaecati, incidunt voluptatem.</p>
-        </div>
-        <div class="one-third bg-dark py-4">
-
         </div>
       </div>
     </div>
   </div>
   <div class="content-block bg-dark">
     <div class="container container-wide">
-      <div class="columns">
-        <div class="one-fourth column">
-          <h2 class="heading-delta">Older Entries</h2>
-        </div>
-        <div class="one-half column">
-          {% for post in site.posts %}
-            {% unless post.categories contains "status" %}
-            <article class="post-preview">
-                <span class="post-date text-small text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
-                <h2 class="post-title heading-gamma">
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
-            </article>
-            {% endunless %}
-          {% endfor %}
-        </div>
+      <div class="one-fourth column">
+        <h2 class="heading-delta">Older Entries</h2>
+      </div>
+      <div class="one-half column">
+        {% for post in site.posts %}
+          {% unless post.categories contains "status" %}
+          <article class="post-preview">
+              <span class="post-date text-small text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h2 class="post-title heading-gamma">
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+          </article>
+          {% endunless %}
+        {% endfor %}
       </div>
 
     <!-- <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
