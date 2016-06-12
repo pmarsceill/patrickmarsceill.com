@@ -3,6 +3,7 @@
   margin: 0 auto;
   overflow-x: hidden;
   border: $spacer-1 solid $darkest;
+  border-top: 0;
 
   @include mq(md) {
     border: $spacer-2 solid $darkest;
