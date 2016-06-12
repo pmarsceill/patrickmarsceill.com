@@ -1,12 +1,26 @@
 .content-block {
-  padding: $spacer-6 * 1.5 0;
+  padding: $spacer-4 0;
 
-  &.img-bg {
-    background-repeat: no-repeat;
-    background-position: 90% bottom;
+  @include mq(md) {
+    padding: $spacer-6 * 1.5 0;
   }
 
   + .content-block {
     margin-top: $spacer-4;
+  }
+}
+
+.content-block-img-bg {
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: auto 60%;
+
+  @include mq(sm) {
+    background-position: 90% bottom;
+    background-size: auto 90%;
+  }
+
+  @include mq(md) {
+    background-size: auto;
   }
 }
