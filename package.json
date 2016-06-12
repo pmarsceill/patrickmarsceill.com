@@ -13,7 +13,7 @@
   },
   "description": "Source for patrickmarsceill.com",
   "scripts": {
-    "test": "stylelint **/*.scss -c .stylelintrc.json -s scss"
+    "test": "stylelint _assets/**/*.scss -c .stylelintrc.json -s scss"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
