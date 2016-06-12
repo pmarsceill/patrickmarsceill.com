@@ -8,9 +8,16 @@
     "type": "git",
     "url": "git+https://github.com/pmarsceill/patrickmarsceill.com.git"
   },
+  "bugs": {
+    "url": "https://github.com/pmarsceill/patrickmarsceill.com/issues"
+  },
   "description": "Source for patrickmarsceill.com",
+  "scripts": {
+    "test": "stylelint **/*.scss -c .stylelintrc.json -s scss"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-build-control": "^0.7.0",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-jekyll": "^0.4.4",
