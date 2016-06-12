@@ -1,5 +1,4 @@
-// scss-lint:disable ImportantRule, QualifyingElement, DuplicateProperty
-
+// stylelint-disable primer/selector-no-utility, selector-no-qualifying-type
 // Base styles and additional resets
 //
 // Credit: Most of this comes from Bootstrap's Reboot.
@@ -177,7 +176,7 @@ legend {
   padding: 0;
   margin-bottom: 0.5rem;
   line-height: inherit;
-//  border: 0;
+  border: 0;
 }
 
 hr {
