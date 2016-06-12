@@ -24,6 +24,7 @@
     "grunt-parker": "^0.1.5",
     "stylelint": "6.5.1",
     "stylelint-scss": "1.1.1",
+    "stylelint-function-url-no-domain": "0.0.1-security",
     "stylelint-selector-no-utility": "1.1.0",
     "stylelint-value-border-zero": "1.0.2"
   }
