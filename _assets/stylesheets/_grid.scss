@@ -16,12 +16,30 @@
 // Base class for every column (requires a column width from below)
 //
 // This is included in the column width mixins below.
-//
-
-.columns {
-  @include columns;
-}
 
 .column {
   @include column;
+}
+
+
+// Column widths
+
+// .one-half, .one-third
+@each $column-width, $size in $column-widths {
+  .#{ $column-width } { width: $size !important; }
+}
+
+// Convert the SASS maps to a list
+$mq-names: map-keys($media-queries);
+
+// .md-one-half, .sm-one-third
+@each $media-query in $mq-names {
+  @each $column, $size in $column-widths {
+    /* test */
+    .#{ $column }-#{ $media-query } {
+      @include mq($media-query) {
+        width: $size !important;
+      }
+    }
+  }
 }
