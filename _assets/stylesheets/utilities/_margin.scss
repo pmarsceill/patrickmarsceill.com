@@ -3,7 +3,7 @@
 // Margin spacer utilities
 
 @for $i from 1 through length($spacers) {
-  $size: #{nth($spacers, $i)};
+  $size: #{map-get($spacers, spacer#{$i - 1})};
   $scale: #{$i - 1};
 
   // .m-0, .m-1, .m-2...
@@ -26,9 +26,8 @@
 
 @each $media-query in map-keys($media-queries) {
   @for $i from 1 through length($spacers) {
-
     @include mq($media-query) {
-      $size: #{nth($spacers, $i)};
+      $size: #{map-get($spacers, spacer#{$i - 1})};
       $scale: #{$i - 1};
 
       // .m-sm-0, .m-md-1, .m-lg-2...

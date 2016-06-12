@@ -3,7 +3,7 @@
 // Padding spacer utilities
 
 @for $i from 1 through length($spacers) {
-  $size: #{nth($spacers, $i)};
+  $size: #{map-get($spacers, spacer#{$i - 1})};
   $scale: #{$i - 1};
 
   // .p-0, .p-1, .p-2...
@@ -27,7 +27,7 @@
 @each $media-query in map-keys($media-queries) {
   @include mq($media-query) {
     @for $i from 1 through length($spacers) {
-      $size: #{nth($spacers, $i)};
+      $size: #{map-get($spacers, spacer#{$i - 1})};
       $scale: #{$i - 1};
 
       // .p-sm-0, .p-md-1, .p-lg-2...
