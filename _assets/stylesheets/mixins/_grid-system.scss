@@ -29,6 +29,11 @@
 // }
 @mixin column {
   float: left !important;
-  padding-right: $grid-gutter !important;
-  padding-left: $grid-gutter !important;
+  padding-right: $grid-gutter / 2 !important;
+  padding-left: $grid-gutter / 2 !important;
+
+  @include mq(md) {
+    padding-right: $grid-gutter !important;
+    padding-left: $grid-gutter !important;
+  }
 }
