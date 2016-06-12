@@ -21,20 +21,6 @@
   }
 }
 
-// Columns container
-//
-// Usage
-// .columns-wrapper {
-//   @include columns;
-// }
-@mixin columns {
-  @include clearfix;
-  @include mq(md) {
-    margin-right: -$grid-gutter !important;
-    margin-left: -$grid-gutter !important;
-  }
-}
-
 // Column container
 //
 // Usage:
@@ -45,22 +31,4 @@
   float: left !important;
   padding-right: $grid-gutter !important;
   padding-left: $grid-gutter !important;
-}
-
-// Column widths
-
-// .one-half, .one-third
-@each $column-width, $size in $column-widths {
-  .#{ $column-width } { width: $size !important; }
-}
-
-// .md-one-half, .sm-one-third
-@each $media-query, $query in $media-queries {
-  @each $column-width, $size in $column-widths {
-    .#{ $column-width }-#{ $media-query } {
-      @include mq($media-query) {
-        width: $size !important;
-      }
-    }
-  }
 }
