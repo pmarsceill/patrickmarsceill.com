@@ -23,7 +23,6 @@
     "grunt-jekyll": "^0.4.4",
     "grunt-parker": "^0.1.5",
     "stylelint": "6.5.1",
-    "stylelint-function-url-no-domain": "1.0.0",
     "stylelint-scss": "1.1.1",
     "stylelint-selector-no-utility": "1.1.0",
     "stylelint-value-border-zero": "1.0.2"
