@@ -7,27 +7,25 @@ order: 2
 
 <div class="content-block border-top">
   <div class="container container-wide">
-      <div class="single column">
-        <div class="item-grid mb-6">
-            <div class="two-thirds py-4 pl-0 pr-3 post-content">
-              <h2 class="heading-beta"><a href="#">Hacking the font stack</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in dicta tempora molestiae assumenda eius commodi molestias enim perspiciatis. Enim doloribus molestias eligendi eum eaque ipsum iste obcaecati, incidunt voluptatem.</p>
-            </div>
-            <div class="one-third bg-dark py-4">
-
-            </div>
-        </div>
-
-        <div class="item-grid mb-6 mx-offset">
-          <div class="two-thirds py-4 pl-0 pr-3 post-content">
+      <div class="d-flex mb-6">
+          <div class="two-thirds column post-content">
             <h2 class="heading-beta"><a href="#">Hacking the font stack</a></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in dicta tempora molestiae assumenda eius commodi molestias enim perspiciatis. Enim doloribus molestias eligendi eum eaque ipsum iste obcaecati, incidunt voluptatem.</p>
           </div>
-          <div class="one-third bg-dark py-4">
+          <div class="one-third column bg-dark">
 
           </div>
+      </div>
+      <div class="d-flex mb-6">
+        <div class="two-thirds column post-content">
+          <h2 class="heading-beta"><a href="#">Hacking the font stack</a></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in dicta tempora molestiae assumenda eius commodi molestias enim perspiciatis. Enim doloribus molestias eligendi eum eaque ipsum iste obcaecati, incidunt voluptatem.</p>
+        </div>
+        <div class="one-third column bg-dark">
+
         </div>
       </div>
+      <p class="single column text-muted text-small">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
     </div>
   </div>
   <div class="content-block bg-dark">
@@ -47,7 +45,6 @@ order: 2
           {% endunless %}
         {% endfor %}
       </div>
-
-    <!-- <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+    </div>
   </div>
 </div>
