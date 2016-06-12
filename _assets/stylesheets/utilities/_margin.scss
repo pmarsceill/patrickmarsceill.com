@@ -22,6 +22,11 @@
     margin-top: #{$size} !important;
     margin-bottom: #{$size} !important;
   }
+
+  .mxn-#{$scale} {
+    margin-right: -#{$size} !important;
+    margin-left: -#{$size} !important;
+  }
 }
 
 @each $media-query in map-keys($media-queries) {
@@ -45,6 +50,11 @@
       .my-#{$media-query}-#{$scale} {
         margin-top: #{$size} !important;
         margin-bottom: #{$size} !important;
+      }
+
+      .mxn-#{$media-query}-#{$scale} {
+        margin-right: -#{$size} !important;
+        margin-left: -#{$size} !important;
       }
     }
   }
