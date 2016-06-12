@@ -1,28 +1,14 @@
 .site-header {
-  @include clearfix;
+  display: table;
+  width: 100%;
   padding: $spacer 0;
   background-color: $darkest;
-
-  @include mq(sm) {
-    z-index: 1;
-    display: table;
-    width: 100%;
-    padding: 0;
-  }
 }
 
 .main-nav {
-  display: block;
-
-  @include mq(sm) {
-    display: table-cell;
-    text-align: right;
-    vertical-align: top;
-  }
-
-  @include mq(md) {
-    vertical-align: bottom;
-  }
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
 
   ul {
     padding: 0;
@@ -33,73 +19,57 @@
 
 .main-nav-item {
   display: inline-block;
-
-  @include mq(sm) {
-    display: block;
-    margin-bottom: 0;
-  }
-
-  @include mq(md) {
-    display: inline-block;
-  }
 }
 
 .main-nav-link {
   display: block;
-  padding: 1rem 1rem 1rem 0;
-  font-size: 14px;
+  padding: 0 0.5rem;
   color: $red;
   background-image: none;
 
-  @include mq(sm) {
-    padding: 2rem 0 2rem 1rem;
-  }
-
-  @include mq(lg) {
-    padding: 3rem 1rem;
-  }
-
   &.selected {
-    position: relative;
-    z-index: 1;
     color: $lightest;
+  }
 
-    &::before {
-      position: absolute;
-      bottom: 50%;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 2px;
-      margin-top: 2px;
-      content: "";
-      background-color: $grey-dk;
-    }
+  @include mq(md) {
+    padding: 3rem 1rem;
 
-    &::after {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      z-index: -1;
-      width: 70%;
-      height: 100%;
-      margin-left: -35%;
-      content: "";
-      background-color: $darkest;
-      opacity: 1;
+    &.selected {
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 2px;
+        margin-top: 2px;
+        content: "";
+        background-color: $grey-dk;
+      }
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        z-index: -1;
+        width: 70%;
+        height: 100%;
+        margin-left: -35%;
+        content: "";
+        background-color: $darkest;
+        opacity: 1;
+      }
     }
   }
 }
 
 .logo {
-  display: block;
-  margin-top: 0;
-
-  @include mq(sm) {
-    display: table-cell;
-    margin: 0;
-    vertical-align: middle;
-  }
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle;
 
   a {
     display: block;
@@ -116,6 +86,14 @@
 }
 
 .logo-mark {
-  width: 140px;
+  width: 75px;
   height: auto;
+
+  @include mq(sm) {
+    width: 100px;
+  }
+
+  @include mq(md) {
+    width: 140px;
+  }
 }
