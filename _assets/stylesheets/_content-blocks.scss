@@ -1,19 +1,17 @@
 .content-block {
-  padding: $spacer-4 0;
+  max-width: $container-wide-width + ($grid-gutter * 10);
+  padding: $spacer-3 rem($grid-gutter / 2);
+  margin: 0 auto;
 
   @include mq(md) {
-    padding: $spacer-6 * 1.5 0;
-  }
-
-  + .content-block {
-    margin-top: $spacer-4;
+    padding: $spacer-6 rem($grid-gutter);
   }
 }
 
 .content-block-img-bg {
   background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: auto 60%;
+  background-position: center bottom;
+  background-size: auto 90%;
 
   @include mq(sm) {
     background-position: 90% bottom;
@@ -21,6 +19,12 @@
   }
 
   @include mq(md) {
+    background-position: 120% 190%;
     background-size: auto;
+  }
+
+  @include mq(lg) {
+    background-position: 90% $spacer-4;
+    background-size: auto 100%;
   }
 }

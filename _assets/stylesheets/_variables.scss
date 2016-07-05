@@ -4,12 +4,12 @@ $grid-gutter: 32px !default;
 // For extra wide content that breaks out of the grid
 $container-wide-width: 1200px !default;
 
-// Media queries
+// Media queries in pixels
 $media-queries: (
   xs: 320px,
   sm: 500px,
-  md: 700px,
-  lg: $container-width + ($grid-gutter * 2),
+  md: 740px,
+  lg: 980px,
   xl: $container-wide-width + ($grid-gutter * 2)
 ) !default;
 

@@ -6,6 +6,17 @@
 .position-absolute { position: absolute !important; }
 .position-fixed    { position: fixed !important; }
 
+// Responsive position utlities
+// .position-sm-static, .position-lg-absolute, ...
+@each $media-query in map-keys($media-queries) {
+  @include mq($media-query) {
+    .position-#{ $media-query }-static   { position: static !important; }
+    .position-#{ $media-query }-relative { position: relative !important; }
+    .position-#{ $media-query }-absolute { position: absolute !important; }
+    .position-#{ $media-query }-fixed    { position: fixed !important; }
+  }
+}
+
 .top-0    { top: 0 !important; }
 .right-0  { right: 0 !important; }
 .bottom-0 { bottom: 0 !important; }
@@ -58,7 +69,6 @@
 }
 
 // Floats
-.right, // legacy
 .float-right { float: right !important; }
 
 @each $media-query in map-keys($media-queries) {
@@ -67,12 +77,19 @@
   }
 }
 
-.left, // legacy
 .float-left { float: left !important; }
 
 @each $media-query in map-keys($media-queries) {
   @include mq($media-query) {
     .float-#{$media-query}-left  { float: left !important; }
+  }
+}
+
+.float-none { float: none !important; }
+
+@each $media-query in map-keys($media-queries) {
+  @include mq($media-query) {
+    .float-#{$media-query}-none  { float: none !important; }
   }
 }
 

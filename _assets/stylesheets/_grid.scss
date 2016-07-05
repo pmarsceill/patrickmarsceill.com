@@ -14,11 +14,13 @@
 }
 
 // Base class for every column (requires a column width from below)
-//
-// This is included in the column width mixins below.
-
 .column {
   @include column;
+}
+
+// Base class for column containers. Applies negative margin so column padding aligns to the edges of the container.
+.columns {
+  @include columns;
 }
 
 // Column widths

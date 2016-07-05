@@ -9,14 +9,14 @@
       {% include header.html %}
 
       <main role="main" class="main">
+
         {{ content }}
+        
       </main>
 
+      {% include footer.html %}
+
     </div>
-
-    {% include footer.html %}
-
     <script src="{% asset_path main.js %}" charset="utf-8"></script>
   </body>
-
 </html>

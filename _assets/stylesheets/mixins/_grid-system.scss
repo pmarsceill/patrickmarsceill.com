@@ -12,7 +12,7 @@
   // If the key exists in the map
   @if $value != null {
     // Prints a media query based on the value
-    @media (min-width: $value) {
+    @media (min-width: rem($value)) {
       @content;
     }
   } @else {
@@ -29,11 +29,22 @@
 // }
 @mixin column {
   float: left !important;
-  padding-right: $grid-gutter / 2 !important;
-  padding-left: $grid-gutter / 2 !important;
+  padding-right: rem($grid-gutter / 2) !important;
+  padding-left: rem($grid-gutter / 2) !important;
 
   @include mq(md) {
-    padding-right: $grid-gutter !important;
-    padding-left: $grid-gutter !important;
+    padding-right: rem($grid-gutter) !important;
+    padding-left: rem($grid-gutter) !important;
+  }
+}
+
+@mixin columns {
+  display: block !important;
+  margin-right: rem(-$grid-gutter / 2) !important;
+  margin-left: rem(-$grid-gutter / 2) !important;
+
+  @include mq(md) {
+    margin-right: rem(-$grid-gutter) !important;
+    margin-left: rem(-$grid-gutter) !important;
   }
 }

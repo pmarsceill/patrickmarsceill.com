@@ -1,4 +1,4 @@
-// Makes single images fluid
+// Makes single images fluid also can be used on video elements
 .img-fluid {
   width: 100%;
   max-width: 100%;
@@ -13,7 +13,7 @@
 
 // Makes all media fluid by default
 // Use as a body class or in specific areas
-// Wrap videos, map embeds, etc in .media-container
+// Wrap youtube embeds, map embeds, etc in .media-container
 .media-fluid {
   img {
     width: 100%;
@@ -30,8 +30,7 @@
 
     iframe,
     object,
-    embed,
-    video {
+    embed {
       position: absolute;
       top: 0;
       left: 0;
