@@ -14,12 +14,12 @@
   background-size: auto 90%;
 
   @include mq(sm) {
-    background-position: 90% bottom;
+    background-position: 110% bottom;
     background-size: auto 90%;
   }
 
   @include mq(md) {
-    background-position: 120% 190%;
+    background-position: 120% 130%;
     background-size: auto;
   }
 
