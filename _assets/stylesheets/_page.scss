@@ -6,13 +6,12 @@
   border-top: 0;
 
   @include mq(md) {
-    border: $spacer-3 solid $darkest;
     border-top: 0;
     border-bottom: 0;
   }
 
   @include mq(xl) {
-    border: $spacer-4 solid $darkest;
+    border: $spacer-3 solid $darkest;
     border-top: 0;
     border-bottom: 0;
   }
