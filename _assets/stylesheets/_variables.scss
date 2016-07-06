@@ -49,11 +49,11 @@ $spacer-5: map-get($spacers, spacer5);
 $spacer-6: map-get($spacers, spacer6);
 
 // Font family and metrics
-$display-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$display-font-family: PxGroteskLight, -apple-system, BlinkMacSystemFont, "Helvetica Neue",  sans-serif;
+$body-font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Oxygen, Ubuntu, Cantarell, sans-serif;
 $monospace-font-family: Consolas, Menlo, Andale, monospace;
-$body-font-size: 18px;
-$body-font-size-sm: 14px;
+$body-font-size: 16px;
+$body-font-size-sm: 13px;
 $body-line-height: 1.5;
 
 // Site colors
