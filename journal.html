@@ -7,21 +7,21 @@ order: 2
 
 <div class="content-block border-top">
   <div class="container container-wide">
-    <div class="d-flex mb-6 columns">
-      <div class="two-thirds column post-content">
-        <h2 class="heading-beta"><a href="#">Hacking the font stack</a></h2>
+    <div class="d-flex mb-6 columns a-center">
+      <div class="one-half column post-content">
+        <h2 class="display-beta"><a href="#">Hacking the font stack</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in dicta tempora molestiae assumenda eius commodi molestias enim perspiciatis. Enim doloribus molestias eligendi eum eaque ipsum iste obcaecati, incidunt voluptatem.</p>
       </div>
-      <div class="one-third column bg-dark">
-
+      <div class="one-half column">
+        <img src="{% asset_path 'articles/hacking-font-stack.png' %}" alt=""  class="img-fluid">
       </div>
     </div>
     <div class="d-flex mb-6 columns">
-      <div class="two-thirds column post-content">
-        <h2 class="heading-beta"><a href="#">Hacking the font stack</a></h2>
+      <div class="one-half column post-content">
+        <h2 class="display-beta"><a href="#">Hacking the font stack</a></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in dicta tempora molestiae assumenda eius commodi molestias enim perspiciatis. Enim doloribus molestias eligendi eum eaque ipsum iste obcaecati, incidunt voluptatem.</p>
       </div>
-      <div class="one-third column bg-dark">
+      <div class="one-half column bg-dark">
 
       </div>
     </div>
@@ -31,15 +31,15 @@ order: 2
 <div class="content-block bg-dark">
   <div class="container container-wide">
     <div class="columns">
-      <div class="one-fourth column">
+      <div class="single one-third-sm one-fourth-lg column">
         <h2 class="heading-delta">Older Entries</h2>
       </div>
-      <div class="one-half column">
+      <div class="two-thirds-sm one-half-md column">
         {% for post in site.posts %}
         {% unless post.categories contains "status" %}
         <article class="post-preview mb-2">
           <span class="post-date text-small text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <h2 class="post-title heading-gamma">
+          <h2 class="post-title display-gamma">
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
         </article>
