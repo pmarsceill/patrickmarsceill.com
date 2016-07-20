@@ -33,13 +33,30 @@
 // Convert the SASS maps to a list
 $mq-names: map-keys($media-queries);
 
-// .md-one-half, .sm-one-third
+// .one-half-md, .one-third-sm
 @each $media-query in $mq-names {
   @each $column, $size in $column-widths {
     /* test */
     .#{ $column }-#{ $media-query } {
       @include mq($media-query) {
         width: $size !important;
+      }
+    }
+  }
+}
+
+// .offset-one-third
+@each $column-width, $size in $column-widths {
+  .offset-#{ $column-width } { margin-left: $size !important; }
+}
+
+// .offset-one-third-md
+@each $media-query in $mq-names {
+  @each $column, $size in $column-widths {
+    /* test */
+    .offset-#{ $column }-#{ $media-query } {
+      @include mq($media-query) {
+        margin-left: $size !important;
       }
     }
   }
