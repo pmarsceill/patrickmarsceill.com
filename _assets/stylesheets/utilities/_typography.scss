@@ -11,3 +11,10 @@
 .text-monospace { font-family: $monospace-font-family !important; }
 
 .text-center { text-align: center !important; }
+
+//
+// Link utils
+//
+.link-no-underline {
+  background-image: none;
+}
