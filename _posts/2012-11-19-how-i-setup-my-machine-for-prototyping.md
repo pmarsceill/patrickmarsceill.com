@@ -13,8 +13,6 @@ _Note: This was written for those using a Mac running OSX 10.7 or later._
 
 You can <a href="http://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12" title="Apple Xcode Download">download and install Xcode from Apple's App store</a> after creating a <a href="https://developer.apple.com" target="_blank" title="Apple Developers">Developer Account</a>.
 
-/images/blog/prototype-setup/xcode-prefs.png Xcode Preferences #2
-
 After Xcode is downloaded and installed, there is another step that I always forget about. I mean _always_... And it takes me a good 20 minutes of cursing trying figure out why my compiler is taking a dump.  So here is what you gotta do:  You open up Xcode and select "Preferences..." from the Xcode menu and manually install the "Command Line Tools" by clicking "Downloads" tab, and then the "Install" button next to the item in the list.
 
  /images/blog/prototype-setup/install-commandline.png Install Command Line Tools
