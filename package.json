@@ -22,11 +22,9 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-jekyll": "^0.4.4",
     "grunt-parker": "^0.1.5",
-    "node-sass": "^3.7.0",
-    "postcss-cli": "^2.5.2",
-    "stylelint": "6.5.1",
-    "stylelint-scss": "1.1.1",
-    "stylelint-selector-no-utility": "1.1.0",
-    "stylelint-value-border-zero": "1.0.2"
+    "node-sass": "3.6.0",
+    "postcss-cli": "2.2.0",
+    "stylelint": "7.0.3",
+    "stylelint-config-primer": "^1.1.0"
   }
 }
