@@ -20,6 +20,7 @@
 
 // Base class for column containers. Applies negative margin so column padding aligns to the edges of the container.
 .columns {
+  @include clearfix;
   @include columns;
 }
 
