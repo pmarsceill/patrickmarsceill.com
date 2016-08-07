@@ -2,8 +2,12 @@
   max-width: $container-wide-width * 2;
   margin: 0 auto;
   overflow-x: hidden;
-  border: $spacer-2 solid $darkest;
+  border: $spacer-1 * 1.5 solid $darkest;
   border-top: 0;
+
+  @include mq(sm) {
+    border: $spacer-2 solid $darkest;
+  }
 
   @include mq(md) {
     border-top: 0;
