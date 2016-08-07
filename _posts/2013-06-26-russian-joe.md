@@ -9,7 +9,7 @@ I was looking at some old photos on Flickr and came across this. It's from 2013'
 Ryan Jahn and I spent a day biking around Austin trying to eat lunch. After multiple unsuccessful attempts, we gave up and focused our collective energy on something that would get us through the rest of the day / night. The Russian Joe was born out of lack of energy, need for sustinance, and the desire to get in some day drinking.
 
 <figure>
-    <img src="http://farm8.staticflickr.com/7373/9135600825_6d52df6494_c.jpg" alt="Photo of 4 Russian Joes">
+    <img src="http://farm8.staticflickr.com/7373/9135600825_6d52df6494_c.jpg" alt="Photo of 4 Russian Joes" class="img-fluid">
     <figcaption>
         4 Russian Joes ready for launch.
     </figcaption>

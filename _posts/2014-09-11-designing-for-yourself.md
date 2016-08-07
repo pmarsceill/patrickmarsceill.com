@@ -23,7 +23,7 @@ To keep myself disciplined, I set a pace of constant ideation, followed by editi
 * **I didn't set a launch date.** This really wasn’t a purposeful decision. Just a feeling that if I could live with the design locally and chisel away at it until it felt right, it would evolve in the most organic way possible. I looked at the fully coded site every day for about a month (in my local dev environment), even if just for five minutes at a time. While I was browsing other sites, I would purposefully pull it up to see what the experience was like—judging how natural or jarring it felt. This lead me to discover more details that I wanted to temper and I hammered at them until they felt _done_.
 
 <figure>
-	<img src="/m/ps-diary.jpg" alt="An screenshot of my Photoshop Diary">
+	<img src="{% asset_path articles/designing-for-yourself/ps-diary.jpg %}" alt="An screenshot of my Photoshop Diary" class="img-fluid">
 	<figcaption>
 		An excerpt from my Photoshop Diary
 	</figcaption>
