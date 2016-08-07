@@ -31,7 +31,6 @@
 .d-inline-block { display: inline-block !important; }
 .d-table { display: table !important; }
 .d-table-cell { display: table-cell !important; }
-.hidden, // legacy
 .d-none         { display: none !important; }
 
 // Responsive display utlities
@@ -65,9 +64,10 @@
 .ws-nowrap { white-space: nowrap !important; }
 
 // Clear floats
-.clearfix {
-  @include clearfix;
-}
+.clearfix { @include clearfix; }
+.clear-both { clear: both !important; }
+.clear-right { clear: right !important; }
+.clear-left { clear: left !important; }
 
 // Floats
 .float-right { float: right !important; }
