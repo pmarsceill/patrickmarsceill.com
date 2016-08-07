@@ -9,7 +9,6 @@ pre {
 
 // Inline code
 code {
-
   &::before,
   &::after {
     letter-spacing: -0.2em;
@@ -37,8 +36,8 @@ code {
   .gd { color: #2aa198; } /* generic.deleted */
 
   .ge {
-    color: #93a1a1;
     font-style: italic;
+    color: #93a1a1;
   } /* generic.emph */
 
   .gr { color: #dc322f; } /* generic.error */
@@ -46,7 +45,12 @@ code {
   .gi { color: #859900; } /* generic.inserted */
   .go { color: #93a1a1; } /* generic.output */
   .gp { color: #93a1a1; } /* generic.prompt */
-  .gs { color: #93a1a1;; font-weight: bold } /* generic.strong */
+
+  .gs {
+    font-weight: bold;
+    color: #93a1a1;
+  } /* generic.strong */
+
   .gu { color: #cb4b16; } /* generic.subheading */
   .gt { color: #93a1a1; } /* generic.traceback */
   .kc { color: #cb4b16; } /* keyword.constant */
