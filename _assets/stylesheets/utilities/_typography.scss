@@ -1,7 +1,11 @@
 // stylelint-disable block-opening-brace-space-after, block-opening-brace-space-before, primer/selector-no-utility
 // Typography utils
 .text-small {
-  font-size: 12px !important;
+  font-size: 10px !important;
+
+  @include mq(sm) {
+    font-size: 12px !important;
+  }
 
   @include mq(md) {
     font-size: 14px !important;
