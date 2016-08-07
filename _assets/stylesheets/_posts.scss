@@ -4,11 +4,12 @@
 
 .post-detail {
   .post-header {
-    padding: $spacer-6 * 1.5 0;
+    padding: $spacer-4 0;
+
     color: $lightest;
 
-    .post-title {
-      width: 70%;
+    @include mq(lg) {
+      padding: $spacer-6 * 1.5 0;
     }
   }
 
