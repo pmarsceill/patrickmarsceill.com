@@ -10,17 +10,17 @@
 
 .content-block-img-bg {
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: 45% bottom;
   background-size: auto 90%;
 
   @include mq(sm) {
-    background-position: 110% bottom;
+    background-position: right bottom;
     background-size: auto 90%;
   }
 
   @include mq(md) {
     background-position: 120% 130%;
-    background-size: auto;
+    background-size: auto 90%;
   }
 
   @include mq(lg) {
