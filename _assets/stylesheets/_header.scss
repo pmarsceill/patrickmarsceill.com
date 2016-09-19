@@ -19,6 +19,12 @@
 
 .main-nav-item {
   display: inline-block;
+
+  &:last-of-type {
+    .main-nav-link {
+      padding-right: 0;
+    }
+  }
 }
 
 .main-nav-link {

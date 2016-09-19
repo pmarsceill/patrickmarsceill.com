@@ -2,14 +2,14 @@ $container-width: 840px !default;
 $grid-gutter: 32px !default;
 
 // For extra wide content that breaks out of the grid
-$container-wide-width: 1200px !default;
+$container-wide-width: 1100px !default;
 
 // Media queries in pixels
 $media-queries: (
   xs: 320px,
   sm: 500px,
   md: 740px,
-  lg: 980px,
+  lg: 880px,
   xl: $container-wide-width + ($grid-gutter * 2)
 ) !default;
 
@@ -61,7 +61,8 @@ $lightest: #f5f5f5;
 $soft-light: #d6d6d6;
 $darkest: #1d212a;
 
-$grey-dk: #2a323a;
+$black: #12161b;
+$grey-dk: #272f38;
 $grey-md: #a7a2a2;
 $red: #df303a;
 $red-lt: #fa8e98;

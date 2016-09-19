@@ -3,12 +3,16 @@
   padding: $spacer-3 rem($grid-gutter / 2);
   margin: 0 auto;
 
+  @include mq(sm) {
+    padding: $spacer-3 rem($grid-gutter);
+  }
+
   @include mq(md) {
-    padding: $spacer-6 rem($grid-gutter);
+    padding: $spacer-6 rem($grid-gutter * 1.5);
   }
 }
 
-.content-block-img-bg {
+.content-block-home-img-bg {
   background-repeat: no-repeat;
   background-position: 45% bottom;
   background-size: auto 90%;
@@ -24,7 +28,17 @@
   }
 
   @include mq(lg) {
-    background-position: 90% $spacer-4;
-    background-size: auto 100%;
+    background-position: 90% bottom;
+  }
+
+  @include mq(xl) {
+    background-position: 80% bottom;
+  }
+}
+
+.content-block-spacious {
+  @include mq(lg) {
+    padding-top: ($spacer-6 * 1.5);
+    padding-bottom: ($spacer-6 * 1.5);
   }
 }
