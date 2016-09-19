@@ -1,6 +1,9 @@
+.work-toc {
+  max-width: 900px;
+}
 .work-toc-item {
   position: relative;
-  display: block;
+  float: left;
   color: $lightest;
   text-decoration: none;
   background-color: $soft-light;
@@ -15,35 +18,19 @@
       // width: 20%;
       height: 110%;
       content: "";
-      background-color: $grey-dk;
+      background-color: $lightest;
     }
   }
 
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: #fff;
-
-    [class*="heading-"] {
-      color: $darkest;
-    }
-  }
-}
-
-.bg-github {
-  background-color: #202021;
-
-  &::after {
-    width: 20%;
-  }
-}
-
-.bg-weil {
-  background-color: #00ac5a;
-
-  &::after {
-    width: 60%;
-  }
+  // &:hover,
+  // &:active,
+  // &:focus {
+  //   background-color: #fff;
+  //
+  //   [class*="heading-"] {
+  //     color: $darkest;
+  //   }
+  // }
 }
 
 .bg-trek {
