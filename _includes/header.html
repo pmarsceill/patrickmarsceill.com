@@ -1,22 +1,21 @@
-<div class="container container-wide">
-  <header class="site-header">
-      <h1 class="logo">
-        <a href="{{ site.baseurl }}/">
-          {% include mark_svg.html %}
-        </a>
-      </h1>
-      <nav class="main-nav">
-        <ul>
-          {% assign current_title = page.title %}
-          {% assign pages = site.pages | sort:"order"  %}
-          {% for page in pages %}
-            {% if page.title and page.nav_hidden != true %}
-            <li class="main-nav-item">
-              <a class="main-nav-link text-small mt-2 mt-md-4{% if page.title == current_title %}selected{% endif %}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </nav>
+<div class="content-block p-0"><header class="site-header">
+    <h1 class="logo">
+      <a href="{{ site.baseurl }}/">
+        {% include mark_svg.html %}
+      </a>
+    </h1>
+    <nav class="main-nav">
+      <ul>
+        {% assign current_title = page.title %}
+        {% assign pages = site.pages | sort:"order"  %}
+        {% for page in pages %}
+          {% if page.title and page.nav_hidden != true %}
+          <li class="main-nav-item">
+            <a class="main-nav-link text-small mt-2 mt-md-4{% if page.title == current_title %}selected{% endif %}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
   </header>
-</div>
+  </div>
