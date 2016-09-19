@@ -6,6 +6,8 @@
 .text-red { color: $red !important; }
 .text-black { color: $darkest !important; }
 .text-grey { color: $grey-dk !important; }
+.text-purple { color: $purple !important; }
+.text-dim { opacity: 0.65 !important; }
 
 // Link colors
 .link-red {
@@ -18,7 +20,7 @@
 }
 
 // Background colors
-.bg-black { background-color: $darkest !important; }
+.bg-black { background-color: $black !important; }
 .bg-dark { background-color: $grey-dk !important; }
 .bg-light { background-color: $grey-md !important; }
 .bg-white { background-color: $lightest !important; }
