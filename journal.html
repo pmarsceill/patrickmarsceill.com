@@ -5,51 +5,78 @@ permalink: /journal/
 order: 2
 ---
 
-<div class="content-block bg-white">
+<div class="content-block">
   <div class="container container-wide">
-    <div class="container mx-0">
-      <h1 class="display-alpha mb-4 mb-md-6 text-black">Ramblings, posts, quotes, lists, sketches, and ideas that keep  me up</h1>
-    </div>
     <div class="columns pb-3 mb-3 border-bottom">
-      <div class="one-third-md column float-right">
-        <img src="{% asset_path 'articles/hacking-font-stack/hacking-font-stack.png' %}" alt=""  class="img-fluid">
-      </div>
-      <div class="two-thirds-md column pt-lg-3">
-        <h2 class="display-beta d-inline mr-1"><a href="#">Hacking the font stack</a></h2>
-        <p class="display-beta d-inline text-muted">Explorations in a modern native font stack.</p>
+      <h1 class="one-fourth column mb-0 heading-alpha">Journal</h1>
+      <div class="three-fourths column float-right">
+        <h2 class="display-beta pr-6 mt-2">Thoughts on design, music, tech, and sometimes my life.</h2>
+        <p class="text-grey-lt text-small">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
       </div>
     </div>
-    <div class="columns pb-3 mb-3 border-bottom">
-      <div class="one-third-md column float-right">
-        <img src="{% asset_path 'articles/hacking-font-stack/hacking-font-stack.png' %}" alt=""  class="img-fluid">
-      </div>
-      <div class="two-thirds-md column pt-lg-3">
-        <h2 class="display-beta d-inline mr-1"><a href="#">Hacking the font stack</a></h2>
-        <p class="display-beta d-inline text-muted">Explorations in a modern native font stack.</p>
-      </div>
-    </div>
-
-    <p class="text-muted text-small clear-both">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
   </div>
 </div>
+<div class="content-block bg-dark">
+  <div class="container container-wide">
+    <div class="columns">
+      <div class="three-fourths column float-right">
+        <div class="columns">
+          <div class="one-third-md column float-right">
+            <img src="/assets/articles/hacking-font-stack/hacking-font-stack.png" alt="" class="img-fluid">
+          </div>
+          <div class="two-thirds-md column pt-lg-3">
+            <h2 class="display-gamma d-inline mr-1"><a href="#">Hacking the font stack</a></h2>
+            <p class="display-gamma d-inline">Explorations in a modern native font stack.</p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="one-third-md column float-right">
+            <img src="/assets/articles/hacking-font-stack/hacking-font-stack.png" alt="" class="img-fluid">
+          </div>
+          <div class="two-thirds-md column pt-lg-3">
+            <h2 class="display-gamma d-inline mr-1"><a href="#">Hacking the font stack</a></h2>
+            <p class="display-gamma d-inline">Explorations in a modern native font stack.</p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="one-third-md column float-right">
+            <img src="/assets/articles/hacking-font-stack/hacking-font-stack.png" alt="" class="img-fluid">
+          </div>
+          <div class="two-thirds-md column pt-lg-3">
+            <h2 class="display-gamma d-inline mr-1"><a href="#">Hacking the font stack</a></h2>
+            <p class="display-gamma d-inline">Explorations in a modern native font stack.</p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="one-third-md column float-right">
+            <img src="/assets/articles/hacking-font-stack/hacking-font-stack.png" alt="" class="img-fluid">
+          </div>
+          <div class="two-thirds-md column pt-lg-3">
+            <h2 class="display-gamma d-inline mr-1"><a href="#">Hacking the font stack</a></h2>
+            <p class="display-gamma d-inline">Explorations in a modern native font stack.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="content-block">
   <div class="container container-wide">
     <div class="columns">
-      <div class="single one-third-sm one-fourth-lg column">
+      <div class="three-fourths column float-right">
         <h2 class="heading-delta">Older Entries</h2>
-      </div>
-      <div class="two-thirds-sm one-half-md column">
         {% for post in site.posts %}
         {% unless post.categories contains "status" %}
         <article class="post-preview mb-2">
-          <span class="post-date text-small text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="post-date text-small text-grey-lt">{{ post.date | date: "%b %-d, %Y" }}</span>
           <h2 class="post-title display-gamma">
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
         </article>
         {% endunless %}
         {% endfor %}
+            </div>
       </div>
-    </div>
   </div>
 </div>
