@@ -133,6 +133,7 @@ a {
     .bg-white & {
       color: $red;
       text-shadow: -1px -1px 0 $lightest, 1px -1px 0 $lightest, -1px 1px 0 $lightest, 1px 1px 0 $lightest;
+      background-image: linear-gradient(rgba($red, 0.15) 0%, rgba($red, 0.55) 100%);
 
       &:hover {
         color: $red-dk;
