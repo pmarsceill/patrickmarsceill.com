@@ -2,7 +2,7 @@
 // Color utils
 
 // Text colors
-.text-muted { color: darken($soft-light, 14%) !important; }
+.text-grey-lt { color: $grey-lt !important; }
 .text-red { color: $red !important; }
 .text-black { color: $darkest !important; }
 .text-grey { color: $grey-dk !important; }
