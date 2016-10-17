@@ -14,6 +14,8 @@
   }
 
   .post-content {
+    position: relative;
+    font-size: $post-content-font-size;
     color: $grey-dk;
 
     h1,
@@ -23,5 +25,4 @@
     h5 {
       color: $darkest;
     }
-  }
 }
