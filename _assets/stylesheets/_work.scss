@@ -1,14 +1,19 @@
-.work-toc {
-  max-width: 900px;
-}
 .work-toc-item {
-  position: relative;
-  float: left;
+  margin-bottom: 0;
   color: $lightest;
   text-decoration: none;
   background-color: $soft-light;
   background-image: none;
-  transition: background-color 0.15s ease-out;
+
+  @include mq(sm) {
+    position: relative;
+    float: left;
+    clear: both;
+  }
+
+  @include mq(xl) {
+    clear: none;
+  }
 
   &::after {
     @include mq(md) {
@@ -31,36 +36,4 @@
   //     color: $darkest;
   //   }
   // }
-}
-
-.bg-trek {
-  background-color: #ce1a2b;
-
-  &::after {
-    width: 50%;
-  }
-}
-
-.bg-coldwell {
-  background-color: #30507b;
-
-  &::after {
-    width: 40%;
-  }
-}
-
-.bg-pj {
-  background-color: #ab131b;
-
-  &::after {
-    width: 5%;
-  }
-}
-
-.bg-amc {
-  background-color: #e6a815;
-
-  &::after {
-    width: 10%;
-  }
 }
