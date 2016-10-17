@@ -4,7 +4,8 @@
 code,
 pre {
   font-family: $monospace-font-family;
-  font-size: 14px;
+  font-size: 15px;
+  background-color: #fff;
 }
 
 // Inline code
@@ -19,6 +20,7 @@ code {
 // Code blocks
 .highlight {
   margin-bottom: $spacer;
+  border-radius: 3px;
 
   .c { color: #586e75; } /* comment */
   .err { color: #93a1a1; } /* error */
