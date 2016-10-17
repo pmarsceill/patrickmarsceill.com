@@ -9,8 +9,8 @@ $media-queries: (
   xs: 320px,
   sm: 500px,
   md: 740px,
-  lg: 880px,
-  xl: $container-wide-width + ($grid-gutter * 2)
+  lg: 900px,
+  xl: 1200px
 ) !default;
 
 // Column widths
@@ -52,14 +52,16 @@ $spacer-6: map-get($spacers, spacer6);
 $display-font-family: PxGroteskLight, -apple-system, BlinkMacSystemFont, "Helvetica Neue",  sans-serif;
 $body-font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Oxygen, Ubuntu, Cantarell, sans-serif;
 $monospace-font-family: Consolas, Menlo, Andale, monospace;
-$body-font-size: 18px;
+$body-font-size: 16px;
 $body-font-size-sm: 14px;
-$body-line-height: 1.5;
+$body-line-height: 1.6;
+$post-content-font-size: 18px;
 
 // Site colors
 $lightest: #f5f5f5; // off-white for light bg
 $soft-light: #d6d6d6; // off-white for text on dark bg
 $darkest: #1d212a; // dark bg color of the site, text color on light bg
+$gloss-black: #151823; // black bg color
 
 $black: #12161b;
 $grey-dk: #272f38;
@@ -72,3 +74,4 @@ $purple: #6f1ee2;
 
 $body-background-color: $darkest;
 $body-color: $soft-light;
+$border-color: $grey-dk;
