@@ -2,6 +2,7 @@
 layout: post
 title: "How I Setup My Machine for Prototyping"
 date: 2012-11-19 17:27
+categories: legacy
 ---
 A few weeks ago, I wrote <a href="http://cognition.happycog.com/article/its-alive-prototyping-in-the-browser">a post for Cognition</a> explaining my process for creating prototypes and how I arrived there. After being asked for more technical detail around my actual setup, I decided to create this step by step guide.
 
@@ -24,7 +25,9 @@ After Xcode is downloaded and installed, there is another step that I always for
 I don't like to muck around with the version of Ruby that comes installed with OSX. <a href="https://rvm.io" title="Ruby Version Manager Project Site">RVM (Ruby Version Manager)</a> is a useful piece of software that lets you have segregated versions of Ruby installed at the same time. This lets us start from a clean Ruby enviroment every time, upgrade very easily, and not have to worry much about system configuration.
 
 _This is where you need to open up Terminal and get busy..._
+
 #### Install RVM &amp; install the latest stable version of Ruby
+
 {% highlight bash %}
 $ \curl -L https://get.rvm.io | bash -s stable --ruby
 {% endhighlight %}
@@ -114,7 +117,13 @@ DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed
 
 Voila, StrapOn has started a local server on your machine that you can use for development by pointing your browser to: `http://localhost:4000`
 
-/images/blog/prototype-setup/strapon-browser.png StrapOn running on a local machine
+
+<figure>
+	<img src="{% asset_path 'articles/prototype-setup/strapon-browser.png' %}">
+	<figcaption>
+    StrapOn running on a local machine
+	</figcaption>
+</figure>
 
 This also includes starts an auto-compiler for SASS, and all the built-in templating engine included in the Serve gem. Both of which will be explained in my next post about developing with StrapOn.
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Introducing Tab Lab"
-date:   2015-02-08 22:44:00
-categories: legacy
+title:  "Seventeen Months"
+description: "Updates from the past year-and-a-half-ish of my life"
+date: 2016-10-12 17:18:00
 ---
 
 <img src="{% asset_path articles/intro-tablab/home-large.jpg %}" alt="tablab.io Homepage screenshot" class="img-fluid">

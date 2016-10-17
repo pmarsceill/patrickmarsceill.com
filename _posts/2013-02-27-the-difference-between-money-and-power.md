@@ -2,6 +2,7 @@
 layout: post
 title: "The Difference Between Money and Power"
 date: 2013-02-27 12:10
+categories: legacy
 ---
 
 <blockquote>

@@ -2,6 +2,7 @@
 layout: post
 title:  "Woodshedding"
 date:   2014-10-30 14:30:00
+categories: legacy
 ---
 
 When I was nine, I began learning how to play percussion. I started out studying in the school band program. By eleven, I was surprisingly still interested enough to seek additional instruction. Driven by a family that already produced two other musicians, I began taking private drum lessons from an older jazz player.

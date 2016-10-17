@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Introducing Tab Lab"
-date:   2015-02-08 22:44:00
-categories: legacy
+title:  "Hacking the Font Stack"
+description: "Explorations in a modern native fonts on the web"
+date: 2016-10-12 17:18:00
 ---
 
 <img src="{% asset_path articles/intro-tablab/home-large.jpg %}" alt="tablab.io Homepage screenshot" class="img-fluid">
