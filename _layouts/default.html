@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="{% if page.home_page == true %}body-home {% endif %}{{ page.bodyClass }}">
+  <body class="{% if page.home_page == true %}body-home {% endif %}{{ page.body_class }}">
     <div class="page-outer-border">
 
       {% include header.html %}
@@ -11,7 +11,7 @@
       <main role="main" class="main">
 
         {{ content }}
-        
+
       </main>
 
       {% include footer.html %}

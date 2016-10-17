@@ -1,10 +1,11 @@
 ---
 layout: default
 ---
+
 <article class="post-detail">
   <header class="post-header">
     <div class="container container-wide">
-      <h1 class="post-title display-alpha mb-0">
+      <h1 class="post-title display-alpha mb-0 three-fourths-md">
         {{ page.title }}
       </h1>
     </div>
@@ -13,7 +14,7 @@ layout: default
     <div class="container container-wide">
       <div class="columns">
           <p class="text-small text-grey-lt one-fourth-md column">{{ page.date | date: "%B&nbsp;%-d,&nbsp;%Y" }}</p>
-        <div class="three-fourths-md column float-right pr-6">
+        <div class="three-fourths-md column float-right pr-md-6">
           {{ content }}
         </div>
       </div>
