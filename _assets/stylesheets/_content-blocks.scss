@@ -7,7 +7,7 @@
     padding: $spacer-3 rem($grid-gutter);
   }
 
-  @include mq(md) {
+  @include mq(lg) {
     padding: $spacer-6 rem($grid-gutter * 1.5);
   }
 }
