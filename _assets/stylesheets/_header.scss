@@ -31,35 +31,30 @@
     color: $lightest;
   }
 
-  @include mq(md) {
+  @include mq(sm) {
+    position: relative;
+    z-index: 1;
     padding: 1rem;
 
+    &:hover,
+    &:active,
     &.selected {
-      position: relative;
-      z-index: 1;
-
       &::before {
         position: absolute;
         bottom: calc(50% - 1px);
-        left: 0;
+        left: 10%;
         z-index: -1;
-        width: 100%;
+        width: 80%;
         height: 1px;
         content: "";
-        background-color: $grey-lt;
+        background-color: $red;
+        opacity: 0.4;
       }
+    }
 
-      &::after {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        z-index: -1;
-        width: 70%;
-        height: 100%;
-        margin-left: -35%;
-        content: "";
-        background-color: $darkest;
-        opacity: 1;
+    &.selected {
+      &::before {
+        background-color: $grey-lt;
       }
     }
   }
