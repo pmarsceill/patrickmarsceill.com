@@ -54,7 +54,7 @@ $body-font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", 
 $monospace-font-family: Consolas, Menlo, Andale, monospace;
 $body-font-size: 16px;
 $body-font-size-sm: 14px;
-$body-line-height: 1.6;
+$body-line-height: 1.7;
 $post-content-font-size: 18px;
 
 // Site colors
@@ -71,6 +71,7 @@ $red: #df303a;
 $red-lt: #fa8e98;
 $red-dk: darken($red, 20%);
 $purple: #6f1ee2;
+$green-dk: #119d86;
 
 $body-background-color: $darkest;
 $body-color: $soft-light;
