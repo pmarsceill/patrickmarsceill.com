@@ -4,23 +4,42 @@
 code,
 pre {
   font-family: $monospace-font-family;
-  font-size: 15px;
-  background-color: #fff;
 }
 
 // Inline code
+
 code {
-  &::before,
-  &::after {
-    letter-spacing: -0.2em;
-    content: "\00a0";
-  }
+  padding: 0.15em 0.3em;
+  font-size: 90%;
+  color: $green-dk;
+  background-color: #fff;
+  border-radius: 3px;
 }
 
 // Code blocks
+
+pre {
+  padding: $spacer;
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 3px;
+
+  code {
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+}
+
+// syntax highlight
 .highlight {
   margin-bottom: $spacer;
-  border-radius: 3px;
 
   .c { color: #586e75; } /* comment */
   .err { color: #93a1a1; } /* error */
@@ -100,23 +119,4 @@ code {
   .vg { color: #268bd2; } /* name.variable.global */
   .vi { color: #268bd2; } /* name.variable.instance */
   .il { color: #2aa198; } /* literal.number.integer.long */
-
-  pre {
-    padding: $spacer;
-    overflow: auto;
-
-    code {
-      display: inline;
-      padding: 0;
-      margin: 0;
-      line-height: inherit;
-      word-wrap: normal;
-      border: 0;
-
-      &::before,
-      &::after {
-        content: none;
-      }
-    }
-  }
 }
