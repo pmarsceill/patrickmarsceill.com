@@ -7,11 +7,12 @@
     <nav class="main-nav">
       <ul>
         {% assign current_title = page.title %}
+        {% assign current_layout = page.layout %}
         {% assign pages = site.pages | sort:"order"  %}
         {% for page in pages %}
           {% if page.title and page.nav_hidden != true %}
           <li class="main-nav-item">
-            <a class="main-nav-link text-small mt-2 mt-md-4{% if page.title == current_title || page.body_class =|| current_title.lowerCase %} selected{% endif %}" href="{{ page.url | prepend: site.baseurl }}"><span class="bg-darkest">{{ page.title }}</span></a>
+            <a class="main-nav-link text-small mt-2 mt-md-4{% if page.title == current_title %} selected{% elsif current_layout == "post" and page.title == "Journal" %} selected{% endif %}" href="{{ page.url | prepend: site.baseurl }}"><span class="bg-darkest">{{ page.title }}</span></a>
           </li>
           {% endif %}
         {% endfor %}

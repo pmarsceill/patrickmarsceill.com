@@ -3,9 +3,8 @@
 
   {% include head.html %}
 
-  <body class="{% if page.home_page == true %}body-home {% endif %}{{ page.body_class }}">
+  <body class="{% if page.home_page == true %}body-home {% endif %}{% if page.layout == post %}body-post {% endif %}">
     <div class="page-outer-border">
-
       {% include header.html %}
 
       <main role="main" class="main">
