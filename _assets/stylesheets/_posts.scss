@@ -4,18 +4,14 @@
 
 .post-detail {
   .post-header {
-    padding: $spacer-4 0;
-
-    color: $lightest;
-
     @include mq(lg) {
-      padding: $spacer-6 * 1.5 0;
+      padding-top: $spacer-6 * 1.5;
+      padding-bottom: $spacer-6 * 1.5;
     }
   }
 
   .post-content {
     position: relative;
-    font-size: $post-content-font-size;
     color: $grey-dk;
 
     h1,
@@ -24,6 +20,10 @@
     h4,
     h5 {
       color: $darkest;
+    }
+
+    @include mq(sm) {
+      font-size: $post-content-font-size;
     }
   }
 }
