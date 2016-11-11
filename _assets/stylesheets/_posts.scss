@@ -19,11 +19,24 @@
     h3,
     h4,
     h5 {
+      padding-top: 1em;
       color: $darkest;
     }
 
-    @include mq(sm) {
-      font-size: $post-content-font-size;
+    // @include mq(md) {
+    //   font-size: $post-content-font-size;
+    // }
+
+    > p:first-of-type {
+      font-family: $display-font-family;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.3;
+
+      @include mq(lg) {
+        font-size: 24px;
+        font-weight: 300;
+      }
     }
   }
 }
