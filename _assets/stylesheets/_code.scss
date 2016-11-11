@@ -9,10 +9,10 @@ pre {
 // Inline code
 
 code {
-  padding: 0.15em 0.3em;
+  padding: 0.25em 0.5em;
   font-size: 90%;
   color: $green-dk;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.03);
   border-radius: 3px;
 }
 
@@ -20,7 +20,6 @@ code {
 
 pre {
   padding: $spacer;
-  overflow: auto;
   background-color: #fff;
   border-radius: 3px;
 
@@ -28,6 +27,7 @@ pre {
     padding: 0;
     color: inherit;
     background-color: transparent;
+    border: 0;
     border-radius: 0;
 
     &::before,
