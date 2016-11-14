@@ -3,18 +3,18 @@ layout: default
 ---
 
 <article class="post-detail">
-  <header class="post-header px-3 py-3 py-md-6 bg-gloss-black">
+  <header class="content-block py-md-6 bg-gloss-black">
     <div class="container container-wide">
-      <h1 class="post-title display-alpha mb-0 three-fourths-md">
+      <h1 class="post-title display-alpha my-0 my-md-3 three-fourths-md">
         {{ page.title }}
       </h1>
     </div>
   </header>
-  <div class="post-content bg-white px-3 py-3 py-md-6">
+  <div class="bg-white content-block">
     <div class="container container-wide">
       <div class="columns pr-md-6">
-          <p class="text-small text-grey-lt one-fifth-md column">{{ page.date | date: "%B&nbsp;%-d,&nbsp;%Y" }}</p>
-        <div class="two-thirds-md column">
+          <p class="text-small text-grey-lt single one-fifth-lg column pt-1">{{ page.date | date: "%B&nbsp;%-d,&nbsp;%Y" }}</p>
+        <div class="post-content single two-thirds-lg column">
           {{ content }}
         </div>
       </div>

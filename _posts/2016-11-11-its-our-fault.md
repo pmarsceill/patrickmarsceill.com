@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Hacking the Font Stack"
-description: "Explorations in a modern native fonts on the web"
-date: 2016-10-12 17:18:00
+title:  "It’s our fault"
+description: "Lorem Lorem ipsum dolor sit amet, consectetur adipisicing"
+date: 2016-11-11 17:18:00
 ---
 
 Let's test some things.

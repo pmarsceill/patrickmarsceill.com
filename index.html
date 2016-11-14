@@ -38,21 +38,20 @@ home_page: true
   <div class="container container-wide">
     <h2 class="heading-epsilon mb-1 text-grey-lt">From my journal</h2>
     <ol class="ol-big columns mb-0">
-      <li class="one-third-md column mb-3 mb-md-0">
-        <h3 class="display-gamma text-grey-lt">
-          <a href="#">Hacking the font stack</a> Explorations in a modern native font stack.
-        </h3>
-      </li>
-      <li class="one-third-md column mb-3 mb-md-0">
-        <h3 class="display-gamma text-grey-lt">
-          <a href="#">It’s Like a Zoo in Here</a> The latest discussion on Quirks &amp; Compulsions.
-        </h3>
-      </li>
-      <li class="one-third-md column">
-        <h3 class="display-gamma text-grey-lt">
-          <a href="#">A designer’s guide to GitHub</a> Pull-request based workflows in design.
-        </h3>
-      </li>
+      {% for post in site.posts %}
+        {% unless post.categories contains "legacy" %}
+          {% if forloop.index <= 3 %}
+            <li class="one-third-md column mb-3 mb-md-0">
+              <h3 class="display-gamma d-inline mr-1">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h3>
+              <p class="display-gamma d-inline text-grey-lt">{{ post.description }}</p>
+            </li>
+          {% endif %}
+        {% else %}
+          {% break %}
+        {% endunless %}
+      {% endfor %}
     </ol>
   </div>
 </div>
@@ -67,7 +66,7 @@ home_page: true
       </div>
       <div class="single two-thirds-md d-flex fw-wrap">
         <div class="one-half mb-3 column">
-          <h3 class="text-small"><a href="#">Aware</a></h3>
+          <h3 class="text-small"><a href="//awaremac.com">Aware</a></h3>
           <p class="text-small mb-0">Aware is a menubar app for OSX and MacOS that tracks and displays how long you've been actively using your computer.</p>
         </div>
         <div class="one-half mb-3 column">
@@ -83,15 +82,10 @@ home_page: true
           <p class="text-small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sint est asperiores veritatis voluptates.</p>
         </div>
         <div class="one-half mb-3 column">
-          <h3 class="text-small"><a href="#">Project title</a></h3>
-          <p class="text-small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sint est asperiores veritatis voluptates.</p>
-        </div>
-        <div class="one-half mb-3 column">
-          <h3 class="text-small"><a href="#">Project title</a></h3>
-          <p class="text-small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sint est asperiores veritatis voluptates.</p>
+          <h3 class="text-small"><a href="#">Stately</a></h3>
+          <p class="text-small mb-0">The Jekyll theme for goverment. Open source and installable through GitHub pages theme manager.</p>
         </div>
       </div>
-
     </div>
   </div>
 </div>

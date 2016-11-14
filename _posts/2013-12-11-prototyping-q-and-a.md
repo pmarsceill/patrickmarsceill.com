@@ -35,6 +35,4 @@ Since our prototypes have essentially replaced paper wireframes in most cases--i
 
 <!--aside-one-->
 
-<div class="icon-post-q-and-a icon--post"></div>
-
 [HTML Prototyping](http://mijingo.com/products/screencasts/html-prototyping/) is available for purchase on [Mijingo.com](http://mijingo.com). For more questions about the prototyping process, [email me](mailto:patrick.marsceill@gmail.com).
