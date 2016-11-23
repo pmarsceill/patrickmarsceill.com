@@ -29,6 +29,11 @@
   }
 }
 
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
 @each $media-query in map-keys($media-queries) {
   @for $i from 1 through length($spacers) {
     @include mq($media-query) {
