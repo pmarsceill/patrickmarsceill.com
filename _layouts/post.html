@@ -13,8 +13,31 @@ layout: default
   <div class="bg-white content-block">
     <div class="container container-wide">
       <div class="columns pr-md-6">
-          <p class="text-small text-grey-lt single one-fifth-lg column pt-1">{{ page.date | date: "%B&nbsp;%-d,&nbsp;%Y" }}</p>
+        <div class="single one-fifth-lg column">
+          <p class="text-small text-black">
+            <!-- <span class="d-block text-grey-lt">Published</span> -->
+            {{ page.date | date: "%B&nbsp;%-d,&nbsp;%Y" }}
+          </p>
+
+          {% if page.next or page.previous %}
+            <hr class="bg-light my-4">
+            <aside class="text-small">
+              {% if page.next %}
+                <span class="d-block text-grey-lt">Next</span>
+                <a href="{{ page.next.url | absolute_url }}">{{ page.next.title }}</a>
+              {% endif %}
+              {% if page.previous %}
+                <span class="d-block text-grey-lt{% if page.next %} mt-2{% endif %}">Prevously</span>
+                <a href="{{ page.previous.url | absolute_url }}">{{ page.previous.title }}</a>
+              {% endif %}
+            </aside>
+          {% endif %}
+        </div>
         <div class="post-content single two-thirds-lg column">
+          {% unless page.featured_img == nil %}
+            <img src="{% asset_path "{{ page.featured_img }}" %}" alt="" class="img-fluid"/>
+          {% endunless %}
+
           {{ content }}
         </div>
       </div>
