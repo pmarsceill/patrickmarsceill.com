@@ -3,6 +3,7 @@ layout: post
 title:  "Hacking the Font Stack"
 description: "Explorations in a modern native fonts on the web"
 date: 2016-10-12 17:18:00
+featured_img: articles/hacking-font-stack/hacking-font-stack.png
 ---
 
 Let's test some things.

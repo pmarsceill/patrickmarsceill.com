@@ -23,11 +23,13 @@ order: 2
       <div class="two-thirds-md three-fourths-xl column">
         {% for post in site.posts %}
           {% unless post.categories contains "legacy" %}
-            <article class="columns mb-4">
-              <div class="one-half-md column float-right">
-                <img src="/assets/articles/hacking-font-stack/hacking-font-stack.png" alt="" class="img-fluid">
-              </div>
-              <div class="one-half-md column">
+            <article class="columns mb-6">
+              {% if post.featured_img %}
+                <div class="one-half-md column float-right">
+                  <img src="{% asset_path "{{ post.featured_img }}" %}" alt="" class="img-fluid">
+                </div>
+              {% endif %}
+              <div class="{% if post.featured_img %}one-half-md{% else %}two-thirds-md{% endif %} column">
                 <time class="post-date text-small text-grey-lt d-block" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
                 <h2 class="display-beta mb-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
                 <p class="display-gamma d-inline text-grey">{{ post.description }}</p>
