@@ -74,7 +74,7 @@ h5,
   letter-spacing: 0.04em;
 
   @include mq(lg) {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
   }
 }
@@ -130,4 +130,19 @@ h5,
   color: $lightest;
   text-shadow: none;
   background: $purple;
+}
+
+.hr-short {
+  position: relative;
+  background-color: transparent;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2em;
+    height: 2px;
+    content: "";
+    background-color: $grey-lt;
+  }
 }

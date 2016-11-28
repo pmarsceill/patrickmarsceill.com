@@ -2,9 +2,10 @@
 // Typography utils
 .text-small {
   font-size: 12px !important;
+  line-height: 1.5;
 
   @include mq(md) {
-    font-size: 14px !important;
+    font-size: 13px !important;
   }
 }
 

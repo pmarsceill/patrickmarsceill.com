@@ -8,7 +8,11 @@
   }
 
   @include mq(lg) {
-    padding: $spacer-6 rem($grid-gutter * 1.5);
+    padding: $spacer-6 rem($grid-gutter * 2);
+  }
+
+  @include mq(xl) {
+    padding: $spacer-6 rem($grid-gutter * 3);
   }
 }
 
