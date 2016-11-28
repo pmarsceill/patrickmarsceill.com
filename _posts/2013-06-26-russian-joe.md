@@ -18,17 +18,11 @@ Ryan Jahn and I spent a day biking around Austin trying to eat lunch. After mult
 
 Shoot the vodka, then dump the espresso into the stout and enjoy it at a hefty pace.
 
-<!--more-->
-
-#### Credits:
+### Credits:
 * _Drink recipe_: Ryan Jahn and Patrick Marsceill
 * _Drink name_: Allison Wagner
 * _Testers_: Who ever was with us at Easy Tiger
 * _Honorable mention_: Our waitress who let us do this
-
-<!--aside-one-->
-
-<div class="icon-post-russian-joe icon--post"></div>
 
 ### The Russian Joe
 
