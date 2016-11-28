@@ -2,9 +2,12 @@
 layout: default
 ---
 
-<article class="post-detail">
+<article>
   <header class="content-block py-md-6 bg-gloss-black">
     <div class="container container-wide">
+      <span class="heading-epsilon">
+        <a href="{{ "/journal" | absolute_url }}" class="text-grey-lt">Journal</a>
+      </span>
       <h1 class="post-title display-alpha my-0 my-md-3 three-fourths-md">
         {{ page.title }}
       </h1>
@@ -12,33 +15,48 @@ layout: default
   </header>
   <div class="bg-white content-block">
     <div class="container container-wide">
-      <div class="columns pr-md-6">
-        <div class="single one-fifth-lg column">
-          <p class="text-small text-black">
-            <!-- <span class="d-block text-grey-lt">Published</span> -->
-            {{ page.date | date: "%B&nbsp;%-d,&nbsp;%Y" }}
+      <div class="columns">
+        <div class="post-content single three-fourths-lg two-thirds-xl column">
+          {% unless page.featured_img == nil %}
+            <div class="position-relative columns mb-4"><img src="{% asset_path "{{ page.featured_img }}" %}" alt="" class="img-fluid" /></div>
+          {% endunless %}
+          {{ content }}
+        </div>
+        <div class="single one-fifth-lg column float-lg-right">
+          <p class="text-small mt-1">
+            <span class="d-block text-black">{{ page.date | date: "%B&nbsp;%-d,&nbsp;%Y" }}</span>
           </p>
 
           {% if page.next or page.previous %}
-            <hr class="bg-light my-4">
+            <hr class="hr-short my-4">
             <aside class="text-small">
               {% if page.next %}
-                <span class="d-block text-grey-lt">Next</span>
+                <span class="heading-epsilon d-block text-grey-lt">Next</span>
                 <a href="{{ page.next.url | absolute_url }}">{{ page.next.title }}</a>
               {% endif %}
               {% if page.previous %}
-                <span class="d-block text-grey-lt{% if page.next %} mt-2{% endif %}">Prevously</span>
+                <span class="heading-epsilon d-block text-grey-lt{% if page.next %} mt-2{% endif %}">Prevously</span>
                 <a href="{{ page.previous.url | absolute_url }}">{{ page.previous.title }}</a>
               {% endif %}
             </aside>
           {% endif %}
         </div>
-        <div class="post-content single two-thirds-lg column">
-          {% unless page.featured_img == nil %}
-            <img src="{% asset_path "{{ page.featured_img }}" %}" alt="" class="img-fluid"/>
+        <div class="single column">
+          <hr class="hr-short my-4">
+          {% unless page.medium_link == nil %}
+            <em class="text-small d-block mb-4">
+              <a href="{{ page.medium_link }}">{{ page.title }} is also published on Medium</a>
+            </em>
           {% endunless %}
-
-          {{ content }}
+          <h5 class="text-black">Respond to this article</h5>
+          <ul class="list-unstyled">
+            <li class="d-inline-block text-grey-lt text-small mr-1 pr-2">
+              <a href="https://twitter.com/intent/tweet?text=@pmarsceill {{ page.url | absolute_url }}">Tweet your response</a>
+            </li>
+            <li class="d-inline-block text-grey-lt text-small">
+              Questions or suggestions? <a href="https://github.com/pmarsceill/patrickmarsceill.com/issues/new?title={{ page.title | url_escape }} ">Open an issue on GitHub</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

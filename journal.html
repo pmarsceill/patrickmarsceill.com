@@ -8,8 +8,8 @@ order: 2
 <div class="content-block bg-gloss-black">
   <div class="container container-wide">
     <div class="columns pb-3 mb-3">
-      <h1 class="one-third-md one-fourth-xl column heading-alpha">Journal</h1>
-      <div class="two-thirds-md three-fourths-xl column float-right">
+      <h1 class="one-fourth-md column heading-alpha">Journal</h1>
+      <div class="three-fourths-md column float-right">
         <h2 class="display-beta pr-md-6 mt-sm-1 mt-lg-2">Thoughts on design, music, tech, and sometimes my life. <span class="text-grey-lt">I’m a thirty-something-year-old product designer from Philadelphia, sometimes my accent shows.</span></h2>
         <p class="text-grey-lt text-small mb-0">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
       </div>
@@ -19,21 +19,21 @@ order: 2
 <div class="content-block bg-white">
   <div class="container container-wide">
     <div class="columns">
-      <h2 class="one-third-md one-fourth-xl column mb-0 heading-delta text-grey">Latest entries</h2>
-      <div class="two-thirds-md three-fourths-xl column">
+      <h2 class="one-fourth-md column heading-delta text-grey mb-3">Latest entries</h2>
+      <div class="three-fourths-md column mt-1">
         {% for post in site.posts %}
           {% unless post.categories contains "legacy" %}
-            <article class="columns mb-6">
+            <article class="columns mb-4 mb-lg-6">
+              <div class="single {% if post.featured_img %}one-half-md{% else %}two-thirds-md{% endif %} column">
+                <time class="heading-epsilon text-grey-lt d-block" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+                <h2 class="display-beta mb-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                <p class="display-gamma text-grey">{{ post.description }}</p>
+              </div>
               {% if post.featured_img %}
-                <div class="one-half-md column float-right">
-                  <img src="{% asset_path "{{ post.featured_img }}" %}" alt="" class="img-fluid">
+                <div class="one-half-md column">
+                  <img src="{% asset_path "{{ post.featured_img }}" %}" alt="" class="img-fluid mb-3">
                 </div>
               {% endif %}
-              <div class="{% if post.featured_img %}one-half-md{% else %}two-thirds-md{% endif %} column">
-                <time class="post-date text-small text-grey-lt d-block" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-                <h2 class="display-beta mb-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-                <p class="display-gamma d-inline text-grey">{{ post.description }}</p>
-              </div>
             </article>
           {% endunless %}
         {% endfor %}
@@ -45,14 +45,14 @@ order: 2
 <div class="content-block">
   <div class="container container-wide">
     <div class="columns">
-      <h2 class="one-third-md one-fourth-xl column heading-delta text-grey-lt">Older Entries</h2>
-      <div class="two-thirds-md three-fourths-xl column">
+      <h2 class="single one-fourth-md column heading-delta text-white mb-3">Older Entries</h2>
+      <div class="three-fourths-md column">
         {% for post in site.posts %}
           {% if post.categories contains "legacy" %}
             <article class="post-preview mb-2">
-              <time class="post-date text-small text-grey-lt" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+              <time class="post-date heading-epsilon text-grey-lt" datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time>
               <h2 class="post-title heading-delta">
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
               </h2>
             </article>
           {% endif %}
