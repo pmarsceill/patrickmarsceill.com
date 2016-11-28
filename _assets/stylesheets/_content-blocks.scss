@@ -1,3 +1,8 @@
+//
+// Content blocks
+// Responsive padding and centering of content in boxes
+//
+
 .content-block {
   max-width: $container-wide-width + ($grid-gutter * 10);
   padding: $spacer-3 rem($grid-gutter / 2);
