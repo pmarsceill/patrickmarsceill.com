@@ -1,6 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (5.0.0.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     autoprefixer-rails (6.5.3)
@@ -14,6 +19,11 @@ GEM
       addressable (~> 2)
     ffi (1.9.14)
     forwardable-extended (2.6.0)
+    gemoji (2.1.0)
+    html-pipeline (2.4.2)
+      activesupport (>= 2)
+      nokogiri (>= 1.4)
+    i18n (0.7.0)
     jekyll (3.3.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -40,14 +50,24 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
+    jemoji (0.5.1)
+      gemoji (~> 2.0)
+      html-pipeline (~> 2.2)
+      jekyll (>= 2.0)
     kramdown (1.13.0)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
+    mini_portile2 (2.1.0)
+    minitest (5.9.0)
+    nokogiri (1.6.8)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
+    pkg-config (1.1.7)
     public_suffix (2.0.4)
     rack (1.6.5)
     rb-fsevent (0.9.8)
@@ -59,6 +79,9 @@ GEM
     sprockets (3.6.3)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
+    thread_safe (0.3.5)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
@@ -69,6 +92,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-seo-tag
   jekyll-sitemap
+  jemoji
 
 RUBY VERSION
    ruby 2.2.3p173
