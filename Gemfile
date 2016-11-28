@@ -8,3 +8,4 @@ gem "autoprefixer-rails"
 gem "jekyll-sitemap"
 gem 'jekyll-seo-tag'
 gem 'jemoji'
+gem 'html-proofer'
