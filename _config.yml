@@ -14,6 +14,7 @@ gems:
   - jekyll-sitemap
   - jekyll-assets
   - jekyll-seo-tag
+  - jemoji
 permalink: pretty
 assets:
   # cache: false | directory | default: .asset-cache
