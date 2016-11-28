@@ -24,7 +24,7 @@
     "grunt-parker": "^0.1.5",
     "node-sass": "3.6.0",
     "postcss-cli": "2.2.0",
-    "stylelint": "7.0.3",
+    "stylelint": "7.4.2",
     "stylelint-config-primer": "^1.1.0"
   }
 }
