@@ -20,7 +20,7 @@ Shoot the vodka, then dump the espresso into the stout and enjoy it at a hefty p
 
 <!--more-->
 
-####Credits:
+#### Credits:
 * _Drink recipe_: Ryan Jahn and Patrick Marsceill
 * _Drink name_: Allison Wagner
 * _Testers_: Who ever was with us at Easy Tiger
@@ -30,7 +30,7 @@ Shoot the vodka, then dump the espresso into the stout and enjoy it at a hefty p
 
 <div class="icon-post-russian-joe icon--post"></div>
 
-###The Russian Joe
+### The Russian Joe
 
 * 1 chilled shot of Russian vodka
 * 1 shot of espresso

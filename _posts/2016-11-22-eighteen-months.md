@@ -3,9 +3,8 @@ layout: post
 title:  "Eighteen Months"
 description: "Updates from the past year-and-a-half-ish of my life"
 date: 2016-11-22 17:18:00
+featured_img: articles/intro-tablab/home-large.jpg
 ---
-
-<img src="{% asset_path articles/intro-tablab/home-large.jpg %}" alt="tablab.io Homepage screenshot" class="img-fluid">
 
 <q>So, what’s stopping you?</q>
 
