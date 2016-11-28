@@ -38,3 +38,4 @@ exclude:
   - package.json
   - Gruntfile.js
   - circle.yml
+  - vendor
