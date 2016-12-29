@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Testing SCSS...\n"
+stylelint _assets/**/*.scss -c .stylelintrc.json -s scss
+
+echo "\nTesting HTML...\n"
+bundle exec jekyll build
+bundle exec htmlproofer ./_site --check-opengraph true --http-status-ignore "408" --url-ignore "/patrickmarsceill.com/" --empty-alt-ignore true
