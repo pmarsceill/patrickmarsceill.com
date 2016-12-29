@@ -11,7 +11,7 @@ The conclusion to my desk building saga ended with a trip to Ikea, and the sandi
 
 I would have never even considered Ikea as the place to go when searching for the top of my desk, had it not been for [Jessica's blog post](http://spacekat.github.com/blog/2012/07/31/steel-pipe-standing-desk/).  The [Ikea Numerär](http://www.ikea.com/us/en/catalog/products/40057396/) counter top in oak is actually the perfect size for this project and looks great after you stain and finish it.
 
-[This counter](http://www.ikea.com/us/en/catalog/products/40057396/) comes in a few sizes and [I built my frame](/blog/2013/01/14/building-my-desk-part-one-the-frame/) to hold the 73 1/4" x 25 5/8" size top.  After getting it home (it's way heavier than it looks), I sanded it with a hand sander and some medium grit paper.  I then used a tack cloth to get all the dust up before staining.
+[This counter](http://www.ikea.com/us/en/catalog/products/40057396/) comes in a few sizes and [I built my frame](../../../../2013/01/14/building-my-desk-part-one-the-frame) to hold the 73 1/4" x 25 5/8" size top.  After getting it home (it's way heavier than it looks), I sanded it with a hand sander and some medium grit paper.  I then used a tack cloth to get all the dust up before staining.
 
 I had some walnut stain left over from when I finished the hardwood floors in my house, so I evenly applied it to the countertop with a clean rag and let it absorb into the wood for about five minutes.  After wiping off the excess, I let the stain dry overnight before finishing it with polyurethane.
 
@@ -24,13 +24,10 @@ I got the finished countertop onto the frame I built, centered it, marked off wh
 I've been using it now for about a month and it is by far the best desk I've ever owned.  I added a keyboard tray too keep the desktop clutter free, and its perfect for my setup.
 
 <figure>
-    <img src="{% asset_path articles/desk/finished_desk.jpg %}" class="img-fluid">
-    <figcaption>
+    <img src="{% asset_path articles/desk/finished_desk.jpg %}" class="img-fluid" aria-labelledby="caption-1" alt="">
+    <figcaption id="caption-1">
         A rather crappy photo of the completed desk.
     </figcaption>
 </figure>
 
 <!--aside-one-->
-
-### Theres more...
-This is just part two of [two](/2013/01/14/building-my-desk-part-one-the-frame/) posts outlining the construction of the [frame](/2013/01/14/building-my-desk-part-one-the-frame/) and top of my desk.

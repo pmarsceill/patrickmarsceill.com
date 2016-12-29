@@ -119,8 +119,8 @@ Voila, StrapOn has started a local server on your machine that you can use for d
 
 
 <figure>
-	<img src="{% asset_path 'articles/prototype-setup/strapon-browser.png' %}" class="img-fluid">
-	<figcaption>
+	<img src="{% asset_path 'articles/prototype-setup/strapon-browser.png' %}" class="img-fluid" alt="" aria-labelledby="caption-1">
+	<figcaption id="caption-1">
     StrapOn running on a local machine
 	</figcaption>
 </figure>
