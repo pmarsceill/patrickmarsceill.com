@@ -54,7 +54,7 @@ layout: default
               <a href="https://twitter.com/intent/tweet?text=@pmarsceill {{ page.url | absolute_url }}">Tweet your response</a>
             </li>
             <li class="d-inline-block text-grey-lt">
-              Questions or suggestions? <a href="https://github.com/pmarsceill/patrickmarsceill.com/issues/new?title={{ page.title | url_escape }} ">Open an issue on GitHub</a>
+              Questions, comments, or suggestions? <a href="https://github.com/pmarsceill/patrickmarsceill.com/issues/new?title={{ "Article - " | url_escape }}{{ page.title | url_escape }}{{" (" | url_escape }}{{page.url | url_escape }}{{")" | url_escape }}">Open an issue on GitHub</a>
             </li>
           </ul>
         </div>
