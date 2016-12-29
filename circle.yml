@@ -5,4 +5,4 @@ machine:
 test:
   post:
     - bundle exec jekyll build
-    - bundle exec htmlproof ./_site
+    - bundle exec htmlproofer ./_site --check-opengraph true --http-status-ignore "408" --url-ignore "/patrickmarsceill.com/" --empty-alt-ignore true
