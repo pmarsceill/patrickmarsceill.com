@@ -37,6 +37,11 @@ exclude:
   - Gruntfile.js
   - circle.yml
   - vendor
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/patrick-marsceill-og.png
 
 # Open Graph
 twitter:
