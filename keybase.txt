@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/pmarsceill
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://patrickmarsceill.com
+  * I am pmarsceill (https://keybase.io/pmarsceill) on keybase.
+  * I have a public key with fingerprint 5EDC FAF0 B961 BB27 0A66  5E2C AEAF 30C1 4952 BCC5
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ff4c9d4cd009a541c181362469f9cf76994226da99b3472fc2ec4a608007a7500a",
+            "fingerprint": "5edcfaf0b961bb270a665e2caeaf30c14952bcc5",
+            "host": "keybase.io",
+            "key_id": "aeaf30c14952bcc5",
+            "kid": "0101ff4c9d4cd009a541c181362469f9cf76994226da99b3472fc2ec4a608007a7500a",
+            "uid": "4238c34fe794bf09fc4cec6a51470019",
+            "username": "pmarsceill"
+        },
+        "service": {
+            "hostname": "patrickmarsceill.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1483216580,
+    "expire_in": 157680000,
+    "prev": "1dde7079cdad0045ae9405a41fa8bb3f39436229d99a1ad0b627fd5c812a21b0",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtkltsDUEcxk/reiqEBtWokNEgcujM7uzumUNEvNDw1Hpo3U5mZ2d7VtvdY8+2
+RYMQ93sEEXHrJXFL2giCqEslUiGNNEFUVFH0HkVKIiJmGzx59DSZye/75vt/+R8c
+OSiQnFRTC+uzc+ruJz3q1AN5sfGN5UB3jHUgUg4K+cDBiwye8KKFlgEiACKITBMz
+YmBmQEioghFDYSSrElaJSZipqYRgSVINSoguY00ymcQZpioMQ6hRTYGQghAwLbuA
+u3HXsj1hq3CDmdSEOlGRrksapKqqcIlRTk0ZMoSJIumMKUIYcxK+QoTTaYLPthzx
+Ji7RgXj/4P9z7pIBOyzJYSZjk2sE6yYkJsOMM5UqCGsQIuKDCe7atJgLOl5M3QTj
+VlER2BAC4r3UYtyv1p/lD0M912KFf8nZzCkWLnHX8RzmFAki5nnxiG/grYv7ijKu
+R397RXXLNkShQlDK3YTl2CCCBMk8yzdHOCxLSFXCMAT42rjl8qjlE4qmitkg9L/h
+pYBGADIMrkGNMIOKlrBCOcFQoRiZNKzrsikTLBqTiEEIRQLRVUkzDYWFkUQlpEPg
+j7fGdkBEFjlpgYiZsAps6pW4HGxI2ZWUMTiQlBwYOiTZX7VASnD0n/3ryxz2I6V3
+25W2Q5lmdVt+87jq7qNb5gRb7jVWFHyd9S0tr68/4+7wpg+dP2+ElwZDP0alNm2t
+PVb/NJ4CGxan7pm+Ge+LVubbbHXdpbTXGZVPQjUnDzfsbjk1qeVQQ3rhg4ULrp4D
+Ew7kLn32/eLoN8VD+sdcnpadG8rOyGmVra7an1UNe593H67euexzXXBK1rHH1Yt2
+nTvRX9WzPf2MVPP2fNkz+/7t6+87esomN33qYWNWXmsdtHHOlrzmpodtR8b2rFRe
+vth0uuNde2ZaBU5d0dU79dSquVnLD0za765/NVHKsTtix++MMEbGusbl555sjbY/
+PLukZGb2jJsr5ufO+7hjcfDGhVv1X678Ag==
+=PiCV
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pmarsceill
+
+==================================================================
