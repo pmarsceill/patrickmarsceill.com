@@ -61,3 +61,13 @@
     }
   }
 }
+
+.post-content-full {
+  @include mq(lg) {
+    width: 145%;
+  }
+
+  @include mq(xl) {
+    width: 150%;
+  }
+}
