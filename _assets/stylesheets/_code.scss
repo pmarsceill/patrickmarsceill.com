@@ -15,7 +15,7 @@ code {
   padding: 0.25em 0.5em;
   font-size: 85%;
   color: $green-dk;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #fff;
   border-radius: 3px;
 }
 
@@ -23,6 +23,8 @@ code {
 
 pre {
   padding: $spacer;
+  white-space: pre-wrap;
+  word-wrap: break-word;
   background-color: #fff;
   border-radius: 3px;
 
