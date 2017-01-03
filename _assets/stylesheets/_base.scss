@@ -199,12 +199,10 @@ legend {
 
 hr {
   height: 1px;
-  background-color: $grey-dk;
   border: 0;
 }
 
-// ul,
-// dd,
-// ol {
-//   padding: 0;
-// }
+// Autohide scrollbar in IE
+pre {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}

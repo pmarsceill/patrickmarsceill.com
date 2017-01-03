@@ -13,13 +13,14 @@
 @import "utilities/utilities";
 
 // Import components
+@import "type";
+@import "links";
+@import "page";
 @import "content-blocks";
 @import "buttons";
-@import "posts";
-@import "page";
-@import "type";
 @import "lists";
-@import "code";
 @import "header";
+@import "code";
 @import "screenshots";
 @import "work";
+@import "posts";
