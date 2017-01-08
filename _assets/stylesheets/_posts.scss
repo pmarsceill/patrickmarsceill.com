@@ -60,6 +60,12 @@
       }
     }
   }
+
+  hr {
+    margin-top: $spacer-2;
+    margin-bottom: $spacer-2;
+    background-color: $grey-lt;
+  }
 }
 
 .post-content-full {
