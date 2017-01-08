@@ -124,39 +124,6 @@ a {
   text-decoration: none;
 }
 
-a:not([class]) {
-  color: $red-lt;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 $darkest, 1px -1px 0 $darkest, -1px 1px 0 $darkest, 1px 1px 0 $darkest;
-  background-image: linear-gradient(rgba($red, 0.25) 0%, $red 100%);
-  background-repeat: repeat-x;
-  background-position: 0 95%;
-  background-size: 1px 1px;
-  transition: color 0.15s ease-in;
-
-  .bg-dark & {
-    text-shadow: -1px -1px 0 $grey-dk, 1px -1px 0 $grey-dk, -1px 1px 0 $grey-dk, 1px 1px 0 $grey-dk;
-  }
-
-  .bg-gloss-black & {
-    text-shadow: -1px -1px 0 $gloss-black, 1px -1px 0 $gloss-black, -1px 1px 0 $gloss-black, 1px 1px 0 $gloss-black;
-  }
-
-  &:hover {
-    color: $red;
-  }
-
-  .bg-white & {
-    color: $red;
-    text-shadow: -1px -1px 0 $lightest, 1px -1px 0 $lightest, -1px 1px 0 $lightest, 1px 1px 0 $lightest;
-    background-image: linear-gradient(rgba($red, 0.15) 0%, rgba($red, 0.55) 100%);
-
-    &:hover {
-      color: $red-dk;
-    }
-  }
-}
-
 figure {
   // Normalize adds `margin` to `figure`s as browsers apply it inconsistently.
   // We reset that to create a better flow in-page.
