@@ -41,24 +41,36 @@ layout: default
             </aside>
           {% endif %}
         </div>
-        <div class="single column">
-          <hr class="hr-short my-4">
+      </div>
+
+    </div>
+  </div>
+  <footer class="bg-gloss-black content-block">
+    <div class="container container-wide">
+      <div class="columns">
+        <div class="one-half-md column">
           {% unless page.medium_link == nil %}
             <em class="text-small d-block mb-4">
               <a href="{{ page.medium_link }}">{{ page.title }} is also published on Medium</a>
             </em>
           {% endunless %}
-          <h4 class="text-black">Respond to this article</h4>
+          <h3 class="text-white">Respond to {{ page.title }}</h3>
           <ul class="list-unstyled">
             <li class="d-inline-block text-grey-lt mr-1 pr-2">
               <a href="https://twitter.com/intent/tweet?text=@pmarsceill {{ page.url | absolute_url }}">Tweet your response</a>
             </li>
-            <li class="d-inline-block text-grey-lt">
+            <li class="d-inline-block text-white">
               Questions, comments, or suggestions? <a href="https://github.com/pmarsceill/patrickmarsceill.com/issues/new?title={{ "Article - " | url_escape }}{{ page.title | url_escape }}{{" (" | url_escape }}{{page.url | url_escape }}{{")" | url_escape }}">Open an issue on GitHub</a>
             </li>
           </ul>
         </div>
+        <div class="one-half-md column">
+          <h5>About the author</h5>
+          <p class="text-small">
+            Patrick Marsceill is a multi-disciplinary designer and manager with a decade’s worth of work in research, design, and development. Currently, Patrick is a Product Design Manager at GitHub.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+  </footer>
 </article>
