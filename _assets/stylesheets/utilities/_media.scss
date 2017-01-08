@@ -1,6 +1,6 @@
 // Makes single images fluid also can be used on video elements
 .img-fluid {
-  width: 100%;
+  display: block;
   max-width: 100%;
   height: auto;
 }
