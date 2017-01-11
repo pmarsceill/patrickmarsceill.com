@@ -16,17 +16,20 @@ layout: default
   <div class="bg-white content-block">
     <div class="container container-wide">
       <div class="columns">
+        <div class="single one-fifth-lg column float-lg-right">
+          <p class="text-small mt-1 mb-0">
+            <span class="d-block text-black">{{ page.date | date: "%B&nbsp;%-d,&nbsp;%Y" }}</span>
+          </p>
+        </div>
         <div class="post-content single three-fourths-lg two-thirds-xl column">
           {% unless page.featured_img == nil %}
-            <div class="position-relative columns mb-4"><img src="{% asset_path "{{ page.featured_img }}" %}" alt="" class="img-fluid" /></div>
+            <div class="feat-img-wrap">
+              <div class="position-relative columns mb-4"><img src="{% asset_path "{{ page.featured_img }}" %}" alt="" class="img-fluid" /></div>
+            </div>
           {% endunless %}
           {{ content }}
         </div>
         <div class="single one-fifth-lg column float-lg-right">
-          <p class="text-small mt-1">
-            <span class="d-block text-black">{{ page.date | date: "%B&nbsp;%-d,&nbsp;%Y" }}</span>
-          </p>
-
           {% if page.next or page.previous %}
             <hr class="hr-short my-4">
             <aside class="text-small">
