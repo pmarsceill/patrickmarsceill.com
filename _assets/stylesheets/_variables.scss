@@ -1,5 +1,6 @@
 $container-width: 840px !default;
 $grid-gutter: 32px !default;
+$grid-gutter-sm: $grid-gutter / 2;
 
 // For extra wide content that breaks out of the grid
 $container-wide-width: 1100px !default;

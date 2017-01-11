@@ -35,6 +35,11 @@
   @include mq(md) {
     padding-right: rem($grid-gutter) !important;
     padding-left: rem($grid-gutter) !important;
+
+    .gut-sm & {
+      padding-right: rem($grid-gutter-sm) !important;
+      padding-left: rem($grid-gutter-sm) !important;
+    }
   }
 }
 
@@ -46,5 +51,10 @@
   @include mq(md) {
     margin-right: rem(-$grid-gutter) !important;
     margin-left: rem(-$grid-gutter) !important;
+
+    &.gut-sm {
+      margin-right: rem(-$grid-gutter-sm) !important;
+      margin-left: rem(-$grid-gutter-sm) !important;
+    }
   }
 }

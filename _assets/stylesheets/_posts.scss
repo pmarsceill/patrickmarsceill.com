@@ -15,6 +15,10 @@
   position: relative;
   color: $grey-dk;
 
+  @include mq(xl) {
+    left: 6%;
+  }
+
   h1,
   h2,
   h3,
@@ -68,12 +72,27 @@
   }
 }
 
-.post-content-full {
+.feat-img-wrap {
+  margin-right: $grid-gutter-sm;
+  margin-left: $grid-gutter-sm;
+
   @include mq(lg) {
-    width: 135%;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   @include mq(xl) {
-    width: 150%;
+    margin-right: -6%;
+    margin-left: -6%;
+  }
+}
+
+.post-content-full {
+  @include mq(lg) {
+    width: 123%;
+  }
+
+  @include mq(xl) {
+    width: 140%;
   }
 }
