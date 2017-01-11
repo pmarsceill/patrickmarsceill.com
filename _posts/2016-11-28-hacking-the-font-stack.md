@@ -2,7 +2,7 @@
 layout: post
 title:  "Hacking the Font Stack"
 description: "Explorations in a modern native fonts on the web"
-date: 2016-10-12 17:18:00
+date: 2016-11-28 17:18:00
 featured_img: articles/hacking-font-stack/hacking-font-stack.png
 image: /assets/articles/hacking-font-stack/hacking-font-stack.png # for open graph
 ---
@@ -21,23 +21,19 @@ _Side note: Internet Explorer (which was a notoriously painful browser to build 
   [039e80cc]: http://alistapart.com/article/cssatten "CSS @ Ten: The Next Big Thing"
   [423c2466]: https://www.w3.org/TR/2001/WD-css3-fonts-20010731/ "CSS3 module: Fonts, W3C Working Draft 31-July-2001"
 
-## Now this is happening
-
 The web is now available on any capable device, largely thanks to the adoption of mobile-friendly web design (like responsive), the downfall of Flash as a web technology, and a user base glued to their phones reading Facebook at any given time. This has forced those who build web pages to consider performance impacts (load time, render time, etc..) more than ever before &mdash; or at least since the days of dialup when that draft was written in 1997.
 
 Like images, JavaScript, and CSS bloat; web fonts can easily become performance bottlenecks if not kept in check. While they allow for consistency in typography across devices and platforms, concern for performance and accessibility over pixel perfect consistency is a valid reason to think twice before using them.
 
 Can we go back to the web development practices in 1997 and make websites using system fonts?... Of course we can. Luckily there are some newer fonts available that make setting type on the web a little nicer.
 
-### Modern native font stacks
-
 Let me preference this list by saying that I am not anti-web font and I think the technology was/is a huge step forward for CSS. I do think there is still work to be done when it comes to how browsers load these resources as it can lead to user experience issues like [FOIT (flash of invisible text)][5038a6bd]. Likewise, this list is experimental and hasn't been tested on many devices beyond recent OSX / Android / and Windows 7+ devices. These stacks can work independently or in conjunction with web fonts and hopefully will be useful for folks looking for alternatives.
 
 [5038a6bd]: https://css-tricks.com/fout-foit-foft/ "FOUT, FOIT, FOFT"
 
-#### 1. The modern serif
+## 1. The modern serif
 
-A modern more humanist serif stack ideal for both body and display sized text.
+A modern and more humanist serif stack ideal for both body and display sized text.
 
 ```css
 body {
@@ -55,29 +51,29 @@ On the Apple side of things, we're using a font intended for a Japanese characte
 -   Falls back to - **local serif**
 
 <div class="position-lg-relative clearfix post-content-full">
-<div class="col-lg-4 float-lg-left pr-lg-1" markdown="1">
+<div class="columns gut-sm">
+<div class="one-third-lg column" markdown="1">
 
 ##### macOS / iOS rendering
 ![Hiragino Mincho Pro (Latin characters) on macOS]({% asset_path articles/hacking-font-stack/apple-hiragino-mincho-pro.png %}){: .img-fluid }
 
 </div>
-<div class="col-lg-4 float-lg-left pl-lg-1 pr-lg-2"  markdown="1">
+<div class="one-third-lg column"  markdown="1">
 
 ##### Windows rendering
 ![Cambria]({% asset_path articles/hacking-font-stack/windows-cambria.png %}){: .img-fluid }
 
 </div>
-<div class="col-lg-4 float-lg-left"  markdown="1">
+<div class="one-third-lg column"  markdown="1">
 
 ##### Android rendering
 ![Roboto Serif]({% asset_path articles/hacking-font-stack/android-roboto-serif.png %}){: .img-fluid }
 
 </div>
 </div>
+</div>
 
----
-
-#### 2. The Helvetica / Arial alternative
+## 2. The Helvetica / Arial alternative
 
 Modern sans stack suitable for UI and body copy. A variety of weights (with a light option on most operating systems).
 
@@ -99,29 +95,29 @@ You might have seen this type of stack used on Medium, GitHub, and Facebook rece
 If you want to stay strictly with neo-grotesque typefaces, you could pull out `Segoe UI` font to allow Windows to render the fall back (Arial). Segoe UI is one of the only default fonts on Windows that has a light weight option, which makes it useful in many display sized contexts.
 
 <div class="position-lg-relative clearfix post-content-full">
-<div class="col-lg-4 float-lg-left pr-lg-1" markdown="1">
+<div class="columns gut-sm">
+<div class="one-third-lg column" markdown="1">
 
 ##### macOS / iOS rendering
 ![San Francisco on macOS / iOS]({% asset_path articles/hacking-font-stack/apple-san-francisco.png %}){: .img-fluid }
 
 </div>
-<div class="col-lg-4 float-lg-left pl-lg-1 pr-lg-2"  markdown="1">
+<div class="one-third-lg column"  markdown="1">
 
 ##### Windows rendering
 ![Segoe UI on Windows]({% asset_path articles/hacking-font-stack/windows-segoe-ui.png %}){: .img-fluid }
 
 </div>
-<div class="col-lg-4 float-lg-left"  markdown="1">
+<div class="one-third-lg column"  markdown="1">
 
 ##### Android / ChromeOS rendering
 ![Roboto on Android / ChromeOS]({% asset_path articles/hacking-font-stack/android-roboto.png %}){: .img-fluid }
 
 </div>
 </div>
+</div>
 
----
-
-#### 3. The humanist sans
+## 3. The humanist sans
 
 A humanist sans stack that works best with body copy set above 18px.
 
@@ -139,29 +135,29 @@ body {
 -   Falls back to - **Lucida Grande, Calibri, local sans serif**
 
 <div class="position-lg-relative clearfix post-content-full">
-<div class="col-lg-4 float-lg-left pr-lg-1" markdown="1">
+<div class="columns gut-sm">
+<div class="one-third-lg column" markdown="1">
 
 ##### macOS / iOS rendering
 ![Gill Sans on macOS / iOS]({% asset_path articles/hacking-font-stack/apple-gill-sans.png %}){: .img-fluid }
 
 </div>
-<div class="col-lg-4 float-lg-left pl-lg-1 pr-lg-2"  markdown="1">
+<div class="one-third-lg column"  markdown="1">
 
 ##### Windows rendering
 ![Segoe UI on Windows]({% asset_path articles/hacking-font-stack/windows-segoe-ui.png %}){: .img-fluid }
 
 </div>
-<div class="col-lg-4 float-lg-left"  markdown="1">
+<div class="one-third-lg column"  markdown="1">
 
 ##### Android / ChromeOS rendering
 ![Roboto on Android / ChromeOS]({% asset_path articles/hacking-font-stack/android-roboto.png %}){: .img-fluid }
 
 </div>
 </div>
+</div>
 
----
-
-#### 4. Classical serif
+## 4. Classical serif
 
 A traditional serif stack suitable optimized for legibility in body copy.
 
@@ -185,23 +181,25 @@ Here we are only using `Palatino Linotype` for display sized headings on Windows
 -   Falls back to - **local serif**
 
 <div class="position-lg-relative clearfix post-content-full">
-<div class="col-lg-4 float-lg-left pr-lg-1" markdown="1">
+<div class="columns gut-sm">
+<div class="one-third-lg column" markdown="1">
 
 ##### macOS / iOS rendering
 ![Athelas on macOS / iOS]({% asset_path articles/hacking-font-stack/apple-athelas.png %}){: .img-fluid }
 
 </div>
-<div class="col-lg-4 float-lg-left pl-lg-1 pr-lg-2"  markdown="1">
+<div class="one-third-lg column"  markdown="1">
 
 ##### Windows rendering
 ![Palentino Linotype and Times New Roman on Windows]({% asset_path articles/hacking-font-stack/windows-palentino-linotype-times-new-roman.png %}){: .img-fluid }
 
 </div>
-<div class="col-lg-4 float-lg-left"  markdown="1">
+<div class="one-third-lg column"  markdown="1">
 
 ##### Android / ChromeOS rendering
 ![Roboto Serif on Android / ChromeOS]({% asset_path articles/hacking-font-stack/android-roboto-serif.png %}){: .img-fluid }
 
+</div>
 </div>
 </div>
 

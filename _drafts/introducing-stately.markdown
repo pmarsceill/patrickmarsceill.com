@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "Introducing Stately"
+layout: "post"
+title: "Introducing Stately"
 description: "Building a Jekyll theme for Government"
-date: 2016-11-23 17:18:00
+date: "2017-01-10 15:47"
 ---
 
 Let's test some things.

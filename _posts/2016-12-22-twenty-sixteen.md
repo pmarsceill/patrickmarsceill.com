@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Twenty Sixteen"
-description: "A look back at the last year, and pondering about what’s to come."
+description: "A look back at the last year, and pondering about what’s to come"
 date: 2016-12-22 17:18:00
 featured_img: articles/intro-tablab/home-large.jpg
 ---
