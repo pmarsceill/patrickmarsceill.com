@@ -13,7 +13,7 @@ gems:
   - jekyll-assets
   - jekyll-seo-tag
   - jemoji
-permalink: pretty
+permalink: /:year/:month/:day/:title/
 assets:
   # cache: false | directory | default: .asset-cache
   # cdn: https://cdn.example.com
