@@ -3,4 +3,5 @@ _site
 .asset-cache
 .DS_Store
 .css-stats.md
+_drafts
 node_modules
