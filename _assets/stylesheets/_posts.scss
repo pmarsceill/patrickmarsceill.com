@@ -28,10 +28,6 @@
     color: $darkest;
   }
 
-  // @include mq(md) {
-  //   font-size: $post-content-font-size;
-  // }
-
   > p:first-of-type {
     margin-bottom: 2em;
     font-family: $display-font-family;
@@ -61,6 +57,22 @@
 
       @include mq(md) {
         font-size: 13px;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: 0.3em;
+
+      &::before {
+        position: absolute;
+        left: -1em;
+        color: $grey-lt;
+        content: "•";
       }
     }
   }
