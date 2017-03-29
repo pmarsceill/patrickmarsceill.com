@@ -35,11 +35,11 @@ layout: default
             <aside class="text-small">
               {% if page.next %}
                 <span class="heading-epsilon d-block text-grey-lt">Next</span>
-                <a href="{{ page.next.url | absolute_url }}">{{ page.next.title }}</a>
+                <a href="{{ site.baseurl }}{{ page.next.url | absolute_url }}">{{ page.next.title }}</a>
               {% endif %}
               {% if page.previous %}
                 <span class="heading-epsilon d-block text-grey-lt{% if page.next %} mt-2{% endif %}">Prevously</span>
-                <a href="{{ page.previous.url | absolute_url }}">{{ page.previous.title }}</a>
+                <a href="{{ site.baseurl }}{{ page.previous.url | absolute_url }}">{{ page.previous.title }}</a>
               {% endif %}
             </aside>
           {% endif %}
