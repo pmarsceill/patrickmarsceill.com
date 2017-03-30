@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Dear Last.fm,"
-description: "It’s been awhile. Seven years, actually."
+description: "It’s been awhile. Seven years, actually"
 date: "2017-01-10 15:30"
 ---
 
