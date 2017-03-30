@@ -6,10 +6,10 @@
 
   @include mq(sm) {
     border: $spacer-2 solid $darkest;
+    border-top: 0;
   }
 
   @include mq(md) {
-    border-top: 0;
     border-bottom: 0;
   }
 
