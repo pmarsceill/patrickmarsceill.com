@@ -5,11 +5,11 @@
 
 .content-block {
   max-width: $container-wide-width + ($grid-gutter * 10);
-  padding: $spacer-3 rem($grid-gutter / 2);
+  padding: $spacer-4 rem($grid-gutter / 2);
   margin: 0 auto;
 
   @include mq(sm) {
-    padding: $spacer-3 rem($grid-gutter);
+    padding: $spacer-4 rem($grid-gutter);
   }
 
   @include mq(lg) {
