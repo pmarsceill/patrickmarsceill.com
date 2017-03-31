@@ -77,7 +77,7 @@
     }
   }
 
-  hr {
+  hr:not([class]) {
     margin-top: $spacer-2;
     margin-bottom: $spacer-2;
     background-color: $grey-lt;
