@@ -16,38 +16,45 @@ This is a product design position. You'll be working with product managers, engi
 
 ### Is this position remote?
 
-Not right now. Currently, we're looking to expand our product design team in San Francisco, and we're not considering remote applicants for this position  (this might change as our team becomes more geographically balanced).
+We value a remote work—so much so that most of our product design team is remote. In an effort to create more of a  geographical balance, we're currently only considering candidates that live in the San Francisco area (or are willing to relocate) and can report into our office in SOMA.
 
 ### The types of projects you'll be working on
 
 GitHub builds products for developers, businesses, open source organizations, educational institutions, government agencies and just about anyone who is involved in building and shipping software. About 20 million people currently use GitHub.com around the world.
 
-My group within the product design team primarily focuses on the businesses that use GitHub, as well as the integrators that build products that extend our platform in various ways. This means you'll get to work on stuff like:
+My group within the product design team primarily focuses on the businesses that use GitHub, as well as the integrators that build products to extend our platform in various ways. This means you'll get to work on stuff like:
 
 -   Providing organizations enterprise-class tools to help manage and support teams of all sizes
 -   Helping developers discover and install integrations to add functionality to their projects on GitHub
--   Giving integrators a great experience to build integrations on top of, extending the core functionality of GitHub
+-   Giving integrators a great experience to build on top of, extending the core functionality of GitHub
 
 Additionally, you'll provide input and feedback that helps influence the direction of other product designers working on other areas of GitHub.
 
-#### This will be a good fit for you if...
+#### This position might be a great fit if...
 
 -   You have a few years experience designing software or websites
 -   You can talk and write about your work
 -   You're comfortable with people having strong opinions about your work and are comfortable sharing yours
--   You have some experience with HTML and CSS (you should be able to write markup and styles)
--   You can work within a defined design system, but also know when to break outside of it
--   You've used GitHub before, are familiar with modern developer workflows, or are willing to learn
+-   You can use HTML and CSS as a design tool (to prototype or build your designs)
+-   You enjoy shepherding design from concept through implementation
+-   You can work within a defined design system and can explain why you might need to break outside of it
+-   You value research as a foundational design component
+-   You've used GitHub before or are familiar with modern developer workflows
 
-#### You might not be right for this position if...
+#### This position may not be right for you if...
 
 -   You've never held a professional design position before
--   Are passionate about design, but don't have a desire to expand your front-end development skills
--   You're more passionate about designing marketing experiences ([we're hiring those types of web designers also](http://sophieshepherd.com/2017/03/17/hiring-a-web-designer.html))
--   You aren't comfortable having autonomy over your work
-
-If you don't check all the boxes above, that's okay... Depending on a candidate's interviews and response to our design exercise we've been known to make exceptions.
+-   You don't have a desire to expand your front-end development skills
+-   You have serious front-end development chops, but aren't excited by an iterative design process grounded in research
+-   You're really into designing editorial content, digital marketing experiences, conference websites, etc... ([we're hiring those types of web designers,  too!](http://sophieshepherd.com/2017/03/17/hiring-a-web-designer.html))
 
 ## Applying
 
 If the above interests you, but you aren't sure if you would be a good fit, feel free [ask me any questions via Twitter](https://twitter.com/pmarsceill) (my DMs are open). Otherwise, [head over to the job application](https://boards.greenhouse.io/github/jobs/580527#.WNvkI1KZNjA), we're excited to meet you.
+
+---
+{: .hr-short .my-4}
+
+Thanks to Sophie Shepherd for inspiring me [with her post][5443eed0] and for help editing this one.
+
+  [5443eed0]: http://sophieshepherd.com/2017/03/17/hiring-a-web-designer.html "Calling All Web Designers"

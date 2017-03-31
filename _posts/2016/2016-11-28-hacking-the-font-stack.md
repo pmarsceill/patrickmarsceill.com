@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hacking the font stack"
+title:  "Hacking the font Stack"
 description: "Explorations in a modern native fonts on the web"
 date: 2016-11-28 17:18:00
 featured_img: articles/hacking-font-stack/hacking-font-stack.png
@@ -14,7 +14,7 @@ A lot of folks (myself included) developed a palpable distaste for Flash-based s
 I started experimenting with web fonts in 2007 after reading [CSS @ Ten: The Next Big Thing
 ][039e80cc]. Ten years prior, [this CSS2 draft from 1997][5ad770fe] mentions the `@font-face` directive but it was removed in the [CSS2.1 spec][964be9d5].
 
-_Side note: Internet Explorer (which was a notoriously painful browser to build websites for back then) was the only browser to ever implement it back then in version 4. :clap:_
+:tada: _Fun fact: Internet Explorer was the only browser to ever implement it back then in version 4._
 
   [964be9d5]: https://www.w3.org/TR/CSS21/ "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification"
   [5ad770fe]: https://www.w3.org/TR/WD-CSS2-971104/cover.html "CSS 2 Specification - W3C Working Draft 04-November-1997"
