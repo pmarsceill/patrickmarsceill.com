@@ -1,0 +1,26 @@
+// Border utilities
+// .bor-t, .bor-b, .bor-0, .bor-t-0
+.bor-t { border-top: 1px solid $border-color !important; }
+.bor-t-0 { border-top: 0 !important; }
+.bor-r { border-right: 1px solid $border-color !important; }
+.bor-r-0 { border-right: 0 !important; }
+.bor-b { border-bottom: 1px solid $border-color !important; }
+.bor-b-0 { border-bottom: 0 !important; }
+.bor-l { border-left: 1px solid $border-color !important; }
+.bor-l-0 { border-left: 0 !important; }
+.bor-0 { border: 0 !important; }
+
+// Responsive border utlities
+// .bor-sm-t, .bor-lg-t-0, ...
+@each $media-query in map-keys($media-queries) {
+  @include mq($media-query) {
+    .bor-#{ $media-query }-t { border-top: 1px solid $border-color !important; }
+    .bor-#{ $media-query }-t-0 { border-top: 0 !important; }
+    .bor-#{ $media-query }-r { border-right: 1px solid $border-color !important; }
+    .bor-#{ $media-query }-r-0 { border-right: 0 !important; }
+    .bor-#{ $media-query }-b { border-bottom: 1px solid $border-color !important; }
+    .bor-#{ $media-query }-b-0 { border-bottom: 0 !important; }
+    .bor-#{ $media-query }-l { border-left: 1px solid $border-color !important; }
+    .bor-#{ $media-query }-l-0 { border-left: 0 !important; }
+  }
+}

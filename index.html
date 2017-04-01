@@ -1,79 +1,95 @@
 ---
-title: Journal
 layout: default
 order: 1
-bodyClass: body--home
+home_page: true
 ---
 
-<main role="main">
-  <div class="outer">
-    <section class="posts">
-    {% for post in site.posts %}
-      <article class="post">
-        <header>
-          <h2 class="post-header__title">
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        <p class="post-header__meta">Published on {{ post.date | date: "%b %-d, %Y" }}. <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">comments</a>.</p>
-        </header>
-
-        <div class="content">
-        {% if post.content contains '<!--more-->' %}
-            
-            {{ post.content | split:'<!--more-->' | first }}
-            
-            <p><a href="{{ post.url }}">Continue reading</a></p>
-
-        {% else %}
-
-            {{ post.content }}
-            
-        {% endif %}
+<div class="content-block bg-dark content-block-home-img-bg content-block-spacious" style="background-image: url({% asset_path patrick-marsceill.png %});">
+  <div class="container container-wide">
+    <div class="columns">
+      <div class="four-fifths-md three-fifths-xl column">
+        <p class="display-alpha mb-3 mb-md-4">
+          I design + build with the product design team at <a href="http://github.com">GitHub</a>.
+        </p>
+        <h1 class="display-gamma mb-3 mb-md-6 text-white text-dim">
+          Patrick Marsceill is a multi-disciplinary product designer, making the web shine for over a decade.
+        </h1>
+      </div>
+      <div class="single column">
+        <div class="d-sm-inline-block mt-4 mt-md-6 mr-sm-3">
+          <h2 class="heading-epsilon text-white mb-1">Follow along on</h2>
+          <ul class="list-inline text-small mb-sm-0">
+            <li class="mr-2"><a href="//twitter.com/pmarsceill">Twitter</a></li>
+            <li class="mr-2"><a href="//github.com/pmarsceill">GitHub</a></li>
+            <li class="mr-2"><a href="//dribbble.com/pmarsceill">Dribbble</a></li>
+            <li class="mr-md-2"><a href="//instagram.com/pmarsceill">Instagram</a></li>
+          </ul>
         </div>
-      </article>
-    {% endfor %}
-      <footer class="content-padding">
-          <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-      </footer>
-    </section>
-    <aside>
-      <header>
-        <h3>Recently</h3>
-      </header>
-      <ul>
-        {% for post in site.posts | offset: 1 | limit: 5  %}
-          <li><a href="{{post.url}}">{{ post.title }}</a></li>
-        {% endfor %}
-
-      </ul>
-    </aside>
-    <aside>
-      <header>
-        <h3>Elsewhere</h3>
-      </header>
-      <ul>
-          <li><a href="mailto:patrick.marsceill@gmail.com">Email Patrick</a></li>
-          <li><a href="http://dribbble.com/pmarsceill">Dribbble</a></li>
-          <li><a href="http://github.com/pmarsceill">Github</a></li>
-          <li><a href="http://twitter.com/pmarsceill">Twitter</a></li>
-          <li><a href="http://cognition.happycog.com/author/pmarsceill">Cognition</a></li>
-
-      </ul>
-    </aside>
+        <div class="d-inline-block">
+          <h2 class="heading-epsilon text-white mb-1">Subscribe</h2>
+          <p class="text-small mb-0"><a href="feed.xml">RSS</a></p>
+        </div>
+      </div>
+    </div>
   </div>
-<!--   <div class="bottom-gradient"></div>
- -->
-</main>
+</div>
 
-<script type="text/javascript">
-/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-var disqus_shortname = 'patrickmarsceill'; // required: replace example with your forum shortname
-
-/* * * DON'T EDIT BELOW THIS LINE * * */
-(function () {
-    var s = document.createElement('script'); s.async = true;
-    s.type = 'text/javascript';
-    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-}());
-</script>
+<div class="content-block content-block-spacious">
+  <div class="container container-wide">
+    <h2 class="heading-epsilon mb-1 text-white">From my journal</h2>
+    <ol class="ol-big columns mb-0">
+      {% for post in site.posts %}
+        {% unless post.categories contains "legacy" %}
+          {% if forloop.index <= 3 %}
+            <li class="one-third-md column mb-3 mb-md-0">
+              <h3 class="display-gamma d-inline mr-1">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h3>
+              <p class="display-gamma d-inline">{{ post.description }}</p>
+            </li>
+          {% endif %}
+        {% else %}
+          {% break %}
+        {% endunless %}
+      {% endfor %}
+    </ol>
+  </div>
+</div>
+<div class="content-block" id="projects">
+  <div class="container container-wide">
+    <h2 class="heading-epsilon text-white">Elsewhere</h2>
+    <div class="columns">
+      <div class="single one-third-md column">
+        <p class="heading-beta text-grey-lt f-wt-normal mb-3 mb-md-0">
+          Side projects &amp; podcasts &amp; bands &amp; artwork &amp; tools &amp; experiments :sparkles:
+        </p>
+      </div>
+      <div class="single two-thirds-md d-flex fw-wrap">
+        <div class="one-half mb-3 column">
+          <h3 class="text-small"><a href="//awaremac.com">Aware</a></h3>
+          <p class="text-small mb-0">Aware is a menubar app for OSX and MacOS that tracks and displays how long you've been actively using your computer.</p>
+        </div>
+        <div class="one-half mb-3 column">
+          <h3 class="text-small"><a href="//tablab.io">Tab Lab</a></h3>
+          <p class="text-small mb-0">Tab Lab is a web app created to publish and collaborate on guitar tablature and sheet music.</p>
+        </div>
+        <div class="one-half mb-3 column">
+          <h3 class="text-small"><a href="//quirksandcompulsions.com">Quirks &amp; Compulsions</a></h3>
+          <p class="text-small mb-0">The show about overanalyzing the overlooked. With my co-hosts, Anthony Colangelo and Aura Seltzer, we discuss their obsessions with life's minutiae.</p>
+        </div>
+        <div class="one-half mb-3 column">
+          <h3 class="text-small"><a href="//ammills.com">A.M. Mills</a></h3>
+          <p class="text-small mb-0">A sappy quartet from Philadelphia.</p>
+        </div>
+        <div class="one-half mb-3 column">
+          <h3 class="text-small"><a href="//github.com/pmarsceill/stately">Stately (alpha)</a></h3>
+          <p class="text-small mb-0">A Jekyll theme for goverment. Open source and easily hosted on GitHub pages.</p>
+        </div>
+        <div class="one-half mb-3 column">
+          <h3 class="text-small text-grey-lt">Just the Docs (coming soon)</h3>
+          <p class="text-small  text-grey-lt mb-0">A highly customaizable Jekyll theme for documentation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

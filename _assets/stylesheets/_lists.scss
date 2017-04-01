@@ -1,0 +1,41 @@
+// stylelint-disable selector-no-type
+
+//
+// Various list styles
+//
+
+.list-inline {
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+// Big ol list
+.ol-big {
+  counter-reset: li;
+
+  > li {
+    position: relative;
+    list-style: none;
+
+    &::before {
+      float: left;
+      margin: -0.3em 0.5em 0 0;
+      font-size: 32px;
+      font-weight: 300;
+      content: counter(li);
+      counter-increment: li;
+
+      @include mq(md) {
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}

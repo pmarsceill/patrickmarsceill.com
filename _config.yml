@@ -1,21 +1,55 @@
 # Site settings
 title: Patrick Marsceill
 email: patrick.marsceill@gmail.com
-description: "Patrick Marsceill is a working designer and developer living in Philadelphia."
-baseurl: ""
-url: "http://patrickmarsceill.com"
+description: > # this means to ignore newlines until "baseurl:"
+  A multi-disciplinary designer, managing product design at GitHub.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://patrickmarsceill.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+gems:
+  - jekyll-sitemap
+  - jekyll-assets
+  - jekyll-seo-tag
+  - jemoji
+permalink: /:year/:month/:day/:title/
+assets:
+  # cache: false | directory | default: .asset-cache
+  # cdn: https://cdn.example.com
+  # skip_prefix_with_cdn: false
+  # prefix: "/a"
+  # assets:
+  #   - "/a/c/main.css"
+  sources:
+    - _assets/stylesheets
+    - _assets/images
+    - _assets/videos
+    - _assets/javascripts
+  baseurl: http://localhost:4000/assets/
+  debug: false
+  version: 1
 exclude:
   - node_modules
-  - scss
-  - '*.scss'
-  - 'README.md'
-  - 'package.json'
-  - 'Gruntfile.js'
-  - 'Gemfile'
-  - 'Gemfile.lock'
-  - '.sass-cache'
-  - '*.sublime-project'
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - Gruntfile.js
+  - circle.yml
+  - vendor
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/patrick-marsceill-og.png
+
+# Open Graph
+twitter:
+  username: pmarsceill
+social:
+  - https://twitter.com/pmarsceill
+  - https://keybase.io/pmarsceill
+  - https://github.com/pmarsceill
+  - https://dribbble.com/pmarsceill
+  - https://linkedin.com/pmarsceill
+logo: "/assets/patrick-marsceill-og.png"

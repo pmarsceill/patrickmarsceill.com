@@ -1,0 +1,110 @@
+// stylelint-disable selector-no-type
+
+//
+// Post detail page
+//
+
+.post-header {
+  @include mq(lg) {
+    padding-top: $spacer-6 * 1.5;
+    padding-bottom: $spacer-6 * 1.5;
+  }
+}
+
+.post-content {
+  position: relative;
+  color: $grey-dk;
+
+  @include mq(xl) {
+    left: 6%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    padding-top: 1em;
+    color: $darkest;
+  }
+
+  > p:first-of-type {
+    margin-bottom: 1.5em;
+    font-family: $display-font-family;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+
+    @include mq(lg) {
+      font-size: 24px;
+      font-weight: 300;
+    }
+  }
+
+  figure {
+    margin: $spacer-3 0;
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.07);
+
+    img {
+      display: block;
+    }
+
+    figcaption {
+      padding: $spacer-1 $spacer-2;
+      font-size: 12px;
+      color: $grey-md;
+
+      @include mq(md) {
+        font-size: 13px;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: 0.4em;
+
+      &::before {
+        position: absolute;
+        left: -1em;
+        color: $grey-lt;
+        content: "•";
+      }
+    }
+  }
+
+  hr:not([class]) {
+    margin-top: $spacer-3;
+    margin-bottom: $spacer-3;
+    background-color: $soft-light;
+  }
+}
+
+.feat-img-wrap {
+  margin-right: $grid-gutter-sm;
+  margin-left: $grid-gutter-sm;
+
+  @include mq(lg) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @include mq(xl) {
+    margin-right: -6%;
+    margin-left: -6%;
+  }
+}
+
+.post-content-full {
+  @include mq(lg) {
+    width: 123%;
+  }
+
+  @include mq(xl) {
+    width: 140%;
+  }
+}

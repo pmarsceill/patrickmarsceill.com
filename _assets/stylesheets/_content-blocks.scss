@@ -1,0 +1,53 @@
+//
+// Content blocks
+// Responsive padding and centering of content in boxes
+//
+
+.content-block {
+  max-width: $container-wide-width + ($grid-gutter * 10);
+  padding: $spacer-4 rem($grid-gutter / 2);
+  margin: 0 auto;
+
+  @include mq(sm) {
+    padding: $spacer-4 rem($grid-gutter);
+  }
+
+  @include mq(lg) {
+    padding: $spacer-6 rem($grid-gutter * 2.5);
+  }
+
+  @include mq(xl) {
+    padding: $spacer-6 rem($grid-gutter * 3);
+  }
+}
+
+.content-block-home-img-bg {
+  background-repeat: no-repeat;
+  background-position: 45% bottom;
+  background-size: auto 90%;
+
+  @include mq(sm) {
+    background-position: right bottom;
+    background-size: auto 90%;
+  }
+
+  @include mq(md) {
+    background-position: 120% 130%;
+    background-size: auto 90%;
+  }
+
+  @include mq(lg) {
+    background-position: 90% bottom;
+  }
+
+  @include mq(xl) {
+    background-position: 80% bottom;
+  }
+}
+
+.content-block-spacious {
+  @include mq(lg) {
+    padding-top: ($spacer-6 * 1.5);
+    padding-bottom: ($spacer-6 * 1.5);
+  }
+}

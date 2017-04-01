@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "Compiling site... \n"
+bundle exec jekyll build
+
+echo "Publishing to gh-pages branch... \n"
+grunt publish

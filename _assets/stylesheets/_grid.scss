@@ -1,0 +1,64 @@
+// flexible width container
+.container {
+  width: auto;
+  max-width: $container-width;
+  margin-right: auto;
+  margin-left: auto;
+  @include clearfix;
+}
+
+// a wider container for media that needs to go beyond the normal container by a bit.
+.container-wide {
+  max-width: $container-wide-width + ($grid-gutter * 2);
+  @include clearfix;
+}
+
+// Base class for every column (requires a column width from below)
+.column {
+  @include column;
+}
+
+// Base class for column containers. Applies negative margin so column padding aligns to the edges of the container.
+.columns {
+  @include clearfix;
+  @include columns;
+}
+
+// Column widths
+
+// .one-half, .one-third
+@each $column-width, $size in $column-widths {
+  .#{ $column-width } { width: $size !important; }
+}
+
+// Convert the SASS maps to a list
+$mq-names: map-keys($media-queries);
+
+// .one-half-md, .one-third-sm
+@each $media-query in $mq-names {
+  @each $column, $size in $column-widths {
+    /* test */
+    .#{ $column }-#{ $media-query } {
+      @include mq($media-query) {
+        width: $size !important;
+      }
+    }
+  }
+}
+
+// .offset-one-third
+@each $column-width, $size in $column-widths {
+  .offset-#{ $column-width } { margin-left: $size !important; }
+}
+
+// .offset-one-third-md
+@each $media-query in $mq-names {
+  @each $column, $size in $column-widths {
+    /* test */
+    .offset-#{ $column }-#{ $media-query } {
+      @include mq($media-query) {
+        margin-left: $size !important;
+      }
+    }
+  }
+}

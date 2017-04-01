@@ -1,0 +1,31 @@
+// stylelint-disable block-opening-brace-space-after, block-opening-brace-space-before, primer/selector-no-utility
+// Color utils
+
+// Text colors
+.text-pure-white {color: #fff !important; }
+.text-white { color: $soft-light !important; }
+.text-grey-lt { color: $grey-md !important; }
+.text-red { color: $red !important; }
+.text-black { color: $darkest !important; }
+.text-grey { color: $grey-dk !important; }
+.text-purple { color: $purple !important; }
+.text-dim { opacity: 0.75 !important; }
+
+// Link colors
+.link-red {
+  color: $red !important;
+  background-image: none !important;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+// Background colors
+.bg-gloss-black { background-color: $gloss-black !important; }
+.bg-dark { background-color: $grey-dk !important; }
+.bg-light { background-color: $grey-md !important; }
+.bg-white { background-color: $lightest !important; }
+.bg-darkest { background-color: $darkest !important; }
+
+.bg-gray-lt { background-color: $grey-lt !important; }

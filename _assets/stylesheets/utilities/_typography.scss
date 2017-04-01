@@ -1,0 +1,23 @@
+// stylelint-disable block-opening-brace-space-after, block-opening-brace-space-before, primer/selector-no-utility
+// Typography utils
+.text-small {
+  font-size: 12px !important;
+  line-height: 1.5;
+
+  @include mq(md) {
+    font-size: 13px !important;
+  }
+}
+
+.text-monospace { font-family: $monospace-font-family !important; }
+
+.text-center { text-align: center !important; }
+
+.f-wt-normal { font-weight: normal !important; }
+
+//
+// Link utils
+//
+.link-no-underline {
+  background-image: none;
+}

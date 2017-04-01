@@ -1,15 +1,30 @@
 {
-  "name": "patrickmarsceill.com",
-  "version": "0.1.0",
+  "name": "patrick-marsceill",
+  "version": "3.0.0",
+  "homepage": "http://patrickmarsceill.com",
+  "author": "Patrick Marsceill",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmarsceill/patrickmarsceill.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmarsceill/patrickmarsceill.com/issues"
+  },
+  "description": "Source for patrickmarsceill.com",
+  "scripts": {
+    "test": "stylelint _assets/**/*.scss -c .stylelintrc.json -s scss"
+  },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-sass": "~0.6.0",
-    "load-grunt-tasks": "~0.2.1",
-    "grunt-jekyll": "~0.4.1",
-    "grunt-shell": "~0.6.4",
-    "grunt-grunticon": "~1.0.0"
+    "grunt": "^0.4.5",
+    "grunt-build-control": "^0.7.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-jekyll": "^0.4.6",
+    "grunt-parker": "^0.1.5",
+    "node-sass": "^3.6.0",
+    "postcss-cli": "^2.2.0",
+    "stylelint": "^7.7.1",
+    "stylelint-config-primer": "^1.4.0"
   }
 }

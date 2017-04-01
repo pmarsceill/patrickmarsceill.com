@@ -1,78 +1,78 @@
 module.exports = function(grunt) {
+
   grunt.initConfig({
+    // Project configuration.
     pkg: grunt.file.readJSON('package.json'),
-    sass: {
-      dist: {
-        options: {
-          style: 'compressed'
-        },
-        files: {
-          'a/c/screen.css': 'a/scss/screen.scss',
-        }
-      }
-    },
-    concat: {
-      source: {
-        src: [
-          'a/j/plugins/*.js', // All JS in the plugins folder
-          'a/j/custom/*.js'  // All JS in the custom folder
-        ],
-      dest: 'a/j/global.js'
-      }
-    },
-    uglify: {
-      source: {
-        src: 'a/j/global.js',
-        dest: 'a/j/global.min.js'
-      }
-    },
-    shell: {
-      jekyllBuild: {
-        command: 'jekyll build'
-      },
-      deploy: {
-        command: 'git subtree push --prefix _site origin gh-pages'
-      }
-    },
-    grunticon: {
-        myIcons: {
-            files: [{
-                expand: true,
-                cwd: 'a/i/icons/',
-                src: '*.svg',
-                dest: "a/c/grunticon/"
-            }],
-            options: {
-            }
-        }
-    },
-    watch: {
+
+    // Runs CSS reporting
+    parker: {
       options: {
-        livereload: true,
+        metrics: [
+          'TotalStylesheets',
+          'TotalStylesheetSize',
+          'TotalRules',
+          'TotalSelectors',
+          'TotalIdentifiers',
+          'TotalDeclarations',
+          'SelectorsPerRule',
+          'IdentifiersPerSelector',
+          'SpecificityPerSelector',
+          'TopSelectorSpecificity',
+          'TopSelectorSpecificitySelector',
+          'TotalIdSelectors',
+          'TotalUniqueColours',
+          'TotalImportantKeywords',
+          'TotalMediaQueries'
+        ],
+        file: ".css-stats.md",
+        usePackage: true
       },
-      any: {
-        files: ['**/*.md','**/*.html','!**/_site/**', '_config.yml'],
-        tasks: ['shell:jekyllBuild']
+      src: [
+        '_site/assets/*.css'
+      ]
+    },
+
+    // Build tooling
+
+    watch: {
+      sass: {
+        files: ['_assets/**/*.scss', '_assets/**/*.js'],
+        tasks: ['parker']
+      }
+    },
+
+    jekyll: {
+      options: {
+        dest: '_site',
+        config: '_config.yml'
+      }
+    },
+
+    buildcontrol: {
+      options: {
+        dir: '_site',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
       },
-      css: {
-        files: ['a/**/*.scss'],
-        tasks: ['sass','shell:jekyllBuild'],
+      pages: {
         options: {
-          spawn: false,
-        }
-      },
-      scripts: {
-        files: ['a/j/custom/*.js','a/js/plugins/*.js'],
-        tasks: ['concat','uglify','shell:jekyllBuild'],
-        options: {
-          spawn: false
+          remote: 'git@github.com:pmarsceill/patrickmarsceill.com.git',
+          branch: 'gh-pages'
         }
       }
     }
   });
 
-require('load-grunt-tasks')(grunt);
-grunt.registerTask('default', ['sass','concat','uglify','grunticon','shell:jekyllBuild','watch']);
-grunt.registerTask('staging', ['sass','concat','uglify','shell:jekyllBuild']);
-grunt.registerTask('deploy', ['shell:deploy']);
+  // Load dependencies
+  grunt.loadNpmTasks('grunt-build-control');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-parker');
+
+  // Generate and format the CSS
+  grunt.registerTask('default', ['jekyll', 'parker']);
+
+  // Publish to GitHub
+  grunt.registerTask('publish', ['jekyll', 'buildcontrol:pages']);
 };

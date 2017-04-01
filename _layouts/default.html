@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en">
+
   {% include head.html %}
-  <body class="{{ page.bodyClass }}">
-	<div class="non-footer">
-    {% include header.html %}
 
-    {{ content }}
-	</div>
-    {% include footer.html %}
+  <body class="{% if page.home_page == true %}body-home {% endif %}{% if page.layout == post %}body-post {% endif %}">
+    <div class="page-outer-border">
+      {% include header.html %}
 
-    <script src="/a/j/global.min.js"></script>
-    <script type="text/javascript" src="//use.typekit.net/peb0hbp.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+      <main role="main" class="main">
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        {{ content }}
 
-      ga('create', 'UA-2709176-3', 'auto');
-      ga('send', 'pageview');
+      </main>
 
-    </script>
-    </body>
+      {% include footer.html %}
+
+    </div>
+  </body>
 </html>

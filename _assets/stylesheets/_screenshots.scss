@@ -1,0 +1,21 @@
+.media-screenshot-desktop {
+  position: relative;
+  padding: 30px;
+  background-color: $darkest;
+  border-radius: 6px;
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    content: "";
+    background-color: $grey-dk;
+    border-radius: 4px;
+  }
+}

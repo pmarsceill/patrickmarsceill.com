@@ -1,0 +1,11 @@
+.work-toc-item {
+  margin-bottom: 0;
+  color: $lightest;
+  text-decoration: none;
+  background-color: $soft-light;
+  background-image: none;
+
+  @include mq(sm) {
+    float: left;
+  }
+}

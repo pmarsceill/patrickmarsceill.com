@@ -1,0 +1,99 @@
+// stylelint-disable selector-no-type
+
+//
+// Global header / nav
+//
+
+.site-header {
+  display: table;
+  width: 100%;
+  padding: $spacer 0;
+  background-color: $darkest;
+}
+
+.main-nav {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+.main-nav-item {
+  display: inline-block;
+}
+
+.main-nav-link {
+  display: block;
+  padding: 0 0.5rem;
+  color: $red;
+  background-image: none;
+
+  &.selected {
+    color: $lightest;
+  }
+
+  @include mq(sm) {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+
+    &:hover,
+    &:active,
+    &.selected {
+      &::before {
+        position: absolute;
+        bottom: calc(50% - 1px);
+        left: 10%;
+        z-index: -1;
+        width: 80%;
+        height: 1px;
+        content: "";
+        background-color: $red;
+        opacity: 0.4;
+      }
+    }
+
+    &.selected {
+      &::before {
+        background-color: $grey-lt;
+      }
+    }
+  }
+}
+
+.logo {
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle;
+
+  a {
+    display: block;
+    float: left;
+    font-size: 0;
+    line-height: 0;
+    background-image: none;
+  }
+
+  .text,
+  .pm {
+    fill: $red;
+  }
+}
+
+.logo-mark {
+  width: 75px;
+  height: auto;
+
+  @include mq(sm) {
+    width: 100px;
+  }
+
+  @include mq(md) {
+    width: 120px;
+  }
+}

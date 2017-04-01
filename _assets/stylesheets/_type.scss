@@ -1,0 +1,145 @@
+// stylelint-disable selector-no-type
+
+//
+// Headings
+//
+
+h1,
+.heading-alpha {
+  margin-bottom: 0.5em;
+  font-family: $body-font-family;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: $lightest;
+
+  @include mq(lg) {
+    font-size: 56px;
+    font-weight: 500;
+  }
+}
+
+h2,
+.heading-beta {
+  margin-bottom: 0.5em;
+  font-family: $body-font-family;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: $lightest;
+
+  @include mq(lg) {
+    font-size: 36px;
+    font-weight: 500;
+  }
+}
+
+h3,
+.heading-gamma {
+  margin-bottom: 0.35em;
+  font-family: $body-font-family;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: $lightest;
+
+  @include mq(lg) {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+h4,
+.heading-delta {
+  margin-bottom: 0.35em;
+  font-family: $body-font-family;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: $lightest;
+
+  @include mq(lg) {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+h5,
+.heading-epsilon {
+  margin-bottom: 0.35em;
+  font-family: $body-font-family;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: $lightest;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+// Display headings
+
+.display-alpha {
+  margin-bottom: 0.5em;
+  font-family: $display-font-family;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: $lightest;
+
+  @include mq(md) {
+    font-size: 54px;
+    font-weight: 300;
+  }
+
+  @include mq(lg) {
+    font-size: 72px;
+    font-weight: 300;
+  }
+}
+
+.display-beta {
+  font-family: $display-font-family;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: $lightest;
+
+  @include mq(lg) {
+    font-size: 36px;
+    font-weight: 300;
+  }
+}
+
+.display-gamma {
+  font-family: $display-font-family;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.3;
+  color: $lightest;
+
+  @include mq(lg) {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+::selection {
+  color: $lightest;
+  text-shadow: none;
+  background: $purple;
+}
+
+.hr-short {
+  position: relative;
+  background-color: transparent;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2em;
+    height: 2px;
+    content: "";
+    background-color: $grey-lt;
+  }
+}
