@@ -3,6 +3,7 @@ layout: post
 title: "Building My Desk — Part Two: The Top"
 date: 2013-02-13 23:04
 categories: legacy
+disqus_comments: true
 ---
 
 The conclusion to my desk building saga ended with a trip to Ikea, and the sanding, staining, and finishing of the tabletop.
