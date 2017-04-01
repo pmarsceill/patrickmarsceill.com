@@ -16,7 +16,7 @@ This is a product design position. You'll be working with product managers, engi
 
 ### Is this position remote?
 
-We value a remote work—so much so that most of our product design team is remote. In an effort to create more of a  geographical balance, we're currently only considering candidates that live in the San Francisco area (or are willing to relocate) and can report into our office in SOMA.
+We value a remote work—so much so that most of our product design team is remote. In an effort to create more of a  geographical balance, we're currently only considering candidates that live in the San Francisco area (or are willing to relocate) and can work out of our office in SOMA.
 
 ### The types of projects you'll be working on
 
@@ -28,7 +28,7 @@ My group within the product design team primarily focuses on the businesses that
 -   Helping developers discover and install integrations to add functionality to their projects on GitHub
 -   Giving integrators a great experience to build on top of, extending the core functionality of GitHub
 
-Additionally, you'll provide input and feedback that helps influence the direction of other product designers working on other areas of GitHub.
+Additionally, you'll provide input and feedback that helps influence the direction of product designers working on other areas of GitHub.
 
 #### This position might be a great fit if...
 
@@ -53,7 +53,6 @@ Additionally, you'll provide input and feedback that helps influence the directi
 If the above interests you, but you aren't sure if you would be a good fit, feel free [ask me any questions via Twitter](https://twitter.com/pmarsceill) (my DMs are open). Otherwise, [head over to the job application](https://boards.greenhouse.io/github/jobs/580527#.WNvkI1KZNjA), we're excited to meet you.
 
 ---
-{: .hr-short .my-4}
 
 Thanks to Sophie Shepherd for inspiring me [with her post][5443eed0] and for help editing this one.
 

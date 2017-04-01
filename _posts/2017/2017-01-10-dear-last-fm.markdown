@@ -5,7 +5,7 @@ description: "It’s been awhile. Seven years, actually"
 date: "2017-01-10 15:30"
 ---
 
-It’s been awhile. Seven years, actually. Streaming services of all types have now cropped up and Spotify (the streaming service that I use) is dropping the ball pretty hard when it comes to personal listening stats and communal listening features. With listeners fragmented across streaming services, a centralized place to explore music based on friends' listening habits no longer really exists... are you still there?
+It’s been awhile. Seven years, actually. Spotify (the streaming service that I use) is dropping the ball pretty hard when it comes to personal listening stats and communal listening features. So much so, that I believe that Last.fm could fill this void, while connecting users across multiple streaming services together.
 
 You started as a way to bring listeners of downloadable media together. Around 2006, I began using your service so I could update my blog with the songs that I was listening to at the moment. A lot has changed since then, huh? I stopped blogging regularly... and then started again, and then stopped again, and then recently started again... and with the rise of streaming music services with “social” features built in, people like me kind of forgot about you…
 
