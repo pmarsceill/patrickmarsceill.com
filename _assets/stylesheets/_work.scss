@@ -6,23 +6,6 @@
   background-image: none;
 
   @include mq(sm) {
-    position: relative;
     float: left;
-    clear: both;
-  }
-
-  @include mq(xl) {
-    clear: none;
-  }
-
-  &::after {
-    @include mq(md) {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 110%;
-      content: "";
-      background-color: $lightest;
-    }
   }
 }
