@@ -51,21 +51,40 @@ layout: default
   <footer class="bg-gloss-black content-block">
     <div class="container container-wide">
       <div class="columns">
-        <div class="one-half-md column">
-          {% unless page.medium_link == nil %}
+        <div class="single one-half-md column">
+          {% unless page.medium_link == nil or page.medium_link == false %}
             <em class="text-small d-block mb-4">
               <a href="{{ page.medium_link }}">{{ page.title }} is also published on Medium</a>
             </em>
           {% endunless %}
           <h3 class="text-white">Respond to {{ page.title }}</h3>
-          <ul class="list-unstyled">
-            <li class="d-inline-block text-grey-lt mr-1 pr-2">
-              <a href="https://twitter.com/intent/tweet?text=@pmarsceill {{ page.url | absolute_url }}">Tweet your response</a>
-            </li>
-            <li class="d-inline-block text-white">
-              Questions, comments, or suggestions? <a href="https://github.com/pmarsceill/patrickmarsceill.com/issues/new?title={{ "Article - " | url_escape }}{{ page.title | url_escape }}{{" (" | url_escape }}{{page.url | url_escape }}{{")" | url_escape }}">Open an issue on GitHub</a>
-            </li>
-          </ul>
+          {% if page.disqus_comments == nil or page.disqus_comments == false %}
+            <ul class="list-unstyled">
+              <li class="d-inline-block text-grey-lt mr-1 pr-2">
+                <a href="https://twitter.com/intent/tweet?text=@pmarsceill {{ page.url | absolute_url }}">Tweet your response</a>
+              </li>
+              <li class="d-inline-block text-white">
+                Questions, comments, or suggestions? <a href="https://github.com/pmarsceill/patrickmarsceill.com/issues/new?title={{ "Article - " | url_escape }}{{ page.title | url_escape }}{{" (" | url_escape }}{{page.url | url_escape }}{{")" | url_escape }}">Open an issue on GitHub</a>
+              </li>
+            </ul>
+          {% else %}
+          <p>
+            <a href="https://twitter.com/intent/tweet?text=@pmarsceill {{ page.url | absolute_url }}">Tweet your response</a> or leave a comment:
+          </p>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'patrickmarsceill'; // required: replace example with your forum shortname
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          {% endif %}
         </div>
         <div class="one-half-md column">
           <h5>About the author</h5>
