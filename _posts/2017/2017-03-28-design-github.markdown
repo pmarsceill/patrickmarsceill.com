@@ -16,7 +16,7 @@ This is a product design position. You'll be working with product managers, engi
 
 ### Is this position remote?
 
-We value a remote work—so much so that most of our product design team is remote. In an effort to create more of a  geographical balance, we're currently only considering candidates that live in the San Francisco area (or are willing to relocate) and can work out of our office in SOMA.
+We value a remote work. So much so that most of our product design team is remote. In an effort to create more of a geographically balanced team, we're currently only considering candidates that live in the San Francisco area (or are willing to relocate) and can work out of our office in SOMA.
 
 ### The types of projects you'll be working on
 
