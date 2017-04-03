@@ -37,6 +37,7 @@ exclude:
   - Gruntfile.js
   - circle.yml
   - vendor
+  - README.md
 defaults:
   - scope:
       path: ""
