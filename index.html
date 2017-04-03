@@ -41,7 +41,7 @@ home_page: true
       {% for post in site.posts %}
         {% unless post.categories contains "legacy" %}
           {% if forloop.index <= 3 %}
-            <li class="one-third-md column mb-3 mb-md-0">
+            <li class="one-third-md column{% unless forloop.index == 3 %} mb-3 mb-md-0{% endunless %}">
               <h3 class="display-gamma d-inline mr-1">
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
               </h3>

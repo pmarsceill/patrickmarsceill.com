@@ -2,7 +2,7 @@
 layout: "post"
 title: "Design GitHub, the product"
 date: "2017-03-28 11:34"
-description: "Work on a product that people love"
+description: "Shape the future of software development"
 ---
 
 Are you designer who enjoys building products and wants to work on a highly visible one? I'm looking to a [hire code-conscious product designer][e7d0e273] to join my team at [GitHub][05966cd1].
@@ -54,6 +54,6 @@ If the above interests you, but you aren't sure if you would be a good fit, feel
 
 ---
 
-Thanks to Sophie Shepherd for inspiring me [with her post][5443eed0] and for help editing this one.
+Thanks to Sophie Shepherd for inspiring me [with her post][5443eed0] and for her help editing this one.
 
   [5443eed0]: http://sophieshepherd.com/2017/03/17/hiring-a-web-designer.html "Calling All Web Designers"
