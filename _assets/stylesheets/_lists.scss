@@ -16,7 +16,7 @@
   list-style: none;
 }
 
-// Big ol list
+// Generates a big number next to each list item
 .ol-big {
   counter-reset: li;
 
@@ -26,7 +26,7 @@
 
     &::before {
       float: left;
-      margin: -0.3em 0.5em 0 0;
+      margin: -0.25em 0.5em 0 0;
       font-size: 32px;
       font-weight: 300;
       content: counter(li);

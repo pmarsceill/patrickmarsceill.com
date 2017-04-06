@@ -35,9 +35,12 @@
     font-weight: 300;
     line-height: 1.5;
 
+    @include mq(sm) {
+      font-size: 21px;
+    }
+
     @include mq(lg) {
       font-size: 24px;
-      font-weight: 300;
     }
   }
 
