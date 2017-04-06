@@ -4,11 +4,30 @@
 // Global header / nav
 //
 
-.site-header {
+// Keep the spacing consistent on the header and footer
+
+.site-header,
+.site-footer {
   display: table;
   width: 100%;
-  padding: $spacer 0;
+  padding-right: $spacer;
+  padding-left: $spacer;
   background-color: $darkest;
+
+  @include mq(sm) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.site-header {
+  padding-top: $spacer;
+  padding-bottom: $spacer;
+
+  @include mq(sm) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .main-nav {

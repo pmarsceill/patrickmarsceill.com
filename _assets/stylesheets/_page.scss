@@ -1,21 +1,16 @@
+//
+// Global page border
+//
+
 .page-outer-border {
   max-width: $container-wide-width * 2;
   margin: 0 auto;
-  border: $spacer-1 * 1.5 solid $darkest;
-  border-top: 0;
 
   @include mq(sm) {
     border: $spacer-2 solid $darkest;
-    border-top: 0;
-  }
-
-  @include mq(md) {
-    border-bottom: 0;
   }
 
   @include mq(xl) {
     border: $spacer-3 solid $darkest;
-    border-top: 0;
-    border-bottom: 0;
   }
 }

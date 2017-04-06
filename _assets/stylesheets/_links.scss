@@ -1,4 +1,6 @@
-// Specific link styles
+//
+// Default links that have no classes
+//
 // stylelint-disable primer/selector-no-utility, selector-no-type
 
 a:not([class]) {
@@ -11,18 +13,21 @@ a:not([class]) {
   background-size: 1px 1px;
   transition: color 0.15s ease-in;
 
-  .bg-dark & {
-    text-shadow: -1px -1px 0 $grey-dk, 1px -1px 0 $grey-dk, -1px 1px 0 $grey-dk, 1px 1px 0 $grey-dk;
-  }
-
-  .bg-gloss-black & {
-    text-shadow: -1px -1px 0 $gloss-black, 1px -1px 0 $gloss-black, -1px 1px 0 $gloss-black, 1px 1px 0 $gloss-black;
-  }
-
   &:hover {
     color: $red;
   }
 
+  // If the link is on the dark bg use a dark shadow to breakup the "underline"
+  .bg-dark & {
+    text-shadow: -1px -1px 0 $grey-dk, 1px -1px 0 $grey-dk, -1px 1px 0 $grey-dk, 1px 1px 0 $grey-dk;
+  }
+
+  // If the link is on the gloss-black bg use a gloss-black shadow to breakup the "underline"
+  .bg-gloss-black & {
+    text-shadow: -1px -1px 0 $gloss-black, 1px -1px 0 $gloss-black, -1px 1px 0 $gloss-black, 1px 1px 0 $gloss-black;
+  }
+
+  // If the link is on the white bg use a white shadow to breakup the "underline"
   .bg-white & {
     color: $red;
     text-shadow: -1px -1px 0 $lightest, 1px -1px 0 $lightest, -1px 1px 0 $lightest, 1px 1px 0 $lightest;
