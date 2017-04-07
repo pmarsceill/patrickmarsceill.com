@@ -21,6 +21,8 @@ assets:
   # prefix: "/a"
   # assets:
   #   - "/a/c/main.css"
+  compress:
+    css: false | true | default
   sources:
     - _assets/stylesheets
     - _assets/images

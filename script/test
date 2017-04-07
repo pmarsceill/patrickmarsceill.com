@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Compiling site... \n"
-bundle exec jekyll build
+bundle exec jekyll build JEKYLL_ENV=production
 
 echo "Running stats on CSS... \n"
 grunt parker
