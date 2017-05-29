@@ -143,3 +143,27 @@ h5,
     background-color: $grey-lt;
   }
 }
+
+.title-slash {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+
+    @include mq(md) {
+      position: absolute;
+      top: 0;
+      right: 0.15em;
+      margin-left: 0.25em;
+      font-size: 200%;
+      line-height: 1.1;
+      color: $grey-md;
+      z-index: -1;
+      content: "/";
+    }
+
+    @include mq(xl) {
+      right: 0.5em;
+    }
+  }
+}
