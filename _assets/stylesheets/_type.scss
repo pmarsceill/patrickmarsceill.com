@@ -153,16 +153,16 @@ h5,
       position: absolute;
       top: 0;
       right: 0.15em;
+      z-index: -1;
       margin-left: 0.25em;
       font-size: 200%;
       line-height: 1.1;
       color: $grey-md;
-      z-index: -1;
       content: "/";
     }
 
     @include mq(lg) {
-      right: 0em;
+      right: 0;
     }
 
     @include mq(xl) {
