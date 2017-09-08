@@ -1,0 +1,46 @@
+@import "../support/index";
+
+.container {
+  display: flex !important;
+  margin: 0 auto !important;
+  flex: 1 1 auto !important;
+  flex-wrap: wrap !important;
+}
+
+.container-spread {
+  justify-content: space-between !important;
+}
+
+@each $size, $value in $container-widths {
+  .container-#{$size} {
+    max-width: $value !important;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} { width: percentage($i / $column-count) !important; }
+}
+
+@each $query, $value in $media-queries {
+  @for $i from 1 through 12 {
+    .col-#{$query}-#{$i} {
+      @include mq($query) {
+        width: percentage($i / $column-count) !important;
+      }
+    }
+  }
+}
+
+.content-padding {
+  padding-right: $sp-6 !important;
+  padding-left: $sp-6 !important;
+
+  @include mq(lg) {
+    padding-right: $sp-12 !important;
+    padding-left: $sp-12 !important;
+  }
+}
+
+.page-padding {
+  padding-top: $page-padding-top !important;
+}

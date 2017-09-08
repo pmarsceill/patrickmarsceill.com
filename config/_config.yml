@@ -17,9 +17,8 @@ description: >
   I see pride. I see power. I see a badass starter that don't take no crap off of nobody!
 
 ## Core Site Settings
-# jekyll configuration 
-baseurl: '/'
-url: 'http://carsonjon.es'
+# jekyll configuration
+url: 'https://patrickmarsceill.com'
 permalink: none
 assets-base-url: '/assets/'
 source: src
@@ -40,11 +39,11 @@ gems:
 
 # SEO Specific Settings
 twitter:
-  username: carsonjonze
-  domain: carsonjon.es
+  username: pmarsceill
+  domain: patrickmarsceill.com
 facebook:
-  app_id: 
+  app_id:
 social:
-  name: Carson Jones
-  links: 
-    - http://carsonjon.es
+  name: Patrick Marsceill
+  links:
+    - https://patrickmarsceill.com

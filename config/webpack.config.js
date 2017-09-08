@@ -52,11 +52,6 @@ const getPlugins = (isProduction) => {
       minimize: isProduction ? true : false,
       debug: isProduction ? false : true,
     }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery',
-    }),
     new CopyWebpackPlugin(
       [
         {
@@ -81,9 +76,9 @@ const getPlugins = (isProduction) => {
       }
     ),
     new ExtractTextPlugin({
-      filename: (isProduction) ? 'assets/main.css' : 'main.css',
+      filename: (isProduction) ? 'assets/pm.css' : 'pm.css',
       allChunks: !isProduction,
-    })
+    }),
   ]
 
   if(isProduction){
@@ -144,6 +139,17 @@ const getRules = (isProduction) => {
         name: './assets/fonts/[name].[ext]',
         publicPath: '../',
       }
+    },
+    {
+      test: /\.eot?(\?v=\d+\.\d+\.\d+)?$/,
+      include: paths.fonts,
+      loader: 'url-loader',
+      options: {
+        limit: 50000,
+        mimetype: 'application/font-woff',
+        name: './assets/fonts/[name].[ext]',
+        publicPath: '../',
+      }
     }
   ]
 
@@ -175,13 +181,13 @@ const getRules = (isProduction) => {
   }
 
   return rules;
-} 
+}
 
 module.exports = (env = {}) => {
   const isProduction = env.production === true;
   const envInfo = (isProduction) ? 'production' : 'development';
   console.log(`Running Webpack: ${envInfo}`);
-  return { 
+  return {
     devtool: (()=>{
       if (isProduction) return 'hidden-source-map';
       else return 'eval-source-map';

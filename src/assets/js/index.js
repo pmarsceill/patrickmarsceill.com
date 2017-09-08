@@ -5,7 +5,7 @@
  */
 import Pages from './pages/index.js';
 
-import '../sass/main.scss';
+import '../sass/pm.scss';
 
 function init(){
   Pages.init();

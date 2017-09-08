@@ -1,0 +1,18 @@
+$column-count: 12;
+$media-queries: (
+  "sm": 380px,
+  "md": 800px,
+  "lg": 1100px,
+  "xl": 1400px
+);
+$container-widths: (
+  "sm": 400px,
+  "md": 800px,
+  "lg": 1160px,
+  "xl": 1420px
+);
+
+$container-width-sm: map-get($container-widths, "sm");
+$container-width-md: map-get($container-widths, "md");
+$container-width-lg: map-get($container-widths, "lg");
+$container-width-xl: map-get($container-widths, "xl");

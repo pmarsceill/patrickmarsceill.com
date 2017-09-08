@@ -1,0 +1,42 @@
+// stylelint-disable block-closing-brace-newline-after, indentation
+
+// Media query mixin
+// Usage:
+// @include mq(md) {
+//   ..medium and up styles
+// }
+@mixin mq($name) {
+  // Retrieves the value from the key
+  $value: map-get($media-queries, $name);
+
+  // If the key exists in the map
+  @if $value != null {
+    // Prints a media query based on the value
+    @media (min-width: rem($value)) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$media-query}`. "
+        + "Please make sure it is defined in `$media-queries` map.";
+  }
+}
+
+// Column container
+//
+// Usage:
+// .column {
+//   @include column;
+// }
+@mixin column {
+  padding-right: rem($grid-gutter / 2) !important;
+  padding-left: rem($grid-gutter / 2) !important;
+
+  @include mq(md) {
+    padding-right: rem($grid-gutter) !important;
+    padding-left: rem($grid-gutter) !important;
+  }
+}
+
+@mixin columns {
+  display: flex !important;
+}

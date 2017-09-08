@@ -1,0 +1,31 @@
+@import "../variables/typography";
+
+@mixin display-setup {
+  font-family: $display-font-family;
+  letter-spacing: $display-letter-spacing;
+  font-weight: $display-font-weight;
+  line-height: $display-line-height;
+}
+
+@mixin display-alpha {
+  font-size: $text-alpha-size;
+  @include display-setup;
+}
+
+@mixin display-beta {
+  font-size: $text-beta-size;
+  @include display-setup;
+}
+
+@mixin display-gamma {
+  font-size: $text-gamma-size;
+  @include display-setup;
+}
+
+@mixin display-delta {
+  font-size: $text-delta-size;
+  @include display-setup;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-style: italic;
+}

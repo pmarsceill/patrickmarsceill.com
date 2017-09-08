@@ -1,0 +1,33 @@
+$spacer-width: 1rem;
+
+$spacers: (
+  "sp-0": 0,                          // 0px
+  "sp-1": $spacer-width / 4,          // 4px
+  "sp-2": $spacer-width / 2,          // 8px
+  "sp-3": $spacer-width / 1.25,       // 12.8px
+  "sp-4": $spacer-width,              // 16px
+  "sp-5": $spacer-width * 1.5,        // 24px
+  "sp-6": $spacer-width * 2,          // 32px
+  "sp-7": $spacer-width * 2.5,        // 40px
+  "sp-8": $spacer-width * 3,          // 48px
+  "sp-9": $spacer-width * 3.5,        // 56px
+  "sp-10": $spacer-width * 4,         // 64px
+  "sp-11": $spacer-width * 4.5,       // 72px
+  "sp-12": $spacer-width * 5          // 80px
+);
+
+$sp-0: map-get($spacers, "sp-0");
+$sp-1: map-get($spacers, "sp-1");
+$sp-2: map-get($spacers, "sp-2");
+$sp-3: map-get($spacers, "sp-3");
+$sp-4: map-get($spacers, "sp-4");
+$sp-5: map-get($spacers, "sp-5");
+$sp-6: map-get($spacers, "sp-6");
+$sp-7: map-get($spacers, "sp-7");
+$sp-8: map-get($spacers, "sp-8");
+$sp-9: map-get($spacers, "sp-9");
+$sp-10: map-get($spacers, "sp-10");
+$sp-11: map-get($spacers, "sp-11");
+$sp-12: map-get($spacers, "sp-12");
+
+$page-padding-top: $spacer-width * 11;

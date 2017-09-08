@@ -1,0 +1,43 @@
+@import "../support/index";
+
+// Makes single images fluid also can be used on video elements
+.img-fluid {
+  display: block !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.img-static {
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+}
+
+// Makes all media fluid by default
+// Use as a body class or in specific areas
+// Wrap youtube embeds, map embeds, etc in .media-container
+.media-fluid {
+  img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .media-container {
+    position: relative !important;
+    max-width: 100% !important;
+    height: 0 !important;
+    padding-bottom: 56.25% !important;
+    overflow: hidden !important;
+
+    iframe,
+    object,
+    embed {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}

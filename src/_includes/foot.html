@@ -1,0 +1,7 @@
+{% if jekyll.environment == 'production' %}
+<script src="{{ "/assets/vendor.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/main.js" | prepend: site.baseurl }}"></script>
+{% else %}
+<script src="http://localhost:3000/vendor.js"></script>
+<script src="http://localhost:3000/main.js"></script>
+{% endif %}

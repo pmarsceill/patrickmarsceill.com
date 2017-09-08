@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<div class="homePage anim-fade-in">
+  <div class="container container-xl">
+    <div class="homePage-about col-12 col-md-7 content-padding page-padding js-plx" data-rellax-speed="7">
+      <h1 class="display-alpha mb-10">
+        I design and build digital products and teams.
+        Currently managing product design at <a href="https://github.com">GitHub</a>. My last name is pronounced like <em>mar&#8209;seel</em>.
+      </h1>
+
+      <img src="{{ site.assets-base-url }}images/patrick-marsceill.jpg" alt="" class="img-fluid mb-12" style="width:400px">
+      <h2 class="display-delta">Follow along</h2>
+      <ul class="list-style-none mb-12">
+        <li class="d-inline-block text-delta mr-3"><a href="">Twitter</a></li>
+        <li class="d-inline-block text-delta mr-3"><a href="">GitHub</a></li>
+        <li class="d-inline-block text-delta mr-3"><a href="">Dribbble</a></li>
+        <li class="d-inline-block text-delta"><a href="">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="homePage-links col-12 col-md-5 content-padding page-padding">
+      <h2 class="display-delta mb-4 mt-2">Latest journal entries</h2>
+      <ol>
+        {% for post in site.posts %}
+          {% unless post.categories contains "legacy" %}
+            {% if forloop.index <= 5 %}
+              <li class="mb-5">
+                <h3 class="text-beta d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                <p class="text-beta d-inline">{{ post.description }}</p>
+              </li>
+            {% endif %}
+          {% else %}
+            {% break %}
+          {% endunless %}
+        {% endfor %}
+      </ol>
+      <ul class="list-style-none">
+        <li class="d-inline-block mr-3 text-delta">
+          <a href="">More entries</a>
+        </li>
+        <li class="d-inline-block text-delta">
+          <a href="">RSS</a>
+        </li>
+      </ul>
+      <h2 class="display-delta mb-4 mt-10">Personal projects</h2>
+      <ul>
+        <li class="text-delta mb-3">
+          <a href="//awaremac.com">Aware</a> simple time tracking for MacOS
+        </li>
+        <li class="text-delta mb-3">
+          <a href="//tablab.io">Tab Lab</a> publish guitar tablature and sheet
+          music on the web
+        </li>
+        <li class="text-delta">
+          <a href="//quirksandcompulsions.com">Quirks and Compulsions</a> a podcast
+          about overanalyzing the overlooked.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="bg-grey">
+    <div class="container container-xl">
+      <div class="content-padding py-4">
+
+      <h2>Test</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="react__root"></div>

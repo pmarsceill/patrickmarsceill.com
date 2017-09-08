@@ -1,18 +1,19 @@
 ---
-layout: compress
+layout: compressed
 ---
+
 {% if page.page-internal != nil %}
   {% capture pageInternal %}internal-page{% endcapture %}
 {% endif %}
 <!DOCTYPE>
 <html>
-  {% include global/head.html %}
+  {% include head.html %}
   <body class="{{ page.page-name }}-page {{pageInternal}}">
-    {% include components/header.html %}
+    {% include site_header.html %}
     <main>
       {{ content }}
     </main>
-    {% include components/footer.html %}
-    {% include global/javascript.html %}
+    {% include site_footer.html %}
+    {% include foot.html %}
   </body>
 </html>
