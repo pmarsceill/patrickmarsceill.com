@@ -7,9 +7,9 @@ $media-queries: (
 );
 $container-widths: (
   "sm": 400px,
-  "md": 800px,
+  "md": 700px,
   "lg": 1160px,
-  "xl": 1420px
+  "xl": 1380px
 );
 
 $container-width-sm: map-get($container-widths, "sm");

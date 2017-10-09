@@ -5,11 +5,16 @@ layout: compressed
 {% if page.page-internal != nil %}
   {% capture pageInternal %}internal-page{% endcapture %}
 {% endif %}
+
 <!DOCTYPE>
 <html>
   {% include head.html %}
-  <body class="{{ page.page-name }}-page {{pageInternal}}">
-    {% include site_header.html %}
+  <body class="{{ page.page-name }}-page {{ pageInternal }}">
+    <nav class="sideBar">
+      <a class="linkHome d-block" href="{% link _pages/index.html %}">
+        {% include mark_svg.html %}
+      </a>
+    </nav>
     <main>
       {{ content }}
     </main>

@@ -8,11 +8,16 @@
   $scale: #{$i - 1};
 
   // .p-0, .p-1, .p-2...
-  .p-#{$scale}  { padding: #{$size} !important; }
-  .pt-#{$scale} { padding-top: #{$size} !important; }
-  .pr-#{$scale} { padding-right: #{$size} !important; }
-  .pb-#{$scale} { padding-bottom: #{$size} !important; }
-  .pl-#{$scale} { padding-left: #{$size} !important; }
+  .p-#{$scale}   { padding: #{$size} !important; }
+  .pn-#{$scale}  { padding: -#{$size} !important; }
+  .pt-#{$scale}  { padding-top: #{$size} !important; }
+  .ptn-#{$scale} { padding-top: -#{$size} !important; }
+  .pr-#{$scale}  { padding-right: #{$size} !important; }
+  .prn-#{$scale} { padding-right: -#{$size} !important; }
+  .pb-#{$scale}  { padding-bottom: #{$size} !important; }
+  .pbn-#{$scale} { padding-bottom: -#{$size} !important; }
+  .pl-#{$scale}  { padding-left: #{$size} !important; }
+  .pln-#{$scale} { padding-left: -#{$size} !important; }
 
   .px-#{$scale} {
     padding-right: #{$size} !important;
@@ -58,11 +63,16 @@
   $scale: #{$i - 1};
 
   // .m-0, .m-1, .m-2...
-  .m-#{$scale}  { margin: #{$size} !important; }
-  .mt-#{$scale} { margin-top: #{$size} !important; }
-  .mr-#{$scale} { margin-right: #{$size} !important; }
-  .mb-#{$scale} { margin-bottom: #{$size} !important; }
-  .ml-#{$scale} { margin-left: #{$size} !important; }
+  .m-#{$scale}   { margin: #{$size} !important; }
+  .mn-#{$scale}  { margin: -#{$size} !important; }
+  .mt-#{$scale}  { margin-top: #{$size} !important; }
+  .mtn-#{$scale} { margin-top: -#{$size} !important; }
+  .mr-#{$scale}  { margin-right: #{$size} !important; }
+  .mrn-#{$scale} { margin-right: -#{$size} !important; }
+  .mb-#{$scale}  { margin-bottom: #{$size} !important; }
+  .mbn-#{$scale} { margin-bottom: -#{$size} !important; }
+  .ml-#{$scale}  { margin-left: #{$size} !important; }
+  .mln-#{$scale} { margin-left: -#{$size} !important; }
 
   .mx-#{$scale} {
     margin-right: #{$size} !important;

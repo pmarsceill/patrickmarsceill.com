@@ -1,0 +1,29 @@
+.gridNav ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.gridNav-item {
+  display: block;
+  padding-right: $sp-3;
+}
+
+.gridNav-link {
+  position: relative;
+  display: block;
+  background-image: none;
+  color: $black;
+  overflow: hidden;
+  padding-left: $sp-5;
+  margin-bottom: $sp-2;
+
+  border-left: 6px solid $border-color;
+  border-bottom: 6px solid $border-color;
+
+  &:hover {
+    border-color: $orange;
+  }
+}

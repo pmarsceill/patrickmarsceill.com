@@ -1,4 +1,30 @@
-.post-content {
+.postContent {
+  max-width: 700px;
+}
+
+.postContent-body {
+  max-width: 700px;
   line-height: 1.6;
-  margin-bottom: $sp-3;
+  margin-bottom: $sp-12;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.2em;
+    margin-top: 1em;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    font-size: $body-font-size * 0.85 !important;
+    letter-spacing: 0.05em;
+    margin-top: 2em;
+  }
+
+  hr {
+
+  }
 }

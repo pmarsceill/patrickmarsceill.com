@@ -1,0 +1,46 @@
+.sideBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: $sp-6;
+  height: 100%;
+  display: flex;
+  z-index: 999;
+
+  @include mq(md) {
+    position: fixed;
+    padding: $sp-5;
+  }
+}
+
+
+.site-mark-svg {
+  width: 130px;
+
+  .pm {
+    fill: $black;
+    transition: fill 0.2s ease-in-out;
+  }
+  .text {
+    opacity: 0;
+    fill: $black;
+    transition: opacity 0.2s ease-in-out, fill 0.2s ease-in-out;
+  }
+
+}
+
+.linkHome {
+  position: absolute;
+  top: $sp-5;
+
+  &:hover {
+    .pm {
+      fill: $purple;
+    }
+
+    .text {
+      opacity: 1;
+      fill: $purple;
+    }
+  }
+}

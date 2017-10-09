@@ -122,6 +122,20 @@ dd {
   margin-left: 0; // Undo browser default
 }
 
+ul:not([class]) {
+  list-style: none;
+
+  li {
+
+    &::before {
+      position: absolute;
+      margin-left: -1.3em;
+      content: "—";
+      opacity: 0.5;
+    }
+  }
+}
+
 blockquote {
   margin: 0 0 1rem;
 }

@@ -2,32 +2,27 @@
 layout: default
 ---
 
-<div class="homePage anim-fade-in">
+<div class="homePage">
   <div class="container container-xl">
-    <div class="homePage-about col-12 col-md-7 content-padding page-padding js-plx" data-rellax-speed="7">
-      <h1 class="display-alpha mb-10">
-        I design and build digital products and teams.
-        Currently managing product design at <a href="https://github.com">GitHub</a>. My last name is pronounced like <em>mar&#8209;seel</em>.
-      </h1>
-
-      <img src="{{ site.assets-base-url }}images/patrick-marsceill.jpg" alt="" class="img-fluid mb-12" style="width:400px">
-      <h2 class="display-delta">Follow along</h2>
-      <ul class="list-style-none mb-12">
-        <li class="d-inline-block text-delta mr-3"><a href="">Twitter</a></li>
-        <li class="d-inline-block text-delta mr-3"><a href="">GitHub</a></li>
-        <li class="d-inline-block text-delta mr-3"><a href="">Dribbble</a></li>
-        <li class="d-inline-block text-delta"><a href="">Instagram</a></li>
-      </ul>
-    </div>
-    <div class="homePage-links col-12 col-md-5 content-padding page-padding">
-      <h2 class="display-delta mb-4 mt-2">Latest journal entries</h2>
-      <ol>
+    <div class="homePage-about pb-12 col-12 col-md-8 content-padding page-padding">
+      <div class="homePage-about-bg--1 js-plx" data-rellax-speed="-4"></div>
+      <div class="js-plx" data-rellax-speed="6">
+        <h1 class="mb-10">
+          <span class="d-block">Hello,</span>
+          <span class="display-alpha">I&rsquo;m a Philadelphia-based digital product designer and builder.
+            Currently, I manage product design at <a href="https://github.com">GitHub</a>.
+            My surname is pronounced, mahr-<em>seel</em></span>.
+        </h1>
+      </div>
+      <h2 class="display-delta mt-12 mb-4 fade-75">The latest</h2>
+      <ol class="list-style-none container mln-4 mrn-4">
         {% for post in site.posts %}
           {% unless post.categories contains "legacy" %}
-            {% if forloop.index <= 5 %}
-              <li class="mb-5">
-                <h3 class="text-beta d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-                <p class="text-beta d-inline">{{ post.description }}</p>
+            {% if forloop.index <= 6 %}
+              <li class="mb-7 col-6 px-4">
+                <time class="text-smallcaps d-block fade-75">{{ post.date | date: '%B %d, %Y'}}</time>
+                <h3 class="text-beta d-inline mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
               </li>
             {% endif %}
           {% else %}
@@ -36,14 +31,26 @@ layout: default
         {% endfor %}
       </ol>
       <ul class="list-style-none">
-        <li class="d-inline-block mr-3 text-delta">
-          <a href="">More entries</a>
+        <li class="d-inline-block mr-3 fs-epsilon">
+          <a href="{% link _pages/journal.html %}">more entries</a>
         </li>
-        <li class="d-inline-block text-delta">
-          <a href="">RSS</a>
+        <li class="d-inline-block fs-epsilon">
+          <span class="text-smallcaps"><a href="">RSS</a></span>
         </li>
       </ul>
-      <h2 class="display-delta mb-4 mt-10">Personal projects</h2>
+      <h2 class="display-delta mb-4 mt-9 fade-75">Follow along</h2>
+      <p class="mb-8">
+        <a href="">Twitter</a><span class="fade-50 px-3">/</span>
+        <a href="">GitHub</a><span class="fade-50 px-3">/</span>
+        <a href="">Instagram</a><span class="fade-50 px-3">/</span>
+        <a href="">Dribbble</a><span class="fade-50 px-3">/</span>
+        <a href="">Keybase</a>
+      </p>
+    </div>
+    <div class="homePage-links col-12 col-md-4 content-padding page-padding">
+      <p class="mt-11 fade-75">Building big things at GitHub, writing more here,
+        making music with A.M. Mills, and hacking on projects that keep me interested.</p>
+      <h2 class="display-delta mb-4 mt-12 fade-75">Personal projects</h2>
       <ul>
         <li class="text-delta mb-3">
           <a href="//awaremac.com">Aware</a> simple time tracking for MacOS
@@ -59,13 +66,4 @@ layout: default
       </ul>
     </div>
   </div>
-  <div class="bg-grey">
-    <div class="container container-xl">
-      <div class="content-padding py-4">
-
-      <h2>Test</h2>
-      </div>
-    </div>
-  </div>
 </div>
-<div id="react__root"></div>

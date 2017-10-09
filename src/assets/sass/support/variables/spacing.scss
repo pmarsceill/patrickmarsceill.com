@@ -13,7 +13,7 @@ $spacers: (
   "sp-9": $spacer-width * 3.5,        // 56px
   "sp-10": $spacer-width * 4,         // 64px
   "sp-11": $spacer-width * 4.5,       // 72px
-  "sp-12": $spacer-width * 5          // 80px
+  "sp-12": $spacer-width * 6          // 96px
 );
 
 $sp-0: map-get($spacers, "sp-0");

@@ -2,9 +2,9 @@ a[href]:not([class]) {
   padding-right: 4px;
   padding-left: 4px;
   color: $black;
-  background-image: linear-gradient(transparent 0%, transparent 50%, $cyan 50%, $cyan 70%, transparent 70%);
+  background-image: linear-gradient(transparent 0%, transparent 47%, $cyan 47%, $cyan 70%, transparent 70%);
 
   &:hover {
-    background-image: none;
+    background-image: linear-gradient(transparent 0%, transparent 47%, $orange 47%, $orange 70%, transparent 70%);
   }
 }

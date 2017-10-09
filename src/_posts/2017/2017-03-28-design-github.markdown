@@ -14,11 +14,11 @@ Are you designer who enjoys building products and wants to work on a highly visi
 
 This is a product design position. You'll be working with product managers, engineers, design managers, and other product designers to define, design,  and build features on GitHub dot com. You'll research, sketch, create mockups, write code, and deploy to production. You'll probably introduce a few bugs — its cool, we all do. Your work will be reviewed and you will review others' work. You will use GitHub to build GitHub.
 
-### Is this position remote?
+### _Is this position remote?_
 
 We value a remote work. So much so that most of our product design team is remote. In an effort to create more of a geographically balanced team, we're currently only considering candidates that live in the San Francisco area (or are willing to relocate) and can work out of our office in SOMA.
 
-### The types of projects you'll be working on
+### _What type of projects will I get to work on?_
 
 GitHub builds products for developers, businesses, open source organizations, educational institutions, government agencies and just about anyone who is involved in building and shipping software. About 20 million people currently use GitHub.com around the world.
 

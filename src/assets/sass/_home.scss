@@ -8,18 +8,33 @@
   flex-wrap: nowrap;
 
   @include mq(md) {
-    background-image: linear-gradient(to right, $white 0, $white percentage(7/12), $blue percentage(7/12), $blue 100%);
+    background-image: linear-gradient(to right, $white 0, $white percentage(8/12), $blue percentage(8/12), $blue 100%);
   }
 }
 
 .homePage-links {
   background-color: $blue;
   color: $white;
+  padding-bottom: $sp-12;
 
   a[href]:not([class]) {
-    padding-right: 7px;
+    padding-right: 0;
     padding-left: 0;
     color: $cyan;
     background-image: none;
+
+    &:hover {
+      color: $orange;
+    }
   }
+}
+
+.homePage-about-bg--1 {
+  position: absolute;
+  width: 300px;
+  left: 0;
+  margin-top: -$sp-4;
+  height: 30%;
+  background-color: $grey;
+  opacity: 0.5;
 }

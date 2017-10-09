@@ -22,15 +22,14 @@
   z-index: 2;
   width: 145px;
   background-color: $purple;
-  padding: $sp-2 $sp-3;
-  border-radius: 3px;
+  padding: $sp-3;
 
   @include anim-fade-in;
 }
 
 .siteHeader-mark-svg {
   .text, .pm {
-    fill: $white;
+    fill: $black;
   }
 }
 
