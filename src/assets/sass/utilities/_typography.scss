@@ -38,6 +38,7 @@
 }
 
 // Headings
+// stylelint-disable selector-max-type
 
 h1,
 .text-alpha {
@@ -64,6 +65,7 @@ h4,
   font-size: $text-delta-size;
   font-weight: 700 !important;
 }
+// stylelint-enable selector-max-type
 
 // Font size
 
@@ -98,6 +100,8 @@ h4,
   letter-spacing: 0.035em !important;
 }
 
+// stylelint-disable primer/selector-no-utility
+
 .text-bold {
   font-weight: 700 !important;
 }
@@ -105,3 +109,5 @@ h4,
 .text-normal {
   font-weight: 400 !important;
 }
+
+// stylelint-enable primer/selector-no-utility

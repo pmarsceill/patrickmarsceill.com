@@ -4,8 +4,8 @@
 
 .postContent-body {
   max-width: 700px;
-  line-height: 1.6;
   margin-bottom: $sp-12;
+  line-height: 1.8;
 
   h1,
   h2,
@@ -13,18 +13,18 @@
   h4,
   h5,
   h6 {
-    margin-bottom: 0.2em;
     margin-top: 1em;
+    margin-bottom: 0.2em;
   }
 
   h4 {
-    text-transform: uppercase;
-    font-size: $body-font-size * 0.85 !important;
-    letter-spacing: 0.05em;
     margin-top: 2em;
+    font-size: $body-font-size * 0.85 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   hr {
-
+    // Todo add styles
   }
 }

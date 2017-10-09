@@ -1,10 +1,10 @@
 .homePage {
   display: flex;
+  width: 100%;
+  min-height: 100%;
   flex-direction: column;
   align-items: stretch;
   align-content: stretch;
-  width: 100%;
-  min-height: 100%;
   flex-wrap: nowrap;
 
   @include mq(md) {
@@ -13,9 +13,9 @@
 }
 
 .homePage-links {
-  background-color: $blue;
-  color: $white;
   padding-bottom: $sp-12;
+  color: $white;
+  background-color: $blue;
 
   a[href]:not([class]) {
     padding-right: 0;
@@ -31,10 +31,21 @@
 
 .homePage-about-bg--1 {
   position: absolute;
-  width: 300px;
   left: 0;
-  margin-top: -$sp-4;
-  height: 30%;
+  width: 30%;
+  height: 0;
+  margin-top: -$sp-7;
   background-color: $grey;
   opacity: 0.5;
+  animation-name: bg-1;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-delay: 0.4s;
+}
+
+@keyframes bg-1 {
+  to {
+    height: 30%;
+  }
 }
