@@ -36,6 +36,11 @@
   padding-left: $sp-6 !important;
 
   @include mq(md) {
+    padding-right: $sp-8 !important;
+    padding-left: $sp-8 !important;
+  }
+
+  @include mq(lg) {
     padding-right: $sp-12 !important;
     padding-left: $sp-12 !important;
   }

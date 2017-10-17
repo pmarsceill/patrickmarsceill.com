@@ -42,28 +42,46 @@
 
 h1,
 .text-alpha {
-  font-size: $text-alpha-size !important;
+  font-size: $text-alpha-size * 0.6 !important;
   font-weight: 700 !important;
-  line-height: 1.3 !important;
+  line-height: 1.2 !important;
+
+  @include mq(md) {
+    font-size: $text-alpha-size * 0.75 !important;
+  }
+
+  @include mq(lg) {
+    font-size: $text-alpha-size !important;
+  }
 }
 
 h2,
 .text-beta {
-  font-size: $text-beta-size !important;
+  font-size: $text-beta-size * 0.75 !important;
   font-weight: 700 !important;
-  line-height: 1.3 !important;
+  line-height: 1.2 !important;
+
+  @include mq(lg) {
+    font-size: $text-beta-size !important;
+  }
 }
 
 h3,
 .text-gamma {
-  font-size: $text-gamma-size !important;
+  font-size: $text-gamma-size * 0.75 !important;
   font-weight: 700 !important;
+  line-height: 1.2 !important;
+
+  @include mq(lg) {
+    font-size: $text-gamma-size !important;
+  }
 }
 
 h4,
 .text-delta {
   font-size: $text-delta-size;
   font-weight: 700 !important;
+  line-height: 1.3 !important;
 }
 // stylelint-enable selector-max-type
 
@@ -90,7 +108,7 @@ h4,
   font-size: $text-epsilon-size !important;
 }
 
-.fs-small-text {
+.fs-small {
   font-size: $text-small-size !important;
 }
 

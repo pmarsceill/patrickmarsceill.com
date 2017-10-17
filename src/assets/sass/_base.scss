@@ -12,13 +12,10 @@
 // change. For example, `width: 100px;` will always be `100px` despite the
 // `border: 10px solid red;` and `padding: 20px;`.
 //
-//s
 // Credit: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 
 html {
   box-sizing: border-box;
-  font-size: $body-font-size;
-  line-height: $body-line-height;
 }
 
 *,
@@ -50,17 +47,18 @@ html {
 //
 // Reset HTML, body, and more
 //
+
 html {
   height: 100%;
 }
 
 body {
+  height: 100%;
   font-family: $body-font-family;
   font-size: $body-font-size-sm;
   line-height: $body-line-height;
   color: $body-color;
   background-color: $body-background-color;
-  height: 100%;
 
   @include mq(md) {
     font-size: #{$body-font-size};

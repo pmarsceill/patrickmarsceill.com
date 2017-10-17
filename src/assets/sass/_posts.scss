@@ -1,3 +1,36 @@
+.postImage {
+  max-width: 980px;
+  margin-top: $sp-12;
+  margin-bottom: $sp-6;
+
+  @include mq(lg) {
+    margin-left: -$sp-11;
+  }
+}
+
+.postNav {
+  position: absolute;
+  top: $sp-6;
+  right: $sp-6;
+}
+
+.postNav-item {
+  padding-right: $sp-2;
+  margin-right: $sp-2;
+  border-right: $border $border-color;
+
+  &:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0;
+  }
+}
+
+.postNav-link {
+  font-weight: 700;
+  color: $black;
+}
+
 .postContent {
   max-width: 700px;
 }

@@ -8,18 +8,34 @@
 }
 
 @mixin display-alpha {
-  font-size: $text-alpha-size !important;
+  font-size: $text-alpha-size * 0.6 !important;
   @include display-setup;
+
+  @include mq(md) {
+    font-size: $text-alpha-size * 0.75 !important;
+  }
+
+  @include mq(lg) {
+    font-size: $text-alpha-size !important;
+  }
 }
 
 @mixin display-beta {
-  font-size: $text-beta-size !important;
+  font-size: $text-beta-size * 0.75 !important;
   @include display-setup;
+
+  @include mq(lg) {
+    font-size: $text-beta-size !important;
+  }
 }
 
 @mixin display-gamma {
-  font-size: $text-gamma-size !important;
+  font-size: $text-gamma-size * 0.75 !important;
   @include display-setup;
+
+  @include mq(lg) {
+    font-size: $text-gamma-size !important;
+  }
 }
 
 @mixin display-delta {

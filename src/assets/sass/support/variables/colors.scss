@@ -6,6 +6,8 @@ $white: #fff;
 $grey: #e8eae9;
 $orange: #ffcf3d;
 
+$grey-lt: lighten($grey, 5%);
+
 $body-color: $black;
 $body-background-color: $white;
 $border-color: $grey;

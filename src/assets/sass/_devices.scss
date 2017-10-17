@@ -1,0 +1,66 @@
+.device {
+  position: relative;
+  background-image: linear-gradient(to bottom, #f0f1f1, #eee);
+  display: flex;
+  margin-bottom: 60px;
+  padding: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07),
+    0 15px 30px rgba(0, 0, 0, 0.15);
+
+  .device-screen {
+    border-radius: 3px;
+    overflow: hidden;
+
+    @include mq(md) {
+      background-color: $black;
+      border: 3px solid #000;
+    }
+  }
+
+  .device-screen-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.device--phone {
+  @include mq(md) {
+    width: 320px;
+    height: 590px;
+    padding: 60px 20px;
+    border-radius: 35px;
+  }
+}
+
+.device--tablet {
+  @include mq(md) {
+    width: 768px;
+    height: 1024px;
+    padding: 40px 40px 40px 40px;
+    border-radius: 35px;
+  }
+}
+
+
+
+.slider_frame {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slider_slides {
+    display: inline-block;
+}
+.slider_slide {
+    position: relative;
+    display: inline-block;
+
+    /**
+     * (optional) if the content inside the slide element has a defined size.
+     */
+    // width: 880px;
+}
+

@@ -3,10 +3,10 @@ layout: default
 ---
 
 <div class="homePage">
-  <div class="container container-xl">
-    <div class="homePage-about pb-12 col-12 col-md-8 content-padding page-padding">
+  <div class="container container-xl homePage-container">
+    <div class="homePage-about pb-12 content-padding page-padding">
       <div class="homePage-about-bg--1 js-plx" data-rellax-speed="-4"></div>
-      <div class="js-plx" data-rellax-speed="6">
+      <div class="js-plx anim-fade-in" data-rellax-speed="6">
         <h1 class="mb-10">
           <span class="d-block">Hello,</span>
           <span class="display-alpha">I&rsquo;m a Philadelphia-based digital product designer and builder.
@@ -14,13 +14,56 @@ layout: default
             My surname is pronounced, mahr-<em>seel</em></span>.
         </h1>
       </div>
+      <div class="container mln-4 mrn-4">
+        <div class="col-8 col-lg-6 px-4">
+          <div class="device device--phone homePage-device">
+            <div class="device-screen slider js_slider">
+              <div class="slider_frame js_frame">
+                <ul class="slider_slides js_slides">
+                  <li class="slider_slide js_slide">
+                    <img src="{{ site.assets-base-url }}images/work/tablab-1.png" class="device-screen-img" >
+                  </li>
+                  <li class="slider_slide js_slide">
+                    <img src="{{ site.assets-base-url }}images/work/phillydotcom-1.png" class="device-screen-img" >
+                  </li>
+                  <li class="slider_slide js_slide">
+                    <img src="{{ site.assets-base-url }}images/work/marketplace-1.png" class="device-screen-img" >
+                  </li>
+                  <li class="slider_slide js_slide">
+                    <img src="{{ site.assets-base-url }}images/work/weil-1.png" class="device-screen-img" >
+                  </li>
+                  <li class="slider_slide js_slide">
+                    <img src="{{ site.assets-base-url }}images/work/cb-homes-1.png" class="device-screen-img" >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 px-4 pt-lg-10">
+          <p>
+            <span class="text-smallcaps">For the last decade</span>, I've worked 
+            with Fortune 500 companies, small start-ups, and many others
+            in-between to build websites and 
+            digital products for screens of all sizes.
+          </p>
+          <p>
+            Since 2015, I've been building GitHub
+            on the product design team.
+          </p>
+          <p>
+            In my spare time, I design and build tools for fun,
+            play music, and travel.
+          </p>
+        </div>
+      </div>
       <h2 class="display-delta mt-12 mb-4 fade-75">The latest</h2>
       <ol class="list-style-none container mln-4 mrn-4">
         {% for post in site.posts %}
           {% unless post.categories contains "legacy" %}
             {% if forloop.index <= 6 %}
               <li class="mb-7 col-6 px-4">
-                <time class="text-smallcaps d-block fade-75">{{ post.date | date: '%B %d, %Y'}}</time>
+                <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
                 <h3 class="text-beta d-inline mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
                 <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
               </li>
@@ -47,9 +90,8 @@ layout: default
         <a href="">Keybase</a>
       </p>
     </div>
-    <div class="homePage-links col-12 col-md-4 content-padding page-padding">
-      <p class="mt-11 fade-75">Building big things at GitHub, writing more here,
-        making music with A.M. Mills, and hacking on projects that keep me interested.</p>
+    <div class="homePage-links content-padding page-padding">
+      <p class="mt-9 mt-lg-11 fade-50"><em>Excited about data.</em></p>
       <h2 class="display-delta mb-4 mt-12 fade-75">Personal projects</h2>
       <ul>
         <li class="text-delta mb-3">

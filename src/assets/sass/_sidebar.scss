@@ -2,28 +2,36 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: $sp-6;
-  height: 100%;
-  display: flex;
   z-index: 999;
+  display: flex;
+  height: 100%;
+  padding: $sp-6;
 
   @include mq(md) {
+    padding: $sp-8;
+  }
+
+  @include mq(lg) {
     position: fixed;
     padding: $sp-5;
   }
 }
 
-
 .site-mark-svg {
-  width: 130px;
+  width: 110px;
+
+  @include mq(md) {
+    width: 130px;
+  }
 
   .pm {
     fill: $black;
     transition: fill 0.2s ease-in-out;
   }
+
   .text {
-    opacity: 0;
     fill: $black;
+    opacity: 0;
     transition: opacity 0.2s ease-in-out, fill 0.2s ease-in-out;
   }
 
@@ -39,8 +47,8 @@
     }
 
     .text {
-      opacity: 1;
       fill: $purple;
+      opacity: 1;
     }
   }
 }

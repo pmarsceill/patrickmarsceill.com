@@ -6,11 +6,13 @@
 
 const webpack = require('webpack');
 const path = require('path');
+const glob = require('glob');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const PurifyCSSPlugin = require('purifycss-webpack');
 
 const ROOT = '../';
 const paths = {
@@ -78,7 +80,7 @@ const getPlugins = (isProduction) => {
     new ExtractTextPlugin({
       filename: (isProduction) ? 'assets/pm.css' : 'pm.css',
       allChunks: !isProduction,
-    }),
+    })
   ]
 
   if(isProduction){
@@ -99,6 +101,10 @@ const getPlugins = (isProduction) => {
         output: {
           comments: false,
         },
+      }),
+      new PurifyCSSPlugin({
+        // Give paths to parse for rules. These should be absolute!
+        paths: glob.sync(path.resolve(__dirname, ROOT, '**/*.html')),
       })
     );
   } else {

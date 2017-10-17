@@ -7,8 +7,18 @@
   align-content: stretch;
   flex-wrap: nowrap;
 
+  @include mq(lg) {
+    background-image: linear-gradient(to right, $white 0%, $white calc(100% - 300px), $blue calc(100% - 300px), $blue 100%);
+  }
+
+  @include mq(xl) {
+    background-image: linear-gradient(to right, $white 0%, $white percentage(3/4), $blue percentage(3/4), $blue 100%);
+  }
+}
+
+.homePage-container {
   @include mq(md) {
-    background-image: linear-gradient(to right, $white 0, $white percentage(8/12), $blue percentage(8/12), $blue 100%);
+    flex-wrap: nowrap !important;
   }
 }
 
@@ -27,25 +37,13 @@
       color: $orange;
     }
   }
-}
 
-.homePage-about-bg--1 {
-  position: absolute;
-  left: 0;
-  width: 30%;
-  height: 0;
-  margin-top: -$sp-7;
-  background-color: $grey;
-  opacity: 0.5;
-  animation-name: bg-1;
-  animation-duration: 0.25s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-  animation-delay: 0.4s;
-}
-
-@keyframes bg-1 {
-  to {
-    height: 30%;
+  @include mq(md) {
+    min-width: 300px;
   }
+}
+
+.device.homePage-device {
+  //transform: translateX(-25%);
+  // transform: perspective(1000px) rotateY(3deg);
 }
