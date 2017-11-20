@@ -10,30 +10,32 @@ export default {
       let rellax = "";
 
       if (mql.matches) {
-        console.log('true');
-        rellax = new Rellax('.js-plx')
+        const plxExists = document.getElementsByClassName('js-plx')
+
+        if (plxExists.length > 0) {
+          rellax = new Rellax('.js-plx')
+        }
       }
 
       mql.addListener(function(mql) {
         if (mql.matches) {
-          console.log('true');
           rellax = new Rellax('.js-plx')
         } else {
           if (typeof rellax != undefined) {
-            rellax.destroy();
+            rellax.destroy()
           }
         }
       })
 
-      var sliderEl = document.querySelector('.js_slider')
+      const sliderEl = document.querySelector('.js_slider')
 
-      var slider = lory(sliderEl, {
+      const slider = lory(sliderEl, {
         infinite: 1
       })
 
       setInterval(function () {
-        slider.next();
-      }, 3000 + 300); // Interval + Transition
+        slider.next()
+      }, 2000 + 300) // Interval + Transition
     }
   }
 }

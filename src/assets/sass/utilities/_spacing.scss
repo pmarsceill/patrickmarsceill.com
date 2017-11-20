@@ -107,6 +107,8 @@
       .mr-#{$media-query}-#{$scale} { margin-right: #{$size} !important; }
       .mb-#{$media-query}-#{$scale} { margin-bottom: #{$size} !important; }
       .ml-#{$media-query}-#{$scale} { margin-left: #{$size} !important; }
+      .ml-#{$media-query}-#{$scale}  { margin-left: #{$size} !important; }
+      .mln-#{$media-query}-#{$scale} { margin-left: -#{$size} !important; }
 
       .mx-#{$media-query}-#{$scale} {
         margin-right: #{$size} !important;

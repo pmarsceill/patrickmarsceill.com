@@ -4,67 +4,33 @@ layout: default
 
 <div class="homePage">
   <div class="container container-xl homePage-container">
-    <div class="homePage-about pb-12 content-padding page-padding">
-      <div class="homePage-about-bg--1 js-plx" data-rellax-speed="-4"></div>
-      <div class="js-plx anim-fade-in" data-rellax-speed="6">
-        <h1 class="mb-10">
+    <div class="homePage-about pb-12 content-padding page-padding js-plx" data-rellax-speed="8">
+      <div class="anim-fade-in">
+        <h1 class="mb-12">
           <span class="d-block">Hello,</span>
           <span class="display-alpha">I&rsquo;m a Philadelphia-based digital product designer and builder.
             Currently, I manage product design at <a href="https://github.com">GitHub</a>.
             My surname is pronounced, mahr-<em>seel</em></span>.
         </h1>
       </div>
-      <div class="container mln-4 mrn-4">
-        <div class="col-8 col-lg-6 px-4">
-          <div class="device device--phone homePage-device">
-            <div class="device-screen slider js_slider">
-              <div class="slider_frame js_frame">
-                <ul class="slider_slides js_slides">
-                  <li class="slider_slide js_slide">
-                    <img src="{{ site.assets-base-url }}images/work/tablab-1.png" class="device-screen-img" >
-                  </li>
-                  <li class="slider_slide js_slide">
-                    <img src="{{ site.assets-base-url }}images/work/phillydotcom-1.png" class="device-screen-img" >
-                  </li>
-                  <li class="slider_slide js_slide">
-                    <img src="{{ site.assets-base-url }}images/work/marketplace-1.png" class="device-screen-img" >
-                  </li>
-                  <li class="slider_slide js_slide">
-                    <img src="{{ site.assets-base-url }}images/work/weil-1.png" class="device-screen-img" >
-                  </li>
-                  <li class="slider_slide js_slide">
-                    <img src="{{ site.assets-base-url }}images/work/cb-homes-1.png" class="device-screen-img" >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 px-4 pt-lg-10">
-          <p>
-            <span class="text-smallcaps">For the last decade</span>, I've worked 
-            with Fortune 500 companies, small start-ups, and many others
-            in-between to build websites and 
-            digital products for screens of all sizes.
-          </p>
-          <p>
-            Since 2015, I've been building GitHub
-            on the product design team.
-          </p>
-          <p>
-            In my spare time, I design and build tools for fun,
-            play music, and travel.
-          </p>
-        </div>
-      </div>
-      <h2 class="display-delta mt-12 mb-4 fade-75">The latest</h2>
-      <ol class="list-style-none container mln-4 mrn-4">
+      <h2 class="display-delta mb-4 fade-75">Elsewhere</h2>
+      <ul class="list-style-none">
+        <li class="d-inline-block"><a href="">Twitter</a><span class="fade-50 mx-2">/</span></li>
+        <li class="d-inline-block"><a href="">github</a><span class="fade-50 mx-2">/</span></li>
+        <li class="d-inline-block"><a href="">instagram</a><span class="fade-50 mx-2">/</span></li>
+        <li class="d-inline-block"><a href="">dribbble</a><span class="fade-50 mx-2">/</span></li>
+        <li class="d-inline-block"><a href="">keybase</a><span class="fade-50 mx-2">/</span></li>
+      </ul>
+    </div>
+    <div class="homepage-links content-padding page-padding">
+      <h2 class="mt-lg-11 display-delta mt-md-9 mb-4 fade-75">the latest</h2>
+      <ol class="list-style-none">
         {% for post in site.posts %}
           {% unless post.categories contains "legacy" %}
             {% if forloop.index <= 6 %}
-              <li class="mb-7 col-6 px-4">
-                <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
-                <h3 class="text-beta d-inline mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+              <li class="mb-7">
+                <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %y'}}</time>
+                <h3 class="text-beta d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
                 <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
               </li>
             {% endif %}
@@ -78,32 +44,65 @@ layout: default
           <a href="{% link _pages/journal.html %}">more entries</a>
         </li>
         <li class="d-inline-block fs-epsilon">
-          <span class="text-smallcaps"><a href="">RSS</a></span>
+          <span class="text-smallcaps"><a href="">rss</a></span>
         </li>
       </ul>
-      <h2 class="display-delta mb-4 mt-9 fade-75">Follow along</h2>
-      <p class="mb-8">
-        <a href="">Twitter</a><span class="fade-50 px-3">/</span>
-        <a href="">GitHub</a><span class="fade-50 px-3">/</span>
-        <a href="">Instagram</a><span class="fade-50 px-3">/</span>
-        <a href="">Dribbble</a><span class="fade-50 px-3">/</span>
-        <a href="">Keybase</a>
-      </p>
+    </div>
+  </div>
+</div>
+<div class="homepage">
+  <div class="container container-xl homePage-container">
+    <div class="homePage-about pb-12 content-padding page-padding">
+      <div>
+        <div class="device device--phone homePage-device">
+          <div class="device-screen slider js_slider">
+            <div class="slider_frame js_frame">
+              <ul class="slider_slides js_slides">
+                <li class="slider_slide js_slide">
+                  <img src="{{ site.assets-base-url }}images/work/tablab-1.png" class="device-screen-img" >
+                </li>
+                <li class="slider_slide js_slide">
+                  <img src="{{ site.assets-base-url }}images/work/phillydotcom-1.png" class="device-screen-img" >
+                </li>
+                <li class="slider_slide js_slide">
+                  <img src="{{ site.assets-base-url }}images/work/marketplace-1.png" class="device-screen-img" >
+                </li>
+                <li class="slider_slide js_slide">
+                  <img src="{{ site.assets-base-url }}images/work/weil-1.png" class="device-screen-img" >
+                </li>
+                <li class="slider_slide js_slide">
+                  <img src="{{ site.assets-base-url }}images/work/cb-homes-1.png" class="device-screen-img" >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="homePage-links content-padding page-padding">
-      <p class="mt-9 mt-lg-11 fade-50"><em>Excited about data.</em></p>
-      <h2 class="display-delta mb-4 mt-12 fade-75">Personal projects</h2>
+      <p>
+        For the last decade, I've worked
+        with Fortune 500 companies, small start-ups, and many others
+        in-between to build websites and digital products for screens of all
+        sizes. Before joining GitHub in 2015, I worked on the design teams
+        at <a href="//happycog.com" target="_blank">Happy Cog</a> and Empathy Lab.
+      </p>
+      <p class="mb-6">
+         I also enjoy spending time making and sharing projects
+         to push my own limits as a designer.
+       </p>
+       <h4 class="text-smallcaps">Recent personal projects</h4>
       <ul>
-        <li class="text-delta mb-3">
+        <li class="mb-3">
           <a href="//awaremac.com">Aware</a> simple time tracking for MacOS
         </li>
-        <li class="text-delta mb-3">
-          <a href="//tablab.io">Tab Lab</a> publish guitar tablature and sheet
-          music on the web
+        <li class="mb-3">
+          <a href="//tablab.io">Tab Lab</a> guitar tablature and sheet
+            music publishing on the web
         </li>
-        <li class="text-delta">
+        <li>
           <a href="//quirksandcompulsions.com">Quirks and Compulsions</a> a podcast
-          about overanalyzing the overlooked.
+            about overanalyzing the overlooked
         </li>
       </ul>
     </div>

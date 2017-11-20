@@ -1,11 +1,10 @@
 .device {
   position: relative;
-  background-image: linear-gradient(to bottom, #f0f1f1, #eee);
+  background-image: linear-gradient(to bottom, #eff0f0, rgba(231, 232, 235, 1));
   display: flex;
   margin-bottom: 60px;
   padding: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07),
-    0 15px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 30px 75px -12px rgba(50, 50, 84, 0.4), 0 20px 10px -20px rgba(0, 0, 0, 0.1);
 
   .device-screen {
     border-radius: 3px;
@@ -53,10 +52,13 @@
 
 .slider_slides {
     display: inline-block;
+    margin-bottom: 0;
 }
+
 .slider_slide {
     position: relative;
     display: inline-block;
+    margin-bottom: 0;
 
     /**
      * (optional) if the content inside the slide element has a defined size.

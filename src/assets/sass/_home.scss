@@ -21,9 +21,12 @@
     flex-wrap: nowrap !important;
   }
 }
+.homePage-about {
+  max-width: 830px;
+  flex-grow: 1;
+}
 
 .homePage-links {
-  padding-bottom: $sp-12;
   color: $white;
   background-color: $blue;
 
@@ -40,6 +43,7 @@
 
   @include mq(md) {
     min-width: 300px;
+    max-width: 550px;
   }
 }
 
