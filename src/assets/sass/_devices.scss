@@ -7,11 +7,12 @@
   box-shadow: 0 30px 75px -12px rgba(50, 50, 84, 0.4), 0 20px 10px -20px rgba(0, 0, 0, 0.1);
 
   .device-screen {
+    width: 100%;
     border-radius: 3px;
     overflow: hidden;
+    background-color: $black;
 
     @include mq(md) {
-      background-color: $black;
       border: 3px solid #000;
     }
   }
@@ -23,9 +24,13 @@
 }
 
 .device--phone {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+
   @include mq(md) {
     width: 320px;
-    height: 590px;
+    height: 610px;
     padding: 60px 20px;
     border-radius: 35px;
   }
@@ -35,7 +40,7 @@
   @include mq(md) {
     width: 768px;
     height: 1024px;
-    padding: 40px 40px 40px 40px;
+    padding: 60px 60px 60px 60px;
     border-radius: 35px;
   }
 }

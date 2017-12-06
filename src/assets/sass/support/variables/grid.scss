@@ -1,15 +1,15 @@
 $column-count: 12;
 $media-queries: (
   "sm": 400px,
-  "md": 700px,
-  "lg": 1160px,
+  "md": 750px,
+  "lg": 1090px,
   "xl": 1338px
 );
 $container-widths: (
   "sm": 400px,
   "md": 700px,
-  "lg": 1160px,
-  "xl": 1380px
+  "lg": 1060px,
+  "xl": 1420px
 );
 
 $container-width-sm: map-get($container-widths, "sm");

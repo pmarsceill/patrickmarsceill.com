@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<div class="homePage">
-  <div class="container container-xl homePage-container">
-    <div class="homePage-about pb-12 content-padding page-padding js-plx" data-rellax-speed="8">
+<div class="homePage-wrap">
+  <div class="container container-xl flex-md-nowrap">
+    <div class="homePage-about pb-12 content-padding page-padding">
       <div class="anim-fade-in">
         <h1 class="mb-12">
           <span class="d-block">Hello,</span>
@@ -15,15 +15,16 @@ layout: default
       </div>
       <h2 class="display-delta mb-4 fade-75">Elsewhere</h2>
       <ul class="list-style-none">
-        <li class="d-inline-block"><a href="">Twitter</a><span class="fade-50 mx-2">/</span></li>
-        <li class="d-inline-block"><a href="">github</a><span class="fade-50 mx-2">/</span></li>
-        <li class="d-inline-block"><a href="">instagram</a><span class="fade-50 mx-2">/</span></li>
-        <li class="d-inline-block"><a href="">dribbble</a><span class="fade-50 mx-2">/</span></li>
-        <li class="d-inline-block"><a href="">keybase</a><span class="fade-50 mx-2">/</span></li>
+        <li class="d-inline-block py-1"><span class="text-bold"><a href="">Twitter</a></span><span class="fade-50 mx-2">/</span></li>
+        <li class="d-inline-block py-1"><span class="text-bold"><a href="">GitHub</a></span><span class="fade-50 mx-2">/</span></li>
+        <li class="d-inline-block py-1"><span class="text-bold"><a href="">Instagram</a></span><span class="fade-50 mx-2">/</span></li>
+        <li class="d-inline-block py-1"><span class="text-bold"><a href="">Dribbble</a></span><span class="fade-50 mx-2">/</span></li>
+        <li class="d-inline-block py-1"><span class="text-bold"><a href="">Keybase</a></span><span class="fade-50 mx-2">/</span></li>
+        <li class="d-inline-block py-1"><span class="text-bold"><a href="">Email me</a></span></li>
       </ul>
     </div>
-    <div class="homepage-links content-padding page-padding">
-      <h2 class="mt-lg-11 display-delta mt-md-9 mb-4 fade-75">the latest</h2>
+    <div class="homepage-links content-padding py-8 py-md-12">
+      <h2 class="mt-4 mt-md-12 display-delta mb-4 fade-75">The latest</h2>
       <ol class="list-style-none">
         {% for post in site.posts %}
           {% unless post.categories contains "legacy" %}
@@ -40,21 +41,26 @@ layout: default
         {% endfor %}
       </ol>
       <ul class="list-style-none">
-        <li class="d-inline-block mr-3 fs-epsilon">
+        <li class="d-inline-block mr-3">
           <a href="{% link _pages/journal.html %}">more entries</a>
         </li>
-        <li class="d-inline-block fs-epsilon">
+        <li class="d-inline-block">
           <span class="text-smallcaps"><a href="">rss</a></span>
         </li>
       </ul>
     </div>
   </div>
 </div>
-<div class="homepage">
-  <div class="container container-xl homePage-container">
-    <div class="homePage-about pb-12 content-padding page-padding">
-      <div>
-        <div class="device device--phone homePage-device">
+<div class="homePage-wrap--work overflow-hidden">
+  <div class="container container-xl flex-lg-nowrap">
+    <div class="homePage-devices pb-12 content-padding py-md-12">
+      <div class="d-flex flex-justify-end position-relative">
+        <div class="device device--tablet homePage-device--tablet position-absolute js-plx" data-rellax-speed="-7">
+          <div class="device-screen">
+            <img src="{{ site.assets-base-url }}images/work/logo-grid.png" class="device-screen-img">
+          </div>
+        </div>
+        <div class="device device--phone homePage-device--phone mt-12 js-plx" data-rellax-speed="4">
           <div class="device-screen slider js_slider">
             <div class="slider_frame js_frame">
               <ul class="slider_slides js_slides">
@@ -73,25 +79,32 @@ layout: default
                 <li class="slider_slide js_slide">
                   <img src="{{ site.assets-base-url }}images/work/cb-homes-1.png" class="device-screen-img" >
                 </li>
+                <li class="slider_slide js_slide">
+                  <img src="{{ site.assets-base-url }}images/work/marketplace-2.png" class="device-screen-img" >
+                </li>
+                <li class="slider_slide js_slide">
+                  <img src="{{ site.assets-base-url }}images/work/papajohns.png" class="device-screen-img" >
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="homePage-links content-padding page-padding">
-      <p>
+    <div class="homePage-worklinks content-padding py-10 py-md-12">
+      <h2 class="text-beta mb-4 fade-75">My work</h2>
+      <p class="">
         For the last decade, I've worked
         with Fortune 500 companies, small start-ups, and many others
         in-between to build websites and digital products for screens of all
-        sizes. Before joining GitHub in 2015, I worked on the design teams
+        sizes. Before joining <a href="//github.com" target="_blank">GitHub</a> in 2015, I worked on the design teams
         at <a href="//happycog.com" target="_blank">Happy Cog</a> and Empathy Lab.
       </p>
       <p class="mb-6">
-         I also enjoy spending time making and sharing projects
-         to push my own limits as a designer.
+         I also enjoy spending my free time making and sharing tools and projects 
+         that push my own limits.
        </p>
-       <h4 class="text-smallcaps">Recent personal projects</h4>
+       <h4 class="text-smallcaps fade-50">Recent personal projects</h4>
       <ul>
         <li class="mb-3">
           <a href="//awaremac.com">Aware</a> simple time tracking for MacOS

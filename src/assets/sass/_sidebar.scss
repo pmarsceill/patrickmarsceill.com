@@ -7,6 +7,10 @@
   height: 100%;
   padding: $sp-6;
 
+  @include mq(md) {
+    padding: $sp-8;
+  }
+
   @include mq(lg) {
     position: fixed;
     padding: $sp-5;

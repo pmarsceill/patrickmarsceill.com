@@ -1,7 +1,6 @@
-.homePage {
+.homePage-wrap {
   display: flex;
   width: 100%;
-  min-height: 100%;
   flex-direction: column;
   align-items: stretch;
   align-content: stretch;
@@ -16,17 +15,62 @@
   }
 }
 
-.homePage-container {
-  @include mq(md) {
-    flex-wrap: nowrap !important;
+.homePage-wrap--work {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: nowrap;
+
+  @include mq(lg) {
+    background-image: linear-gradient(to right, $orange 0%, $orange calc(100% - 300px), $purple calc(100% - 300px), $purple 100%);
+  }
+
+  @include mq(xl) {
+    background-image: linear-gradient(to right, $orange 0%, $orange percentage(3/4), $black percentage(3/4), $black 100%);
   }
 }
+
 .homePage-about {
-  max-width: 830px;
-  flex-grow: 1;
+  @include mq(md) {
+    min-width: 490px;
+    max-width: 830px;
+  }
 }
 
 .homePage-links {
+  @include mq(md) {
+    min-width: 250px;
+    max-width: 450px;
+  }
+}
+
+.homePage-worklinks {
+  background-color: $black !important;
+}
+
+.homePage-devices {
+  overflow: hidden !important;
+  background-color: $orange !important;
+
+  @include mq(lg) {
+    overflow: visible !important;
+  }
+}
+
+.homePage-about,
+.homePage-devices {
+  flex: 1;
+  max-width: none;
+
+  @include mq(lg) {
+    min-width: 690px;
+  }
+}
+
+.homePage-links,
+.homePage-worklinks {
   color: $white;
   background-color: $blue;
 
@@ -41,13 +85,55 @@
     }
   }
 
-  @include mq(md) {
-    min-width: 300px;
+  @include mq(lg) {
     max-width: 550px;
   }
 }
 
-.device.homePage-device {
-  //transform: translateX(-25%);
-  // transform: perspective(1000px) rotateY(3deg);
+.homePage-device--phone {
+  margin-bottom: 0;
+
+  @include mq(md) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.homePage-device--tablet {
+  top: 0;
+  right: -$sp-6;
+  left: -$sp-6;
+  margin-bottom: 0;
+
+  .device-screen {
+    border-radius: 0;
+    background-color: $white;
+  }
+
+  .device-screen-img {
+    opacity: 0.3;
+    height: 100%;
+    width: auto;
+  }
+
+  @include mq(md) {
+    right: auto;
+    left: -20%;
+
+    .device-screen {
+      border-radius: 3px;
+      background-color: $black;
+    }
+
+    .device-screen-img {
+      opacity: 0.65;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @include mq(lg) {
+    top: -30px;
+    left: -50%;
+  }
 }
