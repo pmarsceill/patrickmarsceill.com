@@ -34,15 +34,15 @@
 
 .homePage-about {
   @include mq(md) {
-    min-width: 490px;
+    min-width: 390px;
     max-width: 830px;
   }
 }
 
 .homePage-links {
   @include mq(md) {
-    min-width: 250px;
-    max-width: 450px;
+    min-width: 0;
+    max-width: 250px;
   }
 }
 
@@ -65,7 +65,7 @@
   max-width: none;
 
   @include mq(lg) {
-    min-width: 690px;
+    min-width: 540px;
   }
 }
 
@@ -86,7 +86,12 @@
   }
 
   @include mq(lg) {
-    max-width: 550px;
+    min-width: 200px;
+    max-width: 250px;
+  }
+
+  @include mq(xl) {
+    max-width: 300px;
   }
 }
 
@@ -96,6 +101,11 @@
   @include mq(md) {
     margin-right: 0;
     margin-left: 0;
+    margin-bottom: -300px;
+  }
+
+  @include mq(lg) {
+    margin-bottom: 0;
   }
 }
 
@@ -107,18 +117,19 @@
 
   .device-screen {
     border-radius: 0;
-    background-color: $white;
   }
 
   .device-screen-img {
-    opacity: 0.3;
-    height: 100%;
     width: auto;
+    height: 100%;
+    opacity: 0.4;
+    filter: grayscale(100%);
   }
 
   @include mq(md) {
-    right: auto;
-    left: -20%;
+    top: -250px;
+    right: -20%;
+    left: auto;
 
     .device-screen {
       border-radius: 3px;
@@ -129,11 +140,13 @@
       opacity: 0.65;
       width: 100%;
       height: auto;
+      filter: none;
     }
   }
 
   @include mq(lg) {
-    top: -30px;
+    top: -90px;
+    right: auto;
     left: -50%;
   }
 }

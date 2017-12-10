@@ -30,7 +30,7 @@ layout: default
           {% unless post.categories contains "legacy" %}
             {% if forloop.index <= 6 %}
               <li class="mb-7">
-                <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %y'}}</time>
+                <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
                 <h3 class="text-beta d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
                 <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
               </li>
@@ -42,10 +42,10 @@ layout: default
       </ol>
       <ul class="list-style-none">
         <li class="d-inline-block mr-3">
-          <a href="{% link _pages/journal.html %}">more entries</a>
+          <a href="{% link _pages/journal.html %}" class="text-cyan text-bold">More entries</a>
         </li>
         <li class="d-inline-block">
-          <span class="text-smallcaps"><a href="">rss</a></span>
+          <span class="text-smallcaps"><a href="">RSS</a></span>
         </li>
       </ul>
     </div>
@@ -54,7 +54,7 @@ layout: default
 <div class="homePage-wrap--work overflow-hidden">
   <div class="container container-xl flex-lg-nowrap">
     <div class="homePage-devices pb-12 content-padding py-md-12">
-      <div class="d-flex flex-justify-end position-relative">
+      <div class="d-flex flex-lg-justify-end position-relative">
         <div class="device device--tablet homePage-device--tablet position-absolute js-plx" data-rellax-speed="-7">
           <div class="device-screen">
             <img src="{{ site.assets-base-url }}images/work/logo-grid.png" class="device-screen-img">
@@ -65,25 +65,25 @@ layout: default
             <div class="slider_frame js_frame">
               <ul class="slider_slides js_slides">
                 <li class="slider_slide js_slide">
-                  <img src="{{ site.assets-base-url }}images/work/tablab-1.png" class="device-screen-img" >
+                  <img src="{{ site.assets-base-url }}images/work/tablab-1.png" class="device-screen-img" alt="Tab Lab">
                 </li>
                 <li class="slider_slide js_slide">
-                  <img src="{{ site.assets-base-url }}images/work/phillydotcom-1.png" class="device-screen-img" >
+                  <img src="{{ site.assets-base-url }}images/work/phillydotcom-1.png" class="device-screen-img" alt="Philly.com">
                 </li>
                 <li class="slider_slide js_slide">
-                  <img src="{{ site.assets-base-url }}images/work/marketplace-1.png" class="device-screen-img" >
+                  <img src="{{ site.assets-base-url }}images/work/marketplace-1.png" class="device-screen-img" alt="GitHub Marketplace">
                 </li>
                 <li class="slider_slide js_slide">
-                  <img src="{{ site.assets-base-url }}images/work/weil-1.png" class="device-screen-img" >
+                  <img src="{{ site.assets-base-url }}images/work/weil-1.png" class="device-screen-img" alt="Weil, Gotshal, and Manges">
                 </li>
                 <li class="slider_slide js_slide">
-                  <img src="{{ site.assets-base-url }}images/work/cb-homes-1.png" class="device-screen-img" >
+                  <img src="{{ site.assets-base-url }}images/work/cb-homes-1.png" class="device-screen-img" alt="Coldwell Banker Homes">
                 </li>
                 <li class="slider_slide js_slide">
-                  <img src="{{ site.assets-base-url }}images/work/marketplace-2.png" class="device-screen-img" >
+                  <img src="{{ site.assets-base-url }}images/work/marketplace-2.png" class="device-screen-img" alt="GitHub Payments">
                 </li>
                 <li class="slider_slide js_slide">
-                  <img src="{{ site.assets-base-url }}images/work/papajohns.png" class="device-screen-img" >
+                  <img src="{{ site.assets-base-url }}images/work/papajohns.png" class="device-screen-img" alt="Papa John's Pizza">
                 </li>
               </ul>
             </div>
@@ -94,14 +94,14 @@ layout: default
     <div class="homePage-worklinks content-padding py-10 py-md-12">
       <h2 class="text-beta mb-4 fade-75">My work</h2>
       <p class="">
-        For the last decade, I've worked
-        with Fortune 500 companies, small start-ups, and many others
-        in-between to build websites and digital products for screens of all
-        sizes. Before joining <a href="//github.com" target="_blank">GitHub</a> in 2015, I worked on the design teams
-        at <a href="//happycog.com" target="_blank">Happy Cog</a> and Empathy Lab.
+        For the last decade, I've worked with Fortune 500 industry leaders, scrappy start-ups,
+        and many in between to build digital products for screens of all sizes.
+        Before joining <a href="//github.com" target="_blank">GitHub</a> in 2015,
+        I worked on the design teams at <a href="//happycog.com" target="_blank">Happy
+        Cog</a> and Empathy Lab.
       </p>
       <p class="mb-6">
-         I also enjoy spending my free time making and sharing tools and projects 
+         I also enjoy spending my free time making and sharing tools and projects
          that push my own limits.
        </p>
        <h4 class="text-smallcaps fade-50">Recent personal projects</h4>

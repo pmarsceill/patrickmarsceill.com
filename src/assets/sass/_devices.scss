@@ -29,8 +29,15 @@
   margin-left: auto;
 
   @include mq(md) {
+    width: 270px;
+    max-width: none;
+    padding: 50px 15px;
+    border-radius: 30px;
+  }
+
+  @include mq(lg) {
     width: 320px;
-    height: 610px;
+    height: 565px;
     padding: 60px 20px;
     border-radius: 35px;
   }
@@ -38,14 +45,19 @@
 
 .device--tablet {
   @include mq(md) {
+    width: 600px;
+    max-width: none;
+    padding: 55px;
+    border-radius: 40px;
+  }
+
+  @include mq(lg) {
     width: 768px;
     height: 1024px;
-    padding: 60px 60px 60px 60px;
-    border-radius: 35px;
+    padding: 60px;
+    border-radius: 45px;
   }
 }
-
-
 
 .slider_frame {
     position: relative;
