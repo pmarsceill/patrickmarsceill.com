@@ -2,40 +2,42 @@
 layout: default
 ---
 
-<div class="container container-xl{% if page.featured_img == nil %} page-padding{% endif %} content-padding">
-  {% if page.next or page.previous %}
-    <nav class="postNav fs-small">
-      <ol class="list-style-none d-flex mb-0">
-        {% if page.previous %}
-          <li class="postNav-item">
-            <span class="fade-50">Prevously</span>
-            <a href="{{ page.previous.url | prepend: site.baseurl }}"
-              class="postNav-link">{{ page.previous.title }}</a>
-          </li>
-        {% endif %}
-        {% if page.next %}
-          <li class="postNav-item">
-            <span class="fade-50">Next</span>
-            <a href="{{ page.next.url | prepend: site.baseurl }}"
-              class="postNav-link">{{ page.next.title }}</a>
-          </li>
-        {% endif %}
-      </ol>
-    </nav>
-   {% endif %}
-   {% if page.featured_img != nil %}
+<div class="container container-xl">
+  <div class="{% if page.featured_img == nil %} page-padding{% endif %} content-padding">
+    {% if page.featured_img != nil %}
     <div class="postImage"><img src="{{ site.assets-base-url }}/images/{{ page.featured_img }}"
-      class="img-fluid">
+                                class="img-fluid">
     </div>
-  {% endif %}
-  <div class="postContent">
-    <time class="text-grey text-smallcaps text-bold fade-50">{{ page.date | date: '%B %d, %Y'}}</time>
-    <h1 class="text-alpha">{{ page.title }}</h1>
-    <div class="display-beta mb-8">{{ page.excerpt }}</div>
-    {% capture excerpt %}{{ page.excerpt }}{% endcapture %}
-    <div class="postContent-body">
-      {{ page.content | remove: excerpt }}
+    {% endif %}
+    <div class="postContent">
+      <time class="text-grey text-smallcaps text-bold fade-50">{{ page.date | date: '%B %d, %Y'}}</time>
+      <h1 class="text-alpha">{{ page.title }}</h1>
+      <div class="display-beta mb-8">{{ page.excerpt }}</div>
+      {% capture excerpt %}{{ page.excerpt }}{% endcapture %}
+      <div class="postContent-body">
+        {{ page.content | remove: excerpt }}
+      </div>
     </div>
+    {% if page.next or page.previous %}
+      <nav class="postNav">
+        <ol class="list-style-none container flex-nowrap mb-0">
+          {% if page.previous %}
+          <li class="postNav-item">
+            <h5 class="fs-small text-normal fade-50 mb-0">Prevously</h5>
+            <a href="{{ page.previous.url | prepend: site.baseurl }}"
+               class="postNav-link">{{ page.previous.title }}</a>
+          </li>
+          {% endif %}
+          {% if page.next %}
+          <li class="postNav-item">
+            <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
+            <a href="{{ page.next.url | prepend: site.baseurl }}"
+               class="postNav-link">{{ page.next.title }}</a>
+          </li>
+          {% endif %}
+        </ol>
+      </nav>
+    {% endif %}
   </div>
 </div>
 

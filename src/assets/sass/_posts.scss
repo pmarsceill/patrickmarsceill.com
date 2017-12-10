@@ -4,19 +4,19 @@
   margin-bottom: $sp-6;
 
   @include mq(lg) {
-    margin-left: -$sp-11;
+    margin-left: -5.2rem;
   }
 }
 
 .postNav {
-  position: absolute;
-  top: $sp-6;
-  right: $sp-6;
+  max-width: 500px;
+  margin-bottom: $sp-8;
 }
 
 .postNav-item {
-  padding-right: $sp-2;
-  margin-right: $sp-2;
+  width: 50%;
+  padding-right: $sp-1;
+  margin-right: $sp-3;
   border-right: $border $border-color;
 
   &:last-child {
@@ -37,8 +37,10 @@
 
 .postContent-body {
   max-width: 700px;
-  margin-bottom: $sp-12;
+  padding-bottom: $sp-4;
+  margin-bottom: $sp-4;
   line-height: 1.8;
+  border-bottom: $border $border-color;
 
   h1,
   h2,
