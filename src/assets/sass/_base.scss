@@ -65,6 +65,10 @@ body {
   }
 }
 
+main {
+  background-color: $body-background-color;
+}
+
 [tabindex="-1"]:focus {
   outline: none !important;
 }

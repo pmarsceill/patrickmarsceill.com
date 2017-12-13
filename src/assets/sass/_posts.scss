@@ -1,44 +1,38 @@
 .postImage {
-  max-width: 980px;
-  margin-top: $sp-12;
+  max-width: $container-width-lg;
+  margin-top: $sp-10;
   margin-bottom: $sp-6;
 
   @include mq(lg) {
-    margin-left: -5.2rem;
+    margin-left: -$sp-10;
   }
-}
-
-.postNav {
-  max-width: 500px;
-  margin-bottom: $sp-8;
-}
-
-.postNav-item {
-  width: 50%;
-  padding-right: $sp-1;
-  margin-right: $sp-3;
-  border-right: $border $border-color;
-
-  &:last-child {
-    padding-right: 0;
-    margin-right: 0;
-    border-right: 0;
-  }
-}
-
-.postNav-link {
-  font-weight: 700;
-  color: $black;
 }
 
 .postContent {
-  max-width: 700px;
+  position: relative;
+  max-width: $container-width-lg;
+}
+
+.postContent-header {
+  max-width: 856px;
+}
+
+.postContent-meta {
+  max-width: 200px;
+  float: right;
+  margin-left: $sp-8;
+  margin-bottom: $sp-8;
+
+  @include mq(lg) {
+    position: sticky;
+    top: $sp-6;
+    right: 0;
+  }
 }
 
 .postContent-body {
-  max-width: 700px;
+  max-width: $container-width-md;
   padding-bottom: $sp-4;
-  margin-bottom: $sp-4;
   line-height: 1.8;
   border-bottom: $border $border-color;
 
@@ -63,3 +57,31 @@
     // Todo add styles
   }
 }
+
+.postNav {
+  position: relative;
+  max-width: 700px;
+  margin-bottom: $sp-8;
+}
+
+.postNav-item {
+  width: 50%;
+  padding-top: $sp-4;
+  padding-right: $sp-4;
+  border-right: $border $border-color;
+
+  &:nth-child(2) {
+    padding-right: 0;
+    padding-left: $sp-4;
+    margin-right: 0;
+    text-align: right;
+    border-right: 0;
+  }
+}
+
+.postNav-link {
+  font-weight: 700;
+  color: $black;
+}
+
+

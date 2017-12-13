@@ -5,28 +5,34 @@
   z-index: 999;
   display: flex;
   height: 100%;
-  padding: $sp-6;
-
-  @include mq(md) {
-    padding: $sp-8;
-  }
 
   @include mq(lg) {
     position: fixed;
-    padding: $sp-5;
+    mix-blend-mode: difference;
   }
 }
 
 .site-mark-svg {
   width: 110px;
+  margin-left: $sp-6;
 
   @include mq(md) {
     width: 130px;
+    margin-left: $sp-8;
   }
+
+  @include mq(lg) {
+    margin-left: $sp-5;
+  }
+
 
   .pm {
     fill: $black;
     transition: fill 0.2s ease-in-out;
+
+    @include mq(lg) {
+      fill: invert($black)
+    }
   }
 
   .text {
@@ -44,11 +50,19 @@
   &:hover {
     .pm {
       fill: $purple;
+
+      @include mq(lg) {
+        fill: invert($purple);
+      }
     }
 
     .text {
       fill: $purple;
       opacity: 1;
+
+      @include mq(lg) {
+        fill: invert($purple);
+      }
     }
   }
 }

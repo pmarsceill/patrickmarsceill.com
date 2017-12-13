@@ -3,21 +3,44 @@ layout: default
 ---
 
 <div class="container container-xl">
-  <div class="{% if page.featured_img == nil %} page-padding{% endif %} content-padding">
+  <div class="{% if page.featured_img == nil %} page-padding{% endif %} content-padding flex-auto">
     {% if page.featured_img != nil %}
-    <div class="postImage"><img src="{{ site.assets-base-url }}/images/{{ page.featured_img }}"
-                                class="img-fluid">
+    <div class="postImage" aria-role="banner">
+      <img src="{{ site.assets-base-url }}/images/{{ page.featured_img }}" class="img-fluid">
     </div>
     {% endif %}
-    <div class="postContent">
-      <time class="text-grey text-smallcaps text-bold fade-50">{{ page.date | date: '%B %d, %Y'}}</time>
-      <h1 class="text-alpha">{{ page.title }}</h1>
-      <div class="display-beta mb-8">{{ page.excerpt }}</div>
-      {% capture excerpt %}{{ page.excerpt }}{% endcapture %}
+    <article class="postContent">
+      <header class="postContent-header">
+        <time class="text-grey text-smallcaps text-bold fade-50">{{ page.date | date: '%B %d, %Y'}}</time>
+        <h1 class="text-alpha">{{ page.title }}</h1>
+        <div class="display-beta mb-8">{{ page.excerpt }}</div>
+        {% capture excerpt %}{{ page.excerpt }}{% endcapture %}
+      </header>
+      <div class="postContent-meta mb-5 mt-2">
+        <h3 class="fs-body text-normal text-grey fs-small">Respond to this article</h3>
+        <ul class="list-style-none">
+          <li class="text-grey-lt mb-2 pb-2 border-bottom">
+            <a href="https://twitter.com/intent/tweet?text=@pmarsceill {{ page.url | absolute_url }}">Tweet your response</a>
+          </li>
+          <li>
+            <span class="fs-small">
+              Questions, comments, or suggestions?
+            </span>
+            <span class="d-block">
+              <a href="https://github.com/pmarsceill/patrickmarsceill.com/issues/new?title={{ "Article - " | url_escape }}{{ page.title | url_escape }}{{" (" | url_escape }}{{page.url | url_escape }}{{")" | url_escape }}">Open an issue on GitHub</a>
+            </span>
+          </li>
+        </ul>
+        {% unless page.medium_link == nil or page.medium_link == false %}
+        <em class="fs-small d-block mb-4">
+          <a href="{{ page.medium_link }}">{{ page.title }} is also published on Medium</a>
+        </em>
+        {% endunless %}
+      </div>
       <div class="postContent-body">
         {{ page.content | remove: excerpt }}
       </div>
-    </div>
+    </article>
     {% if page.next or page.previous %}
       <nav class="postNav">
         <ol class="list-style-none container flex-nowrap mb-0">
