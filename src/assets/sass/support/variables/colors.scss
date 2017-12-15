@@ -13,3 +13,8 @@ $grey-dk: #616775;
 $body-color: $black;
 $body-background-color: $white;
 $border-color: $grey;
+
+// White materials for devices and buttons
+
+$white-material: linear-gradient(to bottom, #eff0f0, rgba(231, 232, 235, 1));
+$box-shadow-grey: rgba(50, 50, 84, 0.4);
