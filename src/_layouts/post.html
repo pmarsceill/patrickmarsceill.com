@@ -11,24 +11,48 @@ layout: default
     {% endif %}
     <article class="postContent">
       <header class="postContent-header">
-        <time class="text-grey text-smallcaps text-bold fade-50">{{ page.date | date: '%B %d, %Y'}}</time>
+        <span class="postContent-breadcrumb">
+          <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy">Journal</a>
+        </span>
+        <time class="text-smallcaps text-bold">{{ page.date | date: '%B %d, %Y'}}</time>
         <h1 class="text-alpha">{{ page.title }}</h1>
         <div class="display-beta mb-8">{{ page.excerpt }}</div>
         {% capture excerpt %}{{ page.excerpt }}{% endcapture %}
       </header>
       <div class="postContent-meta mb-5 mt-2">
-        <h3 class="fs-body text-normal text-grey fs-small">Respond to this article</h3>
-        <ul class="list-style-none">
-          <li class="text-grey-lt mb-2 pb-2 border-bottom">
-            <a href="https://twitter.com/intent/tweet?text=@pmarsceill {{ page.url | absolute_url }}" class="btn btn-outline">Tweet your response</a>
+        <h3 class="fs-body text-normal fade-50 text-smallcaps">Let&lsquo;s talk about this</h3>
+        <ul class="list-style-none mb-0">
+          <li class="mb-0">
+            <a href="https://twitter.com/intent/tweet?text=@pmarsceill {{ page.url | absolute_url }}" class="fs-small link-black">
+              <svg class="v-align-middle mr-1" viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="13.1667">
+                <path d="
+                  M 630, 425
+                  A 195, 195 0 0 1 331, 600
+                  A 142, 142 0 0 0 428, 570
+                  A  70,  70 0 0 1 370, 523
+                  A  70,  70 0 0 0 401, 521
+                  A  70,  70 0 0 1 344, 455
+                  A  70,  70 0 0 0 372, 460
+                  A  70,  70 0 0 1 354, 370
+                  A 195, 195 0 0 0 495, 442
+                  A  67,  67 0 0 1 611, 380
+                  A 117, 117 0 0 0 654, 363
+                  A  65,  65 0 0 1 623, 401
+                  A 117, 117 0 0 0 662, 390
+                  A  65,  65 0 0 1 630, 425
+                  Z"
+                  style="fill: currentColor"></path>
+              </svg>
+              Tweet your response
+            </a>
           </li>
           <li>
-            <span class="fs-small">
-              Questions, comments, or suggestions?
-            </span>
-            <span class="d-block">
-              <a href="https://github.com/pmarsceill/patrickmarsceill.com/issues/new?title={{ "Article - " | url_escape }}{{ page.title | url_escape }}{{" (" | url_escape }}{{page.url | url_escape }}{{")" | url_escape }}">Open an issue on GitHub</a>
-            </span>
+            <a href="https://github.com/pmarsceill/patrickmarsceill.com/issues/new?title={{ "Article - " | url_escape }}{{ page.title | url_escape }}{{" (" | url_escape }}{{page.url | url_escape }}{{")" | url_escape }}" class="fs-small link-black">
+              <svg class="v-align-middle mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                <path style="fill: currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+              </svg>
+              Open an issue on GitHub
+            </a>
           </li>
         </ul>
         {% unless page.medium_link == nil or page.medium_link == false %}
@@ -48,14 +72,26 @@ layout: default
           <li class="postNav-item">
             <h5 class="fs-small text-normal fade-50 mb-0">Prevously</h5>
             <a href="{{ page.previous.url | prepend: site.baseurl }}"
-               class="postNav-link">{{ page.previous.title }}</a>
+               class="postNav-link link-black">{{ page.previous.title }}</a>
+          </li>
+          {% else %}
+          <li class="postNav-item">
+            <h5 class="fs-small text-normal fade-50 mb-0">Previously</h5>
+            <a href="{% link _pages/journal.html %}"
+              class="postNav-link link-black">More entries</a>
           </li>
           {% endif %}
           {% if page.next %}
           <li class="postNav-item">
             <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
             <a href="{{ page.next.url | prepend: site.baseurl }}"
-               class="postNav-link">{{ page.next.title }}</a>
+               class="postNav-link link-black">{{ page.next.title }}</a>
+          </li>
+          {% else %}
+          <li class="postNav-item">
+            <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
+            <a href="{% link _pages/journal.html %}"
+              class="postNav-link link-black">More entries</a>
           </li>
           {% endif %}
         </ol>

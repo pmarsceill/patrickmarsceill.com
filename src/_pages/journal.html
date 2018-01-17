@@ -17,7 +17,7 @@ description:  Journal description
             {% if post.featured_img %}
               <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="col-12 position-absolute" style="right: -40px; top: 30px;">
             {% endif %}
-            <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
+            <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
             <h3 class="text-beta d-inline bg-white position-relative"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
             <p class="text-beta text-grey d-inline pl-2 bg-white position-relative">{{ post.description }}</p>
           </article>

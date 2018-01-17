@@ -10,11 +10,11 @@ layout: compressed
 <html>
   {% include head.html %}
   <body class="{{ page.page-name }}-page {{ pageInternal }}">
-    <nav class="sideBar">
+    <div class="sideBar">
       <a class="linkHome d-block" href="{% link _pages/index.html %}">
         {% include mark_svg.html %}
       </a>
-    </nav>
+    </div>
     <main>
       {{ content }}
     </main>

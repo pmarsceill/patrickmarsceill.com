@@ -128,4 +128,9 @@ h4,
   font-weight: 400 !important;
 }
 
+.text-underline-wavy {
+  display: inline-block; // so it doesn't get cut-off in chrome
+  height: 1.5em;         // so it doesn't get cut-off in chrome
+  text-decoration: $black wavy underline;
+}
 // stylelint-enable primer/selector-no-utility

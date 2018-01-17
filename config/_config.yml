@@ -3,23 +3,22 @@
 # Contains site data, core jekyll config, plugin config, etc.
 
 ## Org settings
-title: Site title
+title: Patrick Marsceill
 logo: /assets/img/global/logo.svg
-email: email
-phone: phone
-city: city
-state: state
-zip: zip
+email: patrick.marsceill@gmail.com
+city: Philadelphia
+state: PA
+zip: 19125
 
 ## Site Description
 # used in meta tags
 description: >
-  I see pride. I see power. I see a badass starter that don't take no crap off of nobody!
+  Patrick Marsceill is a multi-disciplinary designer managing product design at GitHub.
 
 ## Core Site Settings
 # jekyll configuration
 url: 'https://patrickmarsceill.com'
-permalink: none
+permalink: /:year/:month/:day/:title/
 assets-base-url: '/assets/'
 source: src
 destination: dist
@@ -47,3 +46,8 @@ social:
   name: Patrick Marsceill
   links:
     - https://patrickmarsceill.com
+    - https://twitter.com/pmarsceill
+    - https://keybase.io/pmarsceill
+    - https://github.com/pmarsceill
+    - https://dribbble.com/pmarsceill
+    - https://linkedin.com/pmarsceill

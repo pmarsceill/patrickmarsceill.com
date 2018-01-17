@@ -5,6 +5,38 @@
 .text-white { color: $white !important; }
 .text-grey { color: $grey-dk !important; }
 
+.link-black {
+  color: $black !important;
+
+  &:hover {
+    color: $purple !important;
+  }
+}
+
+.link-cyan {
+  color: $cyan !important;
+
+  &:hover {
+    color: $purple !important;
+  }
+}
+
+.link-white {
+  color: $white !important;
+
+  &:hover {
+    color: $purple !important;
+  }
+}
+
+.link-grey {
+  color: $grey-dk !important;
+
+  &:hover {
+    color: $purple !important;
+  }
+}
+
 // Background color
 
 .bg-black { background-color: $black !important; }
