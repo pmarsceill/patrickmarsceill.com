@@ -32,19 +32,16 @@
   }
 
   &:hover,
-  &:active,
-  &.zeroclipboard-is-hover,
-  &.zeroclipboard-is-active {
-    color: $black;
+  &:active {
     text-decoration: none;
     background-color: #eef4fb;
-    transition: transform ease-out 0.15s, color ease-out 0.15s;
+    transition: transform ease-out 0.15s, box-shadow ease-out 0.15s;
     transform: translateY(-2px);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 3px 15px rgba(0, 0, 0, 0.2);
   }
 
   &:active,
-  &.selected,
-  &.zeroclipboard-is-active {
+  &.selected {
     background-color: #d3d9e1;
     background-image: none;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);

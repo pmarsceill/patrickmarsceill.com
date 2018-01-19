@@ -5,10 +5,10 @@
   z-index: 999;
   display: flex;
   height: 100%;
+  mix-blend-mode: difference;
 
   @include mq(lg) {
     position: fixed;
-    mix-blend-mode: difference;
   }
 }
 
@@ -25,14 +25,9 @@
     margin-left: $sp-5;
   }
 
-
   .pm {
-    fill: $black;
+    fill: invert($black);
     transition: fill 0.2s ease-in-out;
-
-    @include mq(lg) {
-      fill: invert($black)
-    }
   }
 
   .text {
@@ -49,20 +44,12 @@
 
   &:hover {
     .pm {
-      fill: $purple;
-
-      @include mq(lg) {
-        fill: invert($purple);
-      }
+      fill: invert($purple);
     }
 
     .text {
-      fill: $purple;
+      fill: invert($purple);
       opacity: 1;
-
-      @include mq(lg) {
-        fill: invert($purple);
-      }
     }
   }
 }

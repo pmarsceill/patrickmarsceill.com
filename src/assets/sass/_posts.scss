@@ -1,36 +1,19 @@
 .postImage {
-  max-width: $container-width-lg;
-  margin-top: $sp-10;
   margin-bottom: $sp-6;
-
-  @include mq(lg) {
-    margin-left: -6.1rem;
-  }
+  background-color: $purple;
+  background-repeat: repeat-x;
+  background-size: contain;
+  height: 40vw;
+  max-height: 700px;
 }
+
 
 .postContent {
   max-width: $container-width-lg;
 }
 
 .postContent-header {
-  max-width: 856px;
-}
-
-.postContent-breadcrumb {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: $sp-6;
-  margin-right: $sp-8;
-
-  @include mq(lg) {
-    top: auto;
-    right: auto;
-    left: 0;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 1.5rem;
-  }
+  max-width: 812px;
 }
 
 .postContent-meta {
@@ -59,7 +42,7 @@
 .postContent-body {
   max-width: $container-width-md;
   padding-bottom: $sp-4;
-  line-height: 1.8;
+  line-height: 1.6;
   border-bottom: $border $border-color;
 
   @include mq(xl){

@@ -8,33 +8,39 @@ permalink: /journal/
 title: Journal
 description:  Journal description
 ---
-<div class="page-padding">
-  <div class="container container-xl">
-    <div class="content-padding container mxn-4">
+  <div class="container container-xl mb-12">
+    <div class="content-padding page-padding">
+      <h1 class="text-alpha mb-5">The latest</h1>
+      <div class="container mxn-4">
       {% for post in site.posts %}
-        {% unless post.categories contains "legacy" %}
-          <article class="clearfix col-md-4 position-relative px-4 mb-12 pb-4">
-            {% if post.featured_img %}
-              <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="col-12 position-absolute" style="right: -40px; top: 30px;">
-            {% endif %}
-            <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
-            <h3 class="text-beta d-inline bg-white position-relative"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-            <p class="text-beta text-grey d-inline pl-2 bg-white position-relative">{{ post.description }}</p>
-          </article>
-        {% endunless %}
-      {% endfor %}
-    </div>
-    <div class="content-padding">
-      <h2 class="text-alpha">Older posts</h2>
-      {% for post in site.posts %}
-        {% if post.categories contains "legacy" %}
-          <article class="py-2">
-            <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
-            <h3 class="text-gamma d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-            <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
-          </article>
+      {% unless post.categories contains "legacy" %}
+      <article class="clearfix col-md-4 position-relative px-4 mb-12 pb-4">
+        {% if post.featured_img %}
+        <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="col-12 position-absolute" style="right: -40px; top: 30px;">
         {% endif %}
+        <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
+        <h3 class="text-beta d-inline bg-white position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <p class="text-beta text-grey d-inline pl-2 bg-white position-relative">{{ post.description }}</p>
+      </article>
+      {% endunless %}
       {% endfor %}
     </div>
   </div>
 </div>
+<div class="bg-black py-10">
+  <div class="container container-xl">
+    <div class="content-padding">
+      <h2 class="text-beta text-white">Older posts</h2>
+      {% for post in site.posts %}
+      {% if post.categories contains "legacy" %}
+      <article class="py-3">
+        <time class="text-smallcaps text-white d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
+        <h3 class="text-gamma d-inline"><a href="{{ post.url | prepend: site.baseurl }}" class="text-cyan">{{ post.title }}</a></h3>
+        <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
+      </article>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+

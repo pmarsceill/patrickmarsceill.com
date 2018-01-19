@@ -4,6 +4,7 @@
 .text-cyan { color: $cyan !important; }
 .text-white { color: $white !important; }
 .text-grey { color: $grey-dk !important; }
+.text-blue { color: $blue !important; }
 
 .link-black {
   color: $black !important;
@@ -39,10 +40,13 @@
 
 // Background color
 
-.bg-black { background-color: $black !important; }
-.bg-cyan { background-color: $cyan !important; }
-.bg-grey { background-color: $grey !important; }
-.bg-white { background-color: $white !important; }
+.bg-black  { background-color: $black !important; }
+.bg-cyan   { background-color: $cyan !important; }
+.bg-grey   { background-color: $grey !important; }
+.bg-white  { background-color: $white !important; }
+.bg-blue   { background-color: $blue !important; }
+.bg-purple { background-color: $purple !important; }
+.bg-orange { background-color: $orange !important; }
 
 // Fades
 

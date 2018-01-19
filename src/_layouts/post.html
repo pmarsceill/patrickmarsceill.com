@@ -2,20 +2,22 @@
 layout: default
 ---
 
+{% if page.featured_img != nil %}
+<div class="postImage" aria-role="banner" style="background-image:url({{ site.assets-base-url }}/images/{{ page.featured_img }})">
+</div>
+{% else %}
+<div class="bg-black py-9 position-absolute col-12">
+</div>
+{% endif %}
 <div class="container container-xl">
   <div class="{% if page.featured_img == nil %} page-padding{% endif %} content-padding flex-auto">
-    {% if page.featured_img != nil %}
-    <div class="postImage" aria-role="banner">
-      <img src="{{ site.assets-base-url }}/images/{{ page.featured_img }}" class="img-fluid">
-    </div>
-    {% endif %}
     <article class="postContent">
-      <header class="postContent-header">
-        <span class="postContent-breadcrumb">
+      <header class="postContent-header ">
+        <span class="postContent-breadcrumb mr-2">
           <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy">Journal</a>
         </span>
-        <time class="text-smallcaps text-bold">{{ page.date | date: '%B %d, %Y'}}</time>
-        <h1 class="text-alpha">{{ page.title }}</h1>
+        <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
+        <h1 class="text-alpha mt-2">{{ page.title }}</h1>
         <div class="display-beta mb-8">{{ page.excerpt }}</div>
         {% capture excerpt %}{{ page.excerpt }}{% endcapture %}
       </header>
