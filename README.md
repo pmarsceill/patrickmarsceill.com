@@ -1,15 +1,8 @@
-# Jekyll - Webpack Static Website Starter
+# Source for patrickmarsceill.com
 
 ## About
 
-> Starter files you can use to bootstrap new projects.
-
-Ideal for:
-- Marketing teams that need to iterate website quickly
-- Setting up small client projects fast
-- Legitamizing business ideas
-- Experimenting with react (included) or other technologies
-- deploying to AWS, Netlify, or other static site hosting
+Based on [Jekyll - Webpack Static Website Starter](https://github.com/carsonjones/jekyll-webpack-boilerplate)
 
 ## Set up
 
@@ -22,9 +15,7 @@ Ideal for:
 
 ### Install
 
-1. Fork this repo to your github account
-2. Clone to your computer
-3. Run set-up scripts
+Install deps
 
 ```bash
 bundle install && npm install
@@ -32,7 +23,7 @@ bundle install && npm install
 
 ## Usage
 
-Starting the project
+Starting the project locally
 ```bash
 npm run dev
 ```
