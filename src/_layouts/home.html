@@ -28,13 +28,15 @@ layout: default
       <ol class="list-style-none">
         {% for post in site.posts %}
           {% unless post.categories contains "legacy" %}
-            {% if forloop.index <= 6 %}
-              <li class="mb-7">
-                <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
-                <h3 class="text-beta d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-                <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
-              </li>
-            {% endif %}
+            {% unless post.categories contains "microblog" %}
+              {% if forloop.index <= 6 %}
+                <li class="mb-7">
+                  <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
+                  <h3 class="text-beta d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                  <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
+                </li>
+              {% endif %}
+            {% endunless %}
           {% else %}
             {% break %}
           {% endunless %}

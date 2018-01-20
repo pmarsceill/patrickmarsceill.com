@@ -13,16 +13,18 @@ description:  Journal description
       <h1 class="text-alpha mb-5">The latest</h1>
       <div class="container mxn-4">
       {% for post in site.posts %}
-      {% unless post.categories contains "legacy" %}
-      <article class="clearfix col-md-4 position-relative px-4 mb-12 pb-4">
-        {% if post.featured_img %}
-        <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="col-12 position-absolute" style="right: -40px; top: 30px;">
-        {% endif %}
-        <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
-        <h3 class="text-beta d-inline bg-white position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p class="text-beta text-grey d-inline pl-2 bg-white position-relative">{{ post.description }}</p>
-      </article>
-      {% endunless %}
+        {% unless post.categories contains "legacy" %}
+          {% unless post.categories contains "microblog" %}
+          <article class="clearfix col-md-4 position-relative px-4 mb-12 pb-4">
+            {% if post.featured_img %}
+            <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="col-12 position-absolute" style="right: -40px; top: 30px;">
+            {% endif %}
+            <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
+            <h3 class="text-beta d-inline bg-white position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            <p class="text-beta text-grey d-inline pl-2 bg-white position-relative">{{ post.description }}</p>
+          </article>
+          {% endunless %}
+        {% endunless %}
       {% endfor %}
     </div>
   </div>
