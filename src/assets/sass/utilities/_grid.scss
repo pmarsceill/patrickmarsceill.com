@@ -42,6 +42,11 @@
   }
 
   @include mq(lg) {
+    padding-right: $sp-10 !important;
+    padding-left: $sp-10 !important;
+  }
+
+  @include mq(xl) {
     padding-right: 7rem !important;
     padding-left: 7rem !important;
   }

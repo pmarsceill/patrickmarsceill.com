@@ -10,6 +10,13 @@ city: Philadelphia
 state: PA
 zip: 19125
 
+microblog_url: 'https://micro.blog/pmarsceill'
+twitter_url: 'https://twitter.com/pmarsceill'
+github_url: 'https://github.com/pmarsceill'
+instagram_url: 'https://instagram.com/pmarsceill'
+dribbble_url: 'https://dribbble.com/pmarsceill'
+keybase_url: 'https://keybase.io/pmarsceill'
+
 ## Site Description
 # used in meta tags
 description: >

@@ -22,7 +22,11 @@
   }
 
   @include mq(lg) {
-    margin-left: $sp-5;
+    margin-left: $sp-10 + 0.2rem;
+  }
+
+  @include mq(xl) {
+    margin-left: $sp-8;
   }
 
   .pm {
