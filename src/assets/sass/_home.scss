@@ -95,7 +95,7 @@
 }
 
 .homePage-device--phone {
-  margin-bottom: 0;
+  margin-bottom: $sp-12;
 
   @include mq(md) {
     margin-right: 0;
