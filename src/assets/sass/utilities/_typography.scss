@@ -133,4 +133,8 @@ h4,
   height: 1.5em;         // so it doesn't get cut-off in chrome
   text-decoration: $black wavy underline;
 }
+
+.text-no-wrap {
+  white-space: nowrap;
+}
 // stylelint-enable primer/selector-no-utility

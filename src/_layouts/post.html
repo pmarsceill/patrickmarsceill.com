@@ -14,14 +14,14 @@ layout: default
 <div class="container container-xl">
   <div class="{% if page.featured_img == nil %} page-padding{% endif %} content-padding flex-auto">
     <article class="postContent">
-      <header class="postContent-header col-8 mb-12">
+      <header class="postContent-header col-md-8 mb-md-12">
         <h1 class="text-alpha mt-2">{{ page.title }}</h1>
         <div class="display-beta mb-8">{{ page.excerpt }}</div>
         {% capture excerpt %}{{ page.excerpt }}{% endcapture %}
       </header>
 
       <div class="container container-xl">
-        <div class="postContent-meta col-2">
+        <div class="postContent-meta col-lg-2">
           <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy d-block mb-1">Journal</a>
           <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
 
@@ -65,7 +65,7 @@ layout: default
           </em>
           {% endunless %}
         </div>
-        <div class="postContent-body col-8 px-8">
+        <div class="postContent-body col-lg-8 px-md-8">
           {{ page.content | remove: excerpt }}
 
           <footer class="mt-8">

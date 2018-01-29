@@ -66,6 +66,7 @@ body {
 }
 
 main {
+  min-height: calc(100% - #{$footer-height});
   background-color: $body-background-color;
 }
 
