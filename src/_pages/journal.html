@@ -9,6 +9,11 @@ title: Journal
 description:  Journal description
 ---
 
+<div class="bg- position-absolute col-12 d-flex">
+  <div class="bg-grey col-10 py-9">
+  </div>
+</div>
+
 <div class="container container-xl mb-12">
   <div class="content-padding page-padding">
     <h1 class="text-alpha mb-8">The latest</h1>
@@ -32,7 +37,7 @@ description:  Journal description
 </div>
 <div class="bg-black py-10">
   <div class="container container-xl">
-    <div class="content-padding">
+    <div class="content-padding text-right">
       <h2 class="text-beta text-white">Older posts</h2>
       {% for post in site.posts %}
       {% if post.categories contains "legacy" %}
