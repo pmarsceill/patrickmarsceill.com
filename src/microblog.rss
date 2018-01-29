@@ -9,7 +9,8 @@
 		<link>https://micro.blog/pmarsceill</link>
 		<atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
 		<lastBuildDate>{% for post in site.categories.microblog limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
-		{% for post in site.categories.microblog %}
+		{% for post in site.posts %}
+                        {% if post.categories contains "microblog" %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				{% if post.excerpt %}
@@ -21,6 +22,16 @@
 				<link>{{ site.url }}{{ post.url }}</link>
 				<guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
 			</item>
+                        {% else %}
+                        <item>
+                        {% capture postlink %}<a href="{{ site.url }}{{ post.url }}">patrickmarsceill.com</a>{% endcapture %}
+                        <title>{{ post.title | xml_escape }}</title>
+                                <description>{{ post.content | truncate: 100 | xml_escape }} on {{ postlink | xml_escape }}</description>
+                                <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+                                <link>{{ site.url }}{{ post.url }}</link>
+                                <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+                                </item>
+                        {% endif %}
 		{% endfor %}
 	</channel>
 </rss>

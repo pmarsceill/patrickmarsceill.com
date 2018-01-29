@@ -4,7 +4,7 @@
   background-repeat: repeat-x;
   background-size: contain;
   height: 40vw;
-  max-height: 700px;
+  max-height: 600px;
 }
 
 .postContent-body {
@@ -56,4 +56,16 @@
 .postNav-link {
   display: block;
   font-weight: 700;
+}
+
+// Post preview on journal page
+
+.postPreview {
+  height: 336px;
+}
+.postPreview-img {
+  position: absolute;
+  top: $sp-9;
+  left: $sp-8;
+  width: 90%;
 }

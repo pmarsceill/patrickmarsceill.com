@@ -2,6 +2,8 @@
 layout: "post"
 title: "Design GitHub, the product"
 date: "2017-03-28 11:34"
+featured_img: articles/design-github/design-github.png
+image: /assets/articles/hacking-font-stack/hacking-font-stack.png # for open graph
 description: "Shape the future of software development"
 ---
 

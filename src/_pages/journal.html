@@ -17,13 +17,13 @@ description:  Journal description
 <div class="container container-xl mb-12">
   <div class="content-padding page-padding">
     <h1 class="text-alpha mb-8">The latest</h1>
-    <div class="container mxn-4">
+    <div class="container mxn-8">
       {% for post in site.posts %}
         {% unless post.categories contains "legacy" %}
           {% unless post.categories contains "microblog" %}
-          <article class="clearfix col-md-5 position-relative px-4 mb-4 pb-12 pb-4">
+          <article class="postPreview clearfix col-md-5 position-relative px-8">
             {% if post.featured_img %}
-            <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="col-10 position-absolute" style="left: -1rem; top: 25%;">
+            <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="postPreview-img">
             {% endif %}
             <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
             <h3 class="text-beta d-inline bg-white position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
