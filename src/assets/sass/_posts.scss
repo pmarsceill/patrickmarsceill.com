@@ -1,4 +1,8 @@
 .postImage {
+  width: 100%;
+}
+
+.postImage-content {
   margin-bottom: $sp-6;
   background-color: $purple;
   background-repeat: repeat-x;
@@ -60,12 +64,3 @@
 
 // Post preview on journal page
 
-.postPreview {
-  height: 336px;
-}
-.postPreview-img {
-  position: absolute;
-  top: $sp-9;
-  left: $sp-8;
-  width: 90%;
-}

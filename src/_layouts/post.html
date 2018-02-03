@@ -2,16 +2,13 @@
 layout: default
 ---
 
-{% if page.featured_img != nil %}
-  <div class="postImage" aria-role="banner" style="background-image:url({{ site.assets-base-url }}/images/{{ page.featured_img }})">
-  </div>
-{% else %}
-  <div class="bg-black position-absolute col-12 d-flex">
-    <div class="bg-blue col-10 py-9">
+<div class="container container-xl">
+  {% if page.featured_img != nil %}
+  <div class="postImage content-padding pr-md-0 mt-12 mt-xl-0" aria-role="banner">
+    <div class="postImage-content" style="background-image:url({{ site.assets-base-url }}/images/{{ page.featured_img }})">
     </div>
   </div>
-{% endif %}
-<div class="container container-xl">
+  {% endif %}
   <div class="{% if page.featured_img == nil %} page-padding{% endif %} content-padding flex-auto">
     <article class="postContent">
       <header class="postContent-header col-lg-8 px-md-8 px-lg-0 mb-lg-12">
@@ -68,42 +65,55 @@ layout: default
         <div class="postContent-body col-lg-8 px-md-8">
           {{ page.content | remove: excerpt }}
 
-          <footer class="mt-8">
-            {% if page.next or page.previous %}
-            <nav class="postNav">
-              <ol class="list-style-none container flex-nowrap mb-0">
-                {% if page.previous %}
-                <li class="postNav-item">
-                  <h5 class="fs-small text-normal fade-50 mb-0">Prevously</h5>
-                  <a href="{{ page.previous.url | prepend: site.baseurl }}"
-                     class="postNav-link link-black">{{ page.previous.title }}</a>
-                </li>
-                {% else %}
-                <li class="postNav-item">
-                  <h5 class="fs-small text-normal fade-50 mb-0">Previously</h5>
-                  <a href="{% link _pages/journal.html %}"
-                     class="postNav-link link-black">More entries</a>
-                </li>
-                {% endif %}
-                {% if page.next %}
-                <li class="postNav-item">
-                  <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
-                  <a href="{{ page.next.url | prepend: site.baseurl }}"
-                     class="postNav-link link-black">{{ page.next.title }}</a>
-                </li>
-                {% else %}
-                <li class="postNav-item">
-                  <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
-                  <a href="{% link _pages/journal.html %}"
-                     class="postNav-link link-black">More entries</a>
-                </li>
-                {% endif %}
-              </ol>
-            </nav>
-            {% endif %}
-          </footer>
         </div>
       </div>
+
+      {% capture noPrevious %}
+      <li class="postNav-item">
+        <h5 class="fs-small text-normal fade-50 mb-0">Previously</h5>
+        <a href="{% link _pages/journal.html %}"
+           class="postNav-link link-black">More entries</a>
+      </li>
+      {% endcapture %}
+      {% capture noNext %}
+      <li class="postNav-item">
+        <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
+        <a href="{% link _pages/journal.html %}"
+          class="postNav-link link-black">More entries</a>
+      </li>
+      {% endcapture %}
+
+
+      <footer class="mt-8">
+        {% if page.next or page.previous %}
+        <nav class="postNav">
+          <ol class="list-style-none container flex-nowrap mb-0">
+            {% if page.previous.categories contains "microblog" %}
+              {{ noPrevious }}
+            {% elsif page.previous %}
+              <li class="postNav-item">
+                <h5 class="fs-small text-normal fade-50 mb-0">Prevously</h5>
+                <a href="{{ page.previous.url | prepend: site.baseurl }}"
+                  class="postNav-link link-black">{{ page.previous.title }}</a>
+              </li>
+            {% else %}
+              {{ noPrevious }}
+            {% endif %}
+            {% if page.next.categories contains "microblog" %}
+              {{ noNext }}
+            {% elsif page.next %}
+              <li class="postNav-item">
+                <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
+                <a href="{{ page.next.url | prepend: site.baseurl }}"
+                  class="postNav-link link-black">{{ page.next.title }}</a>
+              </li>
+            {% else %}
+              {{ noNext }}
+            {% endif %}
+          </ol>
+        </nav>
+        {% endif %}
+      </footer>
     </article>
   </div>
 </div>
