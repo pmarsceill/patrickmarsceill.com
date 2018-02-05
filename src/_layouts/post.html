@@ -11,11 +11,9 @@ layout: default
   {% endif %}
   <div class="{% if page.featured_img == nil %} page-padding{% endif %} content-padding flex-auto">
     <article class="postContent">
-      <div class="postContent-meta col-12 px-md-8 d-flex d-lg-none flex-justify-between flex-wrap mb-4">
-        <div class="col-12 col-sm-6 d-flex flex-wrap flex-items-center">
-          <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy  mr-2">Journal</a>
-          <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
-        </div>
+      <div class="postContent-meta col-12 px-md-8 d-flex d-lg-none mb-4">
+        <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy  mr-2">Journal</a>
+        <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
       </div>
 
       <header class="postContent-header col-lg-8 px-md-8 px-lg-0 mb-lg-12">
@@ -26,10 +24,8 @@ layout: default
 
       <div class="container container-xl">
         <div class="postContent-meta d-none d-lg-block col-lg-2 mt-1" aria-hidden>
-          <div>
-            <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy d-block mb-1">Journal</a>
-            <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
-          </div>
+          <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy d-block mb-1">Journal</a>
+          <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
         </div>
         <div class="postContent-body col-lg-8 px-md-8">
           {{ page.content | remove: excerpt }}
