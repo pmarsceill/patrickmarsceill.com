@@ -74,6 +74,12 @@ main {
   outline: none !important;
 }
 
+::selection {
+ color: $white;
+ text-shadow:none;
+ background: $purple;
+}
+
 h1,
 h2,
 h3,

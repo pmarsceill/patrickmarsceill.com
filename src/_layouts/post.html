@@ -11,6 +11,13 @@ layout: default
   {% endif %}
   <div class="{% if page.featured_img == nil %} page-padding{% endif %} content-padding flex-auto">
     <article class="postContent">
+      <div class="postContent-meta col-12 px-md-8 d-flex d-lg-none flex-justify-between flex-wrap mb-4">
+        <div class="col-12 col-sm-6 d-flex flex-wrap flex-items-center">
+          <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy  mr-2">Journal</a>
+          <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
+        </div>
+      </div>
+
       <header class="postContent-header col-lg-8 px-md-8 px-lg-0 mb-lg-12">
         <h1 class="text-alpha mt-2">{{ page.title }}</h1>
         <div class="display-beta mb-8">{{ page.excerpt }}</div>
@@ -18,53 +25,14 @@ layout: default
       </header>
 
       <div class="container container-xl">
-        <div class="postContent-meta col-lg-2">
-          <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy d-block mb-1">Journal</a>
-          <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
-
-          <ul class="list-style-none mt-2 mb-0">
-            <li class="mb-0">
-              <a href="https://twitter.com/intent/tweet?text=@pmarsceill {{ page.url | absolute_url }}" class="fs-small link-black">
-                <svg class="v-align-middle mr-1" viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="13.1667">
-                  <path d="
-                  M 630, 425
-                  A 195, 195 0 0 1 331, 600
-                  A 142, 142 0 0 0 428, 570
-                  A  70,  70 0 0 1 370, 523
-                  A  70,  70 0 0 0 401, 521
-                  A  70,  70 0 0 1 344, 455
-                  A  70,  70 0 0 0 372, 460
-                  A  70,  70 0 0 1 354, 370
-                  A 195, 195 0 0 0 495, 442
-                  A  67,  67 0 0 1 611, 380
-                  A 117, 117 0 0 0 654, 363
-                  A  65,  65 0 0 1 623, 401
-                  A 117, 117 0 0 0 662, 390
-                  A  65,  65 0 0 1 630, 425
-                  Z"
-                        style="fill: currentColor"></path>
-                </svg>
-                Tweet your response
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/pmarsceill/patrickmarsceill.com/issues/new?title={{ "Article - " | url_escape }}{{ page.title | url_escape }}{{" (" | url_escape }}{{page.url | url_escape }}{{")" | url_escape }}" class="fs-small link-black">
-                <svg class="v-align-middle mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
-                  <path style="fill: currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-                </svg>
-                Open an issue on GitHub
-              </a>
-            </li>
-          </ul>
-          {% unless page.medium_link == nil or page.medium_link == false %}
-          <em class="fs-small d-block mb-4">
-            <a href="{{ page.medium_link }}">{{ page.title }} is also published on Medium</a>
-          </em>
-          {% endunless %}
+        <div class="postContent-meta d-none d-lg-block col-lg-2 mt-1" aria-hidden>
+          <div>
+            <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy d-block mb-1">Journal</a>
+            <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
+          </div>
         </div>
         <div class="postContent-body col-lg-8 px-md-8">
           {{ page.content | remove: excerpt }}
-
         </div>
       </div>
 
@@ -83,8 +51,51 @@ layout: default
       </li>
       {% endcapture %}
 
+      <footer>
+        <ul class="list-style-none col-12 my-10 d-flex flex-wrap flex-items-center flex-justify-center">
+          <li class="mb-0 mr-4">
+            <a href="https://twitter.com/intent/tweet?text=@pmarsceill {{ page.url | absolute_url }}" class="fs-small link-black">
+              <svg class="v-align-middle mr-1" viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="16" height="13.1667">
+                <path d="
+                M 630, 425
+                A 195, 195 0 0 1 331, 600
+                A 142, 142 0 0 0 428, 570
+                A  70,  70 0 0 1 370, 523
+                      A  70,  70 0 0 0 401, 521
+                      A  70,  70 0 0 1 344, 455
+                      A  70,  70 0 0 0 372, 460
+                      A  70,  70 0 0 1 354, 370
+                      A 195, 195 0 0 0 495, 442
+                      A  67,  67 0 0 1 611, 380
+                      A 117, 117 0 0 0 654, 363
+                      A  65,  65 0 0 1 623, 401
+                      A 117, 117 0 0 0 662, 390
+                      A  65,  65 0 0 1 630, 425
+                      Z"
+                      style="fill: currentColor"></path>
+              </svg>
+              Respond on Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/pmarsceill/patrickmarsceill.com/issues/new?title={{ "Article - " | url_escape }}{{ page.title | url_escape }}{{" (" | url_escape }}{{page.url | url_escape }}{{")" | url_escape }}" class="fs-small link-black">
+              <svg class="v-align-middle mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
+                <path style="fill: currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+              </svg>
+              Open an issue on GitHub
+            </a>
+          </li>
+          {% unless page.medium_link == nil or page.medium_link == false %}
+            <li class="col-12 text-center mt-2">
+                <a href="{{ page.medium_link }}" class="link-black fs-small">
+                  <svg class="v-align-middle mr-1" preserveAspectRatio="none" viewBox="0 0 195 195" version="1.1" width="16" height="16" aria-hidden xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M0 0h195v195H0z"/><path d="M46.534 65.216a5.074 5.074 0 0 0-1.651-4.28L32.65 46.2V44h37.98l29.355 64.381L125.795 44H162v2.201l-10.458 10.027a3.057 3.057 0 0 0-1.162 2.935v73.674a3.057 3.057 0 0 0 1.162 2.935l10.213 10.027V148h-51.372v-2.201l10.58-10.272c1.04-1.04 1.04-1.345 1.04-2.934V73.042l-29.417 74.713H88.61L54.362 73.042v50.074a6.908 6.908 0 0 0 1.896 5.747l13.76 16.691v2.201H31v-2.2l13.76-16.692a6.663 6.663 0 0 0 1.774-5.747v-57.9z" fill="#FFF"/>
+                  </svg><em>{{ page.title }}</em> is also published on Medium
+                </a>
+            </li>
+          {% endunless %}
+        </ul>
 
-      <footer class="mt-8">
         {% if page.next or page.previous %}
         <nav class="postNav">
           <ol class="list-style-none container flex-nowrap mb-0">

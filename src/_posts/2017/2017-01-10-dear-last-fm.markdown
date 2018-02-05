@@ -3,6 +3,8 @@ layout: "post"
 title: "Dear Last.fm,"
 description: "It’s been awhile. Seven years, actually"
 date: "2017-01-10 15:30"
+featured_img: articles/dear-last-fm/dear-last-fm.png
+image: /assets/articles/dear-last-fm/dear-last-fm.png # for open graph
 ---
 
 It’s been awhile. Seven years, actually. Spotify (the streaming service that I use) is dropping the ball pretty hard when it comes to personal listening stats and communal listening features. So much so, that I believe that Last.fm could fill this void, while connecting users across multiple streaming services together.
