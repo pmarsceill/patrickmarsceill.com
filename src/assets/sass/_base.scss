@@ -131,11 +131,11 @@ dd {
   margin-left: 0; // Undo browser default
 }
 
-ul:not([class]) {
+ul:not([class]),
+ul[class="mb-0"] {
   list-style: none;
 
   li {
-
     &::before {
       position: absolute;
       margin-left: -1.3em;

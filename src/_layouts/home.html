@@ -8,8 +8,8 @@ layout: default
       <div class="anim-fade-in">
         <h1 class="mb-12">
           <span class="d-block">Hello,</span>
-          <span class="display-alpha">I&rsquo;m a digital product designer and builder based out of Philadelphia. My surname is pronounced mahr-<em>seel</em>. Currently, I manage product design at <a href="https://github.com">GitHub</a>
-          </span>.
+          <span class="display-alpha">I&rsquo;m a digital product designer and builder based out of Philadelphia. My surname is pronounced mahr-<em>seel</em>. Currently, I manage product design at <a href="https://github.com">GitHub</a>.
+          </span>
         </h1>
       </div>
       <h2 class="display-delta mb-4 fade-75">Elsewhere</h2>
@@ -25,7 +25,7 @@ layout: default
     </div>
     <div class="homepage-links content-padding py-8 py-md-12">
       <h2 class="mt-4 mt-md-12 display-delta mb-4 fade-75">The latest</h2>
-      <ol class="list-style-none">
+      <ol class="list-style-none pt-1">
         {% for post in site.posts %}
           {% unless post.categories contains "legacy" %}
             {% unless post.categories contains "microblog" %}
@@ -106,7 +106,7 @@ layout: default
         share what I know, or fill a void in my own processes.
       </p>
       <h4 class="text-smallcaps fade-50">Recent personal projects</h4>
-      <ul>
+      <ul class="mb-0">
         <li class="mb-3">
           <a href="//awaremac.com">Aware</a> simple time tracking for MacOS
         </li>
