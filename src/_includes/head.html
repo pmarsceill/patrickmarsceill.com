@@ -27,8 +27,18 @@
     <meta name="robots" content="noindex, nofollow">
   {% endif %}
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/assets/img/global/favicon.ico" type="image/x-icon">
+  <!-- Standard Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- For iPhone: -->
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+  <!-- For iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png">
+  <!-- For Windows 8: -->
+  <meta name="msapplication-TileImage" content="/pinned.png">
+  <meta name="msapplication-TileColor" content="#fff">
 
   <!-- Main Stylesheet -->
   {% if jekyll.environment == 'production' %}
