@@ -107,7 +107,8 @@ const getPlugins = (isProduction) => {
         paths: glob.sync([
           path.resolve(__dirname, ROOT, '**/**/*.html'),
           path.resolve(__dirname, ROOT, '**/**/*.md'),
-        ])
+        ]),
+        minimize: true
       })
     );
   } else {
@@ -168,7 +169,12 @@ const getRules = (isProduction) => {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: 'css-loader!postcss-loader!resolve-url-loader!sass-loader',
+          use: [
+            { loader: 'css-loader' },
+            { loader: 'postcss-loader' },
+            { loader: 'resolve-url-loader' },
+            { loader: 'sass-loader' }
+          ]
         }),
       }
     )
