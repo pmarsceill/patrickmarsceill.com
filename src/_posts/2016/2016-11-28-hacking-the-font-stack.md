@@ -50,16 +50,22 @@ On the Apple side of things, we're using a font intended for a Japanese characte
 -   Android / ChromeOS - **Roboto Serif**
 -   Falls back to - **local serif**
 
-##### macOS / iOS rendering
+<div class="d-flex flex-wrap flex-justify-center mxn-md-11 mxn-lg-12 mt-6 mb-10 py-3 px-3 card">
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### macOS / iOS rendering
 ![Hiragino Mincho Pro (Latin characters) on macOS]({{ site.assets-base-url
-}}images/hacking-font-stack/apple-hiragino-mincho-pro.png){: .img-fluid }
-
-##### Windows rendering
+}}images/articles/hacking-font-stack/apple-hiragino-mincho-pro.png){: .img-fluid }
+  </div>
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### Windows rendering
 ![Cambria]({{ site.assets-base-url
 }}images/articles/hacking-font-stack/windows-cambria.png){: .img-fluid }
-
-##### Android rendering
+  </div>
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### Android rendering
 ![Roboto Serif]({{ site.assets-base-url }}images/articles/hacking-font-stack/android-roboto-serif.png){: .img-fluid }
+  </div>
+</div>
 
 ## 2. The Helvetica / Arial alternative
 
@@ -82,15 +88,21 @@ You might have seen this type of stack used on Medium, GitHub, and Facebook rece
 
 If you want to stay strictly with neo-grotesque typefaces, you could pull out `Segoe UI` font to allow Windows to render the fall back (Arial). Segoe UI is one of the only default fonts on Windows that has a light weight option, which makes it useful in many display sized contexts.
 
-##### macOS / iOS rendering
-![San Francisco on macOS / iOS]({{ site.assets-base-url }}images/hacking-font-stack/apple-san-francisco.png){: .img-fluid }
 
-##### Windows rendering
+<div class="d-flex flex-wrap flex-justify-center mxn-md-11 mxn-lg-12 mt-6 mb-10 py-3 px-3 card">
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### macOS / iOS rendering
+![San Francisco on macOS / iOS]({{ site.assets-base-url }}images/articles/hacking-font-stack/apple-san-francisco.png){: .img-fluid }
+  </div>
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### Windows rendering
 ![Segoe UI on Windows]({{ site.assets-base-url }}images/articles/hacking-font-stack/windows-segoe-ui.png){: .img-fluid }
-
-
-##### Android / ChromeOS rendering
-![Roboto on Android / ChromeOS]({{ site.assets-base-url }}articles/hacking-font-stack/android-roboto.png){: .img-fluid }
+  </div>
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### Android rendering
+![Roboto on Android / ChromeOS]({{ site.assets-base-url }}images/articles/hacking-font-stack/android-roboto.png){: .img-fluid }
+  </div>
+</div>
 
 ## 3. The humanist sans
 
@@ -104,19 +116,26 @@ body {
 }
 ```
 
--   macOS / OS X / iOS - **Gill Sans**  
+-   macOS / OS X / iOS - **Gill Sans**
 -   Windows 7 and up - **Segoe UI**
 -   Android / ChromeOS - **Roboto**
 -   Falls back to - **Lucida Grande, Calibri, local sans serif**
 
-##### macOS / iOS rendering
+
+<div class="d-flex flex-wrap flex-justify-center mxn-md-11 mxn-lg-12 mt-6 mb-10 py-3 px-3 card">
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### macOS / iOS rendering
 ![Gill Sans on macOS / iOS]({{ site.assets-base-url }}images/articles/hacking-font-stack/apple-gill-sans.png){: .img-fluid }
-
-##### Windows rendering
+  </div>
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### Windows rendering
 ![Segoe UI on Windows]({{ site.assets-base-url }}images/articles/hacking-font-stack/windows-segoe-ui.png){: .img-fluid }
-
-##### Android / ChromeOS rendering
+  </div>
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### Android rendering
 ![Roboto on Android / ChromeOS]({{ site.assets-base-url }}images/articles/hacking-font-stack/android-roboto.png){: .img-fluid }
+  </div>
+</div>
 
 ## 4. Classical serif
 
@@ -141,18 +160,21 @@ Here we are only using `Palatino Linotype` for display sized headings on Windows
 -   Android / ChromeOS - **Roboto Serif**
 -   Falls back to - **local serif**
 
-##### macOS / iOS rendering
+<div class="d-flex flex-wrap flex-justify-center mxn-md-11 mxn-lg-12 mt-6 mb-10 py-3 px-3 card">
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### macOS / iOS rendering
 ![Athelas on macOS / iOS]({{ site.assets-base-url }}images/articles/hacking-font-stack/apple-athelas.png){: .img-fluid }
-
-##### Windows rendering
+  </div>
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### Windows rendering
 ![Palentino Linotype and Times New Roman on Windows]({{ site.assets-base-url
 }}images/articles/hacking-font-stack/windows-palentino-linotype-times-new-roman.png){: .img-fluid }
-
-
-##### Android / ChromeOS rendering
+  </div>
+  <div markdown="1" class="px-3 col-md-4 col-lg-4">
+#### Android rendering
 ![Roboto Serif on Android / ChromeOS]({{ site.assets-base-url }}images/articles/hacking-font-stack/android-roboto-serif.png){: .img-fluid }
-
----
+  </div>
+</div>
 
 ### Suggestions or additions?
 

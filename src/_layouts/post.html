@@ -4,7 +4,7 @@ layout: default
 
 <div class="container container-xl">
   {% if page.featured_img != nil %}
-  <div class="postImage pl-md-8 pl-xl-12 ml-lg-4 mt-12 mt-xl-0" aria-role="banner">
+  <div class="postImage px-md-8 px-xl-12 mx-lg-4 mt-12 mt-xl-0" aria-role="banner">
     <div class="postImage-content" style="background-image:url({{ site.assets-base-url }}/images/{{ page.featured_img }})">
     </div>
   </div>
@@ -16,7 +16,7 @@ layout: default
         <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
       </div>
 
-      <header class="postContent-header col-lg-8 px-md-8 px-lg-0 mb-lg-12">
+      <header class="postContent-header col-lg-10 px-md-8 px-lg-0 mb-lg-12">
         <h1 class="text-alpha mt-2">{{ page.title }}</h1>
         <div class="display-beta mb-8">{{ page.excerpt }}</div>
         {% capture excerpt %}{{ page.excerpt }}{% endcapture %}

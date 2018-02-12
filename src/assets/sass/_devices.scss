@@ -43,6 +43,27 @@
   }
 }
 
+.device--phone--landscape {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq(md) {
+    height: 270px;
+    width: 540px;
+    padding: 15px 50px;
+    border-radius: 30px;
+  }
+
+  @include mq(lg) {
+    height: auto;
+    max-height: 360px;
+    width: 640px;
+    padding: 20px 60px;
+    border-radius: 35px;
+  }
+}
+
 .device--tablet {
   @include mq(md) {
     width: 600px;

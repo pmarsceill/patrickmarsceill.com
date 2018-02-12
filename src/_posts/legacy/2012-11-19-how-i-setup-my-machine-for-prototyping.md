@@ -118,18 +118,16 @@ DEPRECATION WARNING: ActiveSupport::Memoizable is deprecated and will be removed
 Voila, StrapOn has started a local server on your machine that you can use for development by pointing your browser to: `http://localhost:4000`
 
 
-<figure>
-	<img src="{{ site.assets-base-url }}images/articles/prototype-setup/strapon-browser.png" class="img-fluid" alt="" aria-labelledby="caption-1">
-	<figcaption id="caption-1">
+<figure class="mb-6">
+  <img src="{{ site.assets-base-url }}images/articles/prototype-setup/strapon-browser.png" class="img-fluid card mb-4" alt="" aria-labelledby="caption-1">
+  <figcaption id="caption-1">
     StrapOn running on a local machine
-	</figcaption>
+  </figcaption>
 </figure>
 
 This also includes starts an auto-compiler for SASS, and all the built-in templating engine included in the Serve gem. Both of which will be explained in my next post about developing with StrapOn.
 
-<!--aside-one-->
-
-###Downloads
+### Downloads
 * [Command Line Tools (Included in Xcode)](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
 * [Ruby Version Manager (RVM)](https://rvm.io/)
 * [Git](http://git-scm.com/download/mac)

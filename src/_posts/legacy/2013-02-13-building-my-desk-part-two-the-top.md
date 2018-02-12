@@ -8,7 +8,7 @@ disqus_comments: true
 
 The conclusion to my desk building saga ended with a trip to Ikea, and the sanding, staining, and finishing of the tabletop.
 
-<img src="{{ site.assets-base-url }}images/articles/desk/finish_process.jpg" alt="Sanding and staining the desk top" class="img-fluid">
+<img src="{{ site.assets-base-url }}images/articles/desk/finish_process.jpg" alt="Sanding and staining the desk top" class="img-fluid card mb-6">
 
 I would have never even considered Ikea as the place to go when searching for the top of my desk, had it not been for [Jessica's blog post](http://spacekat.github.com/blog/2012/07/31/steel-pipe-standing-desk/).  The [Ikea Numerär](http://www.ikea.com/us/en/catalog/products/40057396/) counter top in oak is actually the perfect size for this project and looks great after you stain and finish it.
 
@@ -24,8 +24,8 @@ I got the finished countertop onto the frame I built, centered it, marked off wh
 
 I've been using it now for about a month and it is by far the best desk I've ever owned.  I added a keyboard tray too keep the desktop clutter free, and its perfect for my setup.
 
-<figure>
-    <img src="{{ site.assets-base-url }}images/articles/desk/finished_desk.jpg" class="img-fluid" aria-labelledby="caption-1" alt="">
+<figure class="mb-6">
+    <img src="{{ site.assets-base-url }}images/articles/desk/finished_desk.jpg" class="img-fluid card mb-4" aria-labelledby="caption-1" alt="">
     <figcaption id="caption-1">
         A rather crappy photo of the completed desk.
     </figcaption>
