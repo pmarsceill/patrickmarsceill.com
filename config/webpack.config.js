@@ -104,7 +104,7 @@ const getPlugins = (isProduction) => {
       }),
       new PurifyCSSPlugin({
         // Give paths to parse for rules. These should be absolute!
-        paths: glob.sync(path.resolve(__dirname, ROOT, '**/*.html')),
+        paths: glob.sync(path.resolve(__dirname, ROOT, '**/**/*.html')),
       })
     );
   } else {
