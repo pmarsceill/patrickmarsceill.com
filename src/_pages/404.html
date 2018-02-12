@@ -9,8 +9,28 @@ title: 404! Error Page
 description:  Page not found.
 ---
 
-<div class="wrapper" style="text-align:center">
-  <br>
-  <h1>Sorry! Page not found.</h1><br>
-  <a class="link" href="/">Go Back Home</a>
+<div class="container container-xl page-padding content-padding">
+  <div>
+    <h1><span class="d-block text-alpha">Yo,</span><span class="display-alpha">that page isn&lsquo;t here.</span></h1>
+    <p class="text-beta mb-12">Check out <a href="{{ site.baseurl }}{% link _pages/journal.html %}">this stuff I wrote</a>, or <a href="{{ site.baseurl }}{% link _pages/index.html %}">go home</a> for more information.</p>
+  </div>
+  <div class="col-12">
+    <h2 class="fs-epsion text-smallcaps">Latest posts</h2>
+  </div>
+  <div class="container mxn-4 mxn-lg-6">
+    {% for post in site.posts %}
+    {% unless post.categories contains "legacy" %}
+    {% unless post.categories contains "microblog" %}
+    <article class="postPreview clearfix col-md-4 mb-10 px-4 px-lg-6">
+      {% if post.featured_img %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class=""><img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="img-fluid mb-3"></a>
+      {% endif %}
+      <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
+      <h3 class="text-gamma d-inline position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      <p class="text-gamma text-grey d-inline pl-2 position-relative">{{ post.description }}</p>
+    </article>
+    {% endunless %}
+    {% endunless %}
+    {% endfor %}
+  </div>
 </div>

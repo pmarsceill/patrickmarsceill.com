@@ -9,29 +9,24 @@ title: Journal
 description:  Journal description
 ---
 
-<div class="bg- position-absolute col-12 d-flex">
-  <div class="bg-grey border-bottom py-9">
-  </div>
-</div>
-
 <div class="container container-xl page-padding mb-12 px-4 px-md-6 px-lg-8 px-xl-12">
-    <h1 class="text-alpha mb-8 px-4">The latest</h1>
-    <div class="container px-4 mxn-4 mxn-lg-6">
-      {% for post in site.posts %}
-        {% unless post.categories contains "legacy" %}
-          {% unless post.categories contains "microblog" %}
-          <article class="postPreview clearfix col-md-6 mb-10 px-4 px-lg-6">
-            {% if post.featured_img %}
-            <a href="{{ post.url | prepend: site.baseurl }}" class=""><img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="img-fluid mb-3"></a>
-            {% endif %}
-            <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
-            <h3 class="text-beta d-inline position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-            <p class="text-beta text-grey d-inline pl-2 position-relative">{{ post.description }}</p>
-          </article>
-          {% endunless %}
+  <h1 class="text-alpha mb-8 px-4">The latest</h1>
+  <div class="container px-4 mxn-4 mxn-lg-6">
+    {% for post in site.posts %}
+      {% unless post.categories contains "legacy" %}
+        {% unless post.categories contains "microblog" %}
+        <article class="postPreview clearfix col-md-6 mb-10 px-4 px-lg-6">
+          {% if post.featured_img %}
+          <a href="{{ post.url | prepend: site.baseurl }}" class=""><img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="img-fluid mb-3"></a>
+          {% endif %}
+          <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
+          <h3 class="text-beta d-inline position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+          <p class="text-beta text-grey d-inline pl-2 position-relative">{{ post.description }}</p>
+        </article>
         {% endunless %}
-      {% endfor %}
-    </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
 </div>
 <div class="bg-black py-10">
   <div class="container container-xl">
