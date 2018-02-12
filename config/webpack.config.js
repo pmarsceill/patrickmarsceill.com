@@ -6,7 +6,7 @@
 
 const webpack = require('webpack');
 const path = require('path');
-const glob = require('glob');
+const glob = require('glob-all');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -104,7 +104,10 @@ const getPlugins = (isProduction) => {
       }),
       new PurifyCSSPlugin({
         // Give paths to parse for rules. These should be absolute!
-        paths: glob.sync(path.resolve(__dirname, ROOT, '**/**/*.html')),
+        paths: glob.sync([
+          path.resolve(__dirname, ROOT, '**/**/*.html'),
+          path.resolve(__dirname, ROOT, '**/**/*.md'),
+        ])
       })
     );
   } else {

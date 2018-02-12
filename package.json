@@ -85,6 +85,7 @@
     "webpack-dev-server": "^2.2.1"
   },
   "dependencies": {
+    "glob-all": "^3.1.0",
     "in-view": "^0.6.1",
     "lory.js": "^2.3.3",
     "normalize.css": "^7.0.0",
