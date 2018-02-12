@@ -1,1 +1,0 @@
-YEAR-MONTH-DAY-title.MARKUP must be used for _posts titles
