@@ -101,10 +101,14 @@
     margin-right: 0;
     margin-bottom: -300px;
     margin-left: 0;
+    left: 0;
+    top: 20px;
   }
 
   @include mq(lg) {
     margin-bottom: 0;
+    left: auto;
+    top: auto;
   }
 }
 
@@ -127,7 +131,7 @@
 
   @include mq(md) {
     top: -250px;
-    right: -10%;
+    right: 0;
     left: auto;
 
     .device-screen {
