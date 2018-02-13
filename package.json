@@ -1,8 +1,7 @@
 {
-  "name": "jekyll-static-generator",
-  "version": "2.0.0",
-  "description": "Static site generator stack.",
-  "main": "index.js",
+  "name": "patrickmarsceill-dot-com",
+  "version": "4.0.0",
+  "description": "Source for patrickmarsceill.com",
   "scripts": {
     "test": "stylelint src/assets/**/*.scss -c .stylelintrc.json -s scss",
     "local-test": "npm run build && npm run test && bundle exec htmlproofer ./dist --check-opengraph true --check-html true --http-status-ignore '408,301,0,530' --url-ignore '/patrickmarsceill.com/' --empty-alt-ignore true",
@@ -19,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carsonjones/jekyll-static-generator.git"
+    "url": "git+https://github.com/pmarsceill/patrickmarsceill.com"
   },
   "keywords": [
     "jekyll",
@@ -32,9 +31,9 @@
     "webpack"
   ],
   "author": {
-    "name": "Carson Jones",
-    "email": "carsoncjones@gmail.com",
-    "url": "www.carsonjon.es"
+    "name": "Patrick Marsceill",
+    "email": "patrick.marsceill@gmail.com",
+    "url": "patrickmarsceill.com"
   },
   "license": "ISC",
   "engines": {
