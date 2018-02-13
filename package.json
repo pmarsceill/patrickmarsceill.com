@@ -4,7 +4,7 @@
   "description": "Static site generator stack.",
   "main": "index.js",
   "scripts": {
-    "test": "",
+    "test": "stylelint src/assets/**/*.scss -c .stylelintrc.json -s scss",
     "start": "npm run dev",
     "clean": "rm -rf dist",
     "dev": "npm run clean && concurrently 'npm run webpack:dev' 'npm run jekyll:dev'",

@@ -1,16 +1,16 @@
 .device {
   position: relative;
-  background-image: $white-material;
   display: flex;
-  margin-bottom: 60px;
   padding: 0;
+  margin-bottom: 60px;
+  background-image: $white-material;
   box-shadow: 0 30px 75px -12px $box-shadow-grey, 0 20px 10px -20px rgba(0, 0, 0, 0.1);
 
   .device-screen {
     width: 100%;
-    border-radius: 3px;
     overflow: hidden;
     background-color: $black;
+    border-radius: 3px;
 
     @include mq(md) {
       border: 3px solid #000;
@@ -49,16 +49,16 @@
   margin-left: auto;
 
   @include mq(md) {
-    height: 270px;
     width: 540px;
+    height: 270px;
     padding: 15px 50px;
     border-radius: 30px;
   }
 
   @include mq(lg) {
+    width: 640px;
     height: auto;
     max-height: 360px;
-    width: 640px;
     padding: 20px 60px;
     border-radius: 35px;
   }
@@ -81,26 +81,21 @@
 }
 
 .slider_frame {
-    position: relative;
-    font-size: 0;
-    line-height: 0;
-    overflow: hidden;
-    white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  white-space: nowrap;
 }
 
 .slider_slides {
-    display: inline-block;
-    margin-bottom: 0;
+  display: inline-block;
+  margin-bottom: 0;
 }
 
 .slider_slide {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 0;
-
-    /**
-     * (optional) if the content inside the slide element has a defined size.
-     */
-    // width: 880px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
 }
 
