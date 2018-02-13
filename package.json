@@ -4,7 +4,7 @@
   "description": "Static site generator stack.",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'test'",
+    "test": "",
     "start": "npm run dev",
     "clean": "rm -rf dist",
     "dev": "npm run clean && concurrently 'npm run webpack:dev' 'npm run jekyll:dev'",
