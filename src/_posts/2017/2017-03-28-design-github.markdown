@@ -58,4 +58,4 @@ If the above interests you, but you aren't sure if you would be a good fit, feel
 
 Thanks to Sophie Shepherd for inspiring me [with her post][5443eed0] and for her help editing this one.
 
-  [5443eed0]: http://sophieshepherd.com/2017/03/17/hiring-a-web-designer.html "Calling All Web Designers"
+  [5443eed0]: http://sophieshepherd.com/2017/12/06/hiring-a-web-designer.html "Calling All Web Designers"
