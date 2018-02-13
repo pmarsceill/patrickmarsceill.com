@@ -20,7 +20,7 @@ layout: default
         <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.instagram_url }}">Instagram</a></span><span class="fade-50 px-3 mln-1">/</span></li>
         <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.dribbble_url }}">Dribbble</a></span><span class="fade-50 px-3 mln-1">/</span></li>
         <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.keybase_url }}">Keybase</a></span><span class="fade-50 px-3 mln-1">/</span></li>
-        <li class="d-inline-block py-1 pl-1 pr-2 mln-2 text-no-wrap"><span class="text-bold"><a href="{{ site.email }}">Email me</a></span></li>
+        <li class="d-inline-block py-1 pl-1 pr-2 mln-2 text-no-wrap"><span class="text-bold"><a href="mailto:{{ site.email }}">Email me</a></span></li>
       </ul>
     </div>
     <div class="homepage-links content-padding py-8 py-md-12">
@@ -28,7 +28,7 @@ layout: default
       <ol class="list-style-none pt-1">
         {% for post in site.posts %}
           {% unless post.categories contains "legacy" %}
-            {% unless post.categories contains "microblog" %}
+            8% unless post.categories contains "microblog" %}
               {% if forloop.index <= 6 %}
                 <li class="mb-7">
                   <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
