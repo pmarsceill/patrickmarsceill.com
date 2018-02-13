@@ -22,6 +22,11 @@ keybase_url: 'https://keybase.io/pmarsceill'
 description: >
   Patrick Marsceill is a multi-disciplinary designer managing product design at GitHub.
 
+## Analytics
+# used to track visitor usage
+google_site_tag: true # google's modern tracker code
+google_analytics: UA-2709176-3 # UA—XXXXXXXX-X
+
 ## Core Site Settings
 # jekyll configuration
 url: 'https://patrickmarsceill.com'
