@@ -32,16 +32,17 @@
   }
 }
 
+.homePage-links {
+
+  @include mq(md) {
+    max-width: 350px;
+  }
+}
+
 .homePage-about {
   @include mq(md) {
     min-width: 470px;
     max-width: 830px;
-  }
-}
-
-.homePage-links {
-  @include mq(md) {
-    max-width: 350px;
   }
 }
 
@@ -68,6 +69,7 @@
   }
 }
 
+// stylelint-disable selector-no-qualifying-type, selector-max-specificity, selector-max-type
 .homePage-links,
 .homePage-worklinks {
   color: $white;
@@ -93,25 +95,27 @@
     max-width: 540px;
   }
 }
+// stylelint-enable selector-no-qualifying-type, selector-max-specificity, selector-max-type
 
 .homePage-device--phone {
   margin-bottom: $sp-12;
 
   @include mq(md) {
+    top: 20px;
+    left: 0;
     margin-right: 0;
     margin-bottom: -300px;
     margin-left: 0;
-    left: 0;
-    top: 20px;
   }
 
   @include mq(lg) {
-    margin-bottom: 0;
-    left: auto;
     top: auto;
+    left: auto;
+    margin-bottom: 0;
   }
 }
 
+// stylelint-disable plugin/no-unsupported-browser-features
 .homePage-device--tablet {
   top: 0;
   right: -$sp-6;
@@ -125,8 +129,8 @@
   .device-screen-img {
     width: auto;
     height: 100%;
-    opacity: 0.4;
     filter: grayscale(100%);
+    opacity: 0.4;
   }
 
   @include mq(md) {
@@ -142,8 +146,8 @@
     .device-screen-img {
       width: 100%;
       height: auto;
-      opacity: 0.65;
       filter: none;
+      opacity: 0.65;
     }
   }
 
@@ -157,3 +161,4 @@
     left: -40%;
   }
 }
+// stylelint-enable plugin/no-unsupported-browser-features

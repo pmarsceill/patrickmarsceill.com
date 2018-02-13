@@ -1,4 +1,4 @@
-// stylelint-disable primer/selector-no-utility, selector-no-qualifying-type, selector-no-type
+// stylelint-disable primer/selector-no-utility, selector-no-qualifying-type, selector-no-type, selector-max-type
 
 //
 // Base styles and additional resets
@@ -15,6 +15,7 @@
 // Credit: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 
 html {
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -45,12 +46,8 @@ html {
 }
 
 //
-// Reset HTML, body, and more
+// Reset body, and more
 //
-
-html {
-  height: 100%;
-}
 
 body {
   height: 100%;
@@ -75,9 +72,9 @@ main {
 }
 
 ::selection {
- color: $white;
- text-shadow:none;
- background: $purple;
+  color: $white;
+  text-shadow: none;
+  background: $purple;
 }
 
 h1,

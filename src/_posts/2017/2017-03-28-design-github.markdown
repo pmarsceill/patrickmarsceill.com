@@ -48,7 +48,7 @@ Additionally, you'll provide input and feedback that helps influence the directi
 -   You've never held a professional design position before
 -   You don't have a desire to expand your front-end development skills
 -   You have serious front-end development chops, but aren't excited by an iterative design process grounded in research
--   You're really into designing editorial content, digital marketing experiences, conference websites, etc... ([we're hiring those types of web designers,  too!](http://sophieshepherd.com/2017/03/17/hiring-a-web-designer.html))
+-   You're really into designing editorial content, digital marketing experiences, conference websites, etc... ([we're hiring those types of web designers,  too!](http://sophieshepherd.com/2017/12/06/hiring-a-web-designer.html))
 
 ## Applying
 
@@ -58,4 +58,4 @@ If the above interests you, but you aren't sure if you would be a good fit, feel
 
 Thanks to Sophie Shepherd for inspiring me [with her post][5443eed0] and for her help editing this one.
 
-  [5443eed0]: http://sophieshepherd.com/2017/03/17/hiring-a-web-designer.html "Calling All Web Designers"
+  [5443eed0]: http://sophieshepherd.com/2017/12/06/hiring-a-web-designer.html "Calling All Web Designers"

@@ -1,0 +1,8 @@
+machine:
+  node:
+    version: 6.9.5
+
+test:
+  post:
+    - npm run build
+    - bundle exec htmlproofer ./dist --check-opengraph true --check-html true --http-status-ignore '408,301,0,530' --url-ignore '/patrickmarsceill.com/' --empty-alt-ignore true

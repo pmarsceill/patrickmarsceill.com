@@ -35,7 +35,7 @@ compress_html:
   ignore:
     envs: ['dev']
 # modules
-include: ['_pages', '_posts', '_data']
+include: ['_pages', '_data']
 exclude: ['assets', 'js', 'sass', 'node_modules', Gemfile, Gemfile.lock, notes.txt, package.json, README.md, 'bower.json']
 keep_files:
   - assets

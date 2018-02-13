@@ -1,15 +1,6 @@
 .siteHeader-mark-svg {
-  .text, .pm {
+  .text,
+  .pm {
     fill: $black;
   }
 }
-
-.siteNav {
-  position: relative;
-  float: right;
-  align-self: center;
-  z-index: 101;
-
-  @include anim-fade-in;
-}
-

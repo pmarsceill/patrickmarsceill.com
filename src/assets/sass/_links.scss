@@ -1,3 +1,8 @@
+//
+// Default links
+//
+// stylelint-disable selector-no-qualifying-type, selector-max-type
+
 a[href]:not([class]) {
   padding-right: 4px;
   padding-left: 4px;
