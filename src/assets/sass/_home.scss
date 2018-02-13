@@ -32,6 +32,13 @@
   }
 }
 
+.homePage-links {
+
+  @include mq(md) {
+    max-width: 350px;
+  }
+}
+
 .homePage-about {
   @include mq(md) {
     min-width: 470px;
@@ -39,11 +46,6 @@
   }
 }
 
-.homePage-links {
-  @include mq(md) {
-    max-width: 350px;
-  }
-}
 
 .homePage-worklinks {
   background-color: $black !important;

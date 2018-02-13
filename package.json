@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "stylelint src/assets/**/*.scss -c .stylelintrc.json -s scss",
+    "local-test": "npm run build && npm run test && bundle exec htmlproofer ./dist --check-opengraph true --check-html true --http-status-ignore '408,301,0' --url-ignore '/patrickmarsceill.com/' --empty-alt-ignore true",
     "start": "npm run dev",
     "clean": "rm -rf dist",
     "dev": "npm run clean && concurrently 'npm run webpack:dev' 'npm run jekyll:dev'",
