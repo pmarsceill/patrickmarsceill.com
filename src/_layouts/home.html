@@ -28,7 +28,7 @@ layout: default
       <ol class="list-style-none pt-1">
         {% for post in site.posts %}
           {% unless post.categories contains "legacy" %}
-            8% unless post.categories contains "microblog" %}
+            {% unless post.categories contains "microblog" %}
               {% if forloop.index <= 6 %}
                 <li class="mb-7">
                   <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
