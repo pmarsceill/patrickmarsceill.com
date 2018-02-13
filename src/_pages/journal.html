@@ -9,8 +9,17 @@ title: Journal
 description:  Journal description
 ---
 
+<div class="position-absolute col-12 py-8 py-md-9 bg-blue">
+</div>
+
 <div class="container container-xl page-padding mb-12 px-4 px-md-6 px-lg-8 px-xl-12">
-  <h1 class="text-alpha mb-8 px-4">The latest</h1>
+  <div class="d-flex flex-justify-between col-12 flex-items-baseline px-4 mb-8">
+    <h1 class="text-alpha">The latest</h1>
+    <span class="fs-small text-grey">
+      Subscribe:
+      <a href="{{ site.baseurl }}{% link feed.rss %}">RSS</a>
+    </span>
+  </div>
   <div class="container px-4 mxn-4 mxn-lg-6">
     {% for post in site.posts %}
       {% unless post.categories contains "legacy" %}
