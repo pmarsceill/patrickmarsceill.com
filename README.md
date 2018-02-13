@@ -32,3 +32,8 @@ Building for production
 ```bash
 npm run build
 ```
+
+Run CI tests locally
+```bash
+npm run local-test
+```
