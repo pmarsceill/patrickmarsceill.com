@@ -21,7 +21,7 @@ About a month ago, I stumbled upon <a href="http://spacekat.github.com">Jessica'
 
 Unlike Jessica's desk, I didn't want mine to be that of the standing variety.  I did some research and found <a href="http://www.apartmenttherapy.com/look-desks-and-68448">a few photos of other sitting desks that people had made out of plumbing pipe</a>. Based on these photos and Jessica's design, I sketched out some plans borrowing ideas from both.
 
-Next, I took an inventory of everything I would need to execute this plan and headed off to <a href="http://www.lowes.com">Lowe's</a>. As Jessica noted, Lowe's will cut and thread the pipes for you right in the aisle. They also have pre-cut and pre-threaded pipes from about 1 inch through 20 inches in length.
+Next, I took an inventory of everything I would need to execute this plan and headed off to <a href="https://www.lowes.com">Lowe's</a>. As Jessica noted, Lowe's will cut and thread the pipes for you right in the aisle. They also have pre-cut and pre-threaded pipes from about 1 inch through 20 inches in length.
 
 ### Parts required to build the frame
 
