@@ -14,7 +14,20 @@
 // stylelint-enable plugin/no-unsupported-browser-features
 
 // stylelint-disable selector-max-type
+.postContent-header {
+  max-width: 50em;
+
+  @include mq(lg) {
+    max-width: none;
+  }
+}
 .postContent-body {
+  max-width: 50em;
+
+  @include mq(lg) {
+    max-width: none;
+  }
+
   line-height: 1.6;
 
   h1,
