@@ -26,7 +26,7 @@ layout: default
     <div class="homePage-links content-padding py-8 py-md-12">
       <h2 class="mt-4 mt-md-12 display-delta mb-4 fade-75">The latest</h2>
       <ol class="list-style-none pt-1">
-        {% for post in site.posts %}
+        {% for post in site.categories.journal %}
           {% unless post.categories contains "legacy" %}
             {% unless post.categories contains "microblog" %}
               {% if forloop.index <= 6 %}
