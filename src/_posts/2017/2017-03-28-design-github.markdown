@@ -2,6 +2,7 @@
 layout: "post"
 title: "Design GitHub, the product"
 date: "2017-03-28 11:34"
+categories: journal
 featured_img: articles/design-github/design-github.png
 image: /assets/images/articles/design-github/design-github.png
 description: "Shape the future of software development"
