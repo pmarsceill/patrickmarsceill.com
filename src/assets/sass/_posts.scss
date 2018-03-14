@@ -23,7 +23,7 @@
 }
 
 .postContent-body {
-  max-width: 50em;
+  max-width: 43em;
 
   @include mq(lg) {
     max-width: none;
@@ -55,10 +55,34 @@
     // Todo add styles
   }
 
+  blockquote {
+    padding-left: $sp-3;
+    margin-left: -$sp-3;
+    color: $grey-dk;
+    border-left: 3px solid $border-color;
+  }
+
+  .pullquote {
+    @include display-gamma;
+    position: relative;
+    padding-left: 0;
+    margin-left: 0;
+    border: 0;
+
+    &::before {
+      position: absolute;
+      top: -$sp-2;
+      left: -$sp-4;
+      font-size: 40px;
+      content: "“";
+    }
+  }
+
   figcaption {
     font-size: $text-small-size !important;
   }
 }
+
 // stylelint-enable selector-max-type
 
 .postNav-item {
