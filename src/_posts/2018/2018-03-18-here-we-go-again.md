@@ -23,4 +23,4 @@ On the surface, Micro.blog looks a lot like early-Twitter. But thats really wher
 
 — [Micro.blog FAQ](http://help.micro.blog/faq/)
 
-Micro.blog also offers [a native iOS app](https://itunes.apple.com/us/app/micro-blog/id1253201335?ls=1&mt=8) to make the browsing and posting a bit nicer, though unless you use their hosted option, your site must support the [Micropub](micropub.net) API standard to create posts through the third-party services.
+Micro.blog also offers [a native iOS app](https://itunes.apple.com/us/app/micro-blog/id1253201335?ls=1&mt=8) to make the browsing and posting a bit nicer, though unless you use their hosted option, your site must support the [Micropub](http://micropub.net) API standard to create posts through the third-party services.
