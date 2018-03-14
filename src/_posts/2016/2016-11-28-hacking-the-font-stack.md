@@ -2,6 +2,7 @@
 layout: post
 title:  "Hacking the font Stack"
 description: "Explorations in a modern native fonts on the web"
+categories: journal
 date: 2016-11-28 17:18:00
 featured_img: articles/hacking-font-stack/hacking-font-stack.png
 image: /assets/images/articles/hacking-font-stack/hacking-font-stack.png

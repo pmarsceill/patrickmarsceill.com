@@ -30,7 +30,7 @@
 }
 
 @mixin display-gamma {
-  font-size: $text-gamma-size * 0.75 !important;
+  font-size: $text-gamma-size * 0.9 !important;
   @include display-setup;
 
   @include mq(lg) {

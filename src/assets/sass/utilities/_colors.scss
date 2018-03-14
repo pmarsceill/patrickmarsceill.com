@@ -53,3 +53,6 @@
 .fade-75 { opacity: 0.75 !important; }
 .fade-50 { opacity: 0.5 !important; }
 .fade-25 { opacity: 0.25 !important; }
+
+.border-top    { border-top: $border $border-color !important; }
+.border-bottom { border-bottom: $border $border-color !important; }

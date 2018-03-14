@@ -13,27 +13,30 @@ description:  Journal description
 </div>
 
 <div class="container container-xl page-padding mb-12 px-4 px-md-6 px-lg-8 px-xl-12">
-  <div class="d-flex flex-justify-between col-12 flex-items-baseline px-4 mb-8">
-    <h1 class="text-alpha">The latest</h1>
+  <div class="d-flex flex-justify-between col-12 flex-items-baseline px-4 mb-6">
+    <h1 class="text-alpha">Journal</h1>
     <span class="fs-small text-grey">
       Subscribe:
       <a href="{{ site.baseurl }}{% link feed.rss %}">RSS</a>
     </span>
   </div>
   <div class="container px-4 mxn-4 mxn-lg-6">
-    {% for post in site.posts %}
-      {% unless post.categories contains "legacy" %}
-        {% unless post.categories contains "microblog" %}
-        <article class="postPreview clearfix col-md-6 mb-10 px-4 px-lg-6">
-          {% if post.featured_img %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class=""><img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="img-fluid mb-3"></a>
-          {% endif %}
+    {% assign posts = site.categories.journal %}
+    {% for post in posts %}
+    <article class="postPreview col-12 {% if forloop.first %}border-top {% endif %}{% unless forloop.last %}border-bottom {% endunless %}clearfix py-9 mx-4 mx-lg-6">
+        {% if post.featured_img %}
+        <div class="col-md-5 float-right pl-md-6 mb-4 mb-md-0">
+          <a href="{{ post.url | prepend: site.baseurl }}" class>
+            <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="img-fluid">
+          </a>
+        </div>
+        {% endif %}
+        <div class="{% if post.featured_img %}col-md-7 {% endif %}pr-md-6">
           <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
           <h3 class="text-beta d-inline position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
           <p class="text-beta text-grey d-inline pl-2 position-relative">{{ post.description }}</p>
-        </article>
-        {% endunless %}
-      {% endunless %}
+        </div>
+      </article>
     {% endfor %}
   </div>
 </div>
@@ -42,13 +45,13 @@ description:  Journal description
     <div class="content-padding text-right">
       <h2 class="text-beta text-white">Older posts</h2>
       {% for post in site.posts %}
-      {% if post.categories contains "legacy" %}
-      <article class="py-3">
-        <time class="text-smallcaps text-white d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
-        <h3 class="text-gamma d-inline"><a href="{{ post.url | prepend: site.baseurl }}" class="text-cyan">{{ post.title }}</a></h3>
-        <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
-      </article>
-      {% endif %}
+        {% if post.categories contains "legacy" %}
+        <article class="py-3">
+          <time class="text-smallcaps text-white d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
+          <h3 class="text-gamma d-inline"><a href="{{ post.url | prepend: site.baseurl }}" class="text-cyan">{{ post.title }}</a></h3>
+          <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
+        </article>
+        {% endif %}
       {% endfor %}
     </div>
   </div>

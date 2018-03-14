@@ -27,7 +27,7 @@ layout: default
           <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy d-block mb-1">Journal</a>
           <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
         </div>
-        <div class="postContent-body col-lg-8 pr-md-8 px-lg-9">
+        <div class="postContent-body col-lg-8 px-lg-9 mx-auto mx-lg-0">
           {{ page.content | remove: excerpt }}
         </div>
       </div>
@@ -57,18 +57,17 @@ layout: default
                 A 195, 195 0 0 1 331, 600
                 A 142, 142 0 0 0 428, 570
                 A  70,  70 0 0 1 370, 523
-                      A  70,  70 0 0 0 401, 521
-                      A  70,  70 0 0 1 344, 455
-                      A  70,  70 0 0 0 372, 460
-                      A  70,  70 0 0 1 354, 370
-                      A 195, 195 0 0 0 495, 442
-                      A  67,  67 0 0 1 611, 380
-                      A 117, 117 0 0 0 654, 363
-                      A  65,  65 0 0 1 623, 401
-                      A 117, 117 0 0 0 662, 390
-                      A  65,  65 0 0 1 630, 425
-                      Z"
-                      style="fill: currentColor"></path>
+                A  70,  70 0 0 0 401, 521
+                A  70,  70 0 0 1 344, 455
+                A  70,  70 0 0 0 372, 460
+                A  70,  70 0 0 1 354, 370
+                A 195, 195 0 0 0 495, 442
+                A  67,  67 0 0 1 611, 380
+                A 117, 117 0 0 0 654, 363
+                A  65,  65 0 0 1 623, 401
+                A 117, 117 0 0 0 662, 390
+                A  65,  65 0 0 1 630, 425
+                Z" style="fill: currentColor"></path>
               </svg>
               Respond on Twitter
             </a>
@@ -92,34 +91,46 @@ layout: default
           {% endunless %}
         </ul>
 
-        {% if page.next or page.previous %}
+        {% assign posts = site.categories.journal %}
+
+        {% for post in posts %}
+          {% if post.url == page.url %}
+            {% assign post_index0 = forloop.index0 %}
+            {% assign post_index1 = forloop.index %}
+          {% endif %}
+        {% endfor %}
+        {% for post in posts %}
+          {% if post_index0 == forloop.index %}
+            {% assign prev_post = post %}
+          {% endif %}
+          {% if post_index1 == forloop.index0 %}
+            {% assign next_post = post %}
+          {% endif %}
+        {% endfor %}
+
         <nav class="postNav">
           <ol class="list-style-none container flex-nowrap mb-0">
-            {% if page.previous.categories contains "microblog" %}
-              {{ noPrevious }}
-            {% elsif page.previous %}
+            {% if next_post %}
               <li class="postNav-item">
                 <h5 class="fs-small text-normal fade-50 mb-0">Prevously</h5>
-                <a href="{{ page.previous.url | prepend: site.baseurl }}"
-                  class="postNav-link link-black">{{ page.previous.title }}</a>
+                <a href="{{ next_post.url | prepend: site.baseurl }}"
+                  class="postNav-link link-black">{{ next_post.title }}</a>
               </li>
             {% else %}
               {{ noPrevious }}
             {% endif %}
-            {% if page.next.categories contains "microblog" %}
-              {{ noNext }}
-            {% elsif page.next %}
+
+            {% if prev_post %}
               <li class="postNav-item">
                 <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
-                <a href="{{ page.next.url | prepend: site.baseurl }}"
-                  class="postNav-link link-black">{{ page.next.title }}</a>
+                <a href="{{ prev_post.url | prepend: site.baseurl }}"
+                  class="postNav-link link-black">{{ prev_post.title }}</a>
               </li>
             {% else %}
               {{ noNext }}
             {% endif %}
           </ol>
         </nav>
-        {% endif %}
       </footer>
     </article>
   </div>

@@ -2,6 +2,7 @@
 layout: "post"
 title: "Dear Last.fm,"
 description: "It’s been awhile. Seven years, actually"
+categories: journal
 date: "2017-01-10 15:30"
 featured_img: articles/dear-last-fm/dear-last-fm.png
 image: /assets/images/articles/dear-last-fm/dear-last-fm.png
