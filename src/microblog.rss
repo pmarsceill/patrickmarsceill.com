@@ -10,7 +10,7 @@
 		<atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
 		<lastBuildDate>{% for post in site.categories.microblog limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
 		{% for post in site.posts %}
-                        {% if post.categories contains "microblog" %}
+                        {% if post.categories contains "microblog" or post.layout == "false" %}
 			<item>
 				<title>{{ post.title | xml_escape }}</title>
 				{% if post.excerpt %}
