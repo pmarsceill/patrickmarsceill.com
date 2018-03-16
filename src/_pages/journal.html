@@ -13,29 +13,57 @@ description:  Journal description
 </div>
 
 <div class="container container-xl page-padding mb-12 px-4 px-md-6 px-lg-8 px-xl-12">
-  <div class="d-flex flex-justify-between col-12 flex-items-baseline px-4 mb-6">
+  <div class="d-sm-flex flex-justify-between col-12 flex-items-baseline px-4 mb-6">
     <h1 class="text-alpha">Journal</h1>
-    <span class="fs-small text-grey">
-      Subscribe:
-      <a href="{{ site.baseurl }}{% link feed.rss %}">RSS</a>
+    <span class="fs-small text-grey d-flex">
+      <h5 class="fs-small text-normal mr-1">Subscribe:</h5>
+      <ul class="list-style-none d-flex">
+        <li class="mr-2">
+          <a href="{{ site.baseurl }}{% link feed.rss %}">RSS</a>
+        </li>
+        <li>
+          <a href="https://micro.blog/pmarsceill">Micro.blog</a>
+        </li>
+      </ul>
     </span>
   </div>
   <div class="container px-4 mxn-4 mxn-lg-6">
-    {% assign posts = site.categories.journal %}
+    {% assign posts = site.posts %}
+
     {% for post in posts %}
-    <article class="postPreview col-12 {% if forloop.first %}border-top {% endif %}{% unless forloop.last %}border-bottom {% endunless %}clearfix py-9 mx-4 mx-lg-6">
-        {% if post.featured_img %}
-        <div class="col-md-5 float-right pl-md-6 mb-4 mb-md-0">
-          <a href="{{ post.url | prepend: site.baseurl }}" class>
-            <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="img-fluid">
-          </a>
-        </div>
+      {% if post.categories contains "legacy" %}
+        {% break %}
+      {% endif %}
+      <article class="postPreview col-12 {% if forloop.first %}border-top {% endif %}{% unless forloop.last %}border-bottom {% endunless %}clearfix py-9 mx-4 mx-lg-6">
+        {% if post.categories contains "journal" %}
+          {% if post.featured_img %}
+          <div class="col-md-5 col-lg-6 float-right pl-md-6 mb-4 mb-md-0">
+            <a href="{{ post.url | prepend: site.baseurl }}" class>
+              <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="img-fluid">
+            </a>
+          </div>
+          {% endif %}
+          <div class="{% if post.featured_img %}col-md-7 col-lg-6 {% endif %}pr-md-6">
+            <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
+            <h3 class="text-beta d-inline position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            <p class="text-beta text-grey d-inline pl-2 position-relative">{{ post.description }}</p>
+          </div>
+        {% else %}
+          <time class="text-smallcaps d-block text-bold fade-50 mb-1">{{ post.date | date: '%B %d, %Y'}}</time>
+          <p class="mb-0 fs-beta text-italic">
+            {{ post.content | strip_html }}
+          </p>
         {% endif %}
-        <div class="{% if post.featured_img %}col-md-7 {% endif %}pr-md-6">
-          <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
-          <h3 class="text-beta d-inline position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-          <p class="text-beta text-grey d-inline pl-2 position-relative">{{ post.description }}</p>
-        </div>
+        <ul class="list-style-none d-flex flex-wrap mt-4 mb-0">
+        {% for cat in post.categories %}
+          {% unless cat contains "journal" %}
+          <li class="fs-small text-grey px-1 {% unless cat =="microblog" %}border {% endunless %}mr-2 mt-1 flex-self-start">
+             {% if cat == "microblog" %}💬{% endif %}
+             {{ cat | replace: "-", " " }}
+           </li>
+          {% endunless %}
+        {% endfor %}
+        </ul>
       </article>
     {% endfor %}
   </div>

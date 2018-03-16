@@ -3,8 +3,11 @@ layout: default
 ---
 
 <div class="container container-xl">
+  <div class="d-flex flex-justify-end content-padding position-absolute position-lg-fixed col-12 pt-7" style="z-index: 1;">
+    <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy">Journal</a>
+  </div>
   {% if page.featured_img != nil %}
-  <div class="postImage px-md-8 px-xl-12 mx-lg-4 mt-12 mt-xl-0" aria-role="banner">
+  <div class="postImage px-md-8 px-xl-12 mx-lg-4 mt-12 mt-xl-0 position-relative" aria-role="banner" style="z-index: 2;">
     <div class="postImage-content" style="background-image:url({{ site.assets-base-url }}images/{{ page.featured_img }})">
     </div>
   </div>
@@ -12,8 +15,7 @@ layout: default
   <div class="{% if page.featured_img == nil %} page-padding{% endif %} content-padding flex-auto">
     <article class="postContent">
       <div class="postContent-meta col-12 pr-md-8 d-flex d-lg-none mb-4">
-        <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy  mr-2">Journal</a>
-        <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
+        <time class="text-smallcaps text-bold fade-50">{{ page.date | date: '%B %d, %Y'}}</time>
       </div>
 
       <header class="postContent-header col-lg-10 pr-md-8 pr-lg-9 mb-lg-12">
@@ -24,8 +26,16 @@ layout: default
 
       <div class="container container-xl">
         <div class="postContent-meta d-none d-lg-block col-lg-2 mt-1" aria-hidden>
-          <a href="{% link _pages/journal.html %}" class="text-smallcaps fade-50 text-black text-underline-wavy d-block mb-1">Journal</a>
-          <time class="text-smallcaps">{{ page.date | date: '%B %d, %Y'}}</time>
+          <time class="text-smallcaps text-bold fade-50">{{ page.date | date: '%B %d, %Y'}}</time>
+          <ul class="list-style-none d-flex flex-wrap mt-2 mb-0">
+            {% for cat in page.categories %}
+              {% unless cat contains "journal" or cat contains "legacy" %}
+              <li class="fs-small text-grey px-1 border mr-2 mt-1">
+                {{ cat | replace: "-", " " }}
+              </li>
+              {% endunless %}
+            {% endfor %}
+          </ul>
         </div>
         <div class="postContent-body col-lg-8 px-lg-9 mx-auto mx-lg-0">
           {{ page.content | remove: excerpt }}
@@ -91,48 +101,56 @@ layout: default
           {% endunless %}
         </ul>
 
-        {% assign posts = site.categories.journal %}
-
-        {% for post in posts %}
-          {% if post.url == page.url %}
-            {% assign post_index0 = forloop.index0 %}
-            {% assign post_index1 = forloop.index %}
-          {% endif %}
-        {% endfor %}
-        {% for post in posts %}
-          {% if post_index0 == forloop.index %}
-            {% assign prev_post = post %}
-          {% endif %}
-          {% if post_index1 == forloop.index0 %}
-            {% assign next_post = post %}
-          {% endif %}
-        {% endfor %}
-
-        <nav class="postNav">
-          <ol class="list-style-none container flex-nowrap mb-0">
-            {% if next_post %}
-              <li class="postNav-item">
-                <h5 class="fs-small text-normal fade-50 mb-0">Prevously</h5>
-                <a href="{{ next_post.url | prepend: site.baseurl }}"
-                  class="postNav-link link-black">{{ next_post.title }}</a>
-              </li>
-            {% else %}
-              {{ noPrevious }}
-            {% endif %}
-
-            {% if prev_post %}
-              <li class="postNav-item">
-                <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
-                <a href="{{ prev_post.url | prepend: site.baseurl }}"
-                  class="postNav-link link-black">{{ prev_post.title }}</a>
-              </li>
-            {% else %}
-              {{ noNext }}
-            {% endif %}
-          </ol>
-        </nav>
       </footer>
     </article>
   </div>
+  {% assign cat = page.categories[0] %}
+  {% assign posts = site.categories[cat] %}
+
+  {% for post in posts %}
+  {% if post.url == page.url %}
+  {% assign post_index0 = forloop.index0 %}
+  {% assign post_index1 = forloop.index %}
+  {% endif %}
+  {% endfor %}
+  {% for post in posts %}
+  {% if post_index0 == forloop.index %}
+  {% assign prev_post = post %}
+  {% endif %}
+  {% if post_index1 == forloop.index0 %}
+  {% assign next_post = post %}
+  {% endif %}
+  {% endfor %}
+
+  <nav class="postNav col-12">
+    <div class="content-padding">
+      <ol class="list-style-none container flex-nowrap mb-0">
+        {% if next_post %}
+        <li class="postNav-item">
+          <a href="{{ next_post.url | prepend: site.baseurl }}"
+            class="postNav-link link-black">
+            <h5 class="fs-small text-normal fade-50 mb-0">Prevously</h5>
+            {{ next_post.title }}
+          </a>
+        </li>
+        {% else %}
+        {{ noPrevious }}
+        {% endif %}
+
+        {% if prev_post %}
+        <li class="postNav-item">
+          <a href="{{ prev_post.url | prepend: site.baseurl }}"
+            class="postNav-link link-black">
+            <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
+            {{ prev_post.title }}
+          </a>
+        </li>
+        {% else %}
+        {{ noNext }}
+        {% endif %}
+      </ol>
+    </div>
+  </nav>
+
 </div>
 

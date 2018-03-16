@@ -42,65 +42,44 @@
 
 h1,
 .text-alpha {
-  font-size: $text-alpha-size * 0.6 !important;
+  @include fs-alpha;
   font-weight: 700 !important;
-  line-height: 1.2 !important;
-
-  @include mq(md) {
-    font-size: $text-alpha-size * 0.75 !important;
-  }
-
-  @include mq(lg) {
-    font-size: $text-alpha-size !important;
-  }
 }
 
 h2,
 .text-beta {
-  font-size: $text-beta-size * 0.75 !important;
+  @include fs-beta;
   font-weight: 700 !important;
-  line-height: 1.2 !important;
-
-  @include mq(lg) {
-    font-size: $text-beta-size !important;
-  }
 }
 
 h3,
 .text-gamma {
-  font-size: $text-gamma-size * 0.75 !important;
+  @include fs-gamma;
   font-weight: 700 !important;
-  line-height: 1.2 !important;
-
-  @include mq(lg) {
-    font-size: $text-gamma-size !important;
-  }
 }
 
 h4,
 .text-delta {
-  font-size: $text-delta-size;
   font-weight: 700 !important;
-  line-height: 1.3 !important;
 }
 // stylelint-enable selector-max-type
 
 // Font size
 
 .fs-alpha {
-  font-size: $text-alpha-size !important;
+  @include fs-alpha;
 }
 
 .fs-beta {
-  font-size: $text-beta-size !important;
+  @include fs-beta;
 }
 
 .fs-gamma {
-  font-size: $text-gamma-size !important;
+  @include fs-gamma;
 }
 
 .fs-delta {
-  font-size: $text-delta-size !important;
+  @include fs-delta;
 }
 
 .fs-epsilon,
@@ -122,6 +101,10 @@ h4,
 
 .text-bold {
   font-weight: 700 !important;
+}
+
+.text-italic {
+  font-style: italic !important;
 }
 
 .text-normal {

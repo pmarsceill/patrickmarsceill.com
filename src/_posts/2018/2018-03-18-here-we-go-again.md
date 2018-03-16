@@ -1,9 +1,9 @@
 ---
 layout: "post"
 title: "Here we go again"
-categories: journal
+categories: journal decentralized-web Micro.blog indieweb micropub
 date: "2018-03-14 01:00"
-description: "is the future of the web a network of independent sites?"
+description: "Is the future of the web a network of independent sites?"
 ---
 
 Is the future of the web a network of independent sites?
