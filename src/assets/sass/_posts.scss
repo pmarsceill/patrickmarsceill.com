@@ -111,3 +111,11 @@
 
 // Post preview on journal page
 
+.postPreview:target {
+  border-top: 0 !important;
+  box-shadow: inset 0 -4px 0 $orange, inset 0 4px 0 $orange;
+
+  +.postPreview {
+   border-top: 0 !important;
+  }
+}
