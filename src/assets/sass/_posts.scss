@@ -87,10 +87,11 @@
 .postNav {
   border-top: $border $border-color;
 }
+
 .postNav-item {
   width: 50%;
 
-  +.postNav-item {
+  + .postNav-item {
     text-align: right;
     border-left: $border $border-color;
 
@@ -102,10 +103,10 @@
 }
 
 .postNav-link {
+  display: block;
   padding-top: $sp-5;
   padding-right: $sp-4;
   padding-bottom: $sp-5;
-  display: block;
   font-weight: 700;
 }
 
@@ -115,7 +116,7 @@
   border-top: 0 !important;
   box-shadow: inset 0 -4px 0 $orange, inset 0 4px 0 $orange;
 
-  +.postPreview {
-   border-top: 0 !important;
+  + .postPreview {
+    border-top: 0 !important;
   }
 }
