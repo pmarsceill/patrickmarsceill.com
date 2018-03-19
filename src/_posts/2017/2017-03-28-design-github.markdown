@@ -2,7 +2,7 @@
 layout: "post"
 title: "Design GitHub, the product"
 date: "2017-03-28 11:34"
-categories: journal
+categories: journal GitHub hiring product-design
 featured_img: articles/design-github/design-github.png
 image: /assets/images/articles/design-github/design-github.png
 description: "Shape the future of software development"
@@ -17,11 +17,11 @@ Are you designer who enjoys building products and wants to work on a highly visi
 
 This is a product design position. You'll be working with product managers, engineers, design managers, and other product designers to define, design,  and build features on GitHub dot com. You'll research, sketch, create mockups, write code, and deploy to production. You'll probably introduce a few bugs — its cool, we all do. Your work will be reviewed and you will review others' work. You will use GitHub to build GitHub.
 
-### _Is this position remote?_
+> Is this position remote?
 
 We value a remote work. So much so that most of our product design team is remote. In an effort to create more of a geographically balanced team, we're currently only considering candidates that live in the San Francisco area (or are willing to relocate) and can work out of our office in SOMA.
 
-### _What type of projects will I get to work on?_
+> What type of projects will I get to work on?
 
 GitHub builds products for developers, businesses, open source organizations, educational institutions, government agencies and just about anyone who is involved in building and shipping software. About 20 million people currently use GitHub.com around the world.
 
@@ -33,7 +33,7 @@ My group within the product design team primarily focuses on the businesses that
 
 Additionally, you'll provide input and feedback that helps influence the direction of product designers working on other areas of GitHub.
 
-#### This position might be a great fit if...
+**This position might be a great fit if**
 
 -   You have a few years experience designing software or websites
 -   You can talk and write about your work
@@ -44,7 +44,7 @@ Additionally, you'll provide input and feedback that helps influence the directi
 -   You value research as a foundational design component
 -   You've used GitHub before or are familiar with modern developer workflows
 
-#### This position may not be right for you if...
+**This position may not be right for you if...**
 
 -   You've never held a professional design position before
 -   You don't have a desire to expand your front-end development skills
