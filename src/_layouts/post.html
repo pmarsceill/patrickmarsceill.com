@@ -44,16 +44,16 @@ layout: default
 
       {% capture noPrevious %}
       <li class="postNav-item">
-        <h5 class="fs-small text-normal fade-50 mb-0">Previously</h5>
-        <a href="{% link _pages/journal.html %}"
-           class="postNav-link link-black">More entries</a>
+        <a href="{% link _pages/journal.html %}" class="postNav-link link-black">
+          <h5 class="fs-small text-normal fade-50 mb-0">Previously</h5>
+          More entries</a>
       </li>
       {% endcapture %}
       {% capture noNext %}
       <li class="postNav-item">
-        <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
-        <a href="{% link _pages/journal.html %}"
-          class="postNav-link link-black">More entries</a>
+        <a href="{% link _pages/journal.html %}" class="postNav-link link-black">
+          <h5 class="fs-small text-normal fade-50 mb-0">Next</h5>
+          More entries</a>
       </li>
       {% endcapture %}
 
