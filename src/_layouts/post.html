@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<div class="container container-xl">
-  <div class="postBreadcrumb content-padding position-absolute right-0 pt-7 mr-lg-10 pl-0">
-    <a href="{% link _pages/journal.html %}" class="postBreadcrumb-link position-lg-fixed text-smallcaps link-grey text-underline-wavy">Journal</a>
+<div class="container-xl mx-auto">
+  <div class="postBreadcrumb content-padding position-absolute right-0 top-0 pt-6 mt-1 mr-lg-10 mr-xl-0">
+    <a href="{% link _pages/journal.html %}" class="postBreadcrumb-link position-lg-fixed text-smallcaps link-grey text-underline-wavy pl-xl-3">Journal</a>
   </div>
   {% if page.featured_img != nil %}
   <div class="postImage px-md-8 px-xl-12 mx-lg-4 mt-12 mt-xl-0 position-relative" aria-role="banner" style="z-index: 2;">
@@ -24,8 +24,8 @@ layout: default
         {% capture excerpt %}{{ page.excerpt }}{% endcapture %}
       </header>
 
-      <div class="container container-xl">
-        <div class="postContent-meta d-none d-lg-block col-lg-2 mt-1" aria-hidden>
+      <div class="d-lg-flex container-xl">
+        <div class="postContent-meta d-none d-lg-block col-lg-2">
           <time class="text-smallcaps text-bold fade-50">{{ page.date | date: '%B %d, %Y'}}</time>
           <ul class="list-style-none d-flex flex-wrap mt-2 mb-0">
             {% for cat in page.categories %}
