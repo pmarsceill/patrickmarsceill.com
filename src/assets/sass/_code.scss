@@ -17,24 +17,27 @@ code {
 }
 
 // Code blocks
+// stylelint-disable plugin/no-unsupported-browser-features
 
 pre {
   border: 1px solid $border-color;
   border-radius: 3px;
 
   code {
+    display: block;
+    min-width: 0;
     padding: $sp-4;
+    overflow-wrap: normal;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
     color: inherit;
+    word-wrap: normal;
+    white-space: pre;
     border: 0;
     border-radius: 0;
-    white-space: pre;
-    overflow-wrap: normal;
-    display: block;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
-    min-width: 0;
   }
 }
+// stylelint-enable plugin/no-unsupported-browser-features
 
 // syntax highlight
 .highlight {
