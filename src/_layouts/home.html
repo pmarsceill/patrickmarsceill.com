@@ -11,25 +11,34 @@ layout: default
           <span class="display-alpha">I&rsquo;m a digital product designer and builder based out of Philadelphia. Currently, I manage product design at <a href="https://github.com">GitHub</a>. My surname is pronounced mahr-<em>seel</em>
           </span>.
         </h1>
+        <h2 class="display-delta mb-4 fade-75">Featured</h2>
+        {% for post in site.categories.journal %}
+          {% unless post.categories contains "legacy" %}
+            {% unless post.categories contains "microblog" %}
+              {% if forloop.index == 1 %}
+                <article class="mb-8">
+                  {% if post.featured_img %}
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="bg-black d-block mb-5">
+                      <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="img-fluid">
+                    </a>
+                  {% endif %}
+                  <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
+                  <h3 class="text-beta d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                  <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
+                </article>
+              {% endif %}
+            {% endunless %}
+          {% endunless %}
+        {% endfor %}
       </div>
-      <h2 class="display-delta mb-4 fade-75">Elsewhere</h2>
-      <ul class="list-style-none col-lg-9 col-xl-7 mb-0">
-        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.github_url }}" rel="me">GitHub</a></span><span class="fade-50 px-3 mln-1">/</span></li>
-        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.microblog_url }}" rel="me">Micro.blog</a></span><span class="fade-50 px-3 mln-1">/</span></li>
-        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.twitter_url }}" rel="me">Twitter</a></span><span class="fade-50 px-3 mln-1">/</span></li>
-        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.instagram_url }}" rel="me">Instagram</a></span><span class="fade-50 px-3 mln-1">/</span></li>
-        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.dribbble_url }}" rel="me">Dribbble</a></span><span class="fade-50 px-3 mln-1">/</span></li>
-        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.keybase_url }}" rel="me">Keybase</a></span><span class="fade-50 px-3 mln-1">/</span></li>
-        <li class="d-inline-block py-1 pl-1 pr-2 mln-2 text-no-wrap"><span class="text-bold"><a href="mailto:{{ site.email }}">Email me</a></span></li>
-      </ul>
     </div>
     <div class="homePage-links content-padding py-8 py-md-12">
-      <h2 class="mt-4 mt-md-12 display-delta mb-4 fade-75">The latest</h2>
+      <h2 class="mt-4 mt-md-12 display-delta mb-4 fade-75">Recent entries</h2>
       <ol class="list-style-none pt-1">
         {% for post in site.categories.journal %}
           {% unless post.categories contains "legacy" %}
             {% unless post.categories contains "microblog" %}
-              {% if forloop.index <= 6 %}
+              {% if forloop.index <= 5 and forloop.index > 1 %}
                 <li class="mb-7">
                   <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
                   <h3 class="text-beta d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
@@ -42,13 +51,23 @@ layout: default
           {% endunless %}
         {% endfor %}
       </ol>
-      <ul class="list-style-none">
+      <ul class="list-style-none mb-10">
         <li class="d-inline-block mr-4">
           <a href="{% link _pages/journal.html %}" class="btn">More entries</a>
         </li>
         <li class="d-inline-block">
           <span class="text-smallcaps"><a href="{{ site.baseurl }}{% link feed.rss %}">RSS</a></span>
         </li>
+      </ul>
+      <h2 class="display-delta mb-4 fade-75">Elsewhere</h2>
+      <ul class="list-style-none mb-0">
+        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.github_url }}" rel="me">GitHub</a></span><span class="fade-50 px-3 mln-1">/</span></li>
+        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.microblog_url }}" rel="me">Micro.blog</a></span><span class="fade-50 px-3 mln-1">/</span></li>
+        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.twitter_url }}" rel="me">Twitter</a></span><span class="fade-50 px-3 mln-1">/</span></li>
+        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.instagram_url }}" rel="me">Instagram</a></span><span class="fade-50 px-3 mln-1">/</span></li>
+        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.dribbble_url }}" rel="me">Dribbble</a></span><span class="fade-50 px-3 mln-1">/</span></li>
+        <li class="d-inline-block py-1 mln-1 text-no-wrap"><span class="text-bold"><a href="{{ site.keybase_url }}" rel="me">Keybase</a></span><span class="fade-50 px-3 mln-1">/</span></li>
+        <li class="d-inline-block py-1 pl-1 pr-2 mln-2 text-no-wrap"><span class="text-bold"><a href="mailto:{{ site.email }}">Email me</a></span></li>
       </ul>
     </div>
   </div>

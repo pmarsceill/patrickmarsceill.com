@@ -14,29 +14,30 @@ pre {
 code {
   font-size: 85%;
   color: $purple;
-  border-radius: 3px;
 }
 
 // Code blocks
+// stylelint-disable plugin/no-unsupported-browser-features
 
 pre {
-  padding: $sp-4;
-  white-space: pre-wrap;
   border: 1px solid $border-color;
   border-radius: 3px;
 
   code {
-    padding: 0;
+    display: block;
+    min-width: 0;
+    padding: $sp-4;
+    overflow-wrap: normal;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
     color: inherit;
+    word-wrap: normal;
+    white-space: pre;
     border: 0;
     border-radius: 0;
-
-    &::before,
-    &::after {
-      content: none;
-    }
   }
 }
+// stylelint-enable plugin/no-unsupported-browser-features
 
 // syntax highlight
 .highlight {
