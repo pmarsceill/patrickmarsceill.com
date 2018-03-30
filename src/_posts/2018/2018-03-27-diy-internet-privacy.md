@@ -16,11 +16,11 @@ Having a VPN server laying around for this type of personal use has historically
 
 ## Open Source to the rescue
 
-[Algo VPN](https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/) is an open source VPN server geared toward security and ease-of-use. It comes with IPSec features that make allow you to secure your sessions out-of-the-box.  Here's a quick set up guide and some issues that I ran into while setting it up for the first time.
+[Algo VPN](https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/) is an open source VPN server geared toward security and ease-of-use. It comes with IPSec features that make allow you to secure your sessions out-of-the-box.  Here is a quick set up guide and some issues that I ran into while setting it up for the first time.
 
 ### 1. Figure out where you want to host this
 
-I choose Digital Ocean because it was easy, required next to no set up, and costs less that five bucks a month (and comes with a ten dollar referral credit). If you want a setup like mine, use this link to create your account... *Note that you don't need to configure a Droplet or anything yet, this will happen automatically later.*
+I choose Digital Ocean because it was easy, required next to no setup, and costs less than five bucks a month (and comes with a ten dollar referral credit). If you want a setup like mine, use this link to create your account... *Note that you don't need to configure a Droplet or anything yet, this will happen automatically later.*
 
 [💁 Sign up for Digital Ocean](https://m.do.co/c/e675b6b6aa8e){: .btn .mb-3 }
 
@@ -30,7 +30,7 @@ I choose Digital Ocean because it was easy, required next to no set up, and cost
 
 [⬇ Algo VPN source (.zip)](https://github.com/trailofbits/algo/archive/master.zip){: .btn .mb-3 }
 
-Extract the `zip` file. This will create a folder called `algo-master`. Rename it to whatever you want and put it somewhere that you'll remember. For the purposes of these instructions, let's rename it `algo-vpn`. The rest of these instructions assume that you're on a Mac, as that is what I used... but there are [Linux and Windows based docs](https://github.com/trailofbits/algo#deploy-the-algo-server).
+Extract the `zip` file. This will create a folder called `algo-master`. Rename it to whatever you want and put it somewhere that you'll remember. For the purposes of these instructions, let's rename it `algo-vpn`. The rest of these instructions assume that you're on a Mac, as that is what I used... but there are [Linux and Windows-based docs](https://github.com/trailofbits/algo#deploy-the-algo-server).
 
 ### 3. Configure the server locally
 Fire up Terminal and `cd` to your `algo-vpn` folder...
@@ -56,7 +56,7 @@ So I'm running Python 3 (which I installed from [Homebrew](https://brew.sh)). Th
 $ brew install python2
 ```
 
-Ok, now lets see how my Python versions are setup:
+Ok, now let's see how my Python versions are setup:
 
 ```bash
 $ which python
@@ -67,7 +67,7 @@ $ python --version
 Python 3.6.3
 ```
 
-👍 I wanted this to remain my default Python for other nerd-y shit that I'm into.
+👍 I wanted this to remain my default Python for other nerdy shit that I'm into.
 
 ```bash
 $ python2 --version
@@ -201,7 +201,7 @@ VPN profile installation on MacOS
 </figcaption>
 </figure>
 
-And they can continue through the installation process. Eventually they will need to enter the password from previous section (obfuscated with X's), not their system password:
+And they can continue through the installation process. Eventually, they will need to enter the password from the previous section (obfuscated with X's), not their system password:
 
 ```
 "    \"#                The p12 and SSH keys password for new users is XXXXXXXX             #\"\n",
