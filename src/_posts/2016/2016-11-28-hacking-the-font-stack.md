@@ -12,8 +12,8 @@ When the `@font-face` directive (which allows the use of non-system font files o
 
 A lot of folks (myself included) developed a palpable distaste for Flash-based sites as they were often slow to load, relied on a locally installed plugin, and often were a black box of content that was inaccessible to a large chunk of the web’s users. `@font-face` was just the thing CSS needed if was going to seriously compete with Flash and become adopted as part of the modern (and standard) way to build websites. HTML + CSS offered a more extensible and accessible way to present content and with the addition of features like `@font-face` we could start to see a future where the aesthetic consistency of Flash could be replicated with CSS.
 
-I started experimenting with web fonts in 2007 after reading [CSS @ Ten: The Next Big Thing
-][039e80cc]. Ten years prior, [this CSS2 draft from 1997][5ad770fe] mentions the `@font-face` directive but it was removed in the [CSS2.1 spec][964be9d5].
+I started experimenting with web fonts in 2007 after reading [CSS @ Ten: The Next Big Thing][039e80cc].
+Ten years prior, [this CSS2 draft from 1997][5ad770fe] mentions the `@font-face` directive but it was removed in the [CSS2.1 spec][964be9d5].
 
 🎉 _Fun fact: Internet Explorer was the first browser to implement web fonts with @font-face, back in version 4 (1997)._
 
@@ -24,11 +24,11 @@ I started experimenting with web fonts in 2007 after reading [CSS @ Ten: The Nex
 
 The web is now available on any capable device, largely thanks to the adoption of mobile-friendly web design (like responsive), the downfall of Flash as a web technology, and a user base glued to their phones reading Facebook at any given time. This has forced those who build web pages to consider performance impacts (load time, render time, etc..) more than ever before &mdash; or at least since the days of dialup when that draft was written in 1997.
 
-Like images, JavaScript, and CSS bloat; web fonts can easily become performance bottlenecks if not kept in check. While they allow for consistency in typography across devices and platforms, concern for performance and accessibility over pixel perfect consistency is a valid reason to think twice before using them.
+Like images, JavaScript, and CSS bloat; web fonts can easily become performance bottlenecks if not kept in check. While they allow for consistency in typography across devices and platforms, concern for performance and accessibility over pixel-perfect consistency is a valid reason to think twice before using them.
 
-Today, there are some newer fonts available that make setting type with system fonts on the web a little nicer. Since 1997, major OSs now ship with (and continue to release) native system fonts that can be easily adopted using a few style sheet hacks and some carefully planed fallbacks.
+Today, there are some newer fonts available that make setting type with system fonts on the web a little nicer. Since 1997, major OSs now ship with (and continue to release) native system fonts that can be easily adopted using a few stylesheet hacks and some carefully planned fallbacks.
 
-Let me preference this list by saying that I am not anti-web font and I think the technology was/is a huge step forward for CSS. I do think there is still work to be done when it comes to how browsers load these resources as it can lead to user experience issues like [FOIT (flash of invisible text)][5038a6bd]. Likewise, this list is experimental and hasn't been tested on many devices beyond recent OSX / Android / and Windows 7+ devices. These stacks can work independently or in conjunction with web fonts and hopefully will be useful for folks looking for alternatives.
+Let me preference this list by saying that I am not anti-webfont and I think the technology was/is a huge step forward for CSS. I do think there is still work to be done when it comes to how browsers load these resources as it can lead to user experience issues like [FOIT (flash of invisible text)][5038a6bd]. Likewise, this list is experimental and hasn't been tested on many devices beyond recent OSX / Android / and Windows 7+ devices. These stacks can work independently or in conjunction with web fonts and hopefully will be useful for folks looking for alternatives.
 
 [5038a6bd]: https://css-tricks.com/fout-foit-foft/ "FOUT, FOIT, FOFT"
 
