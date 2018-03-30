@@ -17,14 +17,13 @@ layout: default
             {% unless post.categories contains "microblog" %}
               {% if forloop.index == 1 %}
                 <article class="mb-8">
+                  <h3 class="text-beta d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                  <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
                   {% if post.featured_img %}
-                    <a href="{{ post.url | prepend: site.baseurl }}" class="bg-black d-block mb-5">
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="bg-black d-block mt-5">
                       <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="img-fluid">
                     </a>
                   {% endif %}
-                  <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
-                  <h3 class="text-beta d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-                  <p class="text-beta fade-75 d-inline pl-2">{{ post.description }}</p>
                 </article>
               {% endif %}
             {% endunless %}
