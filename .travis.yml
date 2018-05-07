@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+  - 2.3.0
+
+env:
+  - TRAVIS_NODE_VERSION="9.3.0"
+
+install:
+  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
+  - npm install
+
+script:
+  - npm run build
+  - bundle exec htmlproofer ./dist --check-opengraph true --check-html true --http-status-ignore '408,301,403,0,530' --url-ignore '/patrickmarsceill.com/,https://indieauth.com/auth' --empty-alt-ignore true
