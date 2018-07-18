@@ -11,7 +11,7 @@ layout: default
           <span class="display-alpha">I&rsquo;m a digital product designer and builder based out of Philadelphia. Currently, I manage product design at <a href="https://github.com">GitHub</a>. My surname is pronounced mahr-<em>seel</em>
           </span>.
         </h1>
-        <h2 class="display-delta mb-4 fade-75">Featured</h2>
+        <h2 class="display-delta mb-4 fade-75">Featured Writing</h2>
         {% for post in site.categories.journal %}
           {% unless post.categories contains "legacy" %}
             {% unless post.categories contains "microblog" %}
@@ -71,8 +71,35 @@ layout: default
     </div>
   </div>
 </div>
-<div class="homePage-wrap--work overflow-hidden">
+<div class="bg-orange overflow-hidden">
   <div class="container container-xl flex-lg-nowrap">
+    <div class="homePage-worklinks content-padding py-10 py-md-12 col-md-6">
+      <h2 class="text-alpha mb-4">About me</h2>
+      <p class="display-beta">
+        For over a decade, I&lsquo;ve partnered with Fortune 500 industry
+        leaders, scrappy start-ups, and mission-driven non-profits to build digital products for screens of all sizes.
+        Before joining <a href="//github.com" target="_blank">GitHub</a> in 2015, I led design teams at <a href="//happycog.com" target="_blank">Happy
+          Cog</a> and Empathy Lab.
+      </p>
+      <p class="mb-6">
+      Additionally, I have created a number of personal projects to push my own limits,
+      share what I know, or fill a void in my own processes.
+      </p>
+      <h4 class="text-smallcaps fade-50">Recent personal projects</h4>
+      <ul class="mb-0">
+        <li class="mb-3">
+          <a href="//awaremac.com">Aware</a> simple time tracking for MacOS
+        </li>
+        <li class="mb-3">
+          Tab Lab (no longer active) guitar tablature and sheet
+          music publishing on the web
+        </li>
+        <li>
+          <a href="//quirksandcompulsions.com">Quirks and Compulsions</a> (on hiatus) a podcast
+          about overanalyzing the overlooked
+        </li>
+      </ul>
+    </div>
     <div class="homePage-devices content-padding py-md-12">
       <div class="d-flex flex-lg-justify-end position-relative">
         <div class="device device--tablet homePage-device--tablet position-absolute js-plx" data-rellax-speed="-7">
@@ -109,35 +136,6 @@ layout: default
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="homePage-worklinks content-padding py-10 py-md-12">
-      <div class="col-md-9 col-lg-12">
-        <h2 class="text-beta mb-4 fade-75">My work</h2>
-        <p class="">
-        For over a decade, I&lsquo;ve partnered with Fortune 500 industry
-        leaders, scrappy start-ups, non-profits, and higher learning institutions to build digital products for screens of all sizes.
-        Before joining <a href="//github.com" target="_blank">GitHub</a> in 2015, I led design teams at <a href="//happycog.com" target="_blank">Happy
-          Cog</a> and Empathy Lab.
-        </p>
-        <p class="mb-6">
-        Additionally, I have created a number of personal projects to push my own limits,
-        share what I know, or fill a void in my own processes.
-        </p>
-        <h4 class="text-smallcaps fade-50">Recent personal projects</h4>
-        <ul class="mb-0">
-          <li class="mb-3">
-            <a href="//awaremac.com">Aware</a> simple time tracking for MacOS
-          </li>
-          <li class="mb-3">
-            <a href="//tablab.io">Tab Lab</a> guitar tablature and sheet
-            music publishing on the web
-          </li>
-          <li>
-            <a href="//quirksandcompulsions.com">Quirks and Compulsions</a> a podcast
-            about overanalyzing the overlooked
-          </li>
-        </ul>
       </div>
     </div>
   </div>
