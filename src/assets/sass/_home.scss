@@ -15,13 +15,6 @@
   }
 }
 
-
-.homePage-links {
-  @include mq(md) {
-    max-width: 350px;
-  }
-}
-
 .homePage-about {
   @include mq(md) {
     min-width: 470px;
@@ -63,6 +56,10 @@
     }
   }
 
+  @include mq(md) {
+    max-width: 350px;
+  }
+
   @include mq(lg) {
     min-width: 432px;
     max-width: 456px;
@@ -72,7 +69,6 @@
     max-width: 540px;
   }
 }
-// stylelint-enable selector-no-qualifying-type, selector-max-specificity, selector-max-type
 
 .homePage-worklinks {
   a[href]:not([class]) {
@@ -83,6 +79,7 @@
     }
   }
 }
+// stylelint-enable selector-no-qualifying-type, selector-max-specificity, selector-max-type
 
 .homePage-device--phone {
   margin-bottom: $sp-12;
@@ -110,8 +107,8 @@
   margin-bottom: 0;
 
   .device-screen {
-    border-radius: 0;
     background-color: $orange;
+    border-radius: 0;
   }
 
   .device-screen-img {
