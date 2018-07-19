@@ -15,30 +15,6 @@
   }
 }
 
-.homePage-wrap--work {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: stretch;
-  align-content: stretch;
-  flex-wrap: nowrap;
-
-  @include mq(lg) {
-    background-image: linear-gradient(to right, $orange 0%, $orange calc(100% - 300px), $purple calc(100% - 300px), $purple 100%);
-  }
-
-  @include mq(xl) {
-    background-image: linear-gradient(to right, $orange 0%, $orange percentage(3/4), $black percentage(3/4), $black 100%);
-  }
-}
-
-.homePage-links {
-
-  @include mq(md) {
-    max-width: 350px;
-  }
-}
-
 .homePage-about {
   @include mq(md) {
     min-width: 470px;
@@ -46,13 +22,8 @@
   }
 }
 
-.homePage-worklinks {
-  background-color: $black !important;
-}
-
 .homePage-devices {
   overflow: hidden !important;
-  background-color: $orange !important;
 
   @include mq(lg) {
     overflow: visible !important;
@@ -70,8 +41,7 @@
 }
 
 // stylelint-disable selector-no-qualifying-type, selector-max-specificity, selector-max-type
-.homePage-links,
-.homePage-worklinks {
+.homePage-links {
   color: $white;
   background-color: $blue;
 
@@ -86,6 +56,10 @@
     }
   }
 
+  @include mq(md) {
+    max-width: 350px;
+  }
+
   @include mq(lg) {
     min-width: 432px;
     max-width: 456px;
@@ -95,6 +69,16 @@
     max-width: 540px;
   }
 }
+
+.homePage-worklinks {
+  a[href]:not([class]) {
+    background-image: linear-gradient(transparent 0%, transparent 47%, $plorange 47%, $plorange 70%, transparent 70%);
+
+    &:hover {
+      background-image: linear-gradient(transparent 0%, transparent 47%, $white 47%, $white 70%, transparent 70%);
+    }
+  }
+}
 // stylelint-enable selector-no-qualifying-type, selector-max-specificity, selector-max-type
 
 .homePage-device--phone {
@@ -102,7 +86,7 @@
 
   @include mq(md) {
     top: 20px;
-    left: 0;
+    left: 3%;
     margin-right: 0;
     margin-bottom: -300px;
     margin-left: 0;
@@ -110,7 +94,7 @@
 
   @include mq(lg) {
     top: auto;
-    left: auto;
+    left: -50%;
     margin-bottom: 0;
   }
 }
@@ -123,6 +107,7 @@
   margin-bottom: 0;
 
   .device-screen {
+    background-color: $orange;
     border-radius: 0;
   }
 
@@ -135,8 +120,8 @@
 
   @include mq(md) {
     top: -250px;
-    right: 0;
-    left: auto;
+    right: auto;
+    left: 10%;
 
     .device-screen {
       background-color: $black;
@@ -149,16 +134,6 @@
       filter: none;
       opacity: 0.65;
     }
-  }
-
-  @include mq(lg) {
-    top: -200px;
-    right: auto;
-    left: -50%;
-  }
-
-  @include mq(xl) {
-    left: -20%;
   }
 }
 // stylelint-enable plugin/no-unsupported-browser-features

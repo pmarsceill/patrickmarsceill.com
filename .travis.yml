@@ -12,4 +12,5 @@ install:
 
 script:
   - npm run build
-  - bundle exec htmlproofer ./dist --check-opengraph true --check-html true --http-status-ignore '408,301,403,0,530' --url-ignore '/patrickmarsceill.com/,https://indieauth.com/auth' --empty-alt-ignore true
+  - bundle exec htmlproofer ./dist --check-opengraph true --check-html true --http-status-ignore '408,301,403,0,530' --url-ignore '/patrickmarsceill.com/,https://indieauth.com/auth,https://pmarsceill-micropub.now.sh/micropub/main' --empty-alt-ignore true
+

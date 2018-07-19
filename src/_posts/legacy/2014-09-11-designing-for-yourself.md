@@ -32,12 +32,3 @@ To keep myself disciplined, I set a pace of constant ideation, followed by editi
 </figure>
 
 Out of this thing comes a desire to try to break some of the rigidity that I impose on myself for both personal and professional projects. Designing for yourself is an exercise in confidence and trust in your own intuitions. It's a challenge in restraint and a willingness to allow change to happen as consequence of growth. It's a reminder to foster the formation of ideas, constantly evolve their execution, but allow their core to remain true.
-
-### Inspiration Station
-
-In the process of designing this site, I studied a lot of material both online and offline. I was inspired by many other designers, writers, and creators—too many to name. Here are few of the resources that I frequently looked to for fresh ideas:
-
-* [Grafik](http://www.grafik.net)
-* [Fonts In Use](http://www.fontsinuse.net)
-* [The Dieline](http://thedieline.com)
-* [The Great Discontent](http://thegreatdiscontent.com)
