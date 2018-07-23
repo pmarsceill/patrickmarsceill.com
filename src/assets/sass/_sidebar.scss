@@ -40,14 +40,6 @@
     opacity: 0;
     transition: opacity 0.2s ease-in-out, fill 0.2s ease-in-out;
   }
-
-  // IE / Edge doesn't support blendmodes so we have to force a black fill here
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .pm,
-    .text {
-      fill: $black;
-    }
-  }
 }
 
 .linkHome {
@@ -65,3 +57,24 @@
     }
   }
 }
+
+// IE / Edge doesn't support blend-modes so we have to force a black fill here
+// stylelint-disable selector-max-type
+_:-ms-lang(x),
+.linkHome .pm {
+  fill: $black !important;
+
+  &:hover {
+    fill: $purple !important;
+  }
+}
+
+_:-ms-lang(x),
+.linkHome .text {
+  fill: $black !important;
+
+  &:hover {
+    fill: $purple !important;
+  }
+}
+// stylelint-enable selector-max-type
