@@ -58,26 +58,23 @@
   }
 }
 
-// IE / Edge doesn't support blend-modes so we have to force a black fill here
+// IE 11 and Edge don't support blend-modes
 // stylelint-disable selector-max-type
-_:-ms-lang(x),
-.linkHome .pm {
-  fill: $black;
-}
+
+@charset "";
 
 _:-ms-lang(x),
-.linkHome .text {
-  fill: $purple;
-}
-
-_:ms-lang(x),
 .linkHome {
+  .pm {
+    fill: $black;
+  }
+
   &:hover {
     .pm,
     .text {
-      fill: $purple !important;
+      fill: $purple;
     }
   }
 }
 
-// stylelint-enable selector-max-type
+//stylelint-enable selector-max-type
