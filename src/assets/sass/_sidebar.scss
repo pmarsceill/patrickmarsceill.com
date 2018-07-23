@@ -75,7 +75,7 @@ _:ms-lang(x),
   &:hover {
     .pm,
     .text {
-      fill: $purple;
+      fill: $purple !important;
     }
   }
 }
