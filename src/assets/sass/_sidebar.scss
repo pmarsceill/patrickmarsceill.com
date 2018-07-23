@@ -62,19 +62,22 @@
 // stylelint-disable selector-max-type
 _:-ms-lang(x),
 .linkHome .pm {
-  fill: $black !important;
-
-  &:hover {
-    fill: $purple !important;
-  }
+  fill: $black;
 }
 
 _:-ms-lang(x),
 .linkHome .text {
-  fill: $black !important;
+  fill: $purple;
+}
 
+_:ms-lang(x),
+.linkHome {
   &:hover {
-    fill: $purple !important;
+    .pm,
+    .text {
+      fill: $purple;
+    }
   }
 }
+
 // stylelint-enable selector-max-type
