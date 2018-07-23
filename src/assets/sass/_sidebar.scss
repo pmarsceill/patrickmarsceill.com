@@ -40,6 +40,14 @@
     opacity: 0;
     transition: opacity 0.2s ease-in-out, fill 0.2s ease-in-out;
   }
+
+  // IE / Edge doesn't support blendmodes so we have to force a black fill here
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .pm,
+    .text {
+      fill: $black;
+    }
+  }
 }
 
 .linkHome {
