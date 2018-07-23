@@ -57,3 +57,24 @@
     }
   }
 }
+
+// IE 11 and Edge don't support blend-modes
+// stylelint-disable selector-max-type
+
+@charset "";
+
+_:-ms-lang(x),
+.linkHome {
+  .pm {
+    fill: $black;
+  }
+
+  &:hover {
+    .pm,
+    .text {
+      fill: $purple;
+    }
+  }
+}
+
+//stylelint-enable selector-max-type
