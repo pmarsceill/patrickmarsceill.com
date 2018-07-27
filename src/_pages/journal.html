@@ -13,8 +13,8 @@ description:  Journal description
 </div>
 
 <div class="container container-xl page-padding mb-12 px-4 px-md-6 px-lg-8 px-xl-12">
-  <div class="d-sm-flex flex-justify-between col-12 flex-items-baseline px-4 mb-6">
-    <h1 class="text-alpha">Journal</h1>
+  <div class="d-sm-flex flex-justify-between col-12 flex-items-baseline mx-4 pb-3 border-bottom">
+    <h1 class="display-alpha">Journal</h1>
     <span class="fs-small text-grey d-flex">
       <h5 class="fs-small text-normal mr-1">Subscribe:</h5>
       <ul class="list-style-none d-flex">
@@ -29,15 +29,16 @@ description:  Journal description
   </div>
   <div class="container px-4 mxn-4 mxn-lg-6">
     {% assign posts = site.posts %}
+    <div class="col-md-8 pr-md-5 pr-lg-7">
+      {% for post in posts %}
+        {% if post.categories contains "legacy" %}
+          {% break %}
+        {% endif %}
 
-    {% for post in posts %}
-      {% if post.categories contains "legacy" %}
-        {% break %}
-      {% endif %}
-      <article class="postPreview col-12 border-top clearfix py-9 mx-4 mx-lg-6" {% if post.slug %}id="{{ post.slug }}"{% endif %}>
         {% if post.categories contains "journal" %}
+        <article class="postPreview border-bottom clearfix py-9 mx-4 mx-lg-6" {% if post.slug %}id="{{ post.slug }}"{% endif %}>
           {% if post.featured_img %}
-          <div class="col-md-5 col-lg-6 float-right pl-md-6 mb-4 mb-md-0">
+          <div class="col-lg-6 float-right pl-lg-6 mb-6 mb-lg-0">
             <a href="{{ post.url | prepend: site.baseurl }}" class="bg-purple d-block">
               <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="img-fluid">
             </a>
@@ -48,26 +49,36 @@ description:  Journal description
             <h3 class="text-beta d-inline position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
             <p class="text-beta text-grey d-inline pl-2 position-relative">{{ post.description }}</p>
           </div>
-        {% else %}
-          <time class="text-smallcaps d-block text-bold fade-50 mb-1">{{ post.date | date: '%B %d, %Y'}}</time>
-          <p class="mb-0 fs-beta text-italic">
-            {{ post.content | strip_html }}
-          </p>
+        </article>
         {% endif %}
-        <ul class="list-style-none d-flex flex-wrap mt-4 mb-0">
-        {% for cat in post.categories %}
-          {% unless cat contains "journal" %}
-          <li class="fs-small text-grey px-1 {% unless cat =="microblog" %}border {% endunless %}mr-2 mt-1 flex-self-start">
-             {% if cat == "microblog" %}💬{% endif %}
-             {{ cat | replace: "-", " " }}
-           </li>
-          {% endunless %}
+      {% endfor %}
+    </div>
+    <aside class="col-md-4 pl-md-5 pl-lg-7 mt-md-8">
+      <div class="mx-4 mx-lg-0">
+        <h3 class="fs-gamma">Microblog 💬</h3>
+        <p class="fs-small mb-5 fade-50">Brief and (sometimes) timely thoughts.</p>
+        {% for post in posts %}
+        {% if post.categories contains "legacy" %}
+        {% break %}
+        {% endif %}
+
+        {% unless post.categories contains "journal" %}
+        <article class="mb-5">
+          <p class="mb-0 fs-epsilon">
+          {{ post.content | strip_html }}
+          </p>
+          <time class="fs-small d-block fade-50 mb-1">on {{ post.date | date: '%B %d, %Y'}}</time>
+        </article>
+        {% endunless %}
         {% endfor %}
-        </ul>
-      </article>
-    {% endfor %}
+
+      </div>
+    </aside>
   </div>
 </div>
+
+
+
 <div class="bg-black py-10">
   <div class="container container-xl">
     <div class="content-padding text-right">
