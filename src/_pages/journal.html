@@ -36,7 +36,7 @@ description:  Journal description
         {% endif %}
 
         {% if post.categories contains "journal" %}
-        <article class="postPreview border-bottom clearfix py-9 mx-4 mx-lg-6" {% if post.slug %}id="{{ post.slug }}"{% endif %}>
+        <article class="postPreview border-bottom clearfix py-9 mx-4 mx-lg-6" >
           {% if post.featured_img %}
           <div class="col-lg-6 float-right pl-lg-6 mb-6 mb-lg-0">
             <a href="{{ post.url | prepend: site.baseurl }}" class="bg-purple d-block">
@@ -63,7 +63,7 @@ description:  Journal description
         {% endif %}
 
         {% unless post.categories contains "journal" %}
-        <article class="mb-5">
+        <article class="mb-5" {% if post.slug %}id="{{ post.slug }}"{% endif %}>
           <p class="mb-0 fs-epsilon">
           {{ post.content | strip_html }}
           </p>
