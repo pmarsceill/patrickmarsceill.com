@@ -38,6 +38,14 @@
   }
 }
 
+.link-purple {
+  color: $purple !important;
+
+  &:hover {
+    color: $grey-dk !important;
+  }
+}
+
 // Background color
 
 .bg-black  { background-color: $black !important; }
