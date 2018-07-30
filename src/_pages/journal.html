@@ -44,7 +44,7 @@ description:  Journal description
             </a>
           </div>
           {% endif %}
-          <div class="{% if post.featured_img %}col-md-7 col-lg-6 {% endif %}pr-md-6">
+          <div class="{% if post.featured_img %}col-lg-6 {% endif %}pr-md-6">
             <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%B %d, %Y'}}</time>
             <h3 class="text-beta d-inline position-relative mln-1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
             <p class="text-beta text-grey d-inline pl-2 position-relative">{{ post.description }}</p>
@@ -53,31 +53,42 @@ description:  Journal description
         {% endif %}
       {% endfor %}
     </div>
-    <aside class="col-md-4 pl-md-5 pl-lg-7 mt-md-8">
+    <aside class="col-12 col-md-4 pl-md-5 pl-lg-7 mt-8">
       <div class="mx-4 mx-lg-0">
-        <h3 class="fs-gamma">Microblog 💬</h3>
-        <p class="fs-small mb-5 fade-50">Brief and (sometimes) timely thoughts.</p>
-        {% for post in posts %}
-        {% if post.categories contains "legacy" %}
-        {% break %}
-        {% endif %}
+        <h3 class="fs-gamma mb-0">Microblog 💬</h3>
+        <p class="mb-5 text-grey">Brief and (sometimes) timely thoughts.</p>
 
-        {% unless post.categories contains "journal" %}
-        <article class="mb-5" {% if post.slug %}id="{{ post.slug }}"{% endif %}>
-          <p class="mb-0 fs-epsilon">
-          {{ post.content | strip_html }}
-          </p>
-          <time class="fs-small d-block fade-50 mb-1">on {{ post.date | date: '%B %d, %Y'}}</time>
-        </article>
-        {% endunless %}
-        {% endfor %}
+        <div class="mxn-3 mb-4">
+          {% for post in posts %}
+            {% if post.categories contains "legacy" %}
+              {% break %}
+            {% endif %}
 
+            {% unless post.categories contains "journal" %}
+
+              {% if index %}
+                {% assign index = index | plus: 1 %}
+              {% else %}
+                {% assign index = 0 %}
+              {% endif %}
+
+              {% if index < 11 %}
+                <article class="microPost p-3" {% if post.slug %}id="{{ post.slug }}"{% endif %}>
+                  <p class="mb-1 fs-epsilon">
+                  {{ post.content | strip_html }}
+                  </p>
+                  <time class="fs-small d-block text-grey mb-1">{{ post.date | timeago, depth: 1 }}</time>
+                </article>
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+        </div>
+
+        <a href="{{ site.microblog_url }}" class="btn" target="_blank">More on Micro.blog →</a>
       </div>
     </aside>
   </div>
 </div>
-
-
 
 <div class="bg-black py-10">
   <div class="container container-xl">
