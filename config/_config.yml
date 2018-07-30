@@ -46,6 +46,7 @@ keep_files:
   - assets
 markdown: kramdown
 gems:
+  - jekyll-timeago
   - jekyll-seo-tag
 
 # SEO Specific Settings

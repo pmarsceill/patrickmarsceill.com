@@ -3,6 +3,7 @@ source "https://rubygems.org"
 ruby "2.3.0"
 gem "jekyll", "3.3.1"
 gem "jekyll-seo-tag"
+gem "jekyll-timeago"
 gem "html-proofer"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
