@@ -37,7 +37,7 @@ layout: default
         {% for post in site.categories.journal %}
           {% unless post.categories contains "legacy" %}
             {% unless post.categories contains "microblog" %}
-              {% if forloop.index <= 5 and forloop.index > 1 %}
+              {% if forloop.index <= 4 and forloop.index > 1 %}
                 <li class="mb-7">
                   <time class="text-smallcaps d-block text-bold fade-50">{{ post.date | date: '%b %d, %Y'}}</time>
                   <h3 class="text-beta d-inline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
@@ -50,6 +50,27 @@ layout: default
           {% endunless %}
         {% endfor %}
       </ol>
+      <h3 class="text-smallcaps text-bold fade-50">Microblog</h3>
+
+      {% for post in site.posts %}
+        {% unless post.categories contains "legacy" %}
+        {% unless post.categories contains "journal" %}
+          {% if index %}
+            {% assign index = index | plus: 1 %}
+          {% else %}
+            {% assign index = 0 %}
+          {% endif %}
+
+          {% if index > 1 %}
+            {% break %}
+          {% endif %}
+          <article class="mb-7">
+            {{ post.content | remove: "<p>" | remove: "</p>" }}
+          </article>
+
+        {% endunless %}
+        {% endunless %}
+      {% endfor %}
       <ul class="list-style-none mb-10">
         <li class="d-inline-block mr-4">
           <a href="{% link _pages/journal.html %}" class="btn">More entries</a>
