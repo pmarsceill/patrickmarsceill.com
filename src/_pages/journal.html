@@ -38,7 +38,7 @@ description:  Journal description
         {% if post.categories contains "journal" %}
         <article class="postPreview border-bottom clearfix py-9 mx-4 mx-lg-6" >
           {% if post.featured_img %}
-          <div class="col-lg-6 float-right pl-lg-6 mb-6 mb-lg-0">
+          <div class="col-lg-6 float-right ml-lg-2 mb-6 mb-lg-0">
             <a href="{{ post.url | prepend: site.baseurl }}" class="bg-purple d-block">
               <img src="{{ site.assets-base-url }}/images/{{ post.featured_img }}" class="img-fluid">
             </a>
@@ -53,7 +53,7 @@ description:  Journal description
         {% endif %}
       {% endfor %}
     </div>
-    <aside class="col-12 col-md-4 pl-md-5 pl-lg-7 mt-8">
+    <aside class="col-12 col-md-4 pl-md-5 px-lg-6 mt-8">
       <div class="mx-4 mx-lg-0">
         <h3 class="fs-gamma mb-0">Microblog 💬</h3>
         <p class="mb-5 text-grey">Brief and (sometimes) timely thoughts.</p>
@@ -75,7 +75,7 @@ description:  Journal description
               {% if index < 11 %}
                 <article class="microPost p-3" {% if post.slug %}id="{{ post.slug }}"{% endif %}>
                   <p class="mb-1 fs-epsilon">
-                  {{ post.content | strip_html }}
+                  {{ post.content | remove: '<p>' | remove: '</p>' }}
                   </p>
                   <time class="fs-small d-block text-grey mb-1">{{ post.date | timeago, depth: 1 }}</time>
                 </article>
