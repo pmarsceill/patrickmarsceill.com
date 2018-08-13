@@ -8,7 +8,7 @@
 		<description>Patrick Marsceill's blog</description>
 		<link>http://patrickmarsceill.com</link>
 		<atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
-		<lastBuildDate>{% for post in site.categories.microblog limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
+		<lastBuildDate>{% for post in site.posts limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
 		{% for post in site.posts %}
                         {% unless post.categories contains "microblog" or post.categories contains "legacy" %}
 			<item>
