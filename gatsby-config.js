@@ -5,5 +5,10 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: 'Patrick Marsceill'
+  },
+  plugins: ['gatsby-plugin-styled-components',
+    'gatsby-mdx'
+  ]
 }
